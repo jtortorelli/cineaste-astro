@@ -1,0 +1,71 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Timeline from "../../components/Timeline.astro";
+import TimelineNode from "../../components/TimelineNode.astro";
+
+const tabs = [
+  { href: "/about", label: "The Gist", active: false },
+  { href: "/about/history", label: "History", active: true },
+  { href: "/about/acknowledgements", label: "Acknowledgements", active: false },
+];
+---
+
+<Layout title="History">
+  <div class="text-center w-fit m-auto">
+    <h1 class="font-display tracking-wider uppercase p-4 text-2xl text-gray-700">
+      About
+    </h1>
+  </div>
+  <div
+    class="text-sm font-detail uppercase w-fit m-auto text-center text-gray-500 pb-4"
+  >
+    <div class="flex flex-col sm:flex-row">
+      {
+        tabs.map((tab) => (
+          <div>
+            <a
+              href={tab.href}
+              class={`inline-block p-1 px-4 rounded-t-lg ${tab.active ? "border-red-700 text-red-700" : "hover:text-gray-700"}`}
+            >
+              {tab.label}
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+  <Timeline>
+    <TimelineNode time={2004}>
+      The cineaste embarked on his first foray into web design by teaching himself
+      HTML & CSS and carefully curating his hex color combinations for maximum cringe.
+      Every page was hand coded with Microsoft Notepad. The site’s working title was
+      “Godzilla Universes,” conceived primarily as a dumping ground for all the
+      useless information about Godzilla he’d been carting around in his head. (Making
+      the site easily navigable and visually appealing was a secondary concern.)
+    </TimelineNode>
+    <TimelineNode time={2006}>
+      The cineaste launched the site to the world as “The Godzilla Database,” but soon
+      relented and renamed it to “The Godzilla Cineaste” to match the domain his dad
+      bought. The site was filled with incomplete pages and broken links and the
+      cineaste wasn’t very proud of that at the time. Website updates were
+      accomplished via FTP with FileZilla and CyberDuck. Updates were limited by the
+      cineaste’s college schedule.
+    </TimelineNode>
+    <TimelineNode time={2009}>
+      The cineaste took a formal web design course and decided his website really did
+      suck and took the whole thing down until he could rewrite it from scratch.
+      Unfortunately the cineaste was (and kinda still is) a perfectionist and refused
+      to release anything until it was <i>just right</i>. The site was “under
+      construction” for seven years while the cineaste puttered around, slowly
+      collecting movies and learning how to code.
+    </TimelineNode>
+    <TimelineNode time={2016}>
+      The cineaste had a real life grown up job by this point and was newly married.
+      The missus knew the cineaste had been fretting about the site for a while and
+      told him to “just do it and have fun.” Later that same year the Godzilla
+      Cineaste relaunched with a brand new look and a 100% reduction in broken janky
+      pages. This version of the site is the one the cineaste continues to maintain
+      and iterate on today.
+    </TimelineNode>
+  </Timeline>
+</Layout>

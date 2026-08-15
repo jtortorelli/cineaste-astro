@@ -1,0 +1,516 @@
+---
+import Icon from "./Icon.astro";
+import CineasteLink from "./CineasteLink.astro";
+import FilmShowcaseLink from "./FilmShowcaseLink.astro";
+import PersonShowcaseLink from "./PersonShowcaseLink.astro";
+import NamedDivider from "./NamedDivider.astro";
+import ReviewStars from "./ReviewStars.astro";
+import CastBlock from "./CastBlock.astro";
+import CastBlockFromCsv from "./CastBlockFromCsv.astro";
+import QualifierBadge from "./QualifierBadge.astro";
+import { formatDate } from "../lib/dates";
+import {
+  getAdjacentSeriesEntry,
+  loadSeriesDataFromCsv,
+  seriesEntryIsShowcased,
+  staffFromCsv,
+  type StaffGroup,
+} from "../lib/films";
+import type { FilmRow } from "../lib/csv";
+
+interface Props {
+  slug: string;
+  data: Record<string, unknown>;
+  hasWrittenReview: boolean;
+  filmRecord: FilmRow | null;
+  seriesByName: Record<string, { slug: string }[]>;
+  films: FilmRow[];
+  staffs: Record<string, Record<string, string>[]>;
+  casts: Record<string, Record<string, string>[]>;
+  credits: Record<string, Record<string, string>[]>;
+}
+
+const {
+  slug,
+  data,
+  hasWrittenReview,
+  filmRecord,
+  seriesByName,
+  films,
+  staffs,
+  casts,
+  credits,
+} = Astro.props;
+
+const title = data.title as string;
+const poster_url = data.poster_url as string | undefined;
+const release_date = data.release_date as string;
+const runtime = data.runtime as number | string | undefined;
+const japanese_title = data.japanese_title as string | undefined;
+const transliteration = data.transliteration as string | undefined;
+const translation = data.translation as string | undefined;
+const aliases = data.aliases as
+  | { alias: string; context?: string }[]
+  | undefined;
+const original_works = data.original_works as
+  | {
+      title?: string;
+      format?: string;
+      authors?: { name: string; slug?: string }[];
+      studios?: { name: string }[];
+    }[]
+  | undefined;
+const studios = data.studios as string[] | undefined;
+const staff = data.staff as StaffGroup[] | undefined;
+const top_billed_cast = data.top_billed_cast as Record<string, unknown>[] | undefined;
+const supporting_cast = data.supporting_cast as Record<string, unknown>[] | undefined;
+const kaiju = data.kaiju as
+  | {
+      avatar_url: string;
+      name: string;
+      portrayals: {
+        type: string;
+        people?: { name: string; slug?: string; alias?: string }[];
+      }[];
+    }[]
+  | undefined;
+const video_review = data.video_review as
+  | { star_rating?: number | string }
+  | undefined;
+
+const seriesData = loadSeriesDataFromCsv(
+  filmRecord?.series_name,
+  seriesByName,
+  slug,
+  films,
+);
+const precedingSeriesEntry = seriesData
+  ? getAdjacentSeriesEntry(
+      seriesData.mappedSeriesEntries,
+      seriesData.filmSeriesIndex,
+      -1,
+    )
+  : null;
+const nextSeriesEntry = seriesData
+  ? getAdjacentSeriesEntry(
+      seriesData.mappedSeriesEntries,
+      seriesData.filmSeriesIndex,
+      1,
+    )
+  : null;
+const displayStaff = staffs[slug] ? staffFromCsv(staffs[slug]) : staff;
+const castCsv = casts[slug];
+const creditRows = credits[slug];
+---
+
+<div class="text-center w-fit m-auto">
+  <h1 class="font-display tracking-wider uppercase p-4 text-2xl text-gray-700">
+    {title}
+  </h1>
+</div>
+<div class="pb-4 lg:shrink-0">
+  <div class="text-center w-fit m-auto">
+    <img
+      class="rounded-lg drop-shadow-lg"
+      height={400}
+      width={270}
+      src={poster_url}
+    />
+  </div>
+</div>
+{
+  hasWrittenReview && (
+    <div class="text-center w-fit m-auto pt-2 pb-4">
+      <div class="font-content text-red-700">
+        <CineasteLink href={`/films/${slug}/review`}>
+          godzillacineaste.net review
+        </CineasteLink>
+      </div>
+      <ReviewStars star_rating={video_review?.star_rating} show_label={true} />
+    </div>
+  )
+}
+<NamedDivider name="Overview" />
+<div class="font-content text-sm text-gray-700 max-w-96 w-fit m-auto">
+  <div class="flex pb-2 gap-2">
+    <div class="-translate-y-[2px]">
+      <Icon
+        name="calendar-event"
+        set="tabler"
+        variant="outline"
+        class="inline h-4 w-4 text-gray-500"
+      />
+    </div>
+    <div>{formatDate(release_date, "d MMM yyyy")}</div>
+  </div>
+  <div class="flex pb-2 gap-2">
+    <div class="-translate-y-[2px]">
+      <Icon
+        name="stopwatch"
+        set="tabler"
+        variant="outline"
+        class="inline h-4 w-4 text-gray-500"
+      />
+    </div>
+    <div>{runtime}m</div>
+  </div>
+  <div class="flex pb-2 gap-2">
+    <div class="-translate-y-[2px]">
+      <Icon
+        name="language"
+        set="tabler"
+        variant="outline"
+        class="inline h-4 w-4 text-gray-500"
+      />
+    </div>
+    <div>
+      <span class="font-japanese tracking-wide" set:html={japanese_title} />
+      <br />
+      <span class="font-content italic text-xs text-gray-500">{transliteration}</span>
+      {
+        transliteration !== translation && (
+          <>
+            <br />
+            <span class="font-content italic text-xs text-gray-500">
+              {translation}
+            </span>
+          </>
+        )
+      }
+    </div>
+  </div>
+  {
+    original_works?.map((work) => (
+      <div class="flex pb-2 gap-2">
+        <div class="-translate-y-[2px]">
+          <Icon
+            name="book"
+            set="tabler"
+            variant="outline"
+            class="inline h-4 w-4 text-gray-500"
+          />
+        </div>
+        <div>
+          {work.title && (
+            <>
+              <span class="italic">{work.title}</span>
+              <br />
+            </>
+          )}
+          <span class="uppercase font-detail text-xs text-gray-500">
+            {work.format} by
+          </span>
+          {work.authors?.map((a) => (
+            <>
+              <br />
+              <PersonShowcaseLink slug={a.slug}>{a.name}</PersonShowcaseLink>
+            </>
+          ))}
+          {work.studios?.map((s) => (
+            <>
+              <br />
+              {s.name}
+            </>
+          ))}
+        </div>
+      </div>
+    ))
+  }
+  {
+    aliases?.map((a) => (
+      <div class="flex pb-2 gap-2">
+        <div class="-translate-y-[2px]">
+          <Icon
+            name="at"
+            set="tabler"
+            variant="outline"
+            class="inline h-4 w-4 text-gray-500"
+          />
+        </div>
+        <div>
+          <span class="italic">{a.alias}</span>
+          <br />
+          <span class="text-xs text-gray-500">{a.context}</span>
+        </div>
+      </div>
+    ))
+  }
+  {
+    seriesData && (
+      <div class="flex pb-2 gap-2">
+        <div class="-translate-y-[2px]">
+          <Icon
+            name="affiliate"
+            set="tabler"
+            variant="outline"
+            class="inline h-4 w-4 text-gray-500"
+          />
+        </div>
+        <div>
+          <span>
+            {seriesData.seriesTitle} Series No. {seriesData.filmSeriesIndex + 1}{" "}
+            <>
+              &nbsp;
+              <button class="-translate-y-[2px]" onclick="series_modal.showModal()">
+                <Icon
+                  name="layers-subtract"
+                  set="tabler"
+                  variant="outline"
+                  class="inline h-5 w-5 text-red-700 hover:cursor-pointer"
+                />
+              </button>
+              <dialog id="series_modal" class="modal">
+                <div class="modal-box">
+                  <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                      <Icon name="x" set="tabler" variant="outline" class="h-5 w-5" />
+                    </button>
+                  </form>
+                  <NamedDivider name={`${seriesData.seriesTitle} Series`} />
+                  <div class="text-gray-700 font-content text-sm">
+                    <ol class="list-decimal list-outside gap-2">
+                      {seriesData.mappedSeriesEntries.map((seriesEntry) => (
+                        <li class="ml-8 my-1">
+                          {seriesEntryIsShowcased(seriesEntry) ? (
+                            <FilmShowcaseLink slug={seriesEntry.slug}>
+                              <i>{seriesEntry.title}</i> ({seriesEntry.year})
+                            </FilmShowcaseLink>
+                          ) : (
+                            <>
+                              <i>{seriesEntry.title}</i> ({seriesEntry.year})
+                            </>
+                          )}
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
+            </>
+          </span>
+          {
+            precedingSeriesEntry && (
+              <>
+                <br />
+                <span class="pr-2">
+                  <Icon
+                    name="square-rounded-arrow-left"
+                    set="tabler"
+                    variant="outline"
+                    class="inline h-4 w-4 text-gray-500 -translate-y-[2px]"
+                  />
+                </span>
+                {seriesEntryIsShowcased(precedingSeriesEntry) ? (
+                  <FilmShowcaseLink slug={precedingSeriesEntry.slug}>
+                    <span class="italic">{precedingSeriesEntry.title}</span> (
+                    {precedingSeriesEntry.year})
+                  </FilmShowcaseLink>
+                ) : (
+                  <>
+                    <span class="italic">{precedingSeriesEntry.title}</span> (
+                    {precedingSeriesEntry.year})
+                  </>
+                )}
+              </>
+            )
+          }
+          {
+            nextSeriesEntry && (
+              <>
+                <br />
+                <span class="pr-2">
+                  <Icon
+                    name="square-rounded-arrow-right"
+                    set="tabler"
+                    variant="outline"
+                    class="inline h-4 w-4 text-gray-500 -translate-y-[2px]"
+                  />
+                </span>
+                {seriesEntryIsShowcased(nextSeriesEntry) ? (
+                  <FilmShowcaseLink slug={nextSeriesEntry.slug}>
+                    <span class="italic">{nextSeriesEntry.title}</span> (
+                    {nextSeriesEntry.year})
+                  </FilmShowcaseLink>
+                ) : (
+                  <>
+                    <span class="italic">{nextSeriesEntry.title}</span> (
+                    {nextSeriesEntry.year})
+                  </>
+                )}
+              </>
+            )
+          }
+        </div>
+      </div>
+    )
+  }
+  <div class="flex pb-2 gap-2">
+    <div class="-translate-y-[2px]">
+      <Icon
+        name="buildings"
+        set="tabler"
+        variant="outline"
+        class="inline h-4 w-4 text-gray-500"
+      />
+    </div>
+    <div>{studios?.join(", ")}</div>
+  </div>
+</div>
+<NamedDivider name="Staff" />
+<div
+  class={`w-fit m-auto ${displayStaff && displayStaff.length >= 6 && "lg:columns-3"} ${displayStaff && displayStaff.length < 6 && displayStaff.length >= 4 && "lg:columns-2"} lg:gap-x-8`}
+>
+  {
+    displayStaff?.map((staffGroup) => (
+      <div class="lg:text-center text-left lg:break-inside-avoid-column pb-1">
+        <div class="">
+          <span class="font-content text-xs text-gray-500">{staffGroup.role}</span>
+        </div>
+        <div class="">
+          {staffGroup.people.map((person) => (
+            <div class="text-gray-700 text-sm font-content">
+              <PersonShowcaseLink slug={person.slug}>
+                {person.disambig_chars ? (
+                  <>
+                    {person.name}
+                    <span class="text-xs">
+                      (<span class="font-japanese">{person.disambig_chars}</span>)
+                    </span>
+                  </>
+                ) : (
+                  <>{person.name}</>
+                )}
+              </PersonShowcaseLink>
+              <br />
+              {person.alias && (
+                <span class="text-gray-500 text-xs">
+                  <Icon
+                    name="at"
+                    set="tabler"
+                    variant="outline"
+                    class="inline h-3 w-3 text-gray-500"
+                  />
+                  {person.alias}
+                </span>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    ))
+  }
+</div>
+{
+  creditRows && (
+    <>
+      <div class="w-fit m-auto font-content text-sm text-red-700 hover:cursor-pointer pt-2">
+        <a onclick="credits_modal.showModal()">
+          Credits{" "}
+          <Icon
+            name="layers-subtract"
+            set="tabler"
+            variant="outline"
+            class="h-5 w-5 inline"
+          />
+        </a>
+      </div>
+      <dialog id="credits_modal" class="modal">
+        <div class="modal-box">
+          <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              <Icon name="x" set="tabler" variant="outline" class="h-5 w-5" />
+            </button>
+          </form>
+          <NamedDivider name="Credits" />
+          <div class="grid grid-cols-2 gap-2 text-gray-700 font-content text-sm">
+            {creditRows.map(({ japanese_role, japanese_name, role, name }) => (
+              <>
+                <div>
+                  <span class="text-gray-500 font-mono text-xs">{japanese_role}</span>
+                  <br />
+                  <span>{role}</span>
+                </div>
+                <div>
+                  <span class="text-gray-500 font-mono text-xs">{japanese_name}</span>
+                  <br />
+                  <span>{name}</span>
+                </div>
+              </>
+            ))}
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+    </>
+  )
+}
+{
+  castCsv ? (
+    <CastBlockFromCsv rows={castCsv} />
+  ) : (
+    <>
+      <NamedDivider name="top billed cast" />
+      <CastBlock block={top_billed_cast as never} />
+      {supporting_cast && supporting_cast.length > 0 && (
+        <>
+          <NamedDivider name="supporting cast" />
+          <CastBlock block={supporting_cast as never} />
+        </>
+      )}
+    </>
+  )
+}
+{
+  kaiju && kaiju.length > 0 && (
+    <>
+      <NamedDivider name="kaiju, etc." />
+      <div class="flex flex-col sm:flex-row sm:flex-wrap sm:w-fit w-96 m-auto gap-4 justify-center">
+        {kaiju.map((monster) => (
+          <div class="flex flex-row sm:flex-col sm:w-32 items-center gap-3">
+            <div class="shrink-0">
+              <img
+                class="h-[75px] w-[75px] sm:h-[100px] sm:w-[100px] max-w-[150px] rounded-lg drop-shadow-lg"
+                src={monster.avatar_url}
+              />
+            </div>
+            <div class="flex flex-col sm:items-center">
+              <div class="font-content text-gray-500 text-xs">{monster.name}</div>
+              {monster.portrayals.map((portrayal) => (
+                <>
+                  {portrayal.people ? (
+                    portrayal.people.map((person) => (
+                      <div class="font-content text-sm sm:text-center text-gray-700">
+                        <PersonShowcaseLink slug={person.slug}>
+                          {person.name}
+                        </PersonShowcaseLink>
+                        {person.alias && (
+                          <div class="font-content text-xs text-gray-500">
+                            <Icon
+                              name="at"
+                              set="tabler"
+                              variant="outline"
+                              class="inline h-3 w-3 text-gray-500"
+                            />
+                            {person.alias}
+                          </div>
+                        )}
+                        <QualifierBadge>{portrayal.type}</QualifierBadge>
+                      </div>
+                    ))
+                  ) : (
+                    <QualifierBadge>{portrayal.type}</QualifierBadge>
+                  )}
+                </>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  )
+}

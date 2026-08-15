@@ -1,0 +1,91 @@
+---
+import Icon from "./Icon.astro";
+import PersonShowcaseLink from "./PersonShowcaseLink.astro";
+import QualifierBadge from "./QualifierBadge.astro";
+import UncreditedBadge from "./UncreditedBadge.astro";
+import { processRoleName, type CastEntry } from "../lib/films";
+
+interface Props {
+  block: CastEntry[];
+}
+
+const { block } = Astro.props;
+---
+
+<div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:w-fit w-96 m-auto justify-center">
+  {
+    block.map((cast) => (
+      <div class="flex flex-row sm:flex-col sm:w-32 items-center gap-3">
+        <div class="shrink-0">
+          <img
+            class="h-[75px] w-[75px] sm:h-[100px] sm:w-[100px] max-w-[150px] rounded-lg drop-shadow-lg"
+            src={cast.avatar_url}
+          />
+        </div>
+        <div class="flex flex-col sm:items-center">
+          <div class="font-content sm:text-center text-gray-500 text-xs">
+            <span set:html={processRoleName(cast.role)} />
+            {cast.character_qualifiers && (
+              <>
+                <br />
+                <span class="text-xs">({cast.character_qualifiers})</span>
+              </>
+            )}
+          </div>
+          <div class="font-content text-sm sm:text-center text-gray-700">
+            <PersonShowcaseLink slug={cast.slug}>
+              {cast.name}
+              {cast.disambig_chars && (
+                <span class="text-xs">
+                  (<span class="font-japanese">{cast.disambig_chars}</span>)
+                </span>
+              )}
+            </PersonShowcaseLink>
+          </div>
+          {cast.alias && (
+            <div class="font-content text-xs text-gray-500">
+              <Icon
+                name="at"
+                set="tabler"
+                variant="outline"
+                class="inline h-3 w-3 text-gray-500"
+              />
+              {cast.alias}
+            </div>
+          )}
+          {cast.qualifiers && (
+            <QualifierBadge>{cast.qualifiers}</QualifierBadge>
+          )}
+          {cast.uncredited && <UncreditedBadge />}
+          {cast.secondary?.map((secondary) => (
+            <div class="font-content text-sm sm:text-center text-gray-700">
+              <PersonShowcaseLink slug={secondary.slug}>
+                {secondary.name}
+                {secondary.disambig_chars && (
+                  <span class="text-xs">
+                    (<span class="font-japanese">{secondary.disambig_chars}</span>)
+                  </span>
+                )}
+              </PersonShowcaseLink>
+              {secondary.alias && (
+                <div class="font-content text-xs text-gray-500">
+                  <Icon
+                    name="at"
+                    set="tabler"
+                    variant="outline"
+                    class="inline h-3 w-3 text-gray-500"
+                  />
+                  {secondary.alias}
+                </div>
+              )}
+              {secondary.qualifiers && (
+                <QualifierBadge>{secondary.qualifiers}</QualifierBadge>
+              )}
+              {secondary.uncredited && <UncreditedBadge />}
+            </div>
+          ))}
+        </div>
+      </div>
+    ))
+  }
+</div>

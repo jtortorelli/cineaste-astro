@@ -1,0 +1,14 @@
+---
+import { personDateRange } from "../lib/dates";
+
+interface Props {
+  p: {
+    dob?: string | Date;
+    dod?: string | Date | "unknown";
+  };
+}
+
+const { p } = Astro.props;
+---
+
+{personDateRange(p)}

@@ -1,0 +1,19 @@
+---
+import CineasteLink from "./CineasteLink.astro";
+
+interface Props {
+  slug?: string;
+}
+
+const { slug } = Astro.props;
+---
+
+{
+  slug ? (
+    <CineasteLink href={`/people/${slug}`}>
+      <slot />
+    </CineasteLink>
+  ) : (
+    <slot />
+  )
+}

@@ -1,0 +1,59 @@
+---
+import Icon from "./Icon.astro";
+
+interface VideoReview {
+  youtube_url?: string;
+  rumble_url?: string;
+  odysee_url?: string;
+}
+
+interface Props {
+  video_review?: VideoReview;
+}
+
+const { video_review } = Astro.props;
+---
+
+{
+  video_review?.youtube_url ||
+  video_review?.rumble_url ||
+  video_review?.odysee_url ? (
+    <div class="text-center w-fit m-auto pt-2 pb-4">
+      <div class="font-content text-sm text-gray-700 pb-2">
+        Watch the video review on these platforms!
+      </div>
+      <div class="flex justify-center items-center gap-3">
+        {
+          video_review.youtube_url && (
+            <a
+              href={video_review.youtube_url}
+              class="inline-block align-middle text-red-500 [&_svg]:inline [&_svg]:h-4 [&_svg]:w-4 [&_svg]:fill-red-500 [&_path]:fill-red-500"
+            >
+              <Icon name="youtube" set="simpleicons" />
+            </a>
+          )
+        }
+        {
+          video_review.rumble_url && (
+            <a
+              href={video_review.rumble_url}
+              class="inline-block align-middle text-green-500 [&_svg]:inline [&_svg]:h-4 [&_svg]:w-4 [&_svg]:fill-green-500 [&_path]:fill-green-500"
+            >
+              <Icon name="rumble" set="simpleicons" />
+            </a>
+          )
+        }
+        {
+          video_review.odysee_url && (
+            <a
+              href={video_review.odysee_url}
+              class="inline-block align-middle text-orange-500 [&_svg]:inline [&_svg]:h-4 [&_svg]:w-4 [&_svg]:fill-orange-500 [&_path]:fill-orange-500"
+            >
+              <Icon name="odysee" set="simpleicons" />
+            </a>
+          )
+        }
+      </div>
+    </div>
+  ) : null
+}

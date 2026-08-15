@@ -1,0 +1,42 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import PersonPage from "../../components/PersonPage.astro";
+import GroupPage from "../../components/GroupPage.astro";
+
+export async function getStaticPaths() {
+  const people = await getCollection("people");
+  const paths = [];
+
+  for (const person of people) {
+    const slug = person.id.replace(/\.md$/, "");
+    const { Content } = await render(person);
+    paths.push({
+      params: { slug },
+      props: {
+        data: person.data,
+        isGroup: person.data.type === "group",
+        Content,
+      },
+    });
+  }
+
+  return paths;
+}
+
+interface Props {
+  data: Record<string, unknown>;
+  isGroup: boolean;
+  Content: Awaited<ReturnType<typeof render>>["Content"];
+}
+
+const { data, isGroup, Content } = Astro.props;
+---
+
+<Layout name={data.name as string}>
+  {isGroup ? (
+    <GroupPage data={data} Content={Content} />
+  ) : (
+    <PersonPage data={data} Content={Content} />
+  )}
+</Layout>

@@ -1,0 +1,64 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import FilmPage from "../../components/FilmPage.astro";
+import { filmRecordFromCsv, getFilmData } from "../../lib/films";
+import { getReviewSlugs } from "../../lib/reviews";
+
+export async function getStaticPaths() {
+  const films = await getCollection("films", ({ data }) => !data.draft);
+  const reviewSlugs = await getReviewSlugs();
+  const { films: filmRows, series, credits, staffs, casts } = getFilmData();
+
+  return films.map((film) => ({
+    params: { slug: film.id.replace(/\.md$/, "") },
+    props: {
+      data: film.data,
+      hasWrittenReview: reviewSlugs.has(film.id.replace(/\.md$/, "")),
+      filmRecord: filmRecordFromCsv(film.id.replace(/\.md$/, ""), filmRows),
+      seriesByName: series,
+      films: filmRows,
+      staffs,
+      casts,
+      credits,
+    },
+  }));
+}
+
+interface Props {
+  data: Record<string, unknown>;
+  hasWrittenReview: boolean;
+  filmRecord: ReturnType<typeof filmRecordFromCsv>;
+  seriesByName: Record<string, { slug: string }[]>;
+  films: ReturnType<typeof getFilmData>["films"];
+  staffs: ReturnType<typeof getFilmData>["staffs"];
+  casts: ReturnType<typeof getFilmData>["casts"];
+  credits: ReturnType<typeof getFilmData>["credits"];
+}
+
+const { slug } = Astro.params;
+const {
+  data,
+  hasWrittenReview,
+  filmRecord,
+  seriesByName,
+  films,
+  staffs,
+  casts,
+  credits,
+} = Astro.props;
+---
+
+<Layout title={data.title as string}>
+  <FilmPage
+    slug={slug!}
+    data={data}
+    hasWrittenReview={hasWrittenReview}
+    filmRecord={filmRecord}
+    seriesByName={seriesByName}
+    films={films}
+    staffs={staffs}
+    casts={casts}
+    credits={credits}
+  />
+</Layout>

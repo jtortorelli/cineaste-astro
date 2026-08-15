@@ -1,0 +1,23 @@
+---
+import CastBlock from "./CastBlock.astro";
+import NamedDivider from "./NamedDivider.astro";
+import { castFromCsv } from "../lib/films";
+
+interface Props {
+  rows: Record<string, string>[];
+}
+
+const { rows } = Astro.props;
+const { topBilled, supporting } = castFromCsv(rows);
+---
+
+<NamedDivider name="top billed cast" />
+<CastBlock block={topBilled} />
+{
+  supporting.length > 0 && (
+    <>
+      <NamedDivider name="supporting cast" />
+      <CastBlock block={supporting} />
+    </>
+  )
+}

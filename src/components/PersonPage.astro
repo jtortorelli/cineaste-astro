@@ -1,0 +1,219 @@
+---
+import Icon from "./Icon.astro";
+import NamedDivider from "./NamedDivider.astro";
+import PersonShowcaseLink from "./PersonShowcaseLink.astro";
+import SelectedWorks from "./SelectedWorks.astro";
+import { displayPersonDate, lifespan } from "../lib/dates";
+
+interface Props {
+  data: Record<string, unknown>;
+  Content: Astro.Component;
+}
+
+const { data, Content } = Astro.props;
+
+const name = data.name as string;
+const avatar_url = data.avatar_url as string;
+const japanese_name = data.japanese_name as string | undefined;
+const dob = data.dob as string | undefined;
+const dob_resolution = data.dob_resolution as string | undefined;
+const dod = data.dod as string | Date | "unknown" | undefined;
+const dod_resolution = data.dod_resolution as string | undefined;
+const birth_name = data.birth_name as string | undefined;
+const japanese_birth_name = data.japanese_birth_name as string | undefined;
+const birth_place = data.birth_place as string | undefined;
+const death_place = data.death_place as string | undefined;
+const cause_of_death = data.cause_of_death as string | undefined;
+const aliases = data.aliases as
+  | { name: string; japanese_name?: string; context?: string; category?: string }[]
+  | undefined;
+const spouses = data.spouses as { name: string; slug?: string }[] | undefined;
+const family = data.family as { name: string; slug?: string; relationship: string }[] | undefined;
+const accolades = data.accolades as
+  | {
+      ceremony: string;
+      category: string;
+      status: string;
+      films?: { title: string }[];
+    }[]
+  | undefined;
+const works = data.works as Record<string, unknown>[] | undefined;
+---
+
+<div class="text-center w-fit m-auto">
+  <h1 class="font-display tracking-wider uppercase text-2xl text-gray-700 p-4">
+    {name}
+  </h1>
+  <div class="pb-4 lg:shrink-0 h-full w-fit m-auto">
+    <img class="rounded-lg drop-shadow-lg" src={avatar_url} height="200px" width="200px" />
+  </div>
+</div>
+<NamedDivider name="Bio" />
+<div class="text-sm grid gap-6 sm:grid-cols-[repeat(auto-fit,minmax(110px,140px))] mb-4 mx-auto items-start justify-center">
+  {
+    japanese_name && (
+      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
+        <Icon name="language" set="tabler" variant="outline" class="h-4 w-4 text-gray-500" />
+        <div class="font-japanese text-gray-700">{japanese_name}</div>
+      </div>
+    )
+  }
+  {
+    dob && (
+      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
+        <Icon name="sun-high" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+        <div class="space-y-1">
+          <div class="font-content text-gray-700">
+            {displayPersonDate(dob, dob_resolution)} <span id="age-span"></span>
+            {!dod && (
+              <script is:inline>
+                {`
+                  const dob = new Date("${dob}");
+                  const ageDifMs = Date.now() - dob.getTime();
+                  const ageDate = new Date(ageDifMs);
+                  const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+                  const ageSpan = document.getElementById("age-span");
+                  if (ageSpan) ageSpan.textContent = "(" + age + ")";
+                `}
+              </script>
+            )}
+          </div>
+          {birth_name && <div class="font-content text-gray-500 text-xs">{birth_name}</div>}
+          {japanese_birth_name && (
+            <div class="font-content text-gray-500 text-xs">{japanese_birth_name}</div>
+          )}
+          {birth_place && <div class="font-content text-gray-500 text-xs">{birth_place}</div>}
+        </div>
+      </div>
+    )
+  }
+  {
+    dod && typeof dod !== "string" && (
+      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
+        <Icon name="moon" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+        <div class="space-y-1">
+          <div class="font-content text-gray-700">
+            {displayPersonDate(dod, dod_resolution)} ({lifespan(dob!, dod)})
+          </div>
+          {death_place && <div class="font-content text-gray-500 text-xs">{death_place}</div>}
+          {cause_of_death && (
+            <div class="font-content text-gray-500 text-xs">{cause_of_death}</div>
+          )}
+        </div>
+      </div>
+    )
+  }
+  {
+    dod && typeof dod === "string" && dod.toLowerCase() === "unknown" && (
+      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
+        <Icon name="moon" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+        <div class="font-content text-gray-700">Unknown Date</div>
+      </div>
+    )
+  }
+  {
+    aliases?.map((a) => (
+      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
+        <Icon name="at" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+        <div>
+          <div class="font-content text-gray-700">{a.name}</div>
+          {a.japanese_name && (
+            <div class="font-content text-gray-500 text-xs">{a.japanese_name}</div>
+          )}
+          {a.context && <div class="font-content text-gray-500 text-xs">{a.context}</div>}
+          {a.category == "mistranslation" && (
+            <div class="font-content text-gray-500 text-xs">Mistranslation</div>
+          )}
+        </div>
+      </div>
+    ))
+  }
+  {
+    spouses?.map((spouse) => (
+      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
+        <Icon name="chart-circles" set="tabler" variant="outline" class="h-5 w-5 text-gray-500" />
+        <div>
+          <div class="font-content text-gray-700">
+            <PersonShowcaseLink slug={spouse.slug}>{spouse.name}</PersonShowcaseLink>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+  {
+    family && family.length > 0 && (
+      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
+        <Icon name="users-group" set="tabler" variant="outline" class="h-5 w-5 text-gray-500" />
+        <div>
+          {family.map((member) => (
+            <>
+              <div class="font-content text-gray-700">
+                <PersonShowcaseLink slug={member.slug}>{member.name}</PersonShowcaseLink>
+              </div>
+              <div class="font-content text-gray-500 text-xs capitalize">
+                {member.relationship}
+              </div>
+            </>
+          ))}
+        </div>
+      </div>
+    )
+  }
+</div>
+<div
+  class="
+        text-sm font-content text-justify text-gray-700 pb-1 pt-2 mx-auto
+        w-96 sm:w-fit
+        columns-1 sm:columns-2 space-y-2
+        sm:[&:has(>_:only-child)]:columns-1
+        sm:[&:has(>_:only-child)]:w-96
+        sm:[&:has(>_:only-child)]:justify-items-center
+      "
+>
+  <Content />
+</div>
+{
+  accolades && accolades.length > 0 && (
+    <>
+      <NamedDivider name="Accolades" />
+      <div class="grid gap-6 sm:grid-cols-[repeat(auto-fit,minmax(110px,150px))] justify-center mx-auto">
+        {accolades.map((accolade) => (
+          <div class="">
+            <div
+              class={`font-content text-xs gap-1 ${
+                accolade.status === "won" ? "text-amber-600" : "text-gray-700"
+              }`}
+            >
+              <div class="flex items-end gap-1">
+                <Icon
+                  name="award"
+                  set="tabler"
+                  variant={accolade.status === "won" ? "filled" : "outline"}
+                  class="h-4 w-4"
+                />
+                <div
+                  class={`uppercase font-detail ${
+                    accolade.status !== "won" ? "text-gray-500" : ""
+                  }`}
+                >
+                  {accolade.status === "won" ? "Won" : "Nominated"}
+                </div>
+              </div>
+              <div>
+                <div>{accolade.ceremony}</div>
+                <div>{accolade.category}</div>
+                {accolade.films && accolade.films.length > 0 && (
+                  <div class="italic">
+                    {accolade.films.map((f) => f.title).join(", ")}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  )
+}
+<NamedDivider name="Selected Works" />
+<SelectedWorks works={works as never} />

@@ -1,0 +1,280 @@
+title: Acknowledgements
+influences:
+  - name: Barry's Temple of Godzilla
+    domain: godzillatemple.com
+    resource_url: http://godzillatemple.com
+    author: Barry Goldberg
+    image_url: /static/images/about/acknowledgements/influences/barrys_temple_of_godzilla.webp
+  - name: Godzilla and Other Monster Music
+    domain: godzillamonstermusic.com
+    resource_url: http://www.godzillamonstermusic.com/godzilla.htm
+    author: Lawrence Tuczynski
+    image_url: /static/images/about/acknowledgements/influences/godzilla_and_other_monster_music.webp
+  - name: Godzilla Stomp
+    domain: gojistomp.org
+    alias: Gary's Godzilla Zone
+    author: '"Gary"'
+    image_url: "/static/images/about/acknowledgements/influences/garys_godzilla_zone.webp"
+  - name: "Godzilla Tower"
+    resource_url: "https://www.angelfire.com/movies/GodzillaTower/Homepage.htm"
+    domain: "angelfire.com/movies/GodzillaTower"
+    author: '"Iguanoman"'
+    image_url: "/static/images/about/acknowledgements/influences/godzilla_tower.webp"
+  - name: "Kaiju Headquarters"
+    domain: "kaijuhq.org"
+    author: "Jordan Twining"
+    image_url: "/static/images/about/acknowledgements/influences/kaiju_headquarters.webp"
+  - name: "Kaijuphile"
+    alias: "Rodan's Roost"
+    domain: "kaijuphile.com"
+    author: "Clint Lee Warner & Brandon Waggle"
+    image_url: "/static/images/about/acknowledgements/influences/kaijuphile.webp"
+  - name: Monster Zero News
+    domain: "monsterzero.us"
+    author: "Aaron Smith"
+    image_url: "/static/images/about/acknowledgements/influences/monster_zero_news.webp"
+  - name: SciFi Japan
+    resource_url: "http://scifijapan.com/articles"
+    domain: "scifijapan.com"
+    author: "Keith Aiken & Bob Johnson"
+    image_url: "/static/images/about/acknowledgements/influences/scifi_japan.webp"
+  - name: "Stomp Tokyo"
+    resource_url: "http://www.stomptokyo.com/"
+    domain: "stomptokyo.com"
+    author: "Chris Holland & Scott Hamilton"
+    image_url: "/static/images/about/acknowledgements/influences/stomp_tokyo.webp"
+  - name: Toho Kingdom
+    resource_url: "https://www.tohokingdom.com/"
+    domain: "tohokingdom.com"
+    author: "Anthony Romero & Co."
+    image_url: "/static/images/about/acknowledgements/influences/toho_kingdom.webp"
+  - name: Tokyo Monsters
+    domain: "tokyomonsters.com"
+    author: "James Ballard"
+    image_url: "/static/images/about/acknowledgements/influences/tokyo_monsters.webp"
+resources:
+  - name: The Japanese Movie Database
+    domain: "jmdb.ne.jp"
+    resource_url: "http://www.jmdb.ne.jp/"
+    image_url: "/static/images/about/acknowledgements/resources/jmdb.webp"
+  - name: Japanese Wikipedia
+    domain: "ja.wikipedia.org"
+    resource_url: "https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8"
+    image_url: "/static/images/about/acknowledgements/resources/ja_wikipedia.webp"
+  - name: Kadokawa's Official Film Library
+    image_url: "/static/images/about/acknowledgements/resources/kadokawa.webp"
+  - name: KaijuCast
+    domain: "kaijucast.com"
+    author: "Kyle Yount"
+    resource_url: "http://www.kaijucast.com/"
+    image_url: "/static/images/about/acknowledgements/resources/kaijucast.webp"
+  - name: Midnight Eye
+    domain: "midnighteye.com"
+    author: "Tom Mes, Jasper Sharp & Martin Mes"
+    resource_url: "http://www.midnighteye.com/"
+    image_url: "/static/images/about/acknowledgements/resources/midnight_eye.webp"
+  - name: Toho's Official Film Library
+    resource_url: "https://31fb9f38.viewer.kintoneapp.com/public/0a3f41a74b8bb9e879c82e5240035410e01df4c27f0dfc1d2ef44495962b1f44"
+    image_url: "/static/images/about/acknowledgements/resources/toho.webp"
+  - name: Vantage Point Interviews
+    domain: "vantagepointinterviews.com"
+    author: "Brett Homenick"
+    resource_url: "https://vantagepointinterviews.com/"
+    image_url: "/static/images/about/acknowledgements/resources/vantage_point_interviews.webp"
+books:
+  - name: A Critical History and Filmography of Toho's Godzilla Series
+    author: "David Kalat"
+    isbn: "978-1476672946"
+    image_url: "/static/images/about/acknowledgements/books/a_critical_history_and_filmography_of_tohos_godzilla_series.webp"
+  - name: The Big Book of Japanese Giant Monster Movies
+    subtitle: The Lost Films
+    author: "John LeMay"
+    isbn: "978-1701683945"
+    image_url: "/static/images/about/acknowledgements/books/big_book_of_japanese_giant_monster_movies.webp"
+  - name: Godzilla FAQ
+    author: "Brian Solomon"
+    isbn: "978-1495045684"
+    image_url: "/static/images/about/acknowledgements/books/godzilla_faq.webp"
+  - name: Godzilla on My Mind
+    subtitle: Fifty Years of the King of the Monsters
+    author: "William Tsutsui"
+    isbn: "978-1403964748"
+    image_url: "/static/images/about/acknowledgements/books/godzilla_on_my_mind.webp"
+  - name: Godzilla
+    subtitle: The Official Guide to the King of the Monsters
+    isbn: "978-1787398993"
+    image_url: "/static/images/about/acknowledgements/books/godzilla_the_official_guide_to_the_king_of_the_monsters.webp"
+  - name: Ishiro Honda
+    subtitle: A Life in Film, from Godzilla to Kurosawa
+    author: "Steve Ryfle & Ed Godziszewski"
+    isbn: "978-0819500410"
+    image_url: "/static/images/about/acknowledgements/books/ishiro_honda.webp"
+  - name: Monsters Are Attacking Tokyo
+    subtitle: The Incredible World of Japanese Fantasy Films
+    author: "Stuart Galbraith IV"
+    isbn: "978-0922915477"
+    image_url: "/static/images/about/acknowledgements/books/monsters_are_attacking_tokyo.webp"
+  - name: The Official Godzilla Compendium
+    author: "J.D. Lees & Marc Cerasini"
+    isbn: "978-0679888222"
+    image_url: "/static/images/about/acknowledgements/books/official_godzilla_compendium.webp"
+  - name: Something Like An Autobiography
+    author: "Akira Kurosawa"
+    isbn: "978-0394714394"
+    image_url: "/static/images/about/acknowledgements/books/something_like_an_autobiography.webp"
+labels:
+  - name: ADV Films
+    history: "Defunct, licenses owned by Sentai Filmworks"
+    works: The Heisei <i>Gamera</i> films, <i>The Princess Blade</i>, <i>Parasite Eve</i>
+    image_url: "/static/images/about/acknowledgements/labels/adv_films.webp"
+  - name: Anchor Bay
+    history: "Bought by Lionsgate"
+    works: "<i>Battle Royale</i> & <i>Battle Royale II: Requiem</i>"
+    image_url: "/static/images/about/acknowledgements/labels/anchor_bay_entertainment.webp"
+  - name: Arrow Video
+    resource_url: "https://www.arrowvideo.com/"
+    domain: "arrowvideo.com"
+    image_url: "/static/images/about/acknowledgements/labels/arrow_video.webp"
+    works: The <i>Bloodthirsty</i>
+      trilogy, the <i>Daimajin</i>
+      series, the complete <i>Gamera</i>
+      series, <i>Dark Water</i>, <i>The Invisible Man Appears</i>, the <i>One Missed Call</i>
+      series, the <i>Ring</i>
+      series, the Shinya Tsukamoto collection, <i>Versus</i>, <i>Warning from Space</i>, the
+      <i>Yokai Monsters</i>
+      series
+  - name: Classic Media
+    history: Bought by DreamWorks
+    image_url: "/static/images/about/acknowledgements/labels/classic_media.webp"
+    works: <i>Godzilla</i>
+      (1954), <i>Godzilla Raids Again</i>, <i>Mothra vs. Godzilla</i>, <i>Ghidorah, the Three-Headed Monster</i>, <i>Invasion of Astro-Monster</i>, <i>All Monsters Attack</i>, <i>Terror of Mechagodzilla</i>,
+      <i>Rodan</i>
+      and <i>War of the Garguantas</i>
+      double feature including the documentary <i>Bringing Godzilla Down to Size</i>
+  - name: Columbia/Tristar
+    history: Rolled up under Sony Pictures
+    image_url: "/static/images/about/acknowledgements/labels/columbia_tristar.webp"
+    works: The Heisei <i>Godzilla</i>
+      series from 1991-1995 (debuted on VHS), the Millennium <i>Godzilla</i>
+      series through 2003
+  - name: The Criterion Collection
+    resource_url: "https://www.criterion.com/"
+    domain: "criterion.com"
+    image_url: "/static/images/about/acknowledgements/labels/criterion_collection.webp"
+    works:
+      "The majority of Akira Kurosawa's works, the entire Showa <i>Godzilla</i>
+      series, the <i>Zatoichi</i>
+      series, the <i>Lone Wolf and Cub</i>
+      series, <i>The Sword of Doom</i>, <i>The Human Condition</i>, <i>Three Outlaw Samurai</i>, the
+      <i>Lady Snowblood</i>
+      series, the <i>Rebel Samurai</i>
+      collection, Eclipse Series 7 & 23 (more Kurosawa), Eclipse Series 37:
+      <i>When Horror Came to Shochiku</i>"
+  - name: Discotek
+    resource_url: "https://www.discotekmedia.com/"
+    domain: "discotekmedia.com"
+    image_url: "/static/images/about/acknowledgements/labels/discotek.webp"
+    works: "<i>The Bullet Train</i>, <i>Sayonara, Jupiter</i>, <i>Jin-Roh: The Wolf Brigade</i>"
+  - name: Eleven Arts
+    resource_url: "https://www.elevenarts.net/"
+    domain: "elevenarts.net"
+    image_url: "/static/images/about/acknowledgements/labels/eleven_arts.webp"
+    works: <i>Space Battleship Yamato</i>
+  - name: Funimation
+    resource_url: "https://www.funimation.com/"
+    domain: "funimation.com"
+    history: "Merged with Crunchyroll"
+    image_url: "/static/images/about/acknowledgements/labels/funimation.webp"
+    works: "The <i>Assassination Classroom</i>
+      series, the <i>Attack on Titan</i>
+      series, the works of Mamoru Hosoda, the <i>Evangelion Rebuild</i>
+      series, <i>Ghost in the Shell 2: Innocence</i>, <i>Death Note: Light Up the New World</i>, <i>I Am A Hero</i>, <i>Shin Godzilla</i>, <i>Goemon</i>, <i>Kamui Gaiden</i>, <i>Kingdom</i>, <i>Mushi-shi</i>, <i>Oblivion Island: Haruka and the Magic Mirror</i>, the
+      <i>Parasyte</i>
+      series, the <i>Rurouni Kenshin</i>
+      series, <i>Shinobi: Heart Under Blade</i>"
+  - name: Geneon
+    history: "Formerly Pioneer, currently Universal"
+    image_url: "/static/images/about/acknowledgements/labels/geneon.webp"
+    works: <i>Dororo</i>, the <i>Onmyoji</i> series, <i>Tetsujin-28</i>
+  - name: GKIDS
+    resource_url: "https://gkids.com/"
+    domain: "gkids.com"
+    image_url: "/static/images/about/acknowledgements/labels/gkids.webp"
+    works: "<i>Lupin III: The First</i>, the works of Studio Ghibli, <i>Evangelion 3.0+1.0: Thrice Upon a Time</i>, <i>Belle</i>, <i>Mirai</i>, the works of Makoto Shinkai, the works of Satoshi Kon"
+  - name: Kraken Releasing
+    history: "Defunct, licenses owned by Sentai Filmworks"
+    image_url: "/static/images/about/acknowledgements/labels/kraken_releasing.webp"
+    works:
+      <i>Godzilla vs. the Sea Monster</i>, <i>Godzilla vs. the Smog Monster</i>, <i>Godzilla on Monser Island</i>,
+      <i>Godzilla 1984</i>
+  - name: Magnet
+    resource_url: "https://www.magnetreleasingfilms.com/"
+    domain: "magnetreleasingfilms.com"
+    image_url: "/static/images/about/acknowledgements/labels/magnet.webp"
+    works: <i>13 Assassins</i>
+  - name: Media Blasters
+    resource_url: "http://media-blasters.com/"
+    domain: "http://media-blasters.com/"
+    history: "Includes the Tokyo Shock label"
+    image_url: "/static/images/about/acknowledgements/labels/media_blasters.webp"
+    works:
+      "<i>Alive</i>, <i>Aragami</i>, <i>Atragon</i>, <i>Death Trance</i>, <i>Dogora</i>, the
+      <i>Eko Eko Azarak</i>
+      series, <i>Frankenstein Conquers the World</i>, <i>God's Left Hand, Devil's Right Hand</i>, <i>Gojoe</i>, <i>Latitude Zero</i>, <i>Makai Tensho: Samurai Reincarnation</i>, <i>Masked Rider: The First</i>, <i>Matango</i>, <i>Mechanical Violator Hakaider</i>, <i>Moon Over Tao</i>, <i>The Mysterians</i>,
+      <i>Pyrokinesis</i>
+      (<i>Crossfire</i>), <i>Sky High</i>, <i>Space Amoeba</i>, <i>Varan the Unbelievable</i>, <i>Versus</i>,
+      <i>Zatoichi</i>
+      (1989), the <i>Zëiram</i>
+      series"
+  - name: Mill Creek Entertainment
+    resource_url: "https://www.millcreekent.com/"
+    domain: "millcreekent.com"
+    history: Now Alliance Entertainment
+    image_url: "/static/images/about/acknowledgements/labels/mill_creek_entertainment.webp"
+    works: <i>Battle in Outer Space</i>
+      & <i>The H-Man</i>
+      double feature, The <i>Daimajin</i>
+      series, the Heisei & Showa <i>Gamera</i>
+      series (released separately), <i>Mothra</i>, the entire <i>Ultra</i>/<i>Ultraman</i> series
+  - name: Miramax
+    resource_url: "https://www.miramax.com/"
+    domain: "miramax.com"
+    image_url: "/static/images/about/acknowledgements/labels/miramax.webp"
+    works: <i>Avalon</i>, <i>Godzilla vs. Biollante</i>
+  - name: Shout Factory
+    resource_url: "https://shoutfactory.com/"
+    domain: "shoutfactory.com"
+    image_url: "/static/images/about/acknowledgements/labels/shout_factory.webp"
+    works: The Showa <i>Gamera</i>
+      series, <i>Mystery Science Theater 3000</i>
+      (including <i>MST3K vs. Gamera</i>), the Sonny Chiba collection, the Classic Tokusatsu collection
+  - name: Sony Pictures
+    resource_url: "https://www.sonypictures.com/"
+    domain: "sonypictures.com"
+    image_url: "/static/images/about/acknowledgements/labels/sony.webp"
+    works: "The <i>Icons of Sci-Fi</i>
+      Toho Collection, <i>Godzilla vs. the Sea Monster</i>, <i>Son of Godzilla</i>, <i>Godzilla vs. Hedorah</i>, <i>Godzilla vs. Gigan</i>, <i>Godzilla vs. Mechagodzilla</i>, <i>Godzilla: Final Wars</i>,
+      <i>The Sky Crawlers</i>"
+  - name: SRS Cinema
+    resource_url: "https://srscinemastore.com/"
+    domain: "srscinemastore.com"
+    image_url: "/static/images/about/acknowledgements/labels/srs_cinema.webp"
+    works:
+      "<i>The Great Buddha Arrival</i>, <i>The Great Yokai War: Guardians</i>, <i>Nezura 1964</i>, the works of Shinpei Hayashiya,
+      <i>The Whale God</i>"
+  - name: Viz
+    history: "aka New People Entertainment, defunct"
+    resource_url: "https://www.viz.com/"
+    domain: "viz.com"
+    image_url: "/static/images/about/acknowledgements/labels/viz.webp"
+    works: "The <i>20th Century Boys</i>
+      series, the <i>Death Note</i>
+      series, the <i>Gantz</i>
+      series, <i>K-20: The Fiend with Twenty Faces</i>"
+  - name: Well Go USA Entertainment
+    resource_url: "https://wellgousa.com/"
+    domain: "wellgousa.com"
+    image_url: "/static/images/about/acknowledgements/labels/well_go_usa_entertainment.webp"
+    works:
+      "<i>Assault Girls</i>, <i>Crazy Samurai: 400 vs. 1</i>, <i>Dead Ball</i>,
+      <i>The Great War of Archimedes</i>"

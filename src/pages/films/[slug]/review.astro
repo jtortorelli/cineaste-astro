@@ -1,0 +1,101 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import CineasteLink from "../../../components/CineasteLink.astro";
+import Icon from "../../../components/Icon.astro";
+import ReviewStars from "../../../components/ReviewStars.astro";
+import ReviewVideoLinks from "../../../components/ReviewVideoLinks.astro";
+
+export async function getStaticPaths() {
+  const reviews = await getCollection("reviews");
+  const films = await getCollection("films", ({ data }) => !data.draft);
+  const filmBySlug = new Map(
+    films.map((film) => [film.id.replace(/\.md$/, ""), film]),
+  );
+
+  const paths = [];
+  for (const review of reviews) {
+    const slug = review.id.replace(/\.md$/, "");
+    const film = filmBySlug.get(slug);
+    if (!film) continue;
+
+    const { Content } = await render(review);
+    paths.push({
+      params: { slug },
+      props: {
+        filmTitle: film.data.title,
+        filmUrl: `/films/${slug}`,
+        posterUrl: film.data.poster_url,
+        videoReview: film.data.video_review,
+        starRating: film.data.video_review?.star_rating,
+        Content,
+      },
+    });
+  }
+  return paths;
+}
+
+interface Props {
+  filmTitle: string;
+  filmUrl: string;
+  posterUrl?: string;
+  videoReview?: Record<string, string | number>;
+  starRating?: number | string;
+  Content: Awaited<ReturnType<typeof render>>["Content"];
+}
+
+const { filmTitle, filmUrl, posterUrl, videoReview, starRating, Content } =
+  Astro.props;
+---
+
+<Layout title={`${filmTitle} Review`}>
+  <div class="pb-4 font-content text-sm">
+    <CineasteLink href={filmUrl}>
+      <Icon
+        name="square-rounded-arrow-left"
+        set="tabler"
+        variant="outline"
+        class="inline h-4 w-4 text-gray-500 -translate-y-[2px] mr-1"
+      />
+      Back to <i>{filmTitle}</i>
+    </CineasteLink>
+  </div>
+  <div class="text-center w-fit m-auto">
+    <h1 class="font-display tracking-wider uppercase p-4 text-2xl text-gray-700">
+      {filmTitle}
+    </h1>
+  </div>
+  <div class="text-center w-fit m-auto pb-2">
+    <div class="font-content text-red-700">godzillacineaste.net review</div>
+  </div>
+  <div class="pb-4 lg:shrink-0">
+    <div class="text-center w-fit m-auto">
+      <img
+        class="rounded-lg drop-shadow-lg"
+        height={400}
+        width={270}
+        src={posterUrl}
+      />
+    </div>
+  </div>
+  <div class="pb-4">
+    <ReviewStars star_rating={starRating} show_label={true} />
+  </div>
+  <div
+    class="
+        text-sm font-content text-justify text-gray-700 pb-4 pt-2 mx-auto
+        w-96 sm:w-fit
+        columns-1 sm:columns-2 space-y-2
+
+        sm:[&:has(>_:only-child)]:columns-1
+        sm:[&:has(>_:only-child)]:w-96
+        sm:[&:has(>_:only-child)]:justify-items-center
+      "
+  >
+    <Content />
+  </div>
+  <div class="pb-4">
+    <ReviewStars star_rating={starRating} show_label={true} />
+  </div>
+  <ReviewVideoLinks video_review={videoReview} />
+</Layout>

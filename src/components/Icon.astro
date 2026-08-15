@@ -1,0 +1,15 @@
+---
+import { getIconHtml } from "../lib/icons";
+
+interface Props {
+  name: string;
+  set?: "tabler" | "simpleicons";
+  variant?: string;
+  class?: string;
+}
+
+const { name, set = "tabler", variant = "outline", class: className = "" } =
+  Astro.props;
+---
+
+<Fragment set:html={getIconHtml(name, set, variant, className)} />

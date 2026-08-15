@@ -1,0 +1,76 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import CineasteLink from "../../components/CineasteLink.astro";
+import Icon from "../../components/Icon.astro";
+import { formatDate } from "../../lib/dates";
+
+const films = (await getCollection("films", ({ data }) => !data.draft)).sort(
+  (a, b) => a.id.localeCompare(b.id),
+);
+---
+
+<Layout title="Films">
+  <div class="text-center w-fit m-auto">
+    <h1 class="font-display tracking-wider uppercase p-4 text-2xl text-gray-700">
+      Films
+    </h1>
+  </div>
+  <div class="pb-6">
+    <div class="relative shadow-lg">
+      <div
+        class="absolute inset-y-0 start-0 flex pl-4 items-center ps-3 pointer-events-none text-red-700"
+      >
+        <Icon name="search" set="tabler" variant="outline" class="h-5 w-5" />
+      </div>
+      <input
+        type="text"
+        id="default-search"
+        class="font-content block w-full p-4 pl-12 ps-10 text-base text-red-700 border-none rounded-lg"
+      />
+    </div>
+  </div>
+  <div>
+    <div class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-start gap-4">
+      {
+        films.map((film) => {
+          const slug = film.id.replace(/\.md$/, "");
+          const aliases = (film.data.aliases as { alias: string }[] | undefined) ?? [];
+          return (
+            <div
+              class="filterable sm:flex sm:flex-col sm:w-36 grid grid-cols-[101px_auto]"
+              data-terms={`${film.data.title} ${aliases.map((a) => a.alias).join(" ")}`}
+            >
+              <div>
+                <a href={`/films/${slug}`}>
+                  <div class="text-center w-fit m-auto">
+                    <img
+                      class="rounded-lg drop-shadow-lg"
+                      height={150}
+                      width={101}
+                      src={film.data.poster_url as string}
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="sm:text-center pt-3">
+                <a href={`/films/${slug}`}>
+                  <CineasteLink href={`/films/${slug}`}>
+                    <div class="font-content italic text-sm text-gray-700">
+                      {film.data.title as string}
+                    </div>
+                  </CineasteLink>
+                  <div class="font-content text-gray-500 text-xs">
+                    {formatDate(film.data.release_date as string, "yyyy")}
+                  </div>
+                </a>
+              </div>
+            </div>
+          );
+        })
+      }
+      <div></div>
+    </div>
+  </div>
+  <script is:inline src="/scripts/filter.js"></script>
+</Layout>

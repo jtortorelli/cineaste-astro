@@ -1,0 +1,137 @@
+---
+import Icon from "./Icon.astro";
+import NamedDivider from "./NamedDivider.astro";
+import SelectedWorks from "./SelectedWorks.astro";
+import { displayPersonDate, lifespan } from "../lib/dates";
+
+interface Props {
+  data: Record<string, unknown>;
+  Content: Astro.Component;
+}
+
+const { data, Content } = Astro.props;
+
+const name = data.name as string;
+const avatar_url = data.avatar_url as string;
+const japanese_name = data.japanese_name as string | undefined;
+const active_period_start = data.active_period_start as string | number | undefined;
+const active_period_end = data.active_period_end as string | number | undefined;
+const members = data.members as
+  | {
+      name: string;
+      dob?: string;
+      dob_resolution?: string;
+      dod?: string;
+      dod_resolution?: string;
+      birth_name?: string;
+      japanese_birth_name?: string;
+      birth_place?: string;
+      death_place?: string;
+      cause_of_death?: string;
+    }[]
+  | undefined;
+const works = data.works as Record<string, unknown>[] | undefined;
+---
+
+<div class="text-center w-fit m-auto">
+  <h1 class="font-display tracking-wider uppercase text-2xl text-gray-700 p-4">
+    {name}
+  </h1>
+  <div class="pb-4 lg:shrink-0 h-full w-fit m-auto">
+    <img class="rounded-lg drop-shadow-lg" src={avatar_url} height="200px" width="200px" />
+  </div>
+  <NamedDivider name="Overview" />
+  <div class="text-sm grid gap-6 sm:grid-cols-[repeat(auto-fit,minmax(110px,140px))] mb-4 mx-auto items-start justify-center">
+    {
+      japanese_name && (
+        <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
+          <Icon name="language" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+          <div class="font-japanese text-gray-700">{japanese_name}</div>
+        </div>
+      )
+    }
+    {
+      active_period_start && (
+        <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
+          <Icon name="calendar-time" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+          <div class="font-content text-gray-700">
+            {active_period_start} - {active_period_end ?? "Present"}
+          </div>
+        </div>
+      )
+    }
+  </div>
+</div>
+{
+  members && members.length > 0 && (
+    <>
+      <div class="inline-flex items-center justify-center text-center w-full">
+        <span class="absolute px-3 font-detail text-sm uppercase -translate-x-1/2 bg-white left-1/2 text-gray-500">
+          Members
+        </span>
+      </div>
+      <div class="w-96 m-auto sm:w-fit flex flex-col sm:flex-row flex-wrap gap-6 justify-center p-4">
+        {members.map((member) => (
+          <div class="flex flex-col text-sm gap-3">
+            <div class="sm:text-center text-base font-content text-gray-700">{member.name}</div>
+            {member.dob && (
+              <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
+                <Icon name="sun-high" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+                <div class="space-y-1">
+                  <div class="font-content text-gray-700">
+                    {displayPersonDate(member.dob, member.dob_resolution)}
+                    {!member.dod && member.dob && (
+                      <> ({lifespan(member.dob, new Date().toISOString())})</>
+                    )}
+                  </div>
+                  {member.birth_name && (
+                    <div class="font-content text-gray-500 text-xs">{member.birth_name}</div>
+                  )}
+                  {member.japanese_birth_name && (
+                    <div class="font-content text-gray-500 text-xs">
+                      {member.japanese_birth_name}
+                    </div>
+                  )}
+                  {member.birth_place && (
+                    <div class="font-content text-gray-500 text-xs">{member.birth_place}</div>
+                  )}
+                </div>
+              </div>
+            )}
+            {member.dod && typeof member.dod !== "string" && member.dob && (
+              <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
+                <Icon name="moon" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+                <div class="space-y-1">
+                  <div class="font-content text-gray-700">
+                    {displayPersonDate(member.dod, member.dod_resolution)} (
+                    {lifespan(member.dob, member.dod)})
+                  </div>
+                  {member.death_place && (
+                    <div class="font-content text-gray-500 text-xs">{member.death_place}</div>
+                  )}
+                  {member.cause_of_death && (
+                    <div class="font-content text-gray-500 text-xs">{member.cause_of_death}</div>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </>
+  )
+}
+<div
+  class="
+        text-sm font-content text-justify text-gray-700 pb-1 pt-2 mx-auto
+        w-96 sm:w-fit
+        columns-1 sm:columns-2 space-y-2
+        sm:[&:has(>_:only-child)]:columns-1
+        sm:[&:has(>_:only-child)]:w-96
+        sm:[&:has(>_:only-child)]:justify-items-center
+      "
+>
+  <Content />
+</div>
+<NamedDivider name="Selected Works" />
+<SelectedWorks works={works as never} />

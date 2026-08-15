@@ -1,0 +1,15 @@
+---
+interface Props {
+  resource_url?: string;
+}
+---
+
+{
+  Astro.props.resource_url ? (
+    <a href={Astro.props.resource_url}>
+      <slot />
+    </a>
+  ) : (
+    <slot />
+  )
+}

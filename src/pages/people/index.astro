@@ -1,0 +1,79 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import CineasteLink from "../../components/CineasteLink.astro";
+import Icon from "../../components/Icon.astro";
+import PersonDateRange from "../../components/PersonDateRange.astro";
+
+const people = (await getCollection("people")).sort((a, b) =>
+  (a.data.name as string).localeCompare(b.data.name as string),
+);
+---
+
+<Layout title="People">
+  <div class="text-center w-fit m-auto">
+    <h1 class="font-display tracking-wider uppercase p-4 text-2xl text-gray-700">
+      People
+    </h1>
+  </div>
+  <div class="pb-6">
+    <div class="relative shadow-lg">
+      <div
+        class="absolute inset-y-0 start-0 flex pl-4 items-center ps-3 pointer-events-none text-red-700"
+      >
+        <Icon name="search" set="tabler" variant="outline" class="h-5 w-5" />
+      </div>
+      <input
+        type="text"
+        id="default-search"
+        class="font-content block w-full p-4 pl-12 ps-10 text-base text-red-700 border-none rounded-lg"
+      />
+    </div>
+  </div>
+  <div class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-start gap-4">
+    {
+      people.map((p) => {
+        const slug = p.id.replace(/\.md$/, "");
+        const aliases = (p.data.aliases as { name: string }[] | undefined) ?? [];
+        const members = (p.data.members as { name: string; birth_name?: string }[] | undefined) ?? [];
+        return (
+          <div
+            class="filterable flex flex-row sm:flex-col sm:w-32 items-center"
+            data-terms={`${p.data.name}
+          ${p.data.birth_name ?? ""}
+          ${aliases.map((a) => a.name).join(" ")}
+          ${members.map((m) => `${m.name} ${m.birth_name ?? ""}`).join(" ")}
+            `}
+          >
+            <div class="w-fit m-auto">
+              <a href={`/people/${slug}`}>
+                <img
+                  class="h-[100px] w-[100px] max-w-[150px] rounded-lg drop-shadow-lg"
+                  src={p.data.avatar_url as string}
+                />
+              </a>
+            </div>
+            <div class="sm:text-center pt-3">
+              <a href={`/people/${slug}`}>
+                <CineasteLink href={`/people/${slug}`}>
+                  <div class="font-content text-sm">{p.data.name as string}</div>
+                </CineasteLink>
+                {p.data.profession && (
+                  <div class="font-content text-xs text-gray-500">
+                    {p.data.profession as string}
+                  </div>
+                )}
+                {p.data.type == "person" && (
+                  <div class="font-content text-xs text-gray-500">
+                    <PersonDateRange p={p.data as never} />
+                  </div>
+                )}
+              </a>
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+  <script is:inline src="/scripts/filter.js"></script>
+</Layout>

@@ -1,0 +1,82 @@
+---
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import { load } from "js-yaml";
+import Layout from "../../layouts/Layout.astro";
+import NamedDivider from "../../components/NamedDivider.astro";
+import AcknowledgementCard from "../../components/AcknowledgementCard.astro";
+
+const tabs = [
+  { href: "/about", label: "The Gist", active: false },
+  { href: "/about/history", label: "History", active: false },
+  { href: "/about/acknowledgements", label: "Acknowledgements", active: true },
+];
+
+const data = load(
+  readFileSync(join(process.cwd(), "src/data/acknowledgements.yaml"), "utf8"),
+) as {
+  influences: Record<string, string>[];
+  resources: Record<string, string>[];
+  books: Record<string, string>[];
+  labels: Record<string, string>[];
+};
+---
+
+<Layout title="Acknowledgements">
+  <div class="text-center w-fit m-auto">
+    <h1 class="font-display tracking-wider uppercase p-4 text-2xl text-gray-700">
+      About
+    </h1>
+  </div>
+  <div
+    class="text-sm font-detail uppercase w-fit m-auto text-center text-gray-500 pb-4"
+  >
+    <div class="flex flex-col sm:flex-row">
+      {
+        tabs.map((tab) => (
+          <div>
+            <a
+              href={tab.href}
+              class={`inline-block p-1 px-4 rounded-t-lg ${tab.active ? "border-red-700 text-red-700" : "hover:text-gray-700"}`}
+            >
+              {tab.label}
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <NamedDivider name="Influences" />
+  <div class="lg:grid lg:grid-cols-3">
+    {
+      data.influences.map((influence) => (
+        <AcknowledgementCard {...influence} />
+      ))
+    }
+  </div>
+  <NamedDivider name="Resources" />
+  <div class="lg:grid lg:grid-cols-3">
+    {
+      data.resources.map((resource) => (
+        <AcknowledgementCard {...resource} />
+      ))
+    }
+  </div>
+  <NamedDivider name="Books" />
+  <div class="lg:grid lg:grid-cols-3">
+    {
+      data.books.map((book) => (
+        <AcknowledgementCard {...book} />
+      ))
+    }
+  </div>
+  <NamedDivider name="Labels" />
+  <div class="lg:grid lg:grid-cols-3">
+    {
+      data.labels.map((label) => (
+        <AcknowledgementCard {...label} />
+      ))
+    }
+  </div>
+</Layout>

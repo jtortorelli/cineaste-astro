@@ -1,0 +1,205 @@
+---
+import Icon from "./Icon.astro";
+import FilmShowcaseLink from "./FilmShowcaseLink.astro";
+import PersonShowcaseLink from "./PersonShowcaseLink.astro";
+import QualifierBadge from "./QualifierBadge.astro";
+import UncreditedBadge from "./UncreditedBadge.astro";
+import { processRoleName } from "../lib/films";
+
+interface WorkEntry {
+  format: string;
+  title: string;
+  year?: number | string;
+  slug?: string;
+  poster_url?: string;
+  box_art_url?: string;
+  title_card_url?: string;
+  cover_url?: string;
+  staff?: { role: string; staff_alias?: string; episode_count?: number }[];
+  roles?: { name: string; episode_count?: number }[];
+  kaiju_roles?: { name: string; actor_alias?: string; qualifiers?: string[]; uncredited?: boolean }[];
+}
+
+interface Props {
+  works?: WorkEntry[];
+}
+
+const { works } = Astro.props;
+
+function processRoles(
+  kaiju_roles: WorkEntry["kaiju_roles"],
+  roles: WorkEntry["roles"],
+) {
+  const nullSafeKaiju = kaiju_roles && kaiju_roles.length > 0 ? kaiju_roles : [];
+  const nullSafeRoles = roles && roles.length > 0 ? roles : [];
+  return [...nullSafeKaiju, ...nullSafeRoles];
+}
+---
+
+<div class="full-filmography">
+  <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 m-auto sm:w-fit w-96">
+    {
+      works?.map((entry) => (
+        <>
+          {entry.format.toLowerCase() === "video game" && (
+            <div class="flex flex-row w-60 items-start gap-3">
+              <div class="shrink-0">
+                <img class="rounded-lg drop-shadow-lg" width={75} src={entry.box_art_url} />
+              </div>
+              <div>
+                <div class="font-content text-xs text-gray-500 flex items-center gap-1">
+                  <Icon name="device-gamepad-2" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+                  <div>{entry.year}</div>
+                </div>
+                <div class="font-content text-sm text-gray-700 mb-1">
+                  <span class="italic">{entry.title}</span>
+                </div>
+                {entry.staff?.map((s) => (
+                  <div class="font-content text-xs text-gray-500 flex">
+                    <Icon name="chair-director" set="tabler" variant="outline" class="h-4 w-4" />
+                    <div><div>{s.role}</div></div>
+                  </div>
+                ))}
+                {entry.roles && entry.roles.length > 0 && (
+                  <div class="font-content text-xs text-gray-500 flex gap-1">
+                    <Icon name="masks-theater" set="tabler" variant="outline" class="h-4 w-4" />
+                    <div class="flex flex-col">
+                      {entry.roles.map((r) => (
+                        <div>
+                          <span set:html={processRoleName(r.name)} />{" "}
+                          <span class="font-detail uppercase text-gray-400">
+                            {r.episode_count &&
+                              `${r.episode_count}${r.episode_count > 1 ? "eps" : "ep"}`}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+          {entry.format.toLowerCase() === "tv series" && (
+            <div class="flex flex-row w-60 items-start gap-3">
+              <div class="shrink-0">
+                <img class="rounded-lg drop-shadow-lg" width={75} src={entry.title_card_url} />
+              </div>
+              <div>
+                <div class="font-content text-xs text-gray-500 flex items-center gap-1">
+                  <Icon name="device-tv-old" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+                  <div>{entry.year}</div>
+                </div>
+                <div class="font-content text-sm text-gray-700 mb-1">
+                  <span class="italic">{entry.title}</span>
+                </div>
+                {entry.staff?.map((s) => (
+                  <div class="font-content text-xs text-gray-500 flex">
+                    <Icon name="chair-director" set="tabler" variant="outline" class="h-4 w-4" />
+                    <div>
+                      <div>
+                        {s.role}{" "}
+                        <span class="font-detail uppercase text-gray-400">
+                          {s.episode_count &&
+                            `${s.episode_count}${s.episode_count > 1 ? "eps" : "ep"}`}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                {entry.roles && entry.roles.length > 0 && (
+                  <div class="font-content text-xs text-gray-500 flex gap-1">
+                    <Icon name="masks-theater" set="tabler" variant="outline" class="h-4 w-4" />
+                    <div class="flex flex-col">
+                      {entry.roles.map((r) => (
+                        <div>
+                          <span set:html={processRoleName(r.name)} />{" "}
+                          <span class="font-detail uppercase text-gray-400">
+                            {r.episode_count &&
+                              `${r.episode_count}${r.episode_count > 1 ? "eps" : "ep"}`}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+          {entry.format.toLowerCase() === "film" && (
+            <div class="flex flex-row w-60 items-start gap-3">
+              <div class="shrink-0">
+                <img class="rounded-lg drop-shadow-lg" width={75} src={entry.poster_url} />
+              </div>
+              <div>
+                <div class="font-content text-xs text-gray-500 flex items-center gap-1">
+                  <Icon name="movie" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+                  <div>{entry.year}</div>
+                </div>
+                <div class="font-content text-sm text-gray-700 mb-1">
+                  <FilmShowcaseLink slug={entry.slug}>
+                    <span class="italic">{entry.title}</span>
+                  </FilmShowcaseLink>
+                </div>
+                {entry.staff?.map((s) => (
+                  <div class="font-content text-xs text-gray-500 flex">
+                    <Icon name="chair-director" set="tabler" variant="outline" class="h-4 w-4" />
+                    <div>
+                      <div>{s.role}</div>
+                      {s.staff_alias && (
+                        <div class="flex">
+                          <Icon name="at" set="tabler" variant="outline" class="h-3 w-3" />
+                          {s.staff_alias}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+                {processRoles(entry.kaiju_roles, entry.roles).map((r) => (
+                  <div class="font-content text-xs text-gray-500 flex gap-1">
+                    <Icon name="masks-theater" set="tabler" variant="outline" class="h-4 w-4" />
+                    <div>
+                      <div><span set:html={processRoleName(r.name)} /></div>
+                      {"actor_alias" in r && r.actor_alias && (
+                        <>
+                          <Icon name="at" set="tabler" variant="outline" class="h-3 w-3 inline" />
+                          {r.actor_alias}
+                        </>
+                      )}
+                      <div class="flex flex-col">
+                        {"qualifiers" in r &&
+                          r.qualifiers?.map((q) => <QualifierBadge>{q}</QualifierBadge>)}
+                        {"uncredited" in r && r.uncredited && <UncreditedBadge />}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          {entry.format.toLowerCase() === "book" && (
+            <div class="flex flex-row w-60 items-start gap-3">
+              <div class="shrink-0">
+                <img class="rounded-lg drop-shadow-lg" width={75} src={entry.cover_url} />
+              </div>
+              <div>
+                <div class="font-content text-xs text-gray-500 flex items-center gap-1">
+                  <Icon name="book" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+                  <div>{entry.year}</div>
+                </div>
+                <div class="font-content text-sm text-gray-700 mb-1">
+                  <span class="italic">{entry.title}</span>
+                </div>
+                {entry.staff?.map((s) => (
+                  <div class="font-content text-xs text-gray-500 flex gap-1">
+                    <Icon name="pencil" set="tabler" variant="outline" class="h-4 w-4" />
+                    <div><div>{s.role}</div></div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </>
+      ))
+    }
+  </div>
+</div>
