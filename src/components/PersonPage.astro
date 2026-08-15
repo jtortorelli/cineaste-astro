@@ -49,21 +49,25 @@ const works = data.works as Record<string, unknown>[] | undefined;
   </div>
 </div>
 <NamedDivider name="Bio" />
-<div class="text-sm grid gap-6 sm:grid-cols-[repeat(auto-fit,minmax(110px,140px))] mb-4 mx-auto items-start justify-center">
+<div class="font-content text-sm text-gray-700 max-w-96 w-fit m-auto mb-4">
   {
     japanese_name && (
-      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
-        <Icon name="language" set="tabler" variant="outline" class="h-4 w-4 text-gray-500" />
-        <div class="font-japanese text-gray-700">{japanese_name}</div>
+      <div class="flex pb-2 gap-2">
+        <div class="-translate-y-[2px]">
+          <Icon name="language" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
+        </div>
+        <div class="font-japanese">{japanese_name}</div>
       </div>
     )
   }
   {
     dob && (
-      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
-        <Icon name="sun-high" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+      <div class="flex pb-2 gap-2">
+        <div class="-translate-y-[2px]">
+          <Icon name="sun-high" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
+        </div>
         <div class="space-y-1">
-          <div class="font-content text-gray-700">
+          <div>
             {displayPersonDate(dob, dob_resolution)} <span id="age-span"></span>
             {!dod && (
               <script is:inline>
@@ -78,26 +82,28 @@ const works = data.works as Record<string, unknown>[] | undefined;
               </script>
             )}
           </div>
-          {birth_name && <div class="font-content text-gray-500 text-xs">{birth_name}</div>}
+          {birth_name && <div class="text-xs text-gray-500">{birth_name}</div>}
           {japanese_birth_name && (
-            <div class="font-content text-gray-500 text-xs">{japanese_birth_name}</div>
+            <div class="text-xs text-gray-500">{japanese_birth_name}</div>
           )}
-          {birth_place && <div class="font-content text-gray-500 text-xs">{birth_place}</div>}
+          {birth_place && <div class="text-xs text-gray-500">{birth_place}</div>}
         </div>
       </div>
     )
   }
   {
     dod && typeof dod !== "string" && (
-      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
-        <Icon name="moon" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+      <div class="flex pb-2 gap-2">
+        <div class="-translate-y-[2px]">
+          <Icon name="moon" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
+        </div>
         <div class="space-y-1">
-          <div class="font-content text-gray-700">
+          <div>
             {displayPersonDate(dod, dod_resolution)} ({lifespan(dob!, dod)})
           </div>
-          {death_place && <div class="font-content text-gray-500 text-xs">{death_place}</div>}
+          {death_place && <div class="text-xs text-gray-500">{death_place}</div>}
           {cause_of_death && (
-            <div class="font-content text-gray-500 text-xs">{cause_of_death}</div>
+            <div class="text-xs text-gray-500">{cause_of_death}</div>
           )}
         </div>
       </div>
@@ -105,24 +111,28 @@ const works = data.works as Record<string, unknown>[] | undefined;
   }
   {
     dod && typeof dod === "string" && dod.toLowerCase() === "unknown" && (
-      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
-        <Icon name="moon" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
-        <div class="font-content text-gray-700">Unknown Date</div>
+      <div class="flex pb-2 gap-2">
+        <div class="-translate-y-[2px]">
+          <Icon name="moon" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
+        </div>
+        <div>Unknown Date</div>
       </div>
     )
   }
   {
     aliases?.map((a) => (
-      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
-        <Icon name="at" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
+      <div class="flex pb-2 gap-2">
+        <div class="-translate-y-[2px]">
+          <Icon name="at" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
+        </div>
         <div>
-          <div class="font-content text-gray-700">{a.name}</div>
+          <div>{a.name}</div>
           {a.japanese_name && (
-            <div class="font-content text-gray-500 text-xs">{a.japanese_name}</div>
+            <div class="text-xs text-gray-500">{a.japanese_name}</div>
           )}
-          {a.context && <div class="font-content text-gray-500 text-xs">{a.context}</div>}
+          {a.context && <div class="text-xs text-gray-500">{a.context}</div>}
           {a.category == "mistranslation" && (
-            <div class="font-content text-gray-500 text-xs">Mistranslation</div>
+            <div class="text-xs text-gray-500">Mistranslation</div>
           )}
         </div>
       </div>
@@ -130,27 +140,29 @@ const works = data.works as Record<string, unknown>[] | undefined;
   }
   {
     spouses?.map((spouse) => (
-      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
-        <Icon name="chart-circles" set="tabler" variant="outline" class="h-5 w-5 text-gray-500" />
+      <div class="flex pb-2 gap-2">
+        <div class="-translate-y-[2px]">
+          <Icon name="chart-circles" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
+        </div>
         <div>
-          <div class="font-content text-gray-700">
-            <PersonShowcaseLink slug={spouse.slug}>{spouse.name}</PersonShowcaseLink>
-          </div>
+          <PersonShowcaseLink slug={spouse.slug}>{spouse.name}</PersonShowcaseLink>
         </div>
       </div>
     ))
   }
   {
     family && family.length > 0 && (
-      <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
-        <Icon name="users-group" set="tabler" variant="outline" class="h-5 w-5 text-gray-500" />
+      <div class="flex pb-2 gap-2">
+        <div class="-translate-y-[2px]">
+          <Icon name="users-group" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
+        </div>
         <div>
           {family.map((member) => (
             <>
-              <div class="font-content text-gray-700">
+              <div>
                 <PersonShowcaseLink slug={member.slug}>{member.name}</PersonShowcaseLink>
               </div>
-              <div class="font-content text-gray-500 text-xs capitalize">
+              <div class="text-xs text-gray-500 capitalize">
                 {member.relationship}
               </div>
             </>
