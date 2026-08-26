@@ -17,46 +17,7 @@ release_date: 1998-12-12
 runtime: 100
 studios:
   - Toho Co., Ltd.
-supporting_cast:
-  - avatar_url: /static/images/films/rebirth-of-mothra-iii-1998/cast-avatars/koichi-ueda-0.webp
-    character_qualifiers:
-    name: Ueda Kôichi
-    role: Principal
-    uncredited: false
 title: Rebirth of Mothra III
-top_billed_cast:
-  - avatar_url: /static/images/films/rebirth-of-mothra-iii-1998/cast-avatars/megumi-kobayashi-0.webp
-    character_qualifiers:
-    name: Kobayashi Megumi
-    role: Moll
-  - avatar_url: /static/images/films/rebirth-of-mothra-iii-1998/cast-avatars/misato-date-0.webp
-    character_qualifiers:
-    name: Tate Misato
-    role: Lora
-  - avatar_url: /static/images/films/rebirth-of-mothra-iii-1998/cast-avatars/atsushi-onita-0.webp
-    character_qualifiers:
-    name: Ônita Atsushi
-    role: Sonoda Yûsuke
-  - avatar_url: /static/images/films/rebirth-of-mothra-iii-1998/cast-avatars/miyuki-matsuda-0.webp
-    character_qualifiers:
-    name: Matsuda Miyuki
-    role: Sonoda Yukie
-  - avatar_url: /static/images/films/rebirth-of-mothra-iii-1998/cast-avatars/takuma-yoshizawa-0.webp
-    character_qualifiers:
-    name: Yoshizawa Takuma
-    role: Sonoda Shôta
-  - avatar_url: /static/images/films/rebirth-of-mothra-iii-1998/cast-avatars/kyohei-shinozaki-0.webp
-    character_qualifiers:
-    name: Shinozaki Kyôhei
-    role: Sonoda Junpei
-  - avatar_url: /static/images/films/rebirth-of-mothra-iii-1998/cast-avatars/ayano-suzuki-0.webp
-    character_qualifiers:
-    name: Suzuki Ayano
-    role: Sonoda Tamako
-  - avatar_url: /static/images/films/rebirth-of-mothra-iii-1998/cast-avatars/aki-hano-0.webp
-    character_qualifiers:
-    name: Hano Aki
-    role: Belvera
 translation: Mothra 3 King Ghidorah Invades
 transliteration: Mosura 3 Kingugidora Raishû
 ---

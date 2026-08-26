@@ -37,48 +37,6 @@ runtime: 82
 studios:
   - Toho Co., Ltd.
 title: Godzilla vs. Megalon
-top_billed_cast:
-  - avatar_url: /static/images/films/godzilla-vs-megalon-1973/cast-avatars/katsuhiko-sasaki-0.webp
-    character_qualifiers:
-    name: Sasaki Katsuhiko
-    role: Ibuki Gorô
-  - avatar_url: /static/images/films/godzilla-vs-megalon-1973/cast-avatars/yutaka-hayashi-0.webp
-    character_qualifiers:
-    name: Hayashi Yutaka
-    role: Jinkawa Hiroshi
-  - avatar_url: /static/images/films/godzilla-vs-megalon-1973/cast-avatars/hiroyuki-kawase-0.webp
-    character_qualifiers:
-    name: Kawase Hiroyuki
-    role: Ibuki Rokurô
-  - avatar_url: /static/images/films/godzilla-vs-megalon-1973/cast-avatars/kanta-mori-0.webp
-    character_qualifiers:
-    name: Mori Kanta
-    role: Military Officer
-  - avatar_url: /static/images/films/godzilla-vs-megalon-1973/cast-avatars/kotaro-tomita-0.webp
-    character_qualifiers:
-    name: Tomita Kôtarô
-    role: Seatopian Agent
-  - avatar_url: /static/images/films/godzilla-vs-megalon-1973/cast-avatars/wolf-otsuki-0.webp
-    character_qualifiers:
-    name: Ôtsuki Wolf
-    role: Seatopian Agent
-  - avatar_url: /static/images/films/godzilla-vs-megalon-1973/cast-avatars/sakyo-mikami-0.webp
-    character_qualifiers:
-    name: Mikami Sakyô
-    role: Truck Driver
-  - avatar_url: /static/images/films/godzilla-vs-megalon-1973/cast-avatars/gen-nakajima-0.webp
-    character_qualifiers:
-    name: Nakajima Gen
-    role: Truck Driver
-  - avatar_url: /static/images/films/godzilla-vs-megalon-1973/cast-avatars/robert-dunham-0.webp
-    character_qualifiers:
-    name: Robert Dunham
-    role: Emperor Antonio
-    slug: dunham-robert
-  - avatar_url: /static/images/films/godzilla-vs-megalon-1973/cast-avatars/ralph-jesser-0.webp
-    character_qualifiers:
-    name: Ralph Jesser
-    role: Seatopian Lieutenant
 translation: Godzilla vs. Megalon
 transliteration: Gojira Tai Megaro
 ---

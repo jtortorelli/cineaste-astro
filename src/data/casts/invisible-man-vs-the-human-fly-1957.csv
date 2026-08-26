@@ -1,17 +1,17 @@
-role,name,slug,showcased,avatar_url,uncredited,supporting,alias,qualifiers,character_qualifiers
-Detective Wakabayashi,Kitahara Yoshirô,kitahara-yoshiro,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/kitahara-yoshiro-0.webp,false,false
-Dr. Tsukioka,Shinagawa Ryûji,shinagawa-ryuji,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/shinagawa-ryuji-0.webp,false,false
-Hayakawa Akiko,Kanô Junko,kano-junko,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/kano-junko-0.webp,false,false
-Mieko,Môri Ikuko,mori-ikuko,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/mori-ikuko-0.webp,false,false
-Sugimoto,Tsurumi Jôji,tsurumi-joji,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/tsurumi-joji-0.webp,false,false
-Detective Hayama,Hamaguchi Yoshihiro,hamaguchi-yoshihiro,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/hamaguchi-yoshihiro-0.webp,false,false
-Dr. Hayakawa,Nanbu Shôzô,nanbu-shozo,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/nanbu-shozo-0.webp,false,false
-Police Superintendent,Miake Bontarô,miake-bontaro,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/miake-bontaro-0.webp,false,false
-Kusunoki,Izawa Ichirô,izawa-ichiro,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/izawa-ichiro-0.webp,false,false
-Yamada,Chûjô Shizuo,chujo-shizuo,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/chujo-shizuo-0.webp,false,false
-Hajima,Sugita Kô,sugita-ko,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/sugita-ko-0.webp,false,false
-Detective Tada,Hanabu Tatsuo,hanabu-tatsuo,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/hanabu-tatsuo-0.webp,false,false
-Kuroki,Harumoto Fujio,harumoto-fujio,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/harumoto-fujio-0.webp,false,false
-Chief Detective,Itô Kôichi,ito-koichi,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/ito-koichi-0.webp,false,false
-Detective,Natsuki Shô,natsuki-sho,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/natsuki-sho-0.webp,false,false
-Kusunoki's Secretary,Matsudaira Naoko,matsudaira-naoko,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/matsudaira-naoko-0.webp,false,false
+role,name,slug,showcased,uncredited,supporting,avatar_url,alias,qualifiers,character_qualifiers,secondary
+Detective Wakabayashi,Kitahara Yoshirô,kitahara-yoshiro,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/kitahara-yoshiro-0.webp,,,,false
+Dr. Tsukioka,Shinagawa Ryûji,shinagawa-ryuji,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/shinagawa-ryuji-0.webp,,,,false
+Hayakawa Akiko,Kanô Junko,kano-junko,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/kano-junko-0.webp,,,,false
+Mieko,Môri Ikuko,mori-ikuko,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/mori-ikuko-0.webp,,,,false
+Sugimoto,Tsurumi Jôji,tsurumi-joji,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/tsurumi-joji-0.webp,,,,false
+Detective Hayama,Hamaguchi Yoshihiro,hamaguchi-yoshihiro,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/hamaguchi-yoshihiro-0.webp,,,,false
+Dr. Hayakawa,Nanbu Shôzô,nanbu-shozo,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/nanbu-shozo-0.webp,,,,false
+Police Superintendent,Miake Bontarô,miake-bontaro,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/miake-bontaro-0.webp,,,,false
+Kusunoki,Izawa Ichirô,izawa-ichiro,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/izawa-ichiro-0.webp,,,,false
+Yamada,Chûjô Shizuo,chujo-shizuo,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/chujo-shizuo-0.webp,,,,false
+Hajima,Sugita Kô,sugita-ko,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/sugita-ko-0.webp,,,,false
+Detective Tada,Hanabu Tatsuo,hanabu-tatsuo,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/hanabu-tatsuo-0.webp,,,,false
+Kuroki,Harumoto Fujio,harumoto-fujio,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/harumoto-fujio-0.webp,,,,false
+Chief Detective,Itô Kôichi,ito-koichi,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/ito-koichi-0.webp,,,,false
+Detective,Natsuki Shô,natsuki-sho,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/natsuki-sho-0.webp,,,,false
+Kusunoki's Secretary,Matsudaira Naoko,matsudaira-naoko,false,false,false,/static/images/films/invisible-man-vs-the-human-fly-1957/cast-avatars/matsudaira-naoko-0.webp,,,,false

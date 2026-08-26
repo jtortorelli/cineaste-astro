@@ -1,0 +1,45 @@
+role,name,slug,showcased,uncredited,supporting,avatar_url,alias,qualifiers,character_qualifiers,secondary
+Doctor Atsumi Jôji,Sahara Kenji,sahara-kenji,true,false,false,/static/images/films/mysterians-1957/cast-avatars/kenji-sahara-0.webp,,,,false
+Shiraishi Etsuko,Shirakawa Yumi,shirakawa-yumi,true,false,false,/static/images/films/mysterians-1957/cast-avatars/yumi-shirakawa-0.webp,,,,false
+Iwamoto Hiroko,Kouchi Momoko,kouchi-momoko,true,false,false,/static/images/films/mysterians-1957/cast-avatars/momoko-kochi-0.webp,,,,false
+Doctor Shiraishi Ryôichi,Hirata Akihiko,hirata-akihiko,true,false,false,/static/images/films/mysterians-1957/cast-avatars/akihiko-hirata-0.webp,,,,false
+Doctor Adachi Tanjirô,Shimura Takashi,shimura-takashi,true,false,false,/static/images/films/mysterians-1957/cast-avatars/takashi-shimura-0.webp,,,,false
+General Morita,Fujita Susumu,fujita-susumu,true,false,false,/static/images/films/mysterians-1957/cast-avatars/susumu-fujita-0.webp,,,,false
+Officer Seki,Itô Hisaya,ito-hisaya,true,false,false,/static/images/films/mysterians-1957/cast-avatars/hisaya-ito-0.webp,,,,false
+Officer Sugimoto,Kosugi Yoshio,kosugi-yoshio,true,false,false,/static/images/films/mysterians-1957/cast-avatars/yoshio-kosugi-0.webp,,,,false
+Doctor Kawanami,Murakami Fuyuki,murakami-fuyuki,true,false,false,/static/images/films/mysterians-1957/cast-avatars/fuyuki-murakami-0.webp,,,,false
+Grand Mysterian,Tsuchiya Yoshio,tsuchiya-yoshio,true,false,false,/static/images/films/mysterians-1957/cast-avatars/yoshio-tsuchiya-0.webp,,,,false
+Defense Secretary,Yamada Minosuke,yamada-minosuke,true,false,false,/static/images/films/mysterians-1957/cast-avatars/minosuke-yamada-0.webp,,,,false
+Doctor Kôda,Nakamura Tetsu,nakamura-tetsu,true,false,false,/static/images/films/mysterians-1957/cast-avatars/tetsu-nakamura-0.webp,,,,false
+Interpreter,Henry Okawa,okawa-henry,true,false,false,/static/images/films/mysterians-1957/cast-avatars/henry-okawa-0.webp,,,,false
+Newsreader,Oikawa Takeo,,false,false,false,/static/images/films/mysterians-1957/cast-avatars/takeo-oikawa-0.webp,,,,false
+Villager,Katô Haruya,kato-haruya,true,false,false,/static/images/films/mysterians-1957/cast-avatars/haruya-kato-0.webp,,,,false
+Villager,Ômura Senkichi,omura-senkichi,true,false,false,/static/images/films/mysterians-1957/cast-avatars/senkichi-omura-0.webp,,,,false
+Policeman,Sada Yutaka,sada-yutaka,true,false,false,/static/images/films/mysterians-1957/cast-avatars/yutaka-sada-0.webp,,,,false
+Military Officer,Mihara Hideo,,false,false,false,/static/images/films/mysterians-1957/cast-avatars/hideo-mihara-0.webp,,,,false
+Doctor Noda,Ubukata Sôji,ubukata-soji,true,false,false,/static/images/films/mysterians-1957/cast-avatars/soji-ubukata-0.webp,,,,false
+PM,Tsuda Mitsuo,tsuda-mitsuo,true,false,false,/static/images/films/mysterians-1957/cast-avatars/mitsuo-tsuda-0.webp,,,,false
+Adachi's Assistant,Imaizumi Ren,imaizumi-ren,true,false,false,/static/images/films/mysterians-1957/cast-avatars/ren-imaizumi-0.webp,,,,false
+Policeman,Ôtomo Shin,otomo-shin,true,false,false,/static/images/films/mysterians-1957/cast-avatars/shin-otomo-0.webp,,,,false
+Soldier,Kumagai Takuzô,kumagai-takuzo,true,false,false,/static/images/films/mysterians-1957/cast-avatars/takuzo-kumagai-0.webp,Kumagai Jirô,,,false
+Policeman,Kusama Akio,kusama-akio,true,false,false,/static/images/films/mysterians-1957/cast-avatars/akio-kusama-0.webp,,,,false
+Detective,Hirose Shôichi,hirose-shoichi,true,false,false,/static/images/films/mysterians-1957/cast-avatars/shoichi-hirose-0.webp,,,,false
+Soldier,Nakamaru Tadao,nakamaru-tadao,true,false,false,/static/images/films/mysterians-1957/cast-avatars/tadao-nakamaru-0.webp,,,,false
+Policeman,Tsubono Kamayuki,tsubono-kamayuki,true,false,false,/static/images/films/mysterians-1957/cast-avatars/kamayuki-tsubono-0.webp,,,,false
+Policeman,Ogata Rinsaku,ogata-rinsaku,true,false,false,/static/images/films/mysterians-1957/cast-avatars/rinsaku-ogata-0.webp,,,,false
+Doctor Svenson,George A. Furness,furness-george-a,true,false,false,/static/images/films/mysterians-1957/cast-avatars/george-a-furness-0.webp,,,,false
+Doctor DeGracia,Harold Conway,conway-harold,true,false,false,/static/images/films/mysterians-1957/cast-avatars/harold-s-conway-0.webp,,,,false
+Soldier,Nakajima Haruo,nakajima-haruo,true,false,false,/static/images/films/mysterians-1957/cast-avatars/haruo-nakajima-1.webp,,,,false
+Pilot,Echigo Ken,echigo-ken,true,true,true,/static/images/films/mysterians-1957/cast-avatars/ken-echigo-0.webp,,,,false
+Pilot,Hinata Kazuo,hinata-kazuo,true,true,true,/static/images/films/mysterians-1957/cast-avatars/kazuo-hinata-0.webp,,,,false
+Reporter,Itô Minoru,ito-minoru,true,true,true,/static/images/films/mysterians-1957/cast-avatars/minoru-ito-0.webp,,,,false
+Reporter,Katsube Yoshio,katsube-yoshio,true,true,true,/static/images/films/mysterians-1957/cast-avatars/yoshio-katsube-0.webp,,,,false
+Pilot,Mukai Jun'ichirô,mukai-junichiro,true,true,true,/static/images/films/mysterians-1957/cast-avatars/junichiro-mukai-0.webp,,,,false
+Soldier,Oka Yutaka,oka-yutaka,true,true,true,/static/images/films/mysterians-1957/cast-avatars/yutaka-oka-0.webp,,,,false
+Pilot,Okabe Tadashi,okabe-tadashi,true,true,true,/static/images/films/mysterians-1957/cast-avatars/tadashi-okabe-0.webp,,,,false
+Military Officer,Sakakida Keiji,sakakida-keiji,true,true,true,/static/images/films/mysterians-1957/cast-avatars/keiji-sakakida-0.webp,,,,false
+Policeman,Shibuya Hideo,shibuya-hideo,true,true,true,/static/images/films/mysterians-1957/cast-avatars/hideo-shibuya-0.webp,,,,false
+Soldier,Suzukawa Jirô,,false,true,true,/static/images/films/mysterians-1957/cast-avatars/jiro-suzukawa-0.webp,,,,false
+Policeman,Suzuki Haruo,suzuki-haruo,true,true,true,/static/images/films/mysterians-1957/cast-avatars/haruo-suzuki-0.webp,,,,false
+Policeman,Tachibana Masaaki,tachibana-masaaki,true,true,true,/static/images/films/mysterians-1957/cast-avatars/masaaki-tachibana-0.webp,,,,false
+Soldier,Tachibana Masaaki,tachibana-masaaki,true,true,true,/static/images/films/mysterians-1957/cast-avatars/masaaki-tachibana-1.webp,,,,false

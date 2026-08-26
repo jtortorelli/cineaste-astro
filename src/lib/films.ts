@@ -147,10 +147,15 @@ export function castFromCsv(rows: Record<string, string>[]) {
 
   for (const row of rows) {
     const entry = castEntryFromCsvRow(row);
-    if (isTruthy(row.supporting)) {
-      supporting.push(entry);
+    const list = isTruthy(row.supporting) ? supporting : topBilled;
+    if (isTruthy(row.secondary)) {
+      const parent = list.at(-1);
+      if (!parent) {
+        throw new Error("secondary cast row has no preceding primary");
+      }
+      (parent.secondary ??= []).push(entry);
     } else {
-      topBilled.push(entry);
+      list.push(entry);
     }
   }
 

@@ -1,0 +1,45 @@
+role,name,slug,showcased,uncredited,supporting,avatar_url,alias,qualifiers,character_qualifiers,secondary
+Detective Komai,Natsuki Yôsuke,natsuki-yosuke,true,false,false,/static/images/films/dogora-1964/cast-avatars/yosuke-natsuki-0.webp,,,,false
+Kirino Masayo,Fujiyama Yôko,fujiyama-yoko,true,false,false,/static/images/films/dogora-1964/cast-avatars/yoko-fujiyama-0.webp,,,,false
+Doctor Kirino,Koizumi Hiroshi,koizumi-hiroshi,true,false,false,/static/images/films/dogora-1964/cast-avatars/hiroshi-koizumi-0.webp,,,,false
+Hamako,Wakabayashi Akiko,wakabayashi-akiko,true,false,false,/static/images/films/dogora-1964/cast-avatars/akiko-wakabayashi-0.webp,,,,false
+Doctor Munakata,Nakamura Nobuo,nakamura-nobuo,true,false,false,/static/images/films/dogora-1964/cast-avatars/nobuo-nakamura-0.webp,,,,false
+Gang Leader,Kawazu Seizaburô,kawazu-seizaburo,true,false,false,/static/images/films/dogora-1964/cast-avatars/seizaburo-kawazu-0.webp,,,,false
+Mark Jackson,Robert Dunham,dunham-robert,true,false,false,/static/images/films/dogora-1964/cast-avatars/robert-dunham-0.webp,Dan Yuma,,,false
+General Iwasa,Fujita Susumu,fujita-susumu,true,false,false,/static/images/films/dogora-1964/cast-avatars/susumu-fujita-0.webp,,,,false
+Police Chief,Tazaki Jun,tazaki-jun,true,false,false,/static/images/films/dogora-1964/cast-avatars/jun-tazaki-0.webp,,,,false
+Gangster,Tajima Yoshibumi,tajima-yoshibumi,true,false,false,/static/images/films/dogora-1964/cast-avatars/yoshibumi-tajima-0.webp,,,,false
+Gangster,Amamoto Hideyo,amamoto-hideyo,true,false,false,/static/images/films/dogora-1964/cast-avatars/hideyo-amamoto-0.webp,,,,false
+Gangster,Kirino Nadao,kirino-nadao,true,false,false,/static/images/films/dogora-1964/cast-avatars/nadao-kirino-0.webp,,,,false
+Gangster,Wakamatsu Akira,wakamatsu-akira,true,false,false,/static/images/films/dogora-1964/cast-avatars/akira-wakamatsu-0.webp,,,,false
+Gangster,Katô Haruya,kato-haruya,true,false,false,/static/images/films/dogora-1964/cast-avatars/haruya-kato-0.webp,,,,false
+Detective Nitta,Funato Jun,funato-jun,true,false,false,/static/images/films/dogora-1964/cast-avatars/jun-funato-0.webp,,,,false
+Policeman,Tsutsumi Yasuhisa,tsutsumi-yasuhisa,true,false,false,/static/images/films/dogora-1964/cast-avatars/yasuhisa-tsutsumi-0.webp,,,,false
+Munakata's Assistant,Iwamoto Kôji,,false,false,false,/static/images/films/dogora-1964/cast-avatars/koji-iwamoto-0.webp,,,,false
+Soldier,Tsuda Mitsuo,tsuda-mitsuo,true,false,false,/static/images/films/dogora-1964/cast-avatars/mitsuo-tsuda-0.webp,,,,false
+Military Officer,Kumagai Takuzô,kumagai-takuzo,true,false,false,/static/images/films/dogora-1964/cast-avatars/takuzo-kumagai-0.webp,,,,false
+Truck Driver,Tôgin Chôtarô,togin-chotaro,true,false,false,/static/images/films/dogora-1964/cast-avatars/chotaro-togin-0.webp,,,,false
+Coal Miner,Hirose Shôichi,hirose-shoichi,true,false,false,/static/images/films/dogora-1964/cast-avatars/shoichi-hirose-0.webp,,,,false
+Truck Driver,Nakayama Yutaka,nakayama-yutaka,true,false,false,/static/images/films/dogora-1964/cast-avatars/yutaka-nakayama-0.webp,,,,false
+Coal Miner,Tsuchiya Shirô,tsuchiya-shiro,true,false,false,/static/images/films/dogora-1964/cast-avatars/shiro-tsuchiya-0.webp,,,,false
+Truck Driver,Sakamoto Haruya,sakamoto-haruya,true,false,false,/static/images/films/dogora-1964/cast-avatars/haruya-sakamoto-0.webp,,,,false
+Reporter,Shibuya Hideo,shibuya-hideo,true,false,false,/static/images/films/dogora-1964/cast-avatars/hideo-shibuya-0.webp,,,,false
+Transportation Chief,Oka Yutaka,oka-yutaka,true,false,false,/static/images/films/dogora-1964/cast-avatars/yutaka-oka-0.webp,,,,false
+Policeman,Okabe Tadashi,okabe-tadashi,true,false,false,/static/images/films/dogora-1964/cast-avatars/tadashi-okabe-0.webp,,,,false
+Satellite Personnel,Ômae Wataru,omae-wataru,true,false,false,/static/images/films/dogora-1964/cast-avatars/wataru-omae-0.webp,,,,false
+Coal Miner,Uno Kôji,uno-koji,true,false,false,/static/images/films/dogora-1964/cast-avatars/koji-uno-0.webp,,,,false
+Soldier,Echigo Ken,echigo-ken,true,true,true,/static/images/films/dogora-1964/cast-avatars/ken-echigo-0.webp,,,,false
+Train Attendant,Gondô Yukihiko,gondo-yukihiko,true,true,true,/static/images/films/dogora-1964/cast-avatars/yukihiko-gondo-0.webp,,,,false
+Coal Plant Witness,Hinata Kazuo,hinata-kazuo,true,true,true,/static/images/films/dogora-1964/cast-avatars/kazuo-hinata-0.webp,,,,false
+Soldier,Itô Minoru,ito-minoru,true,true,true,/static/images/films/dogora-1964/cast-avatars/minoru-ito-0.webp,,,,false
+Soldier,Katô Shigeo,kato-shigeo,true,true,true,/static/images/films/dogora-1964/cast-avatars/shigeo-kato-0.webp,,,,false
+Satellite Personnel,Katsube Yoshio,katsube-yoshio,true,true,true,/static/images/films/dogora-1964/cast-avatars/yoshio-katsube-0.webp,,,,false
+Soldier,Kusama Akio,kusama-akio,true,true,true,/static/images/films/dogora-1964/cast-avatars/akio-kusama-0.webp,,,,false
+Coal Plant Witness,Nakajima Haruo,nakajima-haruo,true,true,true,/static/images/films/dogora-1964/cast-avatars/haruo-nakajima-0.webp,,,,false
+Kyushu Witness,Natsuki Junpei,natsuki-junpei,true,true,true,/static/images/films/dogora-1964/cast-avatars/junpei-natsuki-0.webp,,,,false
+Soldier,Ogata Rinsaku,ogata-rinsaku,true,true,true,/static/images/films/dogora-1964/cast-avatars/rinsaku-ogata-0.webp,,,,false
+Detective,Shinohara Masaki,shinohara-masaki,true,true,true,/static/images/films/dogora-1964/cast-avatars/masaki-shinohara-0.webp,,,,false
+Soldier,Suzuki Haruo,suzuki-haruo,true,true,true,/static/images/films/dogora-1964/cast-avatars/haruo-suzuki-0.webp,,,,false
+Soldier,Tachibana Masaaki,tachibana-masaaki,true,true,true,/static/images/films/dogora-1964/cast-avatars/masaaki-tachibana-0.webp,,,,false
+Detective,Tsubono Kamayuki,tsubono-kamayuki,true,true,true,/static/images/films/dogora-1964/cast-avatars/kamayuki-tsubono-0.webp,,,,false
+Soldier,Yamada Keisuke,yamada-keisuke,true,true,true,/static/images/films/dogora-1964/cast-avatars/keisuke-yamada-0.webp,,,,false

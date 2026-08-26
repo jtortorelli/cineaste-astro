@@ -37,31 +37,6 @@ runtime: 109
 studios:
   - Daiei Film Co., Ltd.
 title: "Gamera: Super Monster"
-top_billed_cast:
-  - avatar_url: /static/images/films/gamera-super-monster-1980/cast-avatars/mach-fumiake-0.webp
-    character_qualifiers:
-    name: Mach Fumiake
-    role: Kilara
-  - avatar_url: /static/images/films/gamera-super-monster-1980/cast-avatars/yaeko-kojima-0.webp
-    character_qualifiers:
-    name: Kojima Yaeko
-    role: Marsha
-  - avatar_url: /static/images/films/gamera-super-monster-1980/cast-avatars/yoko-komatsu-0.webp
-    character_qualifiers:
-    name: Komatsu Yôko
-    role: Mitan
-  - avatar_url: /static/images/films/gamera-super-monster-1980/cast-avatars/keiko-kudo-0.webp
-    character_qualifiers:
-    name: Kudô Keiko
-    role: Giruge
-  - avatar_url: /static/images/films/gamera-super-monster-1980/cast-avatars/koichi-maeda-0.webp
-    character_qualifiers:
-    name: Maeda Kôichi
-    role: Keiichi
-  - avatar_url: /static/images/films/gamera-super-monster-1980/cast-avatars/toshie-takada-0.webp
-    character_qualifiers:
-    name: Takada Toshie
-    role: Keiichi's Mother
 translation: Space Monster Gamera
 transliteration: Uchû Kaijû Gamera
 ---

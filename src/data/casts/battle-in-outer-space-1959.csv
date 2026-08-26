@@ -1,0 +1,41 @@
+role,name,slug,showcased,uncredited,supporting,avatar_url,alias,qualifiers,character_qualifiers,secondary
+Major Katsumiya Ichirô,Ikebe Ryô,ikebe-ryo,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/ryo-ikebe-0.webp,,,,false
+Shiraishi Etsuko,Anzai Kyôko,anzai-kyoko,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/kyoko-anzai-0.webp,,,,false
+Defense Commander,Takada Minoru,takada-minoru,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/minoru-takada-0.webp,,,,false
+Doctor Adachi,Senda Koreya,senda-koreya,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/koreya-senda-0.webp,,,,false
+Doctor Richardson,Len Stanford,,false,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/len-stanford-0.webp,,,,false
+Doctor Immelman,Harold Conway,conway-harold,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/harold-s-conway-0.webp,,,,false
+Doctor Ahmed,George Wyman,,false,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/george-wyman-0.webp,,,,false
+Sylvia,Elise Richter,,false,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/elise-richter-0.webp,,,,false
+Astronaut Kogure,Itô Hisaya,ito-hisaya,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/hisaya-ito-0.webp,,,,false
+Astronaut Iwamura,Tsuchiya Yoshio,tsuchiya-yoshio,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/yoshio-tsuchiya-0.webp,,,,false
+Astronaut Okada,Kirino Nadao,kirino-nadao,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/nadao-kirino-0.webp,,,,false
+Space Jet Pilot,Nomura Kôzô,nomura-kozo,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/kozo-nomura-0.webp,,,,false
+Detective Iriake,Murakami Fuyuki,murakami-fuyuki,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/fuyuki-murakami-0.webp,,,,false
+Line Inspector,Sawamura Ikio,sawamura-ikio,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/ikio-sawamura-0.webp,,,,false
+Military Officer,Kumagai Takuzô,kumagai-takuzo,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/takuzo-kumagai-0.webp,Kumagai Jirô,,,false
+Military Officer,Tezuka Katsumi,tezuka-katsumi,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/katsumi-tezuka-0.webp,,,,false
+Military Officer,Tsuda Mitsuo,tsuda-mitsuo,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/mitsuo-tsuda-0.webp,,,,false
+Military Officer,Okabe Tadashi,okabe-tadashi,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/tadashi-okabe-0.webp,,,,false
+Astronaut,Osman Yusuf,yusuf-osman,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/osman-yusef-0.webp,,,,false
+Train Conductor,Tsutsumi Yasuhisa,tsutsumi-yasuhisa,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/yasuhisa-tsutsumi-0.webp,,,,false
+Astronaut,Ogata Rinsaku,ogata-rinsaku,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/rinsaku-ogata-0.webp,,,,false
+UN Official,Yamada Keisuke,yamada-keisuke,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/keisuke-yamada-0.webp,,,,false
+Astronaut,Oka Yutaka,oka-yutaka,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/yutaka-oka-0.webp,,,,false
+Train Conductor,Katô Shigeo,kato-shigeo,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/shigeo-kato-0.webp,,,,false
+Space Station Crew,Gondô Yukihiko,gondo-yukihiko,true,false,false,/static/images/films/battle-in-outer-space-1959/cast-avatars/yukihiko-gondo-0.webp,,,,false
+Soldier,Echigo Ken,echigo-ken,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/ken-echigo-0.webp,,,,false
+UN Official,Hinata Kazuo,hinata-kazuo,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/kazuo-hinata-0.webp,,,,false
+UN Official,Andrew Hughes,hughes-andrew,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/andrew-hughes-0.webp,,,,false
+Newsreader,Iketani Saburô,iketani-saburo,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/saburo-iketani-0.webp,,,,false
+Speaker,Itô Minoru,ito-minoru,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/minoru-ito-0.webp,,,,false
+Attendant,Katsube Yoshio,katsube-yoshio,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/yoshio-katsube-0.webp,,,,false
+Photographer,Kusama Akio,kusama-akio,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/akio-kusama-0.webp,,,,false
+Policeman,Mukai Jun'ichirô,mukai-junichiro,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/junichiro-mukai-0.webp,,,,false
+UN Official,Sakakida Keiji,sakakida-keiji,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/keiji-sakakida-0.webp,,,,false
+Policeman,Sakamoto Haruya,sakamoto-haruya,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/haruya-sakamoto-0.webp,,,,false
+UN Official,Suzukawa Jirô,,false,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/jiro-suzukawa-0.webp,,,,false
+Speaker,Suzukawa Jirô,,false,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/jiro-suzukawa-1.webp,,,,false
+Detective,Suzuki Haruo,suzuki-haruo,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/haruo-suzuki-0.webp,,,,false
+Reporter,Tsubono Kamayuki,tsubono-kamayuki,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/kamayuki-tsubono-0.webp,,,,false
+Military Officer,Obel Wyatt,wyatt-obel,true,true,true,/static/images/films/battle-in-outer-space-1959/cast-avatars/obel-wyatt-0.webp,,,,false

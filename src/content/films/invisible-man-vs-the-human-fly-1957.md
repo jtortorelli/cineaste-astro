@@ -9,7 +9,6 @@ transliteration: "Tômei Ningen To Haeotoko"
 release_date: 1957-08-25
 runtime: 96
 poster_url: /static/images/films/posters/invisible-man-vs-the-human-fly-1957.webp
-top_billed_cast: []
 studios:
   - Daiei Co., Ltd.
 ---

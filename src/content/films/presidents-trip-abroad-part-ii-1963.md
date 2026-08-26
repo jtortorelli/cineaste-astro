@@ -4,35 +4,4 @@ japanese_title: 続・社長外遊記
 title: "President’s Trip Abroad: Part II"
 release_date: 1963-05-29
 draft: true
-top_billed_cast:
-  - name: Morishige Hisaya
-    role: Kazama Keinosuke
-  - name: Kobayashi Keiju
-    role: Nakamura Hiroshi
-  - name: Miki Norihei
-    role: Chinda Bunjirô
-  - name: Katô Daisuke
-    role: Ôshima Gentarô
-  - name: Aratama Michiyo
-    role: Kiyoko
-  - name: Fujiyama Yôko
-    role: Aida Harue
-  - name: Naka Machiko
-    role: Kazama Megumi
-  - name: Sakurai Hiroko
-    role: Kazama Hiromi
-  - name: Kusabue Mitsuko
-    role: Mayako
-  - name: Kuji Asami
-    role: Kazama Sachiko
-  - name: Hanuna Setsuko
-    role: Catherine
-  - name: Hanabusa Yuriko
-    role: Mine Nakamura
-  - name: Kawazu Seizaburô
-    role: Mizutani
-  - name: Yanagiya Kingorô
-    role: Matsumoto
-  - name: Frankie Sakai
-    role: George Okitsu
 ---
