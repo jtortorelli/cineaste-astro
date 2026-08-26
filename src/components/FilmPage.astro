@@ -5,7 +5,6 @@ import FilmShowcaseLink from "./FilmShowcaseLink.astro";
 import PersonShowcaseLink from "./PersonShowcaseLink.astro";
 import NamedDivider from "./NamedDivider.astro";
 import ReviewStars from "./ReviewStars.astro";
-import CastBlock from "./CastBlock.astro";
 import CastBlockFromCsv from "./CastBlockFromCsv.astro";
 import QualifierBadge from "./QualifierBadge.astro";
 import { formatDate } from "../lib/dates";
@@ -14,7 +13,6 @@ import {
   loadSeriesDataFromCsv,
   seriesEntryIsShowcased,
   staffFromCsv,
-  type StaffGroup,
 } from "../lib/films";
 import type { FilmRow } from "../lib/csv";
 
@@ -61,9 +59,6 @@ const original_works = data.original_works as
     }[]
   | undefined;
 const studios = data.studios as string[] | undefined;
-const staff = data.staff as StaffGroup[] | undefined;
-const top_billed_cast = data.top_billed_cast as Record<string, unknown>[] | undefined;
-const supporting_cast = data.supporting_cast as Record<string, unknown>[] | undefined;
 const kaiju = data.kaiju as
   | {
       avatar_url: string;
@@ -98,8 +93,8 @@ const nextSeriesEntry = seriesData
       1,
     )
   : null;
-const displayStaff = staffs[slug] ? staffFromCsv(staffs[slug]) : staff;
-const castCsv = casts[slug];
+const displayStaff = staffFromCsv(staffs[slug] ?? []);
+const castCsv = casts[slug] ?? [];
 const creditRows = credits[slug];
 ---
 
@@ -449,22 +444,7 @@ const creditRows = credits[slug];
     </>
   )
 }
-{
-  castCsv ? (
-    <CastBlockFromCsv rows={castCsv} />
-  ) : (
-    <>
-      <NamedDivider name="top billed cast" />
-      <CastBlock block={top_billed_cast as never} />
-      {supporting_cast && supporting_cast.length > 0 && (
-        <>
-          <NamedDivider name="supporting cast" />
-          <CastBlock block={supporting_cast as never} />
-        </>
-      )}
-    </>
-  )
-}
+<CastBlockFromCsv rows={castCsv} />
 {
   kaiju && kaiju.length > 0 && (
     <>
