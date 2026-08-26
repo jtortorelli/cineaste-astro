@@ -10,31 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/sword-of-alexander-2007.webp
 release_date: 2007-04-07
 runtime: 110
-staff:
-  - people:
-      - name: Tsutsumi Yukihiko
-    role: Director
-  - people:
-      - name: Amasawa Akira
-    role: Screenplay
-  - people:
-      - name: Mitake Akira
-    role: Music
-  - people:
-      - name: Karasawa Satoru
-    role: Photography
-  - people:
-      - name: Kimura Akio
-    role: Lighting
-  - people:
-      - name: Inagaki Hisao
-    role: Art Director
-  - people:
-      - name: Tanaka Yasushi
-    role: Sound
-  - people:
-      - name: Itô Nobuyuki
-    role: Editor
 studios:
   - ENTERBRAIN
   - Toei Co., Ltd.

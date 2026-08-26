@@ -10,40 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/onmyoji-ii-2003.webp
 release_date: 2003-10-04
 runtime: 115
-staff:
-  - people:
-      - name: Takita Yôjirô
-    role: Director
-  - people:
-      - name: Era Itaru
-      - name: Yumemakura Baku
-      - name: Takita Yôjirô
-    role: Screenplay
-  - people:
-      - name: Hamada Takeshi
-    role: Photography
-  - people:
-      - name: Osada Tatsuya
-    role: Lighting
-  - people:
-      - name: Heya Kyôko
-    role: Art
-  - people:
-      - name: Onodera Osamu
-    role: Sound
-  - people:
-      - name: Tomita Nobuko
-    role: Editor
-  - people:
-      - name: Umebayashi Shigeru
-    role: Music
-  - people:
-      - name: Haraguchi Tomoo
-    role: Makeup Effects Supervisor
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: SFX Director
 studios:
   - Tohokushinsha Film Corporation
   - Tokyo Broadcasting System Television, Inc.

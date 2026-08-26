@@ -9,44 +9,6 @@ video_review:
 poster_url: /static/images/films/posters/invisible-man-1954.webp
 release_date: 1954-12-29
 runtime: 70
-staff:
-  - people:
-      - name: Oda Motoyoshi
-        slug: oda-motoyoshi
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: Photography
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-    role: Producer
-  - people:
-      - name: Beppu Kei
-    role: Story
-  - people:
-      - name: Hidaka Shigeaki
-    role: Screenplay
-  - people:
-      - name: Abe Teruaki
-    role: Art
-  - people:
-      - name: Fujinawa Shôichi
-    role: Sound
-  - people:
-      - name: Kishida Kuichirô
-    role: Lighting
-  - people:
-      - name: Kami Kyôsuke
-    role: Music
-  - people:
-      - name: Ihara Shûichi
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

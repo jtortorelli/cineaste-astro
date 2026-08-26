@@ -18,37 +18,6 @@ kaiju:
 poster_url: /static/images/films/posters/gamera-vs-barugon-1966.webp
 release_date: 1966-04-17
 runtime: 101
-staff:
-  - people:
-      - name: Tanaka Shigeo
-    role: Director
-  - people:
-      - name: Nagata Masaichi
-    role: Producer
-  - people:
-      - name: Takahashi Nisan
-    role: Screenplay
-  - people:
-      - name: Takahashi Michio
-    role: Photography
-  - people:
-      - name: Okumura Yukio
-    role: Sound
-  - people:
-      - name: Shibata Tsunekichi
-    role: Lighting
-  - people:
-      - name: Shibata Tokuji
-    role: Art
-  - people:
-      - name: Kinoshita Chûji
-    role: Music
-  - people:
-      - name: Nakashizu Tatsuji
-    role: Editor
-  - people:
-      - name: Yuasa Noriaki
-    role: SFX Director
 studios:
   - Daiei Film Co., Ltd.
 title: Gamera vs. Barugon

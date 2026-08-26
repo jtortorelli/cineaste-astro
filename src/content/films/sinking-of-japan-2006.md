@@ -10,45 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/sinking-of-japan-2006.webp
 release_date: 2006-07-15
 runtime: 135
-staff:
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: Director
-  - people:
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: SFX Director
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: SFX Supervisor
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: Co-Director
-  - people:
-      - name: Narushima Izuru
-      - name: Katô Masato
-    role: Screenplay
-  - people:
-      - name: Iwashiro Tarô
-    role: Music
-  - people:
-      - name: Kawazu Tarô
-    role: Photography
-  - people:
-      - name: Harada Yasuaki
-    role: Art
-  - people:
-      - name: Nakamura Jun
-    role: Sound
-  - people:
-      - name: Okuda Hiroshi
-    role: Editor
-  - people:
-      - name: Haraguchi Tomoo
-    role: Special Molding
 studios:
   - Tokyo Broadcasting System Television, Inc.
   - Toho Co., Ltd.

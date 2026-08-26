@@ -10,37 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/platinum-data-2013.webp
 release_date: 2013-03-16
 runtime: 133
-staff:
-  - people:
-      - name: Ôtomo Keishi
-    role: Director
-  - people:
-      - name: Hamada Hideya
-    role: Screenplay
-  - people:
-      - name: Sawano Hiroyuki
-    role: Music
-  - people:
-      - name: Sakô Akira
-    role: Photography
-  - people:
-      - name: Hashimoto Hajime
-    role: Art
-  - people:
-      - name: Yuwaki Fusao
-    role: Sound
-  - people:
-      - name: Watanabe Yoshimi
-    role: Lighting
-  - people:
-      - name: Imai Tsuyoshi
-    role: Editor
-  - people:
-      - name: Shimomura Yûji
-    role: Action Coordinator
-  - people:
-      - name: Tsujino Minami
-    role: VFX Supervisor
 studios:
   - Toho Co., Ltd.
   - Dentsu, Inc.

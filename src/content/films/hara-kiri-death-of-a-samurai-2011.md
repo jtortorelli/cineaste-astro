@@ -10,31 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/hara-kiri-death-of-a-samurai-2011.webp
 release_date: 2011-10-15
 runtime: 126
-staff:
-  - people:
-      - name: Miike Takashi
-    role: Director
-  - people:
-      - name: Yamagishi Kikumi
-    role: Screenplay
-  - people:
-      - name: Sakamoto Ryûichi
-    role: Music
-  - people:
-      - name: Kita Nobuyasu
-    role: Photography
-  - people:
-      - name: Watanabe Yoshimi
-    role: Lighting
-  - people:
-      - name: Nakamura Jun
-    role: Sound
-  - people:
-      - name: Hayashida Yûji
-    role: Art
-  - people:
-      - name: Yamashita Kenji
-    role: Editor
 studios:
   - Sedic International, Inc.
   - Dentsu, Inc.

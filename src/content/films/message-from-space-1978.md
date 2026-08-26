@@ -4,46 +4,6 @@ japanese_title: 宇宙からのメッセージ
 poster_url: /static/images/films/posters/message-from-space-1978.webp
 release_date: 1978-04-29
 runtime: 105
-staff:
-  - people:
-      - name: Fukasaku Kinji
-    role: Director
-  - people:
-      - name: Yajima Nobuo
-    role: SFX Director
-  - people:
-      - name: Ishinomori Shôtarô
-      - name: Noda Masahiro
-      - name: Fukasaku Kinji
-      - name: Matsuda Hiroo
-    role: Story
-  - people:
-      - name: Matsuda Hiroo
-    role: Screenplay
-  - people:
-      - name: Nakajima Tôru
-    role: Photography
-  - people:
-      - name: Morioka Ken'ichirô
-    role: Music
-  - people:
-      - name: Mikami Michio
-    role: Art
-  - people:
-      - name: Wakagi Tokuji
-    role: Lighting
-  - people:
-      - name: Arakawa Teruhiko
-    role: Sound
-  - people:
-      - name: Ichida Isamu
-    role: Editor
-  - people:
-      - name: Nakano Minoru
-    role: VFX
-  - people:
-      - name: Ishinomori Shôtarô
-    role: Mecha Design
 studios:
   - Toei Co., Ltd.
 title: Message from Space

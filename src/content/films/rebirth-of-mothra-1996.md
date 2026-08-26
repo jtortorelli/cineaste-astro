@@ -19,44 +19,6 @@ kaiju:
 poster_url: /static/images/films/posters/rebirth-of-mothra-1996.webp
 release_date: 1996-12-14
 runtime: 106
-staff:
-  - people:
-      - name: Yoneda Okihiro
-    role: Director
-  - people:
-      - name: Kawakita Kôichi
-    role: SFX Director
-  - people:
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Story
-  - people:
-      - name: Suetani Masumi
-    role: Screenplay
-  - people:
-      - name: Watanabe Toshiyuki
-    role: Music
-  - people:
-      - name: Sekiguchi Yoshinori
-    role: Photography
-  - people:
-      - name: Heya Kyôko
-    role: Art
-  - people:
-      - name: Miyauchi Kazuo
-    role: Sound
-  - people:
-      - name: Ôsawa Teruo
-    role: Lighting
-  - people:
-      - name: Ogawa Nobuo
-    role: Editor
-  - people:
-      - name: Suzuki Kenji
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 title: Rebirth of Mothra

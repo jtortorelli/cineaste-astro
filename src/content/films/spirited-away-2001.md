@@ -4,43 +4,6 @@ japanese_title: 千と千尋の神隠し
 poster_url: /static/images/films/posters/spirited-away-2001.webp
 release_date: 2001-07-20
 runtime: 124
-staff:
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Director
-  - people:
-      - name: Suzuki Toshio
-    role: Producer
-  - people:
-      - name: Tokuma Yasuyoshi
-    role: Executive Producer
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Story
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Screenplay
-  - people:
-      - name: Hisaishi Joe
-    role: Music
-  - people:
-      - name: Takeshige Yôji
-    role: Art Director
-  - people:
-      - name: Yoshida Noboru
-    role: Assistant Art Director
-  - people:
-      - name: Okui Atsushi
-    role: Photography
-  - people:
-      - name: Wakabayashi Kazuhiro
-    role: Sound
-  - people:
-      - name: Seyama Takeshi
-    role: Editor
 studios:
   - Tokuma Shoten Publishing Co., Ltd.
   - Nippon Television Network Corporation

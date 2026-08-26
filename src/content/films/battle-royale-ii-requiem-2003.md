@@ -10,33 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/battle-royale-ii-requiem-2003.webp
 release_date: 2003-07-05
 runtime: 133
-staff:
-  - people:
-      - name: Fukasaku Kinji
-      - name: Fukasaku Kenta
-    role: Director
-  - people:
-      - name: Fukasaku Kenta
-      - name: Kida Norio
-    role: Screenplay
-  - people:
-      - name: Amano Masamichi
-    role: Music
-  - people:
-      - name: Fujisawa Jun'ichi
-    role: Photography
-  - people:
-      - name: Ono Akira
-    role: Lighting
-  - people:
-      - name: Isomi Toshihiro
-    role: Art
-  - people:
-      - name: Andô Kunio
-    role: Sound
-  - people:
-      - name: Abe Hirohide
-    role: Editor
 studios:
   - Fukasaku Group
   - Gaga Communications, Inc.

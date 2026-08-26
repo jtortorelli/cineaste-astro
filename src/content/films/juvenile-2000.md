@@ -4,47 +4,6 @@ japanese_title: ジュブナイル
 poster_url: /static/images/films/posters/juvenile-2000.webp
 release_date: 2000-07-15
 runtime: 105
-staff:
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Director
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Screenplay
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: VFX
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Conceptual Design
-  - people:
-      - name: Shimizu Yasuaki
-    role: Music
-  - people:
-      - name: Shibasaki Kôzô
-    role: Photography
-  - people:
-      - name: Ueda Nariyuki
-    role: Lighting
-  - people:
-      - name: Jôjô Anri
-    role: Art
-  - people:
-      - name: Miyauchi Kazuo
-    role: Sound
-  - people:
-      - name: Kitazawa Yoshio
-    role: Editor
-  - people:
-      - name: Shibuya Kiyoko
-    role: Technical Director
-  - people:
-      - name: Shibuya Kiyoko
-    role: Digital Compositor
 studios:
   - Fuji Television Network, Inc.
   - Media Factory, Inc.

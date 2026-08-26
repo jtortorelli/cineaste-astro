@@ -7,49 +7,6 @@ japanese_title: 地震列島
 poster_url: /static/images/films/posters/magnitude-7-9-1980.webp
 release_date: 1980-08-30
 runtime: 126
-staff:
-  - people:
-      - name: Ômori Kenjirô
-    role: Director
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Shindô Kaneto
-    role: Screenplay
-  - people:
-      - name: Takai Hideyuki
-    role: Assistant Director
-  - people:
-      - name: Nishigaki Rokurô
-    role: Photography
-  - people:
-      - name: Akune Iwao
-    role: Art
-  - people:
-      - name: Hayashi Eishirô
-    role: Sound
-  - people:
-      - name: Kojima Shinji
-    role: Lighting
-  - people:
-      - name: Tsushima Toshiaki
-    role: Music
-  - people:
-      - name: Ogawa Nobuo
-    role: Editor
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
-  - people:
-      - name: Asada Eiichi
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 title: Magnitude 7.9

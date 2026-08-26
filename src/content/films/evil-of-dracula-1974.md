@@ -4,35 +4,6 @@ japanese_title: 血を吸う薔薇
 poster_url: /static/images/films/posters/evil-of-dracula-1974.webp
 release_date: 1974-07-20
 runtime: 83
-staff:
-  - people:
-      - name: Yamamoto Michio
-    role: Director
-  - people:
-      - name: Tanaka Fumio
-    role: Producer
-  - people:
-      - name: Ogawa Ei
-      - name: Takesue Masaru
-    role: Screenplay
-  - people:
-      - name: Hara Kazutami
-    role: Photography
-  - people:
-      - name: Satsuya Kazuo
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Morimoto Masakuni
-    role: Lighting
-  - people:
-      - name: Manabe Riichirô
-    role: Music
-  - people:
-      - name: Ikeda Michiko
-    role: Editor
 studios:
   - Toho Co., Ltd.
 title: Evil of Dracula

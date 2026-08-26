@@ -10,31 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/one-missed-call-2003.webp
 release_date: 2003-11-03
 runtime: 112
-staff:
-  - people:
-      - name: Miike Takashi
-    role: Director
-  - people:
-      - name: Daira Miwako
-    role: Screenplay
-  - people:
-      - name: Yamamoto Hideo
-    role: Photography
-  - people:
-      - name: Inagaki Hisao
-    role: Art
-  - people:
-      - name: Endô Kôji
-    role: Music
-  - people:
-      - name: Matsukuma Shin'ichi
-    role: Lighting
-  - people:
-      - name: Nakamura Jun
-    role: Sound
-  - people:
-      - name: Shimamura Yasushi
-    role: Editor
 studios:
   - Kadokawa Daiei Pictures
   - Nippon Television Network Corporation

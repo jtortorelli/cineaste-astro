@@ -14,58 +14,6 @@ kaiju:
 poster_url: /static/images/films/posters/shin-godzilla-2016.webp
 release_date: 2016-07-29
 runtime: 119
-staff:
-  - people:
-      - name: An'no Hideaki
-    role: General Director
-  - people:
-      - name: An'no Hideaki
-    role: Screenplay
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: Director
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: SFX Director
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: Associate Director
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: SFX Supervisor
-  - people:
-      - name: Satô Atsuki
-      - name: An'no Hideaki
-    role: Editor
-  - people:
-      - name: Satô Atsuki
-    role: VFX Supervisor
-  - people:
-      - name: Yamada Kôsuke
-    role: Photography
-  - people:
-      - name: Kawabe Takayuki
-    role: Lighting
-  - people:
-      - name: Hayashida Yûji
-      - name: Sakushima Eri
-    role: Art
-  - people:
-      - name: Nakamura Jun
-    role: Sound
-  - people:
-      - name: An'no Hideaki
-    role: Godzilla Concept Design
-  - people:
-      - name: An'no Hideaki
-    role: Image Design
-  - people:
-      - name: Sagisu Shirô
-    role: Music
 studios:
   - Toho Co., Ltd.
 supporting_cast:

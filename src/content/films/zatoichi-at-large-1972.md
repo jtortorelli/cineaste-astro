@@ -11,35 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-at-large-1972.webp
 release_date: 1972-01-15
 runtime: 90
-staff:
-  - people:
-      - name: Mori Kazuo
-    role: Director
-  - people:
-      - name: Katsu Shintarô
-      - name: Nishioka Hiroyoshi
-    role: Producer
-  - people:
-      - name: Naoi Kinya
-    role: Screenplay
-  - people:
-      - name: Morita Fujio
-    role: Photography
-  - people:
-      - name: Ôtani Iwao
-    role: Sound
-  - people:
-      - name: Nakaoka Genken
-    role: Lighting
-  - people:
-      - name: Ôta Seiichi
-    role: Art
-  - people:
-      - name: Murai Kunihiko
-    role: Music
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
 studios:
   - Toho Co., Ltd.
   - Katsu Productions

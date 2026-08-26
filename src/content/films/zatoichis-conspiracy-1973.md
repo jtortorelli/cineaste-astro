@@ -11,36 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichis-conspiracy-1973.webp
 release_date: 1973-04-21
 runtime: 88
-staff:
-  - people:
-      - name: Yasuda Kimiyoshi
-    role: Director
-  - people:
-      - name: Katsu Shintarô
-      - name: Nishioka Hiroyoshi
-    role: Producer
-  - people:
-      - name: Hattori Kei
-    role: Screenplay
-  - people:
-      - name: Makiura Chikashi
-    role: Photography
-  - people:
-      - name: Ôsumi Masao
-    role: Sound
-  - people:
-      - name: Saitô Shôzô
-    role: Lighting
-  - people:
-      - name: Ôta Seiichi
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Hayashi Yoshiharu
-    role: Editor
 studios:
   - Toho Co., Ltd.
   - Katsu Productions

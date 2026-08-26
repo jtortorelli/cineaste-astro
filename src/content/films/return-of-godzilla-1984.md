@@ -14,57 +14,6 @@ kaiju:
 poster_url: /static/images/films/posters/return-of-godzilla-1984.webp
 release_date: 1985-12-15
 runtime: 103
-staff:
-  - people:
-      - name: Hashimoto Kôji
-    role: Director
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Story
-  - people:
-      - name: Nagahara Shûichi
-    role: Screenplay
-  - people:
-      - name: Tanaka Fumio
-    role: Co-Producer
-  - people:
-      - name: Hara Kazutami
-    role: Photography
-  - people:
-      - name: Sakuragi Akira
-    role: Art
-  - people:
-      - name: Tanaka Nobuyuki
-    role: Sound
-  - people:
-      - name: Kojima Shinji
-    role: Lighting
-  - people:
-      - name: Koroku Reijirô
-    role: Music
-  - people:
-      - name: Ôkawara Takao
-      - name: Yamashita Kenshô
-    role: Assistant Director
-  - people:
-      - name: Kuroiwa Yoshitami
-    role: Editor
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
-  - people:
-      - name: Asada Eiichi
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

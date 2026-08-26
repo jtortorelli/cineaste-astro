@@ -11,34 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/gatchaman-2013.webp
 release_date: 2013-08-24
 runtime: 113
-staff:
-  - people:
-      - name: Satô Tôya
-    role: Director
-  - people:
-      - name: Watanabe Yûsuke
-    role: Screenplay
-  - people:
-      - name: Nima Fakhrara
-    role: Music
-  - people:
-      - name: Tsutai Takahiro
-    role: Photography
-  - people:
-      - name: Harada Yasuaki
-    role: Art
-  - people:
-      - name: Hikita Yoshitake
-    role: Lighting
-  - people:
-      - name: Yamakata Hiroshi
-    role: Sound
-  - people:
-      - name: Nishimura Ryô
-    role: Co-Director
-  - people:
-      - name: Shibuya Yôichi
-    role: Editor
 studios:
   - Nippon Television Network Corporation
   - Nikkatsu Corporation

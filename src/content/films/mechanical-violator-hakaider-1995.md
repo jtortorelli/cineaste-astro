@@ -4,38 +4,6 @@ japanese_title: 人造人間ハカイダー
 poster_url: /static/images/films/posters/mechanical-violator-hakaider-1995.webp
 release_date: 1995-04-15
 runtime: 52
-staff:
-  - people:
-      - name: Amemiya Keita
-    role: Director
-  - people:
-      - name: Ishinomori Shôtarô
-    role: Story
-  - people:
-      - name: Inoue Toshiki
-    role: Screenplay
-  - people:
-      - name: Matsumura Fumio
-    role: Photography
-  - people:
-      - name: Saiki Masaru
-    role: Lighting
-  - people:
-      - name: Iguchi Akihiko
-    role: Art
-  - people:
-      - name: Sugano Junkichi
-    role: Editor
-  - people:
-      - name: Ôta Katsumi
-    role: Sound
-  - people:
-      - name: Ôta Kôichi
-      - name: Kinoshita Shinji
-    role: Music
-  - people:
-      - name: Amemiya Keita
-    role: Character Design
 studios:
   - Ishinomori Productions
   - Toei Co., Ltd.

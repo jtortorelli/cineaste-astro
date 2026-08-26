@@ -10,42 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/always-sunset-on-third-street-2-2007.webp
 release_date: 2007-11-03
 runtime: 146
-staff:
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Director
-  - people:
-      - name: Kosawa Ryôta
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Screenplay
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: VFX
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Shibasaki Kôzô
-    role: Photography
-  - people:
-      - name: Mizuno Ken'ichi
-    role: Lighting
-  - people:
-      - name: Tsurumaki Hitoshi
-    role: Sound
-  - people:
-      - name: Jôjô Anri
-    role: Art
-  - people:
-      - name: Miyajima Ryûji
-    role: Editor
-  - people:
-      - name: Shibuya Kiyoko
-    role: VFX Director
 studios:
   - Nippon Television Network Corporation
   - The Sapporo Television Broadcasting Co.,Ltd.

@@ -21,34 +21,6 @@ kaiju:
 poster_url: /static/images/films/posters/gamera-vs-viras-1968.webp
 release_date: 1968-03-20
 runtime: 72
-staff:
-  - people:
-      - name: Yuasa Noriaki
-    role: Director
-  - people:
-      - name: Nagata Hidemasa
-    role: Producer
-  - people:
-      - name: Takahashi Nisan
-    role: Screenplay
-  - people:
-      - name: Kitazaki Akira
-    role: Photography
-  - people:
-      - name: Tobita Kimio
-    role: Sound
-  - people:
-      - name: Uehara Shôichi
-    role: Lighting
-  - people:
-      - name: Yano Tomohisa
-    role: Art
-  - people:
-      - name: Hirose Kenjirô
-    role: Music
-  - people:
-      - name: Sekiguchi Shôji
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

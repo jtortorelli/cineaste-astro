@@ -4,39 +4,6 @@ japanese_title: 蜘蛛巣城
 poster_url: /static/images/films/posters/throne-of-blood-1957.webp
 release_date: 1957-01-15
 runtime: 110
-staff:
-  - people:
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Director
-  - people:
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-      - name: Motoki Sôjirô
-    role: Producer
-  - people:
-      - name: Oguni Hideo
-      - name: Hashimoto Shinobu
-      - name: Kikushima Ryûzô
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Screenplay
-  - people:
-      - name: Nakai Asakazu
-    role: Photography
-  - people:
-      - name: Muraki Yoshirô
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Kishida Kuichirô
-    role: Lighting
-  - people:
-      - name: Satô Masaru
-        slug: sato-masaru
-    role: Music
 studios:
   - Toho Co., Ltd.
 supporting_cast:

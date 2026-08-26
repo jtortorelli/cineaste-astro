@@ -65,57 +65,6 @@ kaiju:
 poster_url: /static/images/films/posters/destroy-all-monsters-1968.webp
 release_date: 1968-08-01
 runtime: 89
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Supervisor
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Screenplay
-  - people:
-      - name: Kankura Taiichi
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-    role: Art
-  - people:
-      - name: Yoshizawa Shôichi
-    role: Sound
-  - people:
-      - name: Hirano Kiyohisa
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Fujii Ryôhei
-    role: Editor
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

@@ -4,37 +4,6 @@ japanese_title: 続・社長紳士録
 title: "President's Who's Who: Part II"
 release_date: 1964-02-29
 draft: true
-staff:
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Matsubayashi Shûe
-    role: Director
-  - people:
-      - name: Nishigaki Rokurô
-    role: Photography
-  - people:
-      - name: Iwashita Kôichi
-    role: Editing
-  - people:
-      - name: Yamamoto Naozumi
-    role: Music
-  - people:
-      - name: Akune Iwao
-    role: Art
-  - people:
-      - name: Nishikawa Tsuruzô
-    role: Lighting
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Yoshizaki Matsuo
-    role: Still
 top_billed_cast:
   - name: Morishige Hisaya
     role: Koizumi Reitarô

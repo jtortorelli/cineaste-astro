@@ -4,42 +4,6 @@ japanese_title: 続・社長外遊記
 title: "President’s Trip Abroad: Part II"
 release_date: 1963-05-29
 draft: true
-staff:
-  - people:
-      - name: Fujimoto Sanezumi
-      - name: Tsunoda Ken’ichirô
-    role: Producer
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Matsubayashi Shûe
-    role: Director
-  - people:
-      - name: Suzuki Takeshi
-    role: Photography
-  - people:
-      - name: Iwashita Kôichi
-    role: Editing
-  - people:
-      - name: Ishii Chôshirô
-    role: Lighting
-  - people:
-      - name: Muraki Shinobu
-    role: Art
-  - people:
-      - name: Saitô Akira
-    role: Sound
-  - people:
-      - name: Kôzu Yoshiyuki
-    role: Music
-  - people:
-      - name: Nishikiori Masanobu
-    role: Assistant Director
-  - people:
-      - name: Yoshizaki Matsuo
-    role: Still
-
 top_billed_cast:
   - name: Morishige Hisaya
     role: Kazama Keinosuke

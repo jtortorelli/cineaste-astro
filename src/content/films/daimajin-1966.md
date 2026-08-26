@@ -11,38 +11,6 @@ kaiju:
 poster_url: /static/images/films/posters/daimajin-1966.webp
 release_date: 1966-04-17
 runtime: 84
-staff:
-  - people:
-      - name: Yasuda Kimiyoshi
-    role: Director
-  - people:
-      - name: Kuroda Yoshiyuki
-    role: SFX Director
-  - people:
-      - name: Nagata Masaichi
-    role: Producer
-  - people:
-      - name: Yoshida Tetsurô
-    role: Screenplay
-  - people:
-      - name: Morita Fujio
-    role: Photography
-  - people:
-      - name: Hayashi Tsuchitarô
-    role: Sound
-  - people:
-      - name: Mima Hiroshi
-    role: Lighting
-  - people:
-      - name: Naitô Akira
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Yamada Hiroshi
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 title: Daimajin

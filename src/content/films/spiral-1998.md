@@ -13,31 +13,6 @@ original_works:
 poster_url: /static/images/films/posters/spiral-1998.webp
 release_date: 1998-01-31
 runtime: 97
-staff:
-  - people:
-      - name: Îda George
-    role: Director
-  - people:
-      - name: Îda George
-    role: Screenplay
-  - people:
-      - name: Watanabe Makoto
-    role: Photography
-  - people:
-      - name: Saitô Iwao
-    role: Art
-  - people:
-      - name: Hosawa Shôji
-    role: Lighting
-  - people:
-      - name: LA FINCA
-    role: Music
-  - people:
-      - name: Hosoi Seiji
-    role: Sound
-  - people:
-      - name: Abe Hirohide
-    role: Editor
 studios:
   - Kadokawa Shoten Publishing Co., Ltd.
   - Pony Canyon, Inc.

@@ -4,40 +4,6 @@ japanese_title: ガンヘッド
 poster_url: /static/images/films/posters/gunhed-1989.webp
 release_date: 1989-07-22
 runtime: 100
-staff:
-  - people:
-      - name: Harada Masato
-    role: Director
-  - people:
-      - name: Kawakita Kôichi
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Yamaura Eiji
-    role: Producer
-  - people:
-      - name: Harada Masato
-      - name: James Bannon
-    role: Screenplay
-  - people:
-      - name: Fujisawa Jun'ichi
-    role: Photography
-  - people:
-      - name: Ogawa Fumio
-    role: Art
-  - people:
-      - name: Saitô Teiichi
-    role: Sound
-  - people:
-      - name: Awakihara Tsuyoshi
-    role: Lighting
-  - people:
-      - name: Kuroiwa Yoshitami
-    role: Editor
-  - people:
-      - name: Honda Toshiyuki
-    role: Music
 studios:
   - Toho Co., Ltd.
   - Bandai Co., Ltd.

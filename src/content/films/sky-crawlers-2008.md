@@ -10,32 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/sky-crawlers-2008.webp
 release_date: 2008-08-02
 runtime: 122
-staff:
-  - people:
-      - name: Oshii Mamoru
-    role: Director
-  - people:
-      - name: Itô Chihiro
-    role: Screenplay
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Nagai Kazuo
-    role: Art Director
-  - people:
-      - name: Arai Eiji
-      - name: Yanouchi Jun
-      - name: Ônuki Moritake
-      - name: Takagi Hironori
-    role: Photography
-  - people:
-      - name: Uematsu Jun'ichi
-    role: Editor
-  - people:
-      - name: Wakabayashi Kazuhiro
-    role: Sound
 studios:
   - Nippon Television Network Corporation
   - Production I.G, Inc.

@@ -9,41 +9,6 @@ video_review:
 poster_url: /static/images/films/posters/invisible-man-appears-1949.webp
 release_date: 1949-09-25
 runtime: 87
-staff:
-  - role: Director
-    people:
-      - name: Adachi Nobuo
-      - name: Fukushima Shigehiro
-  - role: Story
-    people:
-      - name: Takagi Akimitsu
-  - role: Screenplay
-    people:
-      - name: Adachi Nobuo
-  - role: Photography
-    people:
-      - name: Ishimoto Hideo
-      - name: Ôkita Jisaburô
-  - role: Music
-    people:
-      - name: Nishi Gorô
-  - role: Sound
-    people:
-      - name: Ôsumi Masao
-      - name: Kurashima Nobu
-  - role: Special Photography
-    people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-  - role: Art
-    people:
-      - name: Nakamura Yoshihisa
-  - role: Lighting
-    people:
-      - name: Okamoto Ken'ichi
-  - role: Editing
-    people:
-      - name: Nishida Shigeo
 studios:
   - Daiei Co., Ltd.
 top_billed_cast:

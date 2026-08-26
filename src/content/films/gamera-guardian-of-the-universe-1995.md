@@ -18,45 +18,6 @@ kaiju:
 poster_url: /static/images/films/posters/gamera-guardian-of-the-universe-1995.webp
 release_date: 1995-03-11
 runtime: 95
-staff:
-  - people:
-      - name: Kaneko Shûsuke
-    role: Director
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: SFX Director
-  - people:
-      - name: Tokuma Yasuyoshi
-    role: Executive Producer
-  - people:
-      - name: Itô Kazunori
-    role: Screenplay
-  - people:
-      - name: Tozawa Jun'ichi
-    role: Photography
-  - people:
-      - name: Oikawa Ichi
-    role: Art
-  - people:
-      - name: Hashimoto Yasuo
-    role: Sound
-  - people:
-      - name: Yoshisumi Sôsuke
-    role: Lighting
-  - people:
-      - name: Arakawa Shizuo
-    role: Editor
-  - people:
-      - name: Ôtani Kô
-    role: Music
-  - people:
-      - name: Haraguchi Tomoo
-    role: Monster Modeling
-  - people:
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: SFX Assistant Director
 studios:
   - Daiei Film Co., Ltd.
   - Hakuhodo, Inc.

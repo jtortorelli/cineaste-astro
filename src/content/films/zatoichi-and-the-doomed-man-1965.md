@@ -11,31 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-and-the-doomed-man-1965.webp
 release_date: 1965-09-18
 runtime: 78
-staff:
-  - people:
-      - name: Mori Kazuo
-    role: Director
-  - people:
-      - name: Asai Shôzaburô
-    role: Screenplay
-  - people:
-      - name: Imai Hiroshi
-    role: Photography
-  - people:
-      - name: Hayashi Tsuchitarô
-    role: Sound
-  - people:
-      - name: Itô Teiichi
-    role: Lighting
-  - people:
-      - name: Ôta Seiichi
-    role: Art
-  - people:
-      - name: Ômori Seitarô
-    role: Music
-  - people:
-      - name: Taniguchi Takashi
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 title: Zatoichi and the Doomed Man

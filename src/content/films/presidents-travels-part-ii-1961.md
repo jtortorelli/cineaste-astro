@@ -4,38 +4,6 @@ japanese_title: 続・社長道中記
 title: "President’s Travels: Part II"
 release_date: 1961-05-30
 draft: true
-staff:
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Genji Keida
-    role: Still
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Matsubayashi Shûe
-    role: Director
-  - people:
-      - name: Suzuki Takeshi
-    role: Photography
-  - people:
-      - name: Inohara Ichirô
-    role: Lighting
-  - people:
-      - name: Hamakami Hyôe
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-      - name: Shimonaga Hisashi
-    role: Sound
-  - people:
-      - name: Matsui Hachirô
-    role: Music
-  - people:
-      - name: Hata Daisan
-    role: Still
 top_billed_cast:
   - name: Morishige Hisaya
     role: Misawa Einosuke

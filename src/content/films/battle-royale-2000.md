@@ -10,31 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/battle-royale-2000.webp
 release_date: 2000-12-16
 runtime: 114
-staff:
-  - people:
-      - name: Fukasaku Kinji
-    role: Director
-  - people:
-      - name: Fukasaku Kenta
-    role: Screenplay
-  - people:
-      - name: Amano Masamichi
-    role: Music
-  - people:
-      - name: Yanagijima Katsumi
-    role: Photography
-  - people:
-      - name: Ono Akira
-    role: Lighting
-  - people:
-      - name: Heya Kyôko
-    role: Art
-  - people:
-      - name: Andô Kunio
-    role: Sound
-  - people:
-      - name: Abe Hirohide
-    role: Editor
 studios:
   - Toei Co., Ltd.
   - Am Associates Co., Ltd.

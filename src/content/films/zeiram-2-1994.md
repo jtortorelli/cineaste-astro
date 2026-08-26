@@ -4,32 +4,6 @@ japanese_title: ゼイラム2
 poster_url: /static/images/films/posters/zeiram-2-1994.webp
 release_date: 1994-12-17
 runtime: 100
-staff:
-  - people:
-      - name: Amemiya Keita
-    role: Director
-  - people:
-      - name: Amemiya Keita
-      - name: Matsumoto Hajime
-    role: Screenplay
-  - people:
-      - name: Kidokoro Hiroshi
-    role: Photography
-  - people:
-      - name: Iguchi Akihiko
-    role: Art
-  - people:
-      - name: Hosaka Yoshimi
-    role: Lighting
-  - people:
-      - name: OHTA FACT
-    role: Sound
-  - people:
-      - name: Ôta Kôichi
-    role: Music
-  - people:
-      - name: Kon'no Haruhito
-    role: Editor
 studios:
   - Crowd
   - Embodiment Films

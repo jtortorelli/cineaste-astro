@@ -4,53 +4,6 @@ japanese_title: 惑星大戦争
 poster_url: /static/images/films/posters/war-in-space-1977.webp
 release_date: 1977-12-17
 runtime: 91
-staff:
-  - people:
-      - name: Fukuda Jun
-        slug: fukuda-jun
-    role: Director
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Tanaka Fumio
-    role: Producer
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Story
-  - people:
-      - name: Nakanishi Ryûzô
-      - name: Nagahara Shûichi
-    role: Screenplay
-  - people:
-      - name: Aizawa Yuzuru
-    role: Photography
-  - people:
-      - name: Satsuya Kazuo
-    role: Art
-  - people:
-      - name: Ban Toshiya
-    role: Sound
-  - people:
-      - name: Kojima Shinji
-    role: Lighting
-  - people:
-      - name: Tsushima Toshiaki
-    role: Music
-  - people:
-      - name: Ikeda Michiko
-    role: Editor
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
-  - people:
-      - name: Kawakita Kôichi
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 title: The War in Space

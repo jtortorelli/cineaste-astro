@@ -19,59 +19,6 @@ kaiju:
 poster_url: /static/images/films/posters/war-of-the-gargantuas-1966.webp
 release_date: 1966-07-31
 runtime: 88
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Tsunoda Ken'ichirô
-    role: Producer
-  - people:
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Screenplay
-  - people:
-      - name: Koizumi Hajime
-        slug: koizumi-hajime
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-    role: Art
-  - people:
-      - name: Tone Norio
-    role: Sound
-  - people:
-      - name: Takashima Toshio
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Fujii Ryôhei
-    role: Editor
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

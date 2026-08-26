@@ -55,47 +55,6 @@ kaiju:
 poster_url: /static/images/films/posters/all-monsters-attack-1969.webp
 release_date: 1969-12-20
 runtime: 70
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Supervisor
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Sekizawa Shin'ichi
-        slug: sekizawa-shinichi
-    role: Screenplay
-  - people:
-      - name: Tomioka Motoyoshi
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-    role: Art
-  - people:
-      - name: Tone Norio
-    role: Sound
-  - people:
-      - name: Hara Fun'yoshi
-    role: Lighting
-  - people:
-      - name: Miyauchi Kunio
-        slug: miyauchi-kunio
-    role: Music
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: Assistant Director
-  - people:
-      - name: Nagami Masahisa
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

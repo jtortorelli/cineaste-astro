@@ -23,51 +23,6 @@ original_works:
 poster_url: /static/images/films/posters/mysterians-1957.webp
 release_date: 1957-12-28
 runtime: 88
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - alias: Tsumuraya Eiji
-        name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Kayama Shigeru
-        slug: kayama-shigeru
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-        alias: Kimura Takeshi
-    role: Screenplay
-  - people:
-      - name: Koizumi Hajime
-        slug: koizumi-hajime
-    role: Photography
-  - people:
-      - name: Abe Teruaki
-    role: Art
-  - people:
-      - name: Miyazaki Masanobu
-    role: Sound
-  - people:
-      - name: Kishida Kuichirô
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Iwashita Kôichi
-    role: Editor
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
 studios:
   - Toho Co., Ltd.
 supporting_cast:

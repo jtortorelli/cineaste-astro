@@ -31,52 +31,6 @@ kaiju:
 poster_url: /static/images/films/posters/invasion-of-astro-monster-1965.webp
 release_date: 1965-12-19
 runtime: 94
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Sekizawa Shin'ichi
-        slug: sekizawa-shinichi
-    role: Screenplay
-  - people:
-      - name: Koizumi Hajime
-        slug: koizumi-hajime
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-    role: Art
-  - people:
-      - name: Onuma Wataru
-    role: Sound
-  - people:
-      - name: Kojima Shôshichi
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Fujii Ryôhei
-    role: Editor
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

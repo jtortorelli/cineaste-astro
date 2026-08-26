@@ -4,44 +4,6 @@ japanese_title: もののけ姫
 poster_url: /static/images/films/posters/princess-mononoke-1997.webp
 release_date: 1997-07-12
 runtime: 133
-staff:
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Director
-  - people:
-      - name: Suzuki Toshio
-    role: Producer
-  - people:
-      - name: Tokuma Yasuyoshi
-    role: Executive Producer
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Story
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Screenplay
-  - people:
-      - name: Hisaishi Joe
-    role: Music
-  - people:
-      - name: Yamamoto Nizô
-      - name: Tanaka Naoya
-      - name: Takeshige Yôji
-      - name: Kuroda Satoshi
-      - name: Oga Kazuo
-    role: Art
-  - people:
-      - name: Okui Atsushi
-    role: Photography
-  - people:
-      - name: Inoue Shûji
-    role: Sound
-  - people:
-      - name: Seyama Takeshi
-    role: Editor
 studios:
   - Tokuma Shoten Publishing Co., Ltd.
   - Nippon Television Network Corporation

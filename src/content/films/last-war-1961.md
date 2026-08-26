@@ -4,52 +4,6 @@ japanese_title: 世界大戦争
 poster_url: /static/images/films/posters/last-war-1961.webp
 release_date: 1961-10-08
 runtime: 110
-staff:
-  - people:
-      - name: Matsubayashi Shûe
-        slug: matsubayashi-shue
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Fujimoto Sanezumi
-        slug: fujimoto-sanezumi
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Yasumi Toshio
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-        alias: Kimura Takeshi
-    role: Screenplay
-  - people:
-      - name: Nishigaki Rokurô
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-      - name: Abe Teruaki
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Mori Hiromitsu
-    role: Lighting
-  - people:
-      - name: Dan Ikuma
-        slug: dan-ikuma
-    role: Music
-  - people:
-      - name: Iwashita Kôichi
-    role: Editor
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
 studios:
   - Toho Co., Ltd.
 supporting_cast:

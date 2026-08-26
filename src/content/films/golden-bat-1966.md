@@ -10,31 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/golden-bat-1966.webp
 release_date: 1966-12-21
 runtime: 73
-staff:
-  - people:
-      - name: Satô Hajime
-    role: Director
-  - people:
-      - name: Takaku Susumu
-    role: Screenplay
-  - people:
-      - name: Yamasawa Yoshikazu
-    role: Photography
-  - people:
-      - name: Uchida Yôzô
-    role: Sound
-  - people:
-      - name: Ginya Kenzô
-    role: Lighting
-  - people:
-      - name: Eno Shin'ichi
-    role: Art
-  - people:
-      - name: Kikuchi Shunsuke
-    role: Music
-  - people:
-      - name: Anda Fumio
-    role: Editor
 studios:
   - Toei Co., Ltd.
 title: The Golden Bat

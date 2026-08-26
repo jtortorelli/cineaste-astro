@@ -4,34 +4,6 @@ japanese_title: 紅い眼鏡/The Red Spectacles
 poster_url: /static/images/films/posters/red-spectacles-1987.webp
 release_date: 1987-02-07
 runtime: 116
-staff:
-  - people:
-      - name: Oshii Mamoru
-    role: Director
-  - people:
-      - name: Itô Kazunori
-      - name: Oshii Mamoru
-    role: Screenplay
-  - people:
-      - name: Mamiya Yôsuke
-    role: Photography
-  - people:
-      - name: Hosaka Yoshimi
-    role: Lighting
-  - people:
-      - name: Itô Kazunori
-    role: Assistant Director
-  - people:
-      - name: Kamino Hiroaki
-      - name: Mimaki Tetsuji
-    role: Art
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Morita Seiji
-    role: Editor
 studios:
   - Omnibus Promotion, Inc.
 supporting_cast:

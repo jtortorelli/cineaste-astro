@@ -4,38 +4,6 @@ japanese_title: トーキング・ヘッド
 poster_url: /static/images/films/posters/talking-head-1992.webp
 release_date: 1992-10-10
 runtime: 105
-staff:
-  - people:
-      - name: Oshii Mamoru
-    role: Director
-  - people:
-      - name: Oshii Mamoru
-    role: Screenplay
-  - people:
-      - name: Mamiya Yôsuke
-    role: Photography
-  - people:
-      - name: Hosaka Yoshimi
-    role: Lighting
-  - people:
-      - name: Hanaya Hidefumi
-    role: Art
-  - people:
-      - name: Iwahashi Masashi
-    role: Sound
-  - people:
-      - name: Matsuo Hiroshi
-    role: Editor
-  - people:
-      - name: Itô Kazunori
-    role: Co-Director
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Chiba Shigeru
-    role: Sound Director
 studios:
   - Bandai Co., Ltd.
   - Embodiment Films

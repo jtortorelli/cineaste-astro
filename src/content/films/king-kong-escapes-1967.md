@@ -26,59 +26,6 @@ kaiju:
 poster_url: /static/images/films/posters/king-kong-escapes-1967.webp
 release_date: 1967-07-22
 runtime: 104
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-    role: Screenplay
-  - people:
-      - name: Arthur Rankin Jr.
-        slug: rankin-arthur
-    role: Technical Adviser
-  - people:
-      - name: Koizumi Hajime
-        slug: koizumi-hajime
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-    role: Art
-  - people:
-      - name: Yoshizawa Shôichi
-    role: Sound
-  - people:
-      - name: Takashima Toshio
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Fujii Ryôhei
-    role: Editor
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Assistant Director
-  - people:
-      - name: Kuze Ryû
-    role: Swordmaster
 studios:
   - Toho Co., Ltd.
 supporting_cast:

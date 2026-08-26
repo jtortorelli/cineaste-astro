@@ -4,32 +4,6 @@ japanese_title: <ruby>friends<rt>フレンズ</rt></ruby> もののけ島のナ�
 poster_url: /static/images/films/posters/friends-naki-on-monster-island-2011.webp
 release_date: 2011-12-17
 runtime: 87
-staff:
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-      - name: Yagi Ryûichi
-    role: Director
-  - people:
-      - name: Shibuya Kiyoko
-    role: Producer
-  - people:
-      - name: Hamada Hirosuke
-    role: Draft
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Katsumata Noriko
-    role: Art Director
-  - people:
-      - name: Momose Keiichi
-    role: Sound
 studios:
   - Toho Co., Ltd.
   - Shogakukan, Inc.

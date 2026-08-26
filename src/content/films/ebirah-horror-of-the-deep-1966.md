@@ -26,55 +26,6 @@ kaiju:
 poster_url: /static/images/films/posters/ebirah-horror-of-the-deep-1966.webp
 release_date: 1966-12-17
 runtime: 87
-staff:
-  - people:
-      - name: Fukuda Jun
-        slug: fukuda-jun
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Sekizawa Shin'ichi
-        slug: sekizawa-shinichi
-    role: Screenplay
-  - people:
-      - name: Yamada Kazuo
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-    role: Art
-  - people:
-      - name: Yoshizawa Shôichi
-    role: Sound
-  - people:
-      - name: Onda Norikazu
-    role: Lighting
-  - people:
-      - name: Satô Masaru
-        slug: sato-masaru
-    role: Music
-  - people:
-      - name: Fujii Ryôhei
-    role: Editor
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Co-Director
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

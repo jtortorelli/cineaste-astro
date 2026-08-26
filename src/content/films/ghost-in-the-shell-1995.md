@@ -10,29 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/ghost-in-the-shell-1995.webp
 release_date: 1995-11-18
 runtime: 85
-staff:
-  - people:
-      - name: Oshii Mamoru
-    role: Director
-  - people:
-      - name: Itô Kazunori
-    role: Screenplay
-  - people:
-      - name: Ogura Hiromasa
-    role: Art Director
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Shirai Hisao
-    role: Photography
-  - people:
-      - name: Kakesu Shûichi
-    role: Editor
-  - people:
-      - name: Wakabayashi Kazuhiro
-    role: Sound
 studios:
   - Bandai Visual
   - Kodansha Ltd.

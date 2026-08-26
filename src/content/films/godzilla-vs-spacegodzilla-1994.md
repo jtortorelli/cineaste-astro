@@ -29,44 +29,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-vs-spacegodzilla-1994.webp
 release_date: 1994-12-10
 runtime: 108
-staff:
-  - people:
-      - name: Yamashita Kenshô
-    role: Director
-  - people:
-      - name: Kawakita Kôichi
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Kashiwabara Hiroshi
-    role: Screenplay
-  - people:
-      - name: Hattori Takayuki
-    role: Music
-  - people:
-      - name: Tomiyama Shôgo
-    role: Co-Producer
-  - people:
-      - name: Kishimoto Masahiro
-    role: Photography
-  - people:
-      - name: Sakai Ken
-    role: Art
-  - people:
-      - name: Miyauchi Kazuo
-    role: Sound
-  - people:
-      - name: Mochitsuki Hideki
-    role: Lighting
-  - people:
-      - name: Yoneda Miho
-    role: Editor
-  - people:
-      - name: Suzuki Kenji
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

@@ -34,45 +34,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-vs-megalon-1973.webp
 release_date: 1973-03-17
 runtime: 82
-staff:
-  - people:
-      - name: Fukuda Jun
-        slug: fukuda-jun
-    role: Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Sekizawa Shin'ichi
-        slug: sekizawa-shinichi
-    role: Story
-  - people:
-      - name: Fukuda Jun
-        slug: fukuda-jun
-    role: Screenplay
-  - people:
-      - name: Aizawa Yuzuru
-    role: Photography
-  - people:
-      - name: Honda Yoshifumi
-    role: Art
-  - people:
-      - name: Hayashi Eishirô
-    role: Sound
-  - people:
-      - name: Morimoto Masakuni
-    role: Lighting
-  - people:
-      - name: Manabe Riichirô
-    role: Music
-  - people:
-      - name: Ikeda Michiko
-    role: Editor
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX
 studios:
   - Toho Co., Ltd.
 title: Godzilla vs. Megalon

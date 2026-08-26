@@ -4,43 +4,6 @@ japanese_title: GOEMON
 poster_url: /static/images/films/posters/goemon-2009.webp
 release_date: 2009-05-01
 runtime: 128
-staff:
-  - people:
-      - name: Kiriya Kazuaki
-    role: Director
-  - people:
-      - name: Kiriya Kazuaki
-      - name: Takita Tetsurô
-    role: Screenplay
-  - people:
-      - name: Kiriya Kazuaki
-      - name: Ichise Takashige
-    role: Producer
-  - people:
-      - name: Kiriya Kazuaki
-    role: Photography Director
-  - people:
-      - name: Tanabe Kenji
-    role: Photography
-  - people:
-      - name: Ushiba Kenji
-    role: Lighting
-  - people:
-      - name: Hayashida Yûji
-    role: Art Director
-  - people:
-      - name: Matsumoto Akihiko
-    role: Music
-  - people:
-      - name: Yano Masato
-    role: Sound
-  - people:
-      - name: Kiriya Kazuaki
-      - name: Yokoyama Chisako
-    role: Editor
-  - people:
-      - name: Kiriya Kazuaki
-    role: Story
 studios:
   - Shochiku Co., Ltd.
   - Warner Bros.

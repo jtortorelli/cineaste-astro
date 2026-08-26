@@ -28,45 +28,6 @@ video_review:
 poster_url: /static/images/films/posters/godzilla-1954.webp
 release_date: 1954-11-03
 runtime: 97
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Murata Takeo
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Screenplay
-  - people:
-      - name: Tamai Masao
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-    role: Art Director
-  - people:
-      - name: Shimonaga Hisashi
-    role: Sound
-  - people:
-      - name: Ishii Chôshirô
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - alias: Tsumuraya Eiji
-        name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: Special Technology
-  - people:
-      - name: Taira Kazuji
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

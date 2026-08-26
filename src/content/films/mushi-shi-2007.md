@@ -4,35 +4,6 @@ japanese_title: 蟲師
 poster_url: /static/images/films/posters/mushi-shi-2007.webp
 release_date: 2007-03-24
 runtime: 131
-staff:
-  - people:
-      - name: Ôtomo Katsuhiro
-    role: Director
-  - people:
-      - name: Ôtomo Katsuhiro
-      - name: Murai Sadayuki
-    role: Screenplay
-  - people:
-      - name: Shibanushi Takahide
-    role: Photography
-  - people:
-      - name: Osada Tatsuya
-    role: Lighting
-  - people:
-      - name: Ikeya Noriyoshi
-    role: Art
-  - people:
-      - name: Koga Nobuaki
-    role: VFX Supervisor
-  - people:
-      - name: Haishima Kuniaki
-    role: Music
-  - people:
-      - name: Ohara Yoshiya
-    role: Sound
-  - people:
-      - name: Ueno Sôichi
-    role: Editor
 studios:
   - Tohokushinsha Film Corporation
   - Bandai Networks Co., Ltd.

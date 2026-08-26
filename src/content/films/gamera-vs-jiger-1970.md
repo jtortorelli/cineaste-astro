@@ -18,34 +18,6 @@ kaiju:
 poster_url: /static/images/films/posters/gamera-vs-jiger-1970.webp
 release_date: 1970-03-21
 runtime: 83
-staff:
-  - people:
-      - name: Yuasa Noriaki
-    role: Director
-  - people:
-      - name: Nagata Hidemasa
-    role: Producer
-  - people:
-      - name: Takahashi Nisan
-    role: Screenplay
-  - people:
-      - name: Kitazaki Akira
-    role: Photography
-  - people:
-      - name: Shimizu Yasutarô
-    role: Sound
-  - people:
-      - name: Izumi Shôzô
-    role: Lighting
-  - people:
-      - name: Yamaguchi Hiroshi
-    role: Art
-  - people:
-      - name: Kikuchi Shunsuke
-    role: Music
-  - people:
-      - name: Miyazaki Yoshiyuki
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 title: Gamera vs. Jiger

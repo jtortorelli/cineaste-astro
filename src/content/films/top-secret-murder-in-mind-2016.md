@@ -10,38 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/top-secret-murder-in-mind-2016.webp
 release_date: 2016-08-06
 runtime: 148
-staff:
-  - people:
-      - name: Ôtomo Keishi
-    role: Director
-  - people:
-      - name: Takahashi Izumi
-      - name: Ôtomo Keishi
-      - name: Lee Sork-jun
-      - name: Kim Sun-mee
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Ishizaka Takurô
-    role: Photography
-  - people:
-      - name: Hirano Shôri
-    role: Lighting
-  - people:
-      - name: Hashimoto Hajime
-    role: Art
-  - people:
-      - name: Yuwaki Fusao
-    role: Sound
-  - people:
-      - name: Imai Tsuyoshi
-    role: Editor
-  - people:
-      - name: Kosaka Kazuyori
-    role: VFX Supervisor
 studios:
   - Shochiku Co., Ltd.
   - Kinoshita Group Co., Ltd.

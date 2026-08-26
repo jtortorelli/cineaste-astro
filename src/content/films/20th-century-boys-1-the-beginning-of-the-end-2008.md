@@ -10,40 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/20th-century-boys-1-the-beginning-of-the-end-2008.webp
 release_date: 2008-08-30
 runtime: 142
-staff:
-  - people:
-      - name: Tsutsumi Yukihiko
-    role: Director
-  - people:
-      - name: Fukuda Yasushi
-      - name: Nagasaki Takashi
-      - name: Urasawa Naoki
-      - name: Watanabe Yûsuke
-    role: Screenplay
-  - people:
-      - name: Shirai Ryômei
-    role: Music Director
-  - people:
-      - name: Shirai Ryômei
-      - name: Hasebe Tôru
-      - name: Audio Highs
-      - name: Urasawa Naoki
-    role: Music
-  - people:
-      - name: Karasawa Satoru
-    role: Photography
-  - people:
-      - name: Sôma Naoki
-    role: Art
-  - people:
-      - name: Kimura Akio
-    role: Lighting
-  - people:
-      - name: Tokita Mitsuo
-    role: Sound
-  - people:
-      - name: Itô Nobuyuki
-    role: Editor
 studios:
   - Nippon Television Network Corporation
   - Shogakukan, Inc.

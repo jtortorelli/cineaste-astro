@@ -4,44 +4,6 @@ japanese_title: 風の谷のナウシカ
 poster_url: /static/images/films/posters/nausicaa-of-the-valley-of-the-wind-1984.webp
 release_date: 1984-03-11
 runtime: 116
-staff:
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Director
-  - people:
-      - name: Takahata Isao
-      - name: Tokuma Yasuyoshi
-      - name: Kondô Michitaka
-    role: Producer
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Story
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Screenplay
-  - people:
-      - name: Nakamura Mitsuki
-    role: Art Director
-  - people:
-      - name: Hisaishi Joe
-    role: Music
-  - people:
-      - name: Shiba Shigeharu
-    role: Sound
-  - people:
-      - name: An'no Hideaki
-    role: Key Animation
-  - people:
-      - name: Shiragami Kôji
-    role: Photography
-  - people:
-      - name: Kida Tomoko
-      - name: Kaneko Naoki
-      - name: Sakai Seiji
-    role: Editor
 studios:
   - Hakuhodo, Inc.
   - Tokuma Shoten Publishing Co., Ltd.

@@ -25,46 +25,6 @@ kaiju:
 poster_url: /static/images/films/posters/ultraman-the-next-2004.webp
 release_date: 2004-12-18
 runtime: 97
-staff:
-  - people:
-      - name: Konaka Kazuya
-    role: Director
-  - people:
-      - name: Kikuchi Yûichi
-    role: SFX Director
-  - people:
-      - name: Matsumoto Takahiro
-    role: Music Supervisor
-  - people:
-      - name: Tsuburaya Kazuo
-    role: Producer
-  - people:
-      - name: Ozawa Masazumi
-      - name: Ikeda Daisuke
-      - name: Kamata Shingo
-    role: Music
-  - people:
-      - name: Hasegawa Keiichi
-    role: Screenplay
-  - people:
-      - name: Ôoka Shin'ichi
-    role: Photography
-  - people:
-      - name: Ôoka Shin'ichi
-    role: VFX Supervisor
-  - people:
-      - name: Ôsawa Tetsuzô
-    role: Art Director
-  - people:
-      - name: Izumi Masakatsu
-    role: Lighting
-  - people:
-      - name: Tsurumaki Yutaka
-      - name: Tsurumaki Hitoshi
-    role: Sound
-  - people:
-      - name: Matsuki Akira
-    role: Editor
 studios:
   - Tsuburaya Productions Co., Ltd.
   - Bandai Co., Ltd.

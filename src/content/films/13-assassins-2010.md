@@ -10,31 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/13-assassins-2010.webp
 release_date: 2010-09-25
 runtime: 141
-staff:
-  - people:
-      - name: Miike Takashi
-    role: Director
-  - people:
-      - name: Tengan Daisuke
-    role: Screenplay
-  - people:
-      - name: Endô Kôji
-    role: Music
-  - people:
-      - name: Kita Nobuyasu
-    role: Photography
-  - people:
-      - name: Watanabe Yoshimi
-    role: Lighting
-  - people:
-      - name: Nakamura Jun
-    role: Sound
-  - people:
-      - name: Hayashida Yûji
-    role: Art
-  - people:
-      - name: Yamashita Kenji
-    role: Editor
 studios:
   - TV Asahi Corporation
   - Toho Co., Ltd.

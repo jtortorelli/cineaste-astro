@@ -11,32 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichis-flashing-sword-1964.webp
 release_date: 1964-07-11
 runtime: 82
-staff:
-  - people:
-      - name: Ikehiro Kazuo
-    role: Director
-  - people:
-      - name: Inuzuka Minoru
-      - name: Asai Shôzaburô
-    role: Screenplay
-  - people:
-      - name: Takemura Yasukazu
-    role: Photography
-  - people:
-      - name: Ôsumi Masao
-    role: Sound
-  - people:
-      - name: Katô Hiroya
-    role: Lighting
-  - people:
-      - name: Nishioka Yoshinobu
-    role: Art
-  - people:
-      - name: Ikeno Sei
-    role: Music
-  - people:
-      - name: Taniguchi Takashi
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

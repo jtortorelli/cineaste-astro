@@ -26,44 +26,6 @@ kaiju:
 poster_url: /static/images/films/posters/terror-of-mechagodzilla-1975.webp
 release_date: 1975-03-15
 runtime: 83
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Takayama Yukiko
-    role: Screenplay
-  - people:
-      - name: Tomioka Motoyoshi
-    role: Photography
-  - people:
-      - name: Honda Yoshifumi
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Takashima Toshio
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Yamashita Kenshô
-    role: Assistant Director
-  - people:
-      - name: Kuroiwa Yoshitami
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

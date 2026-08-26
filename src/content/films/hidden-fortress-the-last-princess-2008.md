@@ -4,44 +4,6 @@ japanese_title: 隠し砦の三悪人 THE LAST PRINCESS
 poster_url: /static/images/films/posters/hidden-fortress-the-last-princess-2008.webp
 release_date: 2008-05-10
 runtime: 118
-staff:
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: Director
-  - people:
-      - name: Kikushima Ryûzô
-      - name: Oguni Hideo
-      - name: Hashimoto Shinobu
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Story
-  - people:
-      - name: Nakashima Kazuki
-    role: Adaptation
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: 2nd Unit Director
-  - people:
-      - name: Ehara Shôji
-    role: Photography
-  - people:
-      - name: Shimizu Takeshi
-    role: Art
-  - people:
-      - name: Yoshisumi Sôsuke
-    role: Lighting
-  - people:
-      - name: Nakamura Jun
-    role: Sound
-  - people:
-      - name: Ueno Sôichi
-    role: Editor
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
 studios:
   - Toho Co., Ltd.
   - Chukyo TV Broadcasting Co., Ltd.

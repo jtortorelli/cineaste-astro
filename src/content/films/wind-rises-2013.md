@@ -4,37 +4,6 @@ japanese_title: 風立ちぬ
 poster_url: /static/images/films/posters/wind-rises-2013.webp
 release_date: 2013-07-20
 runtime: 126
-staff:
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Director
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Story
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Screenplay
-  - people:
-      - name: Suzuki Toshio
-    role: Producer
-  - people:
-      - name: Hisaishi Joe
-    role: Music
-  - people:
-      - name: Takeshige Yôji
-    role: Art Director
-  - people:
-      - name: Okui Atsushi
-    role: Photography
-  - people:
-      - name: Takagi Hajime
-    role: Sound
-  - people:
-      - name: Seyama Takeshi
-    role: Editor
 studios:
   - Nippon Television Network Corporation
   - Dentsu, Inc.

@@ -10,40 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/alive-2003.webp
 release_date: 2003-06-21
 runtime: 150
-staff:
-  - people:
-      - name: Kitamura Ryûhei
-    role: Director
-  - people:
-      - name: Kitamura Ryûhei
-      - name: Yamaguchi Yûdai
-      - name: Kiriyama Isao
-    role: Screenplay
-  - people:
-      - name: Furuya Takumi
-    role: Photography
-  - people:
-      - name: Tamura Fumihiko
-    role: Lighting
-  - people:
-      - name: Hayashida Yûji
-    role: Art
-  - people:
-      - name: Kakesu Shûichi
-    role: Editor
-  - people:
-      - name: Morino Nobuhiko
-      - name: Yano Daisuke
-    role: Music
-  - people:
-      - name: Shimomura Yûji
-    role: Action Choreographer
-  - people:
-      - name: Yamaguchi Yûdai
-    role: 2nd Unit Director
-  - people:
-      - name: Kitamura Ryûhei
-    role: Title Design
 studios:
   - Eisei Gekijo Co., Ltd.
   - Hammers, Inc.

@@ -11,32 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/death-note-2006.webp
 release_date: 2006-06-17
 runtime: 126
-staff:
-  - people:
-      - name: Kaneko Shûsuke
-    role: Director
-  - people:
-      - name: Ôishi Tetsuya
-    role: Screenplay
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Takase Hiroshi
-    role: Photography
-  - people:
-      - name: Watanabe Kôichi
-    role: Lighting
-  - people:
-      - name: Iwakura Masayuki
-    role: Sound
-  - people:
-      - name: Oikawa Ichi
-    role: Art
-  - people:
-      - name: Yafune Yôsuke
-    role: Editor
 studios:
   - Nippon Television Network Corporation
   - The Sapporo Television Broadcasting Co.,Ltd.

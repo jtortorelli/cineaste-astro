@@ -11,35 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-challenged-1967.webp
 release_date: 1967-12-30
 runtime: 87
-staff:
-  - people:
-      - name: Misumi Kenji
-    role: Director
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Makiura Chikashi
-    role: Photography
-  - people:
-      - name: Ôtani Gen
-    role: Sound
-  - people:
-      - name: Yamashita Reijirô
-    role: Lighting
-  - people:
-      - name: Shimoishizaka Shimonori
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
-  - people:
-      - name: Katsu Shintarô
-    role: Theme Song Performer
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

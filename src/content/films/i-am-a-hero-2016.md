@@ -10,35 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/i-am-a-hero-2016.webp
 release_date: 2016-04-23
 runtime: 127
-staff:
-  - people:
-      - name: Satô Shinsuke
-    role: Director
-  - people:
-      - name: Nogi Akiko
-    role: Screenplay
-  - people:
-      - name: Kawazu Tarô
-    role: Photography
-  - people:
-      - name: Saitô Iwao
-    role: Art
-  - people:
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: SFX
-  - people:
-      - name: Yokono Kazushikô
-    role: Sound
-  - people:
-      - name: Imai Tsuyoshi
-    role: Editor
-  - people:
-      - name: Shimomura Yûji
-    role: Action Coordinator
-  - people:
-      - name: Nima Fakhrara
-    role: Music
 studios:
   - Toho Co., Ltd.
   - Avex Pictures Inc.

@@ -13,36 +13,6 @@ original_works:
 poster_url: /static/images/films/posters/rurouni-kenshin-2012.webp
 release_date: 2012-08-25
 runtime: 134
-staff:
-  - people:
-      - name: Ôtomo Keishi
-    role: Director
-  - people:
-      - name: Fujii Kiyomi
-      - name: Ôtomo Keishi
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Ishizaka Takurô
-    role: Photography
-  - people:
-      - name: Hirano Shôri
-    role: Lighting
-  - people:
-      - name: Hashimoto Hajime
-    role: Art
-  - people:
-      - name: Masuko Hiroaki
-    role: Sound
-  - people:
-      - name: Imai Tsuyoshi
-    role: Editor
-  - people:
-      - name: Kurosaki Kaoru
-    role: Screenplay Cooperation
 studios:
   - Warner Bros.
   - Amuse Inc.

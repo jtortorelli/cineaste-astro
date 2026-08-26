@@ -10,42 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/fueled-the-man-they-called-pirate-2016.webp
 release_date: 2016-12-10
 runtime: 145
-staff:
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Director
-  - people:
-      - name: Moriya Keiichirô
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Screenplay
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: VFX
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Shibasaki Kôzô
-    role: Photography
-  - people:
-      - name: Ueda Nariyuki
-    role: Lighting
-  - people:
-      - name: Jôjô Anri
-    role: Art
-  - people:
-      - name: Fujimoto Ken'ichi
-    role: Sound
-  - people:
-      - name: Shibuya Kiyoko
-    role: VFX Director
-  - people:
-      - name: Miyajima Ryûji
-    role: Editor
 studios:
   - Nippon Television Network Corporation
   - Kodansha Ltd.

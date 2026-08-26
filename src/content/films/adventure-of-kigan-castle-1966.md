@@ -13,44 +13,6 @@ original_works:
 poster_url: /static/images/films/posters/adventure-of-kigan-castle-1966.webp
 release_date: 1966-04-28
 runtime: 100
-staff:
-  - people:
-      - name: Taniguchi Senkichi
-        slug: taniguchi-senkichi
-    role: Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Nezu Hiroshi
-    role: Assistant Producer
-  - people:
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-    role: Screenplay
-  - people:
-      - name: Yamada Kazuo
-    role: Photography
-  - people:
-      - name: Ueda Hiroshi
-    role: Art
-  - people:
-      - name: Nishikawa Yoshio
-    role: Sound
-  - people:
-      - name: Mori Hiromitsu
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Kuroiwa Yoshitami
-    role: Editor
-  - people:
-      - name: Kuze Ryû
-    role: Swordmaster
 studios:
   - Toho Co., Ltd.
   - Mifune Productions Co., Ltd.

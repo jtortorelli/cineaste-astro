@@ -10,29 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/stand-by-me-doraemon-2014.webp
 release_date: 2014-08-08
 runtime: 95
-staff:
-  - people:
-      - name: Yagi Ryûichi
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Director
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Yagi Ryûichi
-    role: Storyboards
-  - people:
-      - name: Hanafusa Makoto
-    role: Art Director
-  - people:
-      - name: Suzuki Takeyuki
-    role: CG Supervisor
 studios:
   - Fujiko Productions
   - Shin-Ei Animation Co., Ltd.

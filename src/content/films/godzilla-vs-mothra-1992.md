@@ -28,48 +28,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-vs-mothra-1992.webp
 release_date: 1992-12-12
 runtime: 102
-staff:
-  - people:
-      - name: Ôkawara Takao
-    role: Director
-  - people:
-      - name: Kawakita Kôichi
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Ômori Kazuki
-    role: Screenplay
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music Director
-  - people:
-      - name: Kishimoto Masahiro
-    role: Photography
-  - people:
-      - name: Sakai Ken
-    role: Art
-  - people:
-      - name: Saitô Teiichi
-    role: Sound
-  - people:
-      - name: Mochitsuki Hideki
-    role: Lighting
-  - people:
-      - name: Yoneda Miho
-    role: Editor
-  - people:
-      - name: Tezuka Masaaki
-    role: Assistant Director
-  - people:
-      - name: Suzuki Kenji
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

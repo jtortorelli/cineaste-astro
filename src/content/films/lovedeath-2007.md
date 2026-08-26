@@ -10,49 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/lovedeath-2007.webp
 release_date: 2007-05-12
 runtime: 158
-staff:
-  - people:
-      - name: Kitamura Ryûhei
-    role: Director
-  - people:
-      - name: Kiriyama Isao
-      - name: Kitamura Ryûhei
-    role: Screenplay
-  - people:
-      - name: Kitamura Ryûhei
-      - name: Takahashi Tsutomu
-    role: Producer
-  - people:
-      - name: Kanaya Kôji
-    role: Photography
-  - people:
-      - name: Morino Nobuhiko
-      - name: Yano Daisuke
-    role: Music
-  - people:
-      - name: Shiraishi Manabu
-    role: Art Director
-  - people:
-      - name: Nagasaka Tomoki
-    role: Editor
-  - people:
-      - name: Kimura Akio
-    role: Lighting
-  - people:
-      - name: Sakaki Hideo
-    role: Assistant Producer
-  - people:
-      - name: Sakaki Hideo
-    role: Chief Assistant Director
-  - people:
-      - name: Kubota Toshiyuki
-    role: Sound
-  - people:
-      - name: Matsumoto Minoru
-    role: Production Assistant
-  - people:
-      - name: Takeda Shinji
-    role: Additional Music
 studios:
   - Suplex, Inc.
   - Universal Pictures Japan

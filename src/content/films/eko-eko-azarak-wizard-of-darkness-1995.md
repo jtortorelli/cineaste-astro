@@ -10,38 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/eko-eko-azarak-wizard-of-darkness-1995.webp
 release_date: 1995-04-08
 runtime: 80
-staff:
-  - people:
-      - name: Satô Shimako
-    role: Director
-  - people:
-      - name: Takegami Junki
-    role: Screenplay
-  - people:
-      - name: Satô Shimako
-    role: Story Draft
-  - people:
-      - name: Katakura Mikiya
-    role: Music
-  - people:
-      - name: Sudô Shôei
-    role: Photography
-  - people:
-      - name: Yoshimura Mitsutaku
-    role: Lighting
-  - people:
-      - name: Inoue Kôji
-    role: Sound
-  - people:
-      - name: Sakamoto Kyodai
-    role: Art
-  - people:
-      - name: Kawahara Hiroshi
-    role: Editor
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Digital VFX
 studios:
   - Gaga Communications, Inc.
   - Tsuburaya Productions Co., Ltd.

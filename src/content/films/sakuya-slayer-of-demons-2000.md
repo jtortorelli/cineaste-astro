@@ -4,43 +4,6 @@ japanese_title: さくや妖怪伝
 poster_url: /static/images/films/posters/sakuya-slayer-of-demons-2000.webp
 release_date: 2000-08-12
 runtime: 88
-staff:
-  - people:
-      - name: Haraguchi Tomoo
-    role: Director
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: SFX Director
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: SFX Supervisor
-  - people:
-      - name: Haraguchi Tomoo
-    role: Story
-  - people:
-      - name: Mitsumasu Kimiaki
-    role: Screenplay
-  - people:
-      - name: Ehara Shôji
-    role: Photography
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Harada Tetsuo
-    role: Art
-  - people:
-      - name: Nakaji Toyotaka
-    role: Sound
-  - people:
-      - name: Tsuchino Hiroshi
-    role: Lighting
-  - people:
-      - name: Okuda Hiroshi
-    role: Editor
 studios:
   - Towani
   - Warner Bros.

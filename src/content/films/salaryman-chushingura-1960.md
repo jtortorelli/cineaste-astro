@@ -4,25 +4,6 @@ japanese_title: サラリーマン忠臣蔵
 title: Salaryman Chushingura
 release_date: 1960-12-25
 draft: true
-staff:
-  - people:
-      - name: Sugie Toshio
-    role: Director
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Ihara Yasuo
-    role: Still
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Kankura Taiichi
-    role: Photography
-  - people:
-      - name: Kôzu Yoshiyuki
-    role: Music
 top_billed_cast:
   - name: Morishige Hisaya
     role: Ôishi Yoshio

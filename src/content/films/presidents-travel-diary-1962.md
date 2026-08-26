@@ -4,40 +4,6 @@ japanese_title: 社長洋行記
 title: President’s Travel Diary
 release_date: 1962-04-29
 draft: true
-staff:
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Sugie Toshio
-    role: Director
-  - people:
-      - name: Kankura Taiichi
-    role: Photography
-  - people:
-      - name: Yamaguchi Osamu
-    role: Lighting
-  - people:
-      - name: Muraki Yoshirô
-    role: Art
-  - people:
-      - name: Tone Norio
-    role: Sound
-  - people:
-      - name: Kôzu Yoshiyuki
-    role: Music
-  - people:
-      - name: Obata Chôzô
-    role: Editing
-  - people:
-      - name: Nonagase Samaji
-    role: Assistant Director
-  - people:
-      - name: Tanaka Kazukiyo
-    role: Still
 top_billed_cast:
   - name: Morishige Hisaya
     role: Honda Einosuke

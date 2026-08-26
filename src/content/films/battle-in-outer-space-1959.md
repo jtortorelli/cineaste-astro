@@ -6,52 +6,6 @@ japanese_title: 宇宙大戦争
 poster_url: /static/images/films/posters/battle-in-outer-space-1959.webp
 release_date: 1959-12-26
 runtime: 93
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Okami Jôjirô
-        slug: okami-jojiro
-    role: Story
-  - people:
-      - name: Sekizawa Shin'ichi
-        slug: sekizawa-shinichi
-    role: Screenplay
-  - people:
-      - name: Koizumi Hajime
-        slug: koizumi-hajime
-    role: Photography
-  - people:
-      - name: Abe Teruaki
-    role: Art
-  - people:
-      - name: Ishikawa Rokurô
-    role: Lighting
-  - people:
-      - name: Mikami Chôshichirô
-      - name: Miyazaki Masanobu
-    role: Sound
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Taira Kazuji
-    role: Editor
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
 studios:
   - Toho Co., Ltd.
 supporting_cast:

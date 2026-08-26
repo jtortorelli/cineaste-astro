@@ -10,48 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/lorelei-the-witch-of-the-pacific-ocean-2005.webp
 release_date: 2005-03-05
 runtime: 128
-staff:
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: Director
-  - people:
-      - name: Suzuki Satoshi
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: Assistant Director
-  - people:
-      - name: Sakô Akira
-    role: Photography
-  - people:
-      - name: Shimizu Takeshi
-    role: Art
-  - people:
-      - name: Watanabe Kôichi
-    role: Lighting
-  - people:
-      - name: Tsurumaki Hitoshi
-    role: Sound
-  - people:
-      - name: Okuda Hiroshi
-    role: Editor
-  - people:
-      - name: Haraguchi Tomoo
-    role: Special Makeup
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: SFX Director
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
   - Fuji Television Network, Inc.

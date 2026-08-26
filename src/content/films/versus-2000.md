@@ -4,39 +4,6 @@ japanese_title: VERSUS
 poster_url: /static/images/films/posters/versus-2000.webp
 release_date: 2000-09-08
 runtime: 119
-staff:
-  - people:
-      - name: Kitamura Ryûhei
-    role: Director
-  - people:
-      - name: Kitamura Ryûhei
-      - name: Yamaguchi Yûdai
-    role: Screenplay
-  - people:
-      - name: Furuya Takumi
-    role: Photography
-  - people:
-      - name: Kakesu Shûichi
-    role: Editor
-  - people:
-      - name: Shimomura Yûji
-    role: Action Director
-  - people:
-      - name: Morino Nobuhiko
-    role: Music
-  - people:
-      - name: Yamaguchi Yûdai
-    role: 2nd Unit Director
-  - people:
-      - name: Tamura Fumihiko
-      - name: Kon'no Takeshi
-    role: Lighting
-  - people:
-      - name: Shimomura Yûji
-    role: Stunts
-  - people:
-      - name: Kiriyama Isao
-    role: Screenplay Advisor
 studios:
   - KSS, Inc.
   - NAPALMFILMS

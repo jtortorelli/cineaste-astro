@@ -7,34 +7,6 @@ japanese_title: 仮面ライダー THE FIRST
 poster_url: /static/images/films/posters/kamen-rider-the-first-2005.webp
 release_date: 2005-11-05
 runtime: 90
-staff:
-  - people:
-      - name: Nagaishi Takao
-    role: Director
-  - people:
-      - name: Ishinomori Shôtarô
-    role: Story
-  - people:
-      - name: Inoue Toshiki
-    role: Screenplay
-  - people:
-      - name: Yasukawa Gorô
-    role: Music
-  - people:
-      - name: Tanaka Kazushige
-    role: Photography
-  - people:
-      - name: Wada Hiroshi
-    role: Art
-  - people:
-      - name: Sunaga Hiroshi
-    role: Editor
-  - people:
-      - name: Mieno Seiichirô
-    role: Lighting
-  - people:
-      - name: Murozono Tsuyoshi
-    role: Sound
 studios:
   - Toei Co., Ltd.
   - Toei Advertising, Ltd.

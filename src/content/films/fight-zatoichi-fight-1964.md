@@ -11,34 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/fight-zatoichi-fight-1964.webp
 release_date: 1964-10-17
 runtime: 87
-staff:
-  - people:
-      - name: Misumi Kenji
-    role: Director
-  - people:
-      - name: Hoshikawa Seiji
-      - name: Yoshida Tetsurô
-      - name: Matsumura Masaharu
-    role: Screenplay
-  - people:
-      - name: Makiura Chikashi
-    role: Photography
-  - people:
-      - name: Ôtani Iwao
-    role: Sound
-  - people:
-      - name: Yamashita Reijirô
-    role: Lighting
-  - people:
-      - name: Naitô Akira
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Suganuma Kanji
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 title: Fight, Zatoichi, Fight

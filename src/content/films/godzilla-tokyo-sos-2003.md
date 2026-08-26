@@ -25,38 +25,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-tokyo-sos-2003.webp
 release_date: 2003-12-13
 runtime: 91
-staff:
-  - people:
-      - name: Tezuka Masaaki
-    role: Director
-  - people:
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Mimura Wataru
-      - name: Tezuka Masaaki
-    role: Screenplay
-  - people:
-      - name: Sekiguchi Yoshinori
-    role: Photography
-  - people:
-      - name: Seshimo Yukiharu
-    role: Art
-  - people:
-      - name: Saitô Teiichi
-    role: Sound
-  - people:
-      - name: Mochitsuki Hideki
-    role: Lighting
-  - people:
-      - name: Fushima Shin'ichi
-    role: Editor
-  - people:
-      - name: Ôshima Michiru
-    role: Music
-  - people:
-      - name: Asada Eiichi
-    role: SFX
 studios:
   - Toho Co., Ltd.
 supporting_cast:

@@ -11,34 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-and-the-fugitives-1968.webp
 release_date: 1968-08-10
 runtime: 82
-staff:
-  - people:
-      - name: Yasuda Kimiyoshi
-    role: Director
-  - people:
-      - name: Naoi Kinya
-    role: Screenplay
-  - people:
-      - name: Miyagawa Kazuo
-    role: Photography
-  - people:
-      - name: Ôtani Gen
-    role: Sound
-  - people:
-      - name: Nakaoka Genken
-    role: Lighting
-  - people:
-      - name: Katô Shigeru
-    role: Art
-  - people:
-      - name: Kaburagi Hajime
-    role: Music
-  - people:
-      - name: Suganuma Kanji
-    role: Editor
-  - people:
-      - name: Katsu Shintarô
-    role: Theme Song Performer
 studios:
   - Daiei Film Co., Ltd.
 title: Zatoichi and the Fugitives

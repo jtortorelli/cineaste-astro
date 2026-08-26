@@ -4,34 +4,6 @@ japanese_title: 仮面ライダー THE NEXT
 poster_url: /static/images/films/posters/kamen-rider-the-next-2007.webp
 release_date: 2007-10-27
 runtime: 113
-staff:
-  - people:
-      - name: Tasaki Ryûta
-    role: Director
-  - people:
-      - name: Ishinomori Shôtarô
-    role: Story
-  - people:
-      - name: Inoue Toshiki
-    role: Screenplay
-  - people:
-      - name: Yasukawa Gorô
-    role: Music
-  - people:
-      - name: Tanaka Kazushige
-    role: Photography
-  - people:
-      - name: Wada Hiroshi
-    role: Art
-  - people:
-      - name: Ôhata Hideaki
-    role: Editor
-  - people:
-      - name: Mieno Seiichirô
-    role: Lighting
-  - people:
-      - name: Murozono Tsuyoshi
-    role: Sound
 studios:
   - Toei Co., Ltd.
   - Toei Advertising, Ltd.

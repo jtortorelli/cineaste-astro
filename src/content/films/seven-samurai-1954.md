@@ -4,35 +4,6 @@ japanese_title: 七人の侍
 poster_url: /static/images/films/posters/seven-samurai-1954.webp
 release_date: 1954-04-26
 runtime: 207
-staff:
-  - people:
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Director
-  - people:
-      - name: Motoki Sôjirô
-    role: Producer
-  - people:
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-      - name: Hashimoto Shinobu
-      - name: Oguni Hideo
-    role: Screenplay
-  - people:
-      - name: Nakai Asakazu
-    role: Photography
-  - people:
-      - name: Matsuyama Takashi
-    role: Art
-  - people:
-      - name: Mori Shigeru
-    role: Lighting
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Hayasaka Fumio
-    role: Music
 studios:
   - Toho Co., Ltd.
 supporting_cast:

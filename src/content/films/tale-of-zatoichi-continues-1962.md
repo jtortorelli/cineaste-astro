@@ -11,31 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/tale-of-zatoichi-continues-1962.webp
 release_date: 1962-10-12
 runtime: 73
-staff:
-  - people:
-      - name: Mori Kazuo
-    role: Director
-  - people:
-      - name: Inuzuka Minoru
-    role: Screenplay
-  - people:
-      - name: Honda Shôzô
-    role: Photography
-  - people:
-      - name: Hayashi Tsuchitarô
-    role: Sound
-  - people:
-      - name: Itô Teiichi
-    role: Lighting
-  - people:
-      - name: Ôta Seiichi
-    role: Art
-  - people:
-      - name: Saitô Ichirô
-    role: Music
-  - people:
-      - name: Taniguchi Takashi
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

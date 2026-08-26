@@ -14,55 +14,6 @@ original_works:
 poster_url: /static/images/films/posters/matango-1963.webp
 release_date: 1963-08-11
 runtime: 89
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Hoshi Shin'ichi
-      - name: Fukushima Masami
-    role: Story
-  - people:
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-        alias: Kimura Takeshi
-    role: Screenplay
-  - people:
-      - name: Koizumi Hajime
-        slug: koizumi-hajime
-    role: Photography
-  - people:
-      - name: Ikuno Shigekazu
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Kojima Shôshichi
-    role: Lighting
-  - people:
-      - name: Bekku Sadao
-    role: Music
-  - people:
-      - name: Kaneko Reiko
-    role: Editor
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 title: Matango

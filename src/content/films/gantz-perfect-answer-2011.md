@@ -10,36 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/gantz-perfect-answer-2011.webp
 release_date: 2011-04-23
 runtime: 141
-staff:
-  - people:
-      - name: Satô Shinsuke
-    role: Director
-  - people:
-      - name: Watanabe Yûsuke
-    role: Screenplay
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Kawazu Tarô
-    role: Photography
-  - people:
-      - name: Harada Yasuaki
-    role: Art Director
-  - people:
-      - name: Yokono Kazushikô
-    role: Sound
-  - people:
-      - name: Imai Tsuyoshi
-    role: Editor
-  - people:
-      - name: Shimomura Yûji
-    role: Action Director
-  - people:
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: SFX Director
 studios:
   - Nippon Television Network Corporation
   - Shueisha, Inc.

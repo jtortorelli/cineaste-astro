@@ -18,33 +18,6 @@ original_works:
 poster_url: /static/images/films/posters/crossfire-2000.webp
 release_date: 2000-06-10
 runtime: 115
-staff:
-  - people:
-      - name: Kaneko Shûsuke
-    role: Director
-  - people:
-      - name: Yamada Kôta
-      - name: Yokotani Masahiro
-      - name: Kaneko Shûsuke
-    role: Screenplay
-  - people:
-      - name: Ôtani Kô
-    role: Music
-  - people:
-      - name: Takama Kenji
-    role: Photography
-  - people:
-      - name: Miike Toshio
-    role: Art
-  - people:
-      - name: Miyauchi Kazuo
-    role: Sound
-  - people:
-      - name: Saito Kaoru
-    role: Lighting
-  - people:
-      - name: Tomita Isao
-    role: Editor
 studios:
   - Toho Co., Ltd.
   - Tokyo Broadcasting System Television, Inc.

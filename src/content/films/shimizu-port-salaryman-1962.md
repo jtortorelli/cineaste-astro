@@ -4,37 +4,6 @@ japanese_title: サラリーマン清水港
 title: Shimizu Port Salaryman
 release_date: 1962-01-03
 draft: true
-staff:
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Matsubayashi Shûe
-    role: Director
-  - people:
-      - name: Nishigaki Rokurô
-    role: Photography
-  - people:
-      - name: Iwashita Kôichi
-    role: Editing
-  - people:
-      - name: Kôzu Yoshiyuki
-    role: Music
-  - people:
-      - name: Hamakami Hyôe
-    role: Art
-  - people:
-      - name: Nishikawa Tsuruzô
-    role: Lighting
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Iwauchi Katsuki
-    role: Assistant Director
 top_billed_cast:
   - name: Morishige Hisaya
     role: Yamamoto Chôgorô

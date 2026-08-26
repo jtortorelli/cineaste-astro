@@ -11,32 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichis-vengeance-1966.webp
 release_date: 1966-05-03
 runtime: 83
-staff:
-  - people:
-      - name: Tanaka Tokuzô
-    role: Director
-  - people:
-      - name: Takaiwa Hajime
-    role: Screenplay
-  - people:
-      - name: Miyagawa Kazuo
-    role: Photography
-  - people:
-      - name: Kaibara Yukio
-    role: Sound
-  - people:
-      - name: Nakaoka Genken
-    role: Lighting
-  - people:
-      - name: Nishioka Yoshinobu
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Suganuma Kanji
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 title: Zatoichi's Vengeance

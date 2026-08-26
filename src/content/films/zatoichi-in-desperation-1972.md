@@ -11,36 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-in-desperation-1972.webp
 release_date: 1972-09-02
 runtime: 95
-staff:
-  - people:
-      - name: Katsu Shintarô
-    role: Director
-  - people:
-      - name: Katsu Shintarô
-      - name: Nishioka Hiroyoshi
-    role: Producer
-  - people:
-      - name: Inuzuka Minoru
-    role: Screenplay
-  - people:
-      - name: Morita Fujio
-    role: Photography
-  - people:
-      - name: Ôsumi Masao
-    role: Sound
-  - people:
-      - name: Nakaoka Genken
-    role: Lighting
-  - people:
-      - name: Ôta Seiichi
-    role: Art
-  - people:
-      - name: Murai Kunihiko
-      - name: Miyamoto Mitsuo
-    role: Music
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
 studios:
   - Toho Co., Ltd.
   - Katsu Productions

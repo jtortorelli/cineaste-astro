@@ -11,32 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-on-the-road-1963.webp
 release_date: 1963-11-30
 runtime: 88
-staff:
-  - people:
-      - name: Yasuda Kimiyoshi
-    role: Director
-  - people:
-      - name: Inuzuka Minoru
-    role: Screenplay
-  - people:
-      - name: Honda Shôzô
-    role: Photography
-  - people:
-      - name: Nagaoka Sakae
-    role: Sound
-  - people:
-      - name: Mima Hiroshi
-    role: Lighting
-  - people:
-      - name: Nishioka Yoshinobu
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Suganuma Kanji
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

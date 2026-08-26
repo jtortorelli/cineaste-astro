@@ -11,36 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/samaritan-zatoichi-1968.webp
 release_date: 1968-12-28
 runtime: 82
-staff:
-  - people:
-      - name: Misumi Kenji
-    role: Director
-  - people:
-      - name: Saruwaka Kiyokata
-      - name: Sugiura Hisashi
-      - name: Yoshida Tetsurô
-    role: Screenplay
-  - people:
-      - name: Morita Fujio
-    role: Photography
-  - people:
-      - name: Kaibara Yukio
-    role: Sound
-  - people:
-      - name: Kurokawa Shunji
-    role: Lighting
-  - people:
-      - name: Naitô Akira
-    role: Art
-  - people:
-      - name: Ikeno Sei
-    role: Music
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
-  - people:
-      - name: Katsu Shintarô
-    role: Theme Song Performer
 studios:
   - Daiei Film Co., Ltd.
 title: Samaritan Zatoichi

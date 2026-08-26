@@ -13,34 +13,6 @@ original_works:
 poster_url: /static/images/films/posters/ring-0-birthday-2000.webp
 release_date: 2000-01-22
 runtime: 99
-staff:
-  - people:
-      - name: Tsuruta Norio
-    role: Director
-  - people:
-      - name: Takahashi Hiroshi
-    role: Screenplay
-  - people:
-      - name: Shibanushi Takahide
-    role: Photography
-  - people:
-      - name: Yamaguchi Osamu
-    role: Art
-  - people:
-      - name: Watanabe Yoshimi
-    role: Lighting
-  - people:
-      - name: Ogata Shin'ichirô
-    role: Music
-  - people:
-      - name: Segawa Tetsuo
-    role: Sound
-  - people:
-      - name: Sunaga Hiroshi
-    role: Editor
-  - people:
-      - name: Haraguchi Tomoo
-    role: Special Modeling
 studios:
   - Kadokawa Shoten Publishing Co., Ltd.
   - Asmik Ace, Inc.

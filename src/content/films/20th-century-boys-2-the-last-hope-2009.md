@@ -10,41 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/20th-century-boys-2-the-last-hope-2009.webp
 release_date: 2009-01-31
 runtime: 139
-staff:
-  - people:
-      - name: Tsutsumi Yukihiko
-    role: Director
-  - people:
-      - name: Nagasaki Takashi
-      - name: Watanabe Yûsuke
-    role: Screenplay
-  - people:
-      - name: Urasawa Naoki
-    role: Screenplay Supervision
-  - people:
-      - name: Shirai Ryômei
-    role: Music Director
-  - people:
-      - name: Shirai Ryômei
-      - name: Hasebe Tôru
-      - name: Audio Highs
-      - name: Urasawa Naoki
-    role: Music
-  - people:
-      - name: Karasawa Satoru
-    role: Photography
-  - people:
-      - name: Sôma Naoki
-    role: Art
-  - people:
-      - name: Kimura Akio
-    role: Lighting
-  - people:
-      - name: Tokita Mitsuo
-    role: Sound
-  - people:
-      - name: Itô Nobuyuki
-    role: Editor
 studios:
   - Nippon Television Network Corporation
   - Shogakukan, Inc.

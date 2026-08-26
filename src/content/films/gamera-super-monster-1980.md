@@ -34,34 +34,6 @@ kaiju:
 poster_url: /static/images/films/posters/gamera-super-monster-1980.webp
 release_date: 1980-03-20
 runtime: 109
-staff:
-  - people:
-      - name: Yuasa Noriaki
-    role: Director
-  - people:
-      - name: Ôba Hirokazu
-    role: Producer
-  - people:
-      - name: Takahashi Nisan
-    role: Screenplay
-  - people:
-      - name: Kikuchi Shunsuke
-    role: Music
-  - people:
-      - name: Kitazaki Akira
-    role: Photography
-  - people:
-      - name: Tobita Kimio
-    role: Sound
-  - people:
-      - name: Shimada Tadaaki
-    role: Lighting
-  - people:
-      - name: Yokoshima Tsuneo
-    role: Art
-  - people:
-      - name: Taga Tamotsu
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 title: "Gamera: Super Monster"

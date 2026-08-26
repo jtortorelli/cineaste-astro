@@ -14,31 +14,6 @@ kaiju:
 poster_url: /static/images/films/posters/gamera-the-giant-monster-1965.webp
 release_date: 1965-11-27
 runtime: 78
-staff:
-  - people:
-      - name: Yuasa Noriaki
-    role: Director
-  - people:
-      - name: Takahashi Nisan
-    role: Screenplay
-  - people:
-      - name: Munekawa Nobuo
-    role: Photography
-  - people:
-      - name: Watanabe Toshikazu
-    role: Sound
-  - people:
-      - name: Itô Yukio
-    role: Lighting
-  - people:
-      - name: Inoue Akira
-    role: Art
-  - people:
-      - name: Yamanouchi Tadashi
-    role: Music
-  - people:
-      - name: Nakashizu Tatsuji
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 title: Gamera, the Giant Monster

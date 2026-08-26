@@ -4,35 +4,6 @@ japanese_title: ケルベロス-地獄の番犬
 poster_url: /static/images/films/posters/stray-dog-kerberos-panzer-cops-1991.webp
 release_date: 1991-03-23
 runtime: 99
-staff:
-  - people:
-      - name: Oshii Mamoru
-    role: Director
-  - people:
-      - name: Oshii Mamoru
-    role: Story
-  - people:
-      - name: Oshii Mamoru
-    role: Screenplay
-  - people:
-      - name: Mamiya Yôsuke
-    role: Photography
-  - people:
-      - name: Hosaka Yoshimi
-    role: Lighting
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Asari Naoko
-    role: Sound
-  - people:
-      - name: Morita Seiji
-    role: Editor
-  - people:
-      - name: Tezuka Tsunemitsu
-    role: Art
 studios:
   - Bandai Co., Ltd.
   - Fuji Television Network, Inc.

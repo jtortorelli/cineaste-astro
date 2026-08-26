@@ -10,31 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/one-missed-call-2-2005.webp
 release_date: 2005-02-05
 runtime: 106
-staff:
-  - people:
-      - name: Tsukamoto Renpei
-    role: Director
-  - people:
-      - name: Daira Miwako
-    role: Screenplay
-  - people:
-      - name: Kikumura Tokushô
-    role: Photography
-  - people:
-      - name: Saiki Masaru
-    role: Lighting
-  - people:
-      - name: Nitta Takayuki
-    role: Art
-  - people:
-      - name: Takizawa Osamu
-    role: Sound
-  - people:
-      - name: Ueno Sôichi
-    role: Editor
-  - people:
-      - name: Endô Kôji
-    role: Music
 studios:
   - Kadokawa Corporation
   - Nippon Television Network Corporation

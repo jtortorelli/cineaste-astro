@@ -10,31 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/parasite-eve-1997.webp
 release_date: 1997-02-01
 runtime: 120
-staff:
-  - people:
-      - name: Ochiai Masayuki
-    role: Director
-  - people:
-      - name: Sena Hideaki
-    role: Screenplay
-  - people:
-      - name: Hisaishi Joe
-    role: Music
-  - people:
-      - name: Shibasaki Kôzô
-    role: Photography
-  - people:
-      - name: Yoshikazu Sôsuke
-    role: Lighting
-  - people:
-      - name: Yamakata Hiroshi
-    role: Sound
-  - people:
-      - name: Yanagawa Kazuo
-    role: Art
-  - people:
-      - name: Fukazawa Yoshifumi
-    role: Editor
 studios:
   - Fuji Television Network, Inc.
   - Kadokawa Shoten Publishing Co., Ltd.

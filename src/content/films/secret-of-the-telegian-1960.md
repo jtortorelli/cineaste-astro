@@ -4,46 +4,6 @@ japanese_title: 電送人間
 poster_url: /static/images/films/posters/secret-of-the-telegian-1960.webp
 release_date: 1960-04-10
 runtime: 85
-staff:
-  - people:
-      - name: Fukuda Jun
-        slug: fukuda-jun
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Sekizawa Shin'ichi
-        slug: sekizawa-shinichi
-    role: Screenplay
-  - people:
-      - name: Yamada Kazuo
-    role: Photography
-  - people:
-      - name: Hamagami Kyôe
-    role: Art
-  - people:
-      - name: Nishikawa Yoshio
-      - name: Miyazaki Masanobu
-    role: Sound
-  - people:
-      - name: Nishikawa Tsuruzô
-    role: Lighting
-  - people:
-      - name: Ikeno Sei
-    role: Music
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
-  - people:
-      - name: Taira Kazuji
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

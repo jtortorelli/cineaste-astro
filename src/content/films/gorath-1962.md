@@ -14,53 +14,6 @@ kaiju:
 poster_url: /static/images/films/posters/gorath-1962.webp
 release_date: 1962-03-21
 runtime: 88
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Okami Jôjirô
-        slug: okami-jojiro
-    role: Story
-  - people:
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-        alias: Kimura Takeshi
-    role: Screenplay
-  - people:
-      - name: Koizumi Hajime
-        slug: koizumi-hajime
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-      - name: Abe Teruaki
-    role: Art
-  - people:
-      - name: Ban Toshiya
-    role: Sound
-  - people:
-      - name: Takashima Toshio
-    role: Lighting
-  - people:
-      - name: Ishii Kan
-    role: Music
-  - people:
-      - name: Kaneko Reiko
-    role: Editor
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
 studios:
   - Toho Co., Ltd.
 supporting_cast:

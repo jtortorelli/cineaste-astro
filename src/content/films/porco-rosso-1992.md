@@ -4,40 +4,6 @@ japanese_title: 紅の豚
 poster_url: /static/images/films/posters/porco-rosso-1992.webp
 release_date: 1992-07-18
 runtime: 93
-staff:
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Director
-  - people:
-      - name: Suzuki Toshio
-      - name: Tokuma Yasuyoshi
-      - name: Toshimitsu Matsuo
-      - name: Sasaki Yoshio
-    role: Producer
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Story
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Screenplay
-  - people:
-      - name: Hisaishi Joe
-    role: Music
-  - people:
-      - name: Hisamura Kazu
-    role: Art Director
-  - people:
-      - name: Okui Atsushi
-    role: Photography
-  - people:
-      - name: Seyama Takeshi
-    role: Editor
-  - people:
-      - name: Asari Naoko
-    role: Sound
 studios:
   - Tokuma Shoten Publishing Co., Ltd.
   - Japan Airlines Co., Ltd.

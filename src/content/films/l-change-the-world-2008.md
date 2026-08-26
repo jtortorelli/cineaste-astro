@@ -11,36 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/l-change-the-world-2008.webp
 release_date: 2008-02-09
 runtime: 129
-staff:
-  - people:
-      - name: Nakata Hideo
-    role: Director
-  - people:
-      - name: Kobayashi Hirotoshi
-    role: Screenplay
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Kikumura Tokushô
-    role: Photography
-  - people:
-      - name: Nakamura Yûki
-    role: Lighting
-  - people:
-      - name: Yauchi Kyôko
-    role: Art
-  - people:
-      - name: Komatsu Masato
-    role: Sound
-  - people:
-      - name: Takahashi Nobuyuki
-    role: Editor
-  - people:
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: SFX Director
 studios:
   - Nippon Television Network Corporation
   - The Sapporo Television Broadcasting Co.,Ltd.

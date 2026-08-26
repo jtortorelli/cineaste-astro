@@ -6,49 +6,6 @@ japanese_title: 日本誕生
 poster_url: /static/images/films/posters/three-treasures-1959.webp
 release_date: 1959-10-25
 runtime: 182
-staff:
-  - people:
-      - name: Inagaki Hiroshi
-        slug: inagaki-hiroshi
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Fujimoto Sanezumi
-        slug: fujimoto-sanezumi
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Yasumi Toshio
-      - name: Kikushima Ryûzô
-    role: Screenplay
-  - people:
-      - name: Itô Kisaku
-    role: Art Director
-  - people:
-      - name: Yamada Kazuo
-    role: Photography
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Nishikawa Yoshio
-      - name: Shimonaga Hisashi
-    role: Sound
-  - people:
-      - name: Kojima Shôshichi
-    role: Lighting
-  - people:
-      - name: Taira Kazuji
-    role: Editor
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
 studios:
   - Toho Co., Ltd.
 supporting_cast:

@@ -4,37 +4,6 @@ japanese_title: 社長三代記
 title: Three Generations of Presidents
 release_date: 1958-01-03
 draft: true
-staff:
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Taku Kôji
-    role: Music
-  - people:
-      - name: Ohara Jôji
-    role: Photography
-  - people:
-      - name: Muraki Yoshirô
-    role: Art
-  - people:
-      - name: Ôi Kôzô
-    role: Editing
-  - people:
-      - name: Matsubayashi Shûe
-    role: Director
-  - people:
-      - name: Nishikawa Tsuruzô
-    role: Lighting
-  - people:
-      - name: Nishikawa Yoshio
-    role: Sound
-  - people:
-      - name: Okamoto Kihachi
-    role: Assistant Director
 top_billed_cast:
   - name: Morishige Hisaya
     role: Asakawa Keitarô

@@ -34,48 +34,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-vs-mechagodzilla-1974.webp
 release_date: 1974-03-21
 runtime: 84
-staff:
-  - people:
-      - name: Fukuda Jun
-        slug: fukuda-jun
-    role: Director
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Sekizawa Shin'ichi
-        slug: sekizawa-shinichi
-      - name: Fukushima Masami
-    role: Story
-  - people:
-      - name: Yamaura Hiroyasu
-      - name: Fukuda Jun
-        slug: fukuda-jun
-    role: Screenplay
-  - people:
-      - name: Aizawa Yuzuru
-    role: Photography
-  - people:
-      - name: Satsuya Kazuo
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Morimoto Masakuni
-    role: Lighting
-  - people:
-      - name: Satô Masaru
-        slug: sato-masaru
-    role: Music
-  - people:
-      - name: Ikeda Michiko
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

@@ -4,46 +4,6 @@ japanese_title: 続・社長太平記
 title: "President’s Peaceful Period: Part II"
 release_date: 1959-03-15
 draft: true
-staff:
-  - people:
-      - name: Shimizu Masashi
-    role: Producer
-  - people:
-      - name: Mori Iwao
-    role: Still
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Matsui Hachirô
-    role: Music
-  - people:
-      - name: Nishigaki Rokurô
-    role: Photography
-  - people:
-      - name: Ogawa Kazuo
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Nishikawa Tsuruzô
-    role: Lighting
-  - people:
-      - name: Ôi Eiji
-    role: Editing
-  - people:
-      - name: Iwashiro Eiji
-    role: Chief Assistant Director
-  - people:
-      - name: Miyazaki Masanobu
-    role: Dubbing
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Aoyagi Nobuo
-    role: Director
 top_billed_cast:
   - name: Morishige Hisaya
     role: Makita Shôtarô

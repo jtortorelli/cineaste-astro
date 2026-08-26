@@ -22,42 +22,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-vs-hedorah-1971.webp
 release_date: 1971-07-24
 runtime: 85
-staff:
-  - people:
-      - name: Banno Yoshimitsu
-    role: Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-      - name: Banno Yoshimitsu
-    role: Screenplay
-  - people:
-      - name: Manoda Yôichi
-    role: Photography
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: Art
-  - people:
-      - name: Fujiyoshi Masao
-    role: Sound
-  - people:
-      - name: Hara Fun'yoshi
-    role: Lighting
-  - people:
-      - name: Manabe Riichirô
-    role: Music
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX
-  - people:
-      - name: Kuroiwa Yoshitami
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

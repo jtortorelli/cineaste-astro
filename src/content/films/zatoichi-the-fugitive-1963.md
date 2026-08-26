@@ -11,35 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-the-fugitive-1963.webp
 release_date: 1963-08-10
 runtime: 86
-staff:
-  - people:
-      - name: Tanaka Tokuzô
-    role: Director
-  - people:
-      - name: Inuzuka Minoru
-    role: Adaptation
-  - people:
-      - name: Hoshikawa Seiji
-    role: Screenplay
-  - people:
-      - name: Makiura Chikashi
-    role: Photography
-  - people:
-      - name: Nagaoka Sakae
-    role: Sound
-  - people:
-      - name: Nakaoka Genken
-    role: Lighting
-  - people:
-      - name: Ôta Seiichi
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Yamada Hiroshi
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

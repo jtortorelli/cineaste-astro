@@ -14,41 +14,6 @@ kaiju:
 poster_url: /static/images/films/posters/return-of-daimajin-1966.webp
 release_date: 1966-08-13
 runtime: 79
-staff:
-  - people:
-      - name: Misumi Kenji
-    role: Director
-  - people:
-      - name: Kuroda Yoshiyuki
-    role: SFX Director
-  - people:
-      - name: Nagata Masaichi
-    role: Producer
-  - people:
-      - name: Yoshida Tetsurô
-    role: Screenplay
-  - people:
-      - name: Morita Fujio
-      - name: Tanaka Shôzô
-    role: Photography
-  - people:
-      - name: Ôsumi Masao
-    role: Sound
-  - people:
-      - name: Mima Hiroshi
-      - name: Furuya Kenji
-    role: Lighting
-  - people:
-      - name: Naitô Akira
-      - name: Katô Shigeru
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Suganuma Kanji
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

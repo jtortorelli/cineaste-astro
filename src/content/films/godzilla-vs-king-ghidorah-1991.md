@@ -23,45 +23,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-vs-king-ghidorah-1991.webp
 release_date: 1991-12-14
 runtime: 103
-staff:
-  - people:
-      - name: Ômori Kazuki
-    role: Director
-  - people:
-      - name: Ômori Kazuki
-    role: Screenplay
-  - people:
-      - name: Kawakita Kôichi
-    role: SFX Director
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Sekiguchi Yoshinori
-    role: Photography
-  - people:
-      - name: Sakai Ken
-    role: Art
-  - people:
-      - name: Miyauchi Kazuo
-    role: Sound
-  - people:
-      - name: Awakihara Tsuyoshi
-    role: Lighting
-  - people:
-      - name: Ikeda Michiko
-    role: Editor
-  - people:
-      - name: Suzuki Kenji
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

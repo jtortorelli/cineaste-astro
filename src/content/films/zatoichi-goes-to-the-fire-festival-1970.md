@@ -11,38 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-goes-to-the-fire-festival-1970.webp
 release_date: 1970-08-12
 runtime: 96
-staff:
-  - people:
-      - name: Misumi Kenji
-    role: Director
-  - people:
-      - name: Katsu Shintarô
-    role: Producer
-  - people:
-      - name: Nishioka Hiroyoshi
-    role: Assistant Producer
-  - people:
-      - name: Yamada Takayuki
-      - name: Katsu Shintarô
-    role: Screenplay
-  - people:
-      - name: Miyagawa Kazuo
-    role: Photography
-  - people:
-      - name: Ôsumi Masao
-    role: Sound
-  - people:
-      - name: Nakaoka Genken
-    role: Lighting
-  - people:
-      - name: Nishioka Yoshinobu
-    role: Art
-  - people:
-      - name: Tomita Isao
-    role: Music
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
   - Dainichi Film Distribution Co., Ltd

@@ -4,35 +4,6 @@ japanese_title: 呪いの館 血を吸う眼
 poster_url: /static/images/films/posters/lake-of-dracula-1971.webp
 release_date: 1971-06-16
 runtime: 82
-staff:
-  - people:
-      - name: Yamamoto Michio
-    role: Director
-  - people:
-      - name: Tanaka Fumio
-    role: Producer
-  - people:
-      - name: Ogawa Ei
-      - name: Takesue Masaru
-    role: Screenplay
-  - people:
-      - name: Nishigaki Rokurô
-    role: Photography
-  - people:
-      - name: Ikuno Shigekazu
-    role: Art
-  - people:
-      - name: Watarai Shin
-    role: Sound
-  - people:
-      - name: Satô Kôjirô
-    role: Lighting
-  - people:
-      - name: Manabe Riichirô
-    role: Music
-  - people:
-      - name: Kondô Hisashi
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

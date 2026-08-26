@@ -10,32 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/assassination-classroom-graduation-2016.webp
 release_date: 2016-03-25
 runtime: 117
-staff:
-  - people:
-      - name: Hasumi Eiichirô
-    role: Director
-  - people:
-      - name: Kanazawa Tatsuya
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Ezaki Tomoo
-    role: Photography
-  - people:
-      - name: Miyoshi Akiyo
-    role: Lighting
-  - people:
-      - name: Yanagiya Fumihiko
-    role: Sound
-  - people:
-      - name: Abeki Yôji
-    role: Art
-  - people:
-      - name: Matsuo Hiroshi
-    role: Editor
 studios:
   - Toho Co., Ltd.
   - Fuji Television Network, Inc.

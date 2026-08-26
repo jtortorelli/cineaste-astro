@@ -10,43 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/legend-of-the-eight-samurai-1983.webp
 release_date: 1983-12-10
 runtime: 136
-staff:
-  - people:
-      - name: Fukasaku Kinji
-    role: Director
-  - people:
-      - name: Yajima Nobuo
-    role: SFX Director
-  - people:
-      - name: Kadokawa Haruki
-    role: Producer
-  - people:
-      - name: Kamata Toshio
-      - name: Fukasaku Kinji
-    role: Screenplay
-  - people:
-      - name: Sengen Seizô
-    role: Photography
-  - people:
-      - name: Imamura Tsutomu
-    role: Art
-  - people:
-      - name: Watanabe Mitsuo
-    role: Lighting
-  - people:
-      - name: Arakawa Teruhiko
-    role: Sound
-  - people:
-      - name: Ichida Isamu
-    role: Editor
-  - people:
-      - name: Nobody
-      - name: Sakuma Masahide
-      - name: Nanba Hiroyuki
-    role: Music Director
-  - people:
-      - name: Nakano Minoru
-    role: VFX
 studios:
   - Toei Co., Ltd.
 supporting_cast:

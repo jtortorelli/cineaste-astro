@@ -4,29 +4,6 @@ japanese_title: ホッタラケの島 〜遥と魔法の鏡〜
 poster_url: /static/images/films/posters/oblivion-island-haruka-and-the-magic-mirror-2009.webp
 release_date: 2009-08-22
 runtime: 93
-staff:
-  - people:
-      - name: Satô Shinsuke
-    role: Director
-  - people:
-      - name: Adachi Hirotaka
-      - name: Satô Shinsuke
-    role: Screenplay
-  - people:
-      - name: Ueda Tadashi
-    role: Music
-  - people:
-      - name: Nomura Masanobu
-    role: Art Director
-  - people:
-      - name: Luna-parc
-      - name: Imai Tsuyoshi
-      - name: Katô Hitomi
-      - name: Wakimoto Kazumi
-    role: Editor
-  - people:
-      - name: Fukumoto Ryôichi
-    role: Sound
 studios:
   - Dentsu, Inc.
   - Fuji Television Network, Inc.

@@ -4,39 +4,6 @@ japanese_title: 新幹線大爆破
 poster_url: /static/images/films/posters/bullet-train-1975.webp
 release_date: 1975-07-05
 runtime: 152
-staff:
-  - people:
-      - name: Satô Jun'ya
-    role: Director
-  - people:
-      - name: Katô Arei
-    role: Story
-  - people:
-      - name: Ono Ryûnosuke
-      - name: Satô Jun'ya
-    role: Screenplay
-  - people:
-      - name: Îmura Masahiko
-      - name: Yamasawa Yoshikazu
-      - name: Shimizu Masao
-    role: Photography
-  - people:
-      - name: Nakamura Shûichirô
-      - name: Kuwana Tadayuki
-    role: Art
-  - people:
-      - name: Inoue Kenzô
-    role: Sound
-  - people:
-      - name: Kawasaki Yasuyuki
-      - name: Umetani Shigeru
-    role: Lighting
-  - people:
-      - name: Tanaka Osamu
-    role: Editor
-  - people:
-      - name: Aoyama Hachirô
-    role: Music
 studios:
   - Toei Co., Ltd.
 title: The Bullet Train

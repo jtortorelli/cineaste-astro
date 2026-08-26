@@ -11,39 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-the-outlaw-1967.webp
 release_date: 1967-08-12
 runtime: 96
-staff:
-  - people:
-      - name: Yamamoto Satsuo
-    role: Director
-  - people:
-      - name: Nagata Masaichi
-    role: Producer
-  - people:
-      - name: Nakajima Takehiro
-      - name: Matsumoto Kôji
-      - name: Saruwaka Kiyokata
-    role: Screenplay
-  - people:
-      - name: Miyagawa Kazuo
-    role: Photography
-  - people:
-      - name: Ikeno Sei
-    role: Music
-  - people:
-      - name: Hayashi Tsuchitarô
-    role: Sound
-  - people:
-      - name: Nakaoka Genken
-    role: Lighting
-  - people:
-      - name: Nishioka Yoshinobu
-    role: Art
-  - people:
-      - name: Suganuma Kanji
-    role: Editor
-  - people:
-      - name: Katsu Shintarô
-    role: Theme Song Performer
 studios:
   - Daiei Film Co., Ltd.
   - Katsu Productions

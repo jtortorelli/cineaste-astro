@@ -34,42 +34,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-vs-gigan-1972.webp
 release_date: 1972-03-12
 runtime: 89
-staff:
-  - people:
-      - name: Fukuda Jun
-        slug: fukuda-jun
-    role: Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Sekizawa Shin'ichi
-        slug: sekizawa-shinichi
-    role: Screenplay
-  - people:
-      - name: Hasegawa Kiyoshi
-    role: Photography
-  - people:
-      - name: Honda Yoshifumi
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Satô Kôjirô
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX
-  - people:
-      - name: Tamura Yoshio
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

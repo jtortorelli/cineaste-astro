@@ -10,42 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/samurai-iii-duel-at-ganryu-island-1956.webp
 release_date: 1956-01-03
 runtime: 104
-staff:
-  - people:
-      - name: Inagaki Hiroshi
-        slug: inagaki-hiroshi
-    role: Director
-  - people:
-      - name: Hôjô Hideji
-    role: Dramatization
-  - people:
-      - name: Wakao Tokuhei
-      - name: Inagaki Hiroshi
-        slug: inagaki-hiroshi
-    role: Screenplay
-  - people:
-      - name: Yamada Kazuo
-    role: Photography
-  - people:
-      - name: Itô Kisaku
-    role: Art Director
-  - people:
-      - name: Miyazaki Masanobu
-    role: Sound
-  - people:
-      - name: Nishikawa Tsuruzô
-    role: Lighting
-  - people:
-      - name: Dan Ikuma
-        slug: dan-ikuma
-    role: Music
-  - people:
-      - name: Fukuda Jun
-        slug: fukuda-jun
-    role: Assistant Director
-  - people:
-      - name: Iwashita Kôichi
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

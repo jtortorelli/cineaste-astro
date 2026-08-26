@@ -20,34 +20,6 @@ kaiju:
 poster_url: /static/images/films/posters/gamera-vs-gyaos-1967.webp
 release_date: 1967-03-15
 runtime: 87
-staff:
-  - people:
-      - name: Yuasa Noriaki
-    role: Director
-  - people:
-      - name: Nagata Hidemasa
-    role: Producer
-  - people:
-      - name: Takahashi Nisan
-    role: Screenplay
-  - people:
-      - name: Uehara Akira
-    role: Photography
-  - people:
-      - name: Okumura Yukio
-    role: Sound
-  - people:
-      - name: Kuboe Heihachi
-    role: Lighting
-  - people:
-      - name: Inoue Akira
-    role: Art
-  - people:
-      - name: Yamanouchi Tadashi
-    role: Music
-  - people:
-      - name: Nakashizu Tatsuji
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 title: Gamera vs. Gyaos

@@ -31,49 +31,6 @@ kaiju:
 poster_url: /static/images/films/posters/gamera-2-attack-of-legion-1996.webp
 release_date: 1996-07-13
 runtime: 99
-staff:
-  - people:
-      - name: Kaneko Shûsuke
-    role: Director
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: SFX Director
-  - people:
-      - name: Tokuma Yasuyoshi
-    role: Executive Producer
-  - people:
-      - name: Itô Kazunori
-    role: Screenplay
-  - people:
-      - name: Ôtani Kô
-    role: Music
-  - people:
-      - name: Tozawa Jun'ichi
-    role: Photography
-  - people:
-      - name: Oikawa Ichi
-    role: Art
-  - people:
-      - name: Hashimoto Yasuo
-    role: Sound
-  - people:
-      - name: Yoshisumi Sôsuke
-    role: Lighting
-  - people:
-      - name: Arakawa Shizuo
-    role: Editor
-  - people:
-      - name: Haraguchi Tomoo
-    role: Monster Modeling
-  - people:
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: SFX Assistant Director
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: Monster Design
 studios:
   - Daiei Film Co., Ltd.
   - Fujitsu Limited

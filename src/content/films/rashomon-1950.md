@@ -16,34 +16,6 @@ original_works:
 poster_url: /static/images/films/posters/rashomon-1950.webp
 release_date: 1950-08-26
 runtime: 88
-staff:
-  - people:
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Director
-  - people:
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-      - name: Hashimoto Shinobu
-    role: Screenplay
-  - people:
-      - name: Miyagawa Kazuo
-    role: Photography
-  - people:
-      - name: Ôtani Iwao
-    role: Sound
-  - people:
-      - name: Matsuyama Takashi
-    role: Art
-  - people:
-      - name: Hayasaka Fumio
-    role: Music
-  - people:
-      - name: Okamoto Kenichi
-    role: Lighting
-  - people:
-      - name: Nishida Shigeo
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 title: Rashomon

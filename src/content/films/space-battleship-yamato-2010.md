@@ -10,40 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/space-battleship-yamato-2010.webp
 release_date: 2010-12-01
 runtime: 138
-staff:
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Director
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: VFX
-  - people:
-      - name: Satô Shimako
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Shibasaki Kôzô
-    role: Photography
-  - people:
-      - name: Yoshisumi Sôsuke
-    role: Lighting
-  - people:
-      - name: Tsurumaki Hitoshi
-    role: Sound
-  - people:
-      - name: Jôjô Anri
-    role: Art
-  - people:
-      - name: Miyajima Ryûji
-    role: Editor
-  - people:
-      - name: Shibuya Kiyoko
-    role: VFX Director
 studios:
   - Tokyo Broadcasting System Television, Inc.
   - Sedic International, Inc.

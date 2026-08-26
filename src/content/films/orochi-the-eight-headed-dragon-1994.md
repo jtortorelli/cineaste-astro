@@ -33,40 +33,6 @@ kaiju:
 poster_url: /static/images/films/posters/orochi-the-eight-headed-dragon-1994.webp
 release_date: 1994-07-09
 runtime: 103
-staff:
-  - people:
-      - name: Ôkawara Takao
-    role: Director
-  - people:
-      - name: Kawakita Kôichi
-    role: SFX Director
-  - people:
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Mimura Wataru
-    role: Screenplay
-  - people:
-      - name: Sekiguchi Yoshinori
-    role: Photography
-  - people:
-      - name: Ogawa Fumio
-    role: Art
-  - people:
-      - name: Ikeda Noboru
-    role: Sound
-  - people:
-      - name: Mochitsuki Hideki
-    role: Lighting
-  - people:
-      - name: Ogawa Nobuo
-    role: Editor
-  - people:
-      - name: Ogino Kiyoko
-    role: Music
-  - people:
-      - name: Suzuki Kenji
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

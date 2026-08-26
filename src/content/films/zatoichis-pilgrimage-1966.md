@@ -11,31 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichis-pilgrimage-1966.webp
 release_date: 1966-08-13
 runtime: 82
-staff:
-  - people:
-      - name: Ikehiro Kazuo
-    role: Director
-  - people:
-      - name: Shindô Kaneto
-    role: Screenplay
-  - people:
-      - name: Takeda Senkichirô
-    role: Photography
-  - people:
-      - name: Ôtani Iwao
-    role: Sound
-  - people:
-      - name: Yamashita Reijirô
-    role: Lighting
-  - people:
-      - name: Nishioka Yoshinobu
-    role: Art
-  - people:
-      - name: Saitô Ichirô
-    role: Music
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

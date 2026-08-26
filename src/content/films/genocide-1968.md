@@ -4,32 +4,6 @@ japanese_title: 昆虫大戦争
 poster_url: /static/images/films/posters/genocide-1968.webp
 release_date: 1968-11-09
 runtime: 84
-staff:
-  - people:
-      - name: Nihonmatsu Kazui
-    role: Director
-  - people:
-      - name: Takaku Susumu
-    role: Screenplay
-  - people:
-      - name: Hirase Shizuo
-      - name: Shinomura Sôzaburô
-    role: Photography
-  - people:
-      - name: Yoshino Tadataka
-    role: Art
-  - people:
-      - name: Kikuchi Shunsuke
-    role: Music
-  - people:
-      - name: Aoki Tatsuo
-    role: Lighting
-  - people:
-      - name: Terada Akimitsu
-    role: Editor
-  - people:
-      - name: Nakamura Hiroshi
-    role: Sound
 studios:
   - Shochiku Co., Ltd.
 title: Genocide

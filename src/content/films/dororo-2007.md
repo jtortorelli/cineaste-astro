@@ -10,36 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/dororo-2007.webp
 release_date: 2007-01-27
 runtime: 138
-staff:
-  - people:
-      - name: Shiota Akihiko
-    role: Director
-  - people:
-      - name: Nakamura Masaru
-      - name: Shiota Akihiko
-    role: Screenplay
-  - people:
-      - name: Yasukawa Gorô
-      - name: Fukuoka Yutaka
-    role: Music
-  - people:
-      - name: Shibanushi Takahide
-    role: Photography
-  - people:
-      - name: Tomiyama Akinaga
-    role: Lighting
-  - people:
-      - name: Maruo Tomoyuki
-    role: Art Director
-  - people:
-      - name: Ika Makio
-    role: Sound
-  - people:
-      - name: Fukano Toshihide
-    role: Editor
-  - people:
-      - name: Shimomura Yûji
-    role: Action Coordinator
 studios:
   - Tokyo Broadcasting System Television, Inc.
   - Universal Pictures Japan

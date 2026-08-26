@@ -4,38 +4,6 @@ japanese_title: タオの月
 poster_url: /static/images/films/posters/moon-over-tao-1997.webp
 release_date: 1997-11-29
 runtime: 96
-staff:
-  - people:
-      - name: Amemiya Keita
-    role: Director
-  - people:
-      - name: Tanaka Tôru
-      - name: Matsumoto Hajime
-      - name: Amemiya Keita
-    role: Screenplay
-  - people:
-      - name: Kidokoro Hiroshi
-    role: Photography
-  - people:
-      - name: Hosaka Yoshimi
-    role: Lighting
-  - people:
-      - name: Iguchi Akihiko
-    role: Art
-  - people:
-      - name: Amemiya Keita
-    role: Character Design
-  - people:
-      - name: Fushima Shin'ichi
-    role: Editor
-  - people:
-      - name: BUDDY ZOO
-      - name: Ôta Kôichi
-      - name: Kinoshita Shinji
-    role: Music
-  - people:
-      - name: Sugiyama Atsushi
-    role: Sound
 studios:
   - Bandai Visual
 supporting_cast:

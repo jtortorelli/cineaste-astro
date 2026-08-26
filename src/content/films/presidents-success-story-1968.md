@@ -4,40 +4,6 @@ japanese_title: 社長繁盛記
 title: President’s Success Story
 release_date: 1968-01-04
 draft: true
-staff:
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Matsubayashi Shûe
-    role: Director
-  - people:
-      - name: Hasegawa Kiyoshi
-    role: Photography
-  - people:
-      - name: Ishii Chôshirô
-    role: Lighting
-  - people:
-      - name: Ueda Hiroshi
-    role: Art
-  - people:
-      - name: Nishikawa Yoshio
-    role: Sound
-  - people:
-      - name: Miyagawa Hiroshi
-    role: Music
-  - people:
-      - name: Iwashita Kôichi
-    role: Editing
-  - people:
-      - name: Ban’no Yoshimitsu
-    role: Assistant Director
-  - people:
-      - name: Yoshizaki Matsuo
-    role: Still
 top_billed_cast:
   - name: Morishige Hisaya
     role: Takayama Keitarô

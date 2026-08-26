@@ -10,39 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/samurai-reincarnation-1981.webp
 release_date: 1981-06-06
 runtime: 122
-staff:
-  - people:
-      - name: Fukasaku Kinji
-    role: Director
-  - people:
-      - name: Kadokawa Haruki
-    role: Producer
-  - people:
-      - name: Nogami Tatsuo
-      - name: Ishikawa Takato
-      - name: Fukasaku Kinji
-    role: Screenplay
-  - people:
-      - name: Hasegawa Kiyoshi
-      - name: Sakane Shôzô
-    role: Photography
-  - people:
-      - name: Masuda Etsuaki
-    role: Lighting
-  - people:
-      - name: Nakayama Shigeji
-    role: Sound
-  - people:
-      - name: Ichida Isamu
-    role: Editor
-  - people:
-      - name: Ikawa Norimichi
-      - name: Sano Yoshikazu
-    role: Art
-  - people:
-      - name: Yamamoto Hôzan
-      - name: Kan'no Mitsuaki
-    role: Music
 studios:
   - Toei Co., Ltd.
 title: Samurai Reincarnation

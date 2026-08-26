@@ -4,33 +4,6 @@ japanese_title: 吸血髑髏船
 poster_url: /static/images/films/posters/living-skeleton-1968.webp
 release_date: 1968-11-09
 runtime: 81
-staff:
-  - people:
-      - name: Matsuno Hiroki
-    role: Director
-  - people:
-      - name: Shimoiizaka Kikuma
-      - name: Kobayashi Kyûzô
-    role: Screenplay
-  - people:
-      - name: Katô Masayuki
-      - name: Akamatsu Takashi
-    role: Photography
-  - people:
-      - name: Morita Gôhei
-    role: Art
-  - people:
-      - name: Nishiyama Noboru
-    role: Music
-  - people:
-      - name: Sakuma Takehiko
-    role: Lighting
-  - people:
-      - name: Ôta Kazuo
-    role: Editor
-  - people:
-      - name: Kobayashi Hideo
-    role: Sound
 studios:
   - Shochiku Co., Ltd.
 title: The Living Skeleton

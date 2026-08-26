@@ -27,43 +27,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-mothra-and-king-ghidorah-giant-monsters-all-out-attack-2001.webp
 release_date: 2001-12-15
 runtime: 105
-staff:
-  - people:
-      - name: Kaneko Shûsuke
-    role: Director
-  - people:
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: SFX
-  - people:
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Hasegawa Keiichi
-      - name: Yokotani Masahiro
-      - name: Kaneko Shûsuke
-    role: Screenplay
-  - people:
-      - name: Ôtani Kô
-    role: Music
-  - people:
-      - name: Kishimoto Masahiro
-    role: Photography
-  - people:
-      - name: Shimizu Takeshi
-    role: Art
-  - people:
-      - name: Saitô Teiichi
-    role: Sound
-  - people:
-      - name: Awakihara Tsuyoshi
-    role: Lighting
-  - people:
-      - name: Tomita Isao
-    role: Editor
-  - people:
-      - name: Kikuchi Yûichi
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

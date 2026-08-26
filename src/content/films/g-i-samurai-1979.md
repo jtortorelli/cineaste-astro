@@ -13,41 +13,6 @@ original_works:
 poster_url: /static/images/films/posters/g-i-samurai-1979.webp
 release_date: 1979-12-15
 runtime: 139
-staff:
-  - people:
-      - name: Satô Kôsei
-    role: Director
-  - people:
-      - name: Chiba Shin'ichi
-    role: Action Director
-  - people:
-      - name: Kadokawa Haruki
-    role: Producer
-  - people:
-      - name: Kamata Toshio
-    role: Screenplay
-  - people:
-      - name: Isayama Iwao
-    role: Photography
-  - people:
-      - name: Ueda Hiroshi
-      - name: Tsutsui Masuo
-    role: Art
-  - people:
-      - name: Hashimoto Fumio
-    role: Sound
-  - people:
-      - name: Endô Katsumi
-    role: Lighting
-  - people:
-      - name: Inoue Masaya
-    role: Editor
-  - people:
-      - name: Kadokawa Haruki
-    role: Music Producer
-  - people:
-      - name: Haneda Kantarô
-    role: Music
 studios:
   - Toho Co., Ltd.
   - Kadokawa Corporation

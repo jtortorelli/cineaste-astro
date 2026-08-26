@@ -10,32 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/all-round-appraiser-q-the-eyes-of-mona-lisa-2014.webp
 release_date: 2014-05-31
 runtime: 119
-staff:
-  - people:
-      - name: Satô Shinsuke
-    role: Director
-  - people:
-      - name: Uda Manabu
-    role: Screenplay
-  - people:
-      - name: Habuka Yuri
-      - name: Ômama Takashi
-    role: Music
-  - people:
-      - name: Kawazu Tarô
-    role: Photography
-  - people:
-      - name: Saitô Iwao
-    role: Art Director
-  - people:
-      - name: Yokono Kazushikô
-    role: Sound
-  - people:
-      - name: Katô Hitomi
-    role: Editor
-  - people:
-      - name: Tsujino Minami
-    role: VFX Supervisor
 studios:
   - Tokyo Broadcasting System Television, Inc.
   - Kadokawa Corporation

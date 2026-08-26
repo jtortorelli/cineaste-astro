@@ -4,35 +4,6 @@ japanese_title: 機動警察パトレイバー the Movie
 poster_url: /static/images/films/posters/patlabor-the-movie-1989.webp
 release_date: 1989-07-15
 runtime: 100
-staff:
-  - people:
-      - name: Oshii Mamoru
-    role: Director
-  - people:
-      - name: Headgear
-    role: Story
-  - people:
-      - name: Yûki Masami
-    role: Draft
-  - people:
-      - name: Itô Kazunori
-    role: Screenplay
-  - people:
-      - name: Ogura Hiromasa
-    role: Art
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Shiba Shigeharu
-    role: Sound
-  - people:
-      - name: Yoshida Mitsunobu
-    role: Photography
-  - people:
-      - name: Morita Seiji
-    role: Editor
 studios:
   - Bandai Visual
   - Tohokushinsha Film Corporation

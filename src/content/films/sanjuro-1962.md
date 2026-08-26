@@ -10,45 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/sanjuro-1962.webp
 release_date: 1962-01-01
 runtime: 96
-staff:
-  - people:
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Kikushima Ryûzô
-    role: Producer
-  - people:
-      - name: Kikushima Ryûzô
-      - name: Oguni Hideo
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Screenplay
-  - people:
-      - name: Koizumi Fukuzô
-      - name: Saitô Takao
-    role: Photography
-  - people:
-      - name: Muraki Yoshirô
-    role: Art
-  - people:
-      - name: Onuma Wataru
-    role: Sound
-  - people:
-      - name: Inohara Ichirô
-    role: Lighting
-  - people:
-      - name: Satô Masaru
-        slug: sato-masaru
-    role: Music
-  - people:
-      - name: Moritani Shirô
-    role: Assistant Director
-  - people:
-      - name: Kuze Ryû
-    role: Swordmaster
 studios:
   - Toho Co., Ltd.
   - Kurosawa Productions

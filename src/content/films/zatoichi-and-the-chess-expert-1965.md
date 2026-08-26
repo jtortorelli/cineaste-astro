@@ -11,32 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-and-the-chess-expert-1965.webp
 release_date: 1965-12-24
 runtime: 87
-staff:
-  - people:
-      - name: Misumi Kenji
-    role: Director
-  - people:
-      - name: Itô Daisuke
-    role: Screenplay
-  - people:
-      - name: Makiura Chikashi
-    role: Photography
-  - people:
-      - name: Ôtani Iwao
-    role: Sound
-  - people:
-      - name: Furuya Kenji
-    role: Lighting
-  - people:
-      - name: Naitô Akira
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Suganuma Kanji
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 title: Zatoichi and the Chess Expert

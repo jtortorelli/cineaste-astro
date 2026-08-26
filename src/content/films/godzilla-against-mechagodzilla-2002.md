@@ -17,37 +17,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-against-mechagodzilla-2002.webp
 release_date: 2002-12-14
 runtime: 88
-staff:
-  - people:
-      - name: Tezuka Masaaki
-    role: Director
-  - people:
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Mimura Wataru
-    role: Screenplay
-  - people:
-      - name: Kishimoto Masahiro
-    role: Photography
-  - people:
-      - name: Seshimo Yukiharu
-    role: Art
-  - people:
-      - name: Saitô Teiichi
-    role: Sound
-  - people:
-      - name: Mochitsuki Hideki
-    role: Lighting
-  - people:
-      - name: Fushima Shin'ichi
-    role: Editor
-  - people:
-      - name: Ôshima Michiru
-    role: Music
-  - people:
-      - name: Kikuchi Yûichi
-    role: SFX Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

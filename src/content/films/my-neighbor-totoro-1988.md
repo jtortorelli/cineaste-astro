@@ -4,38 +4,6 @@ japanese_title: となりのトトロ
 poster_url: /static/images/films/posters/my-neighbor-totoro-1988.webp
 release_date: 1988-04-16
 runtime: 87
-staff:
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Director
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Story
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Screenplay
-  - people:
-      - name: Hara Tôru
-      - name: Tokuma Yasuyoshi
-    role: Producer
-  - people:
-      - name: Oga Kazuo
-    role: Art
-  - people:
-      - name: Hisaishi Joe
-    role: Music
-  - people:
-      - name: Shirai Hisao
-    role: Photography
-  - people:
-      - name: Seyama Takeshi
-    role: Editor
-  - people:
-      - name: Shiba Shigeharu
-    role: Sound
 studios:
   - Studio Ghibli, Inc.
   - Tokuma Shoten Publishing Co., Ltd.

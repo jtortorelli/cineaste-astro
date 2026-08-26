@@ -10,43 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/parasyte-part-1-2014.webp
 release_date: 2014-11-29
 runtime: 109
-staff:
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Director
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: VFX
-  - people:
-      - name: Kosawa Ryôta
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Atô Shôichi
-    role: Photography
-  - people:
-      - name: Takakura Susumu
-    role: Lighting
-  - people:
-      - name: Hayashida Yûji
-      - name: Sakushima Eri
-    role: Art
-  - people:
-      - name: Shiratori Mitsugu
-    role: Sound
-  - people:
-      - name: Hogaki Jun'nosuke
-    role: Editor
-  - people:
-      - name: Shibuya Kiyoko
-    role: VFX Director
 studios:
   - Toho Co., Ltd.
   - Nippon Television Network Corporation

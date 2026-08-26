@@ -10,37 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/genghis-khan-to-the-ends-of-the-earth-and-sea-2007.webp
 release_date: 2007-03-03
 runtime: 136
-staff:
-  - people:
-      - name: Sawai Shin'ichirô
-    role: Director
-  - people:
-      - name: Kadokawa Haruki
-    role: Executive Producer
-  - people:
-      - name: Nakajima Takehiro
-      - name: Maruyama Shôichi
-    role: Screenplay
-  - people:
-      - name: Iwashiro Tarô
-      - name: Yoshikawa Kiyoshi
-    role: Music
-  - people:
-      - name: Maeda Yonezô
-    role: Photography
-  - people:
-      - name: Yabe Kazuo
-    role: Lighting
-  - people:
-      - name: Benitani Ken'ichi
-    role: Sound
-  - people:
-      - name: Nakazawa Katsumi
-      - name: Kondô Shigeyuki
-    role: Art Director
-  - people:
-      - name: Kawashima Akimasa
-    role: Editor
 studios:
   - Kadokawa Haruki Corporation
   - Avex Entertainment, Inc.

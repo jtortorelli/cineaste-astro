@@ -27,35 +27,6 @@ original_works:
 poster_url: /static/images/films/posters/tetsujin-28-2005.webp
 release_date: 2005-03-19
 runtime: 114
-staff:
-  - people:
-      - name: Togashi Shin
-    role: Director
-  - people:
-      - name: Saitô Hiroshi
-      - name: Yamada Kôta
-    role: Screenplay
-  - people:
-      - name: Senju Akira
-    role: Music
-  - people:
-      - name: Matsumoto Hajime
-    role: VFX
-  - people:
-      - name: Yamamoto Hideo
-    role: Photography
-  - people:
-      - name: Ono Akira
-    role: Lighting
-  - people:
-      - name: Nonaka Hidetoshi
-    role: Sound
-  - people:
-      - name: Ogawa Fumio
-    role: Art
-  - people:
-      - name: Ueno Sôichi
-    role: Editor
 studios:
   - Dentsu, Inc.
   - King Records Co., Ltd.

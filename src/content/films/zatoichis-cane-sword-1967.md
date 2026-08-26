@@ -11,31 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichis-cane-sword-1967.webp
 release_date: 1967-01-03
 runtime: 93
-staff:
-  - people:
-      - name: Yasuda Kimiyoshi
-    role: Director
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Takeda Senkichirô
-    role: Photography
-  - people:
-      - name: Ôsumi Masao
-    role: Sound
-  - people:
-      - name: Furuya Kenji
-    role: Lighting
-  - people:
-      - name: Nishioka Yoshinobu
-    role: Art
-  - people:
-      - name: Saitô Ichirô
-    role: Music
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

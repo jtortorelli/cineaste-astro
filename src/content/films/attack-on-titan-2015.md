@@ -13,42 +13,6 @@ original_works:
 poster_url: /static/images/films/posters/attack-on-titan-2015.webp
 release_date: 2015-08-01
 runtime: 98
-staff:
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: Director
-  - people:
-      - name: Watanabe Yûsuke
-      - name: Machiyama Tomohiro
-    role: Screenplay
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: SFX Director
-  - people:
-      - name: Ehara Shôji
-    role: Photography
-  - people:
-      - name: Sugimoto Takashi
-    role: Lighting
-  - people:
-      - name: Shimizu Takeshi
-    role: Art
-  - people:
-      - name: Nakamura Jun
-      - name: Tanaka Hironobu
-    role: Sound
-  - people:
-      - name: Ishida Yûsuke
-    role: Editor
-  - people:
-      - name: Satô Atsuki
-      - name: Tsujino Minami
-    role: VFX Supervisor
-  - people:
-      - name: Sagisu Shirô
-    role: Music
 studios:
   - Toho Co., Ltd.
   - Kodansha Ltd.

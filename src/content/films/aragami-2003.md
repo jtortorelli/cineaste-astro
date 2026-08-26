@@ -4,42 +4,6 @@ japanese_title: 荒神
 poster_url: /static/images/films/posters/aragami-2003.webp
 release_date: 2003-03-27
 runtime: 78
-staff:
-  - people:
-      - name: Kitamura Ryûhei
-    role: Director
-  - people:
-      - name: Kitamura Ryûhei
-      - name: Takatsu Ryûichi
-    role: Screenplay
-  - people:
-      - name: Morino Nobuhiko
-    role: Music
-  - people:
-      - name: Furuya Takumi
-    role: Photography
-  - people:
-      - name: Hayashida Yûji
-      - name: Ataka Norifumi
-    role: Art
-  - people:
-      - name: Nomura Yasuhiro
-    role: Lighting
-  - people:
-      - name: Iwakura Masayuki
-    role: Sound
-  - people:
-      - name: Kakesu Shûichi
-    role: Editor
-  - people:
-      - name: Yano Daisuke
-    role: Music Arrangement
-  - people:
-      - name: Paul Gilbert
-    role: Guitar Performer
-  - people:
-      - name: Paul Gilbert
-    role: Theme Song Performer
 studios:
   - NAPALMFILMS
   - Studio 3

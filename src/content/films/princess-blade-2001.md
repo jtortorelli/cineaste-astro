@@ -11,44 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/princess-blade-2001.webp
 release_date: 2001-12-15
 runtime: 93
-staff:
-  - people:
-      - name: Satô Shinsuke
-    role: Director
-  - people:
-      - name: Satô Shinsuke
-      - name: Kunii Kei
-    role: Screenplay
-  - people:
-      - name: Donnie Yen
-    role: Action Director
-  - people:
-      - name: Tanigaki Kenji
-      - name: Shimomura Yûji
-    role: Stunt Coordinator
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: SFX Director
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Kawazu Tarô
-    role: Photography
-  - people:
-      - name: Maruo Tomoyuki
-    role: Art
-  - people:
-      - name: Nakagawa Daisuke
-    role: Lighting
-  - people:
-      - name: Abe Hirohide
-    role: Editor
-  - people:
-      - name: Kakizawa Kiyoshi
-    role: Sound
 studios:
   - Nikkatsu Corporation
   - Pioneer LDC

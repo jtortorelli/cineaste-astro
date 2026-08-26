@@ -4,44 +4,6 @@ japanese_title: 用心棒
 poster_url: /static/images/films/posters/yojimbo-1961.webp
 release_date: 1961-04-25
 runtime: 110
-staff:
-  - people:
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Kikushima Ryûzô
-    role: Producer
-  - people:
-      - name: Kikushima Ryûzô
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Screenplay
-  - people:
-      - name: Miyagawa Kazuo
-    role: Photography
-  - people:
-      - name: Muraki Yoshirô
-    role: Art
-  - people:
-      - name: Mikami Chôshichirô
-      - name: Shimonaga Hisashi
-    role: Sound
-  - people:
-      - name: Ishii Chôshirô
-    role: Lighting
-  - people:
-      - name: Satô Masaru
-        slug: sato-masaru
-    role: Music
-  - people:
-      - name: Moritani Shirô
-    role: Assistant Director
-  - people:
-      - name: Kuze Ryû
-    role: Swordmaster
 studios:
   - Toho Co., Ltd.
   - Kurosawa Productions

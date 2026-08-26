@@ -17,37 +17,6 @@ kaiju:
 poster_url: /static/images/films/posters/gamera-the-brave-2006.webp
 release_date: 2006-04-29
 runtime: 96
-staff:
-  - people:
-      - name: Tasaki Ryûta
-    role: Director
-  - people:
-      - name: Tatsui Yukari
-    role: Screenplay
-  - people:
-      - name: Kaneko Isao
-    role: SFX
-  - people:
-      - name: Ueno Yôko
-    role: Music
-  - people:
-      - name: Suzuki Kazuhiro
-    role: Photography
-  - people:
-      - name: Hayashida Yûji
-    role: Art
-  - people:
-      - name: Kozuma Toshiatsu
-    role: Lighting
-  - people:
-      - name: Yano Masato
-    role: Sound
-  - people:
-      - name: Hirasawa Seigo
-    role: Editor
-  - people:
-      - name: Haraguchi Tomoo
-    role: Monster Modeling
 studios:
   - Kadokawa Herald Pictures
   - Japan Film Fund

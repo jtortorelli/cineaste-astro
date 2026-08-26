@@ -11,38 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-meets-the-one-armed-swordsman-1971.webp
 release_date: 1971-01-13
 runtime: 94
-staff:
-  - people:
-      - name: Yasuda Kimiyoshi
-    role: Director
-  - people:
-      - name: Katsu Shintarô
-    role: Producer
-  - people:
-      - name: Nishioka Hiroyoshi
-    role: Assistant Producer
-  - people:
-      - name: Yasuda Kimiyoshi
-      - name: Yamada Takayuki
-    role: Screenplay
-  - people:
-      - name: Makiura Chikashi
-    role: Photography
-  - people:
-      - name: Ôtani Iwao
-    role: Sound
-  - people:
-      - name: Mima Hiroshi
-    role: Lighting
-  - people:
-      - name: Nishioka Yoshinobu
-    role: Art
-  - people:
-      - name: Tomita Isao
-    role: Music
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
 studios:
   - Toho Co., Ltd.
   - Katsu Productions

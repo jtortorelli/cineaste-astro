@@ -15,40 +15,6 @@ kaiju:
 poster_url: /static/images/films/posters/rebirth-of-mothra-iii-1998.webp
 release_date: 1998-12-12
 runtime: 100
-staff:
-  - people:
-      - name: Yoneda Okihiro
-    role: Director
-  - people:
-      - name: Suzuki Kenji
-    role: SFX Director
-  - people:
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Suetani Masumi
-    role: Screenplay
-  - people:
-      - name: Watanabe Toshiyuki
-    role: Music
-  - people:
-      - name: Sekiguchi Yoshinori
-    role: Photography
-  - people:
-      - name: Sakuragi Akira
-    role: Art
-  - people:
-      - name: Saitô Teiichi
-    role: Sound
-  - people:
-      - name: Awakihara Tsuyoshi
-    role: Lighting
-  - people:
-      - name: Ogawa Nobuo
-    role: Editor
-  - people:
-      - name: Tezuka Masaaki
-    role: Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

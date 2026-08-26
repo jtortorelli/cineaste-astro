@@ -14,41 +14,6 @@ video_review:
 poster_url: /static/images/films/posters/half-human-1955.webp
 release_date: 1955-08-14
 runtime: 95
-staff: 
-  - role: Director
-    people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-  - role: Producer
-    people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-  - role: Screenplay
-    people:
-      - name: Murata Takeo
-  - role: Photography
-    people:
-      - name: Iimura Tadashi
-  - role: Art
-    people:
-      - name: Kita Tatsuo
-  - role: Sound
-    people:
-      - name: Nishikawa Yoshio
-  - role: Lighting
-    people:
-      - name: Yokoi Sôichi
-  - role: Music
-    people:
-      - name: Satô Masaru
-        slug: sato-masaru
-  - role: Special Technology
-    people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-  - role: Assistant Director
-    people:
-      - name: Okamoto Kihachi
 studios:
   - Toho Co., Ltd.
 supporting_cast:

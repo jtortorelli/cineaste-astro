@@ -4,38 +4,6 @@ japanese_title: 三匹の侍
 poster_url: /static/images/films/posters/three-outlaw-samurai-1964.webp
 release_date: 1964-05-13
 runtime: 94
-staff:
-  - people:
-      - name: Gosha Hideo
-    role: Director
-  - people:
-      - name: Kishimoto Gin'ichi
-      - name: Tamba Tetsurô
-    role: Producer
-  - people:
-      - name: Abe Keiichi
-      - name: Shiba Eizaburô
-      - name: Kishimoto Gin'ichi
-      - name: Gosha Hideo
-    role: Screenplay
-  - people:
-      - name: Sakai Tadashi
-    role: Photography
-  - people:
-      - name: Ôsumi Jun'ichi
-    role: Art
-  - people:
-      - name: Fukuyasu Ken'yô
-    role: Sound
-  - people:
-      - name: Tsushima Toshiaki
-    role: Music
-  - people:
-      - name: Somekawa Hiroyoshi
-    role: Lighting
-  - people:
-      - name: Ôta Kazuo
-    role: Editor
 studios:
   - Shochiku Co., Ltd.
   - Samurai Productions

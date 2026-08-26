@@ -4,36 +4,6 @@ japanese_title: アヴァロン
 poster_url: /static/images/films/posters/avalon-2001.webp
 release_date: 2001-01-20
 runtime: 106
-staff:
-  - people:
-      - name: Oshii Mamoru
-    role: Director
-  - people:
-      - name: Itô Kazunori
-    role: Screenplay
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Grzegorz Kędzierski
-    role: Photography
-  - people:
-      - name: Barbara Nowak
-    role: Art Director
-  - people:
-      - name: Koga Nobuaki
-    role: VFX Supervisor
-  - people:
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: Special Assistant Director
-  - people:
-      - name: Wakabayashi Kazuhiro
-    role: Sound
-  - people:
-      - name: Okuda Hiroshi
-    role: Editor
 studios:
   - Bandai Visual
   - deiz

@@ -22,50 +22,6 @@ original_works:
 poster_url: /static/images/films/posters/mothra-1961.webp
 release_date: 1961-07-30
 runtime: 101
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Sekizawa Shin'ichi
-        slug: sekizawa-shinichi
-    role: Screenplay
-  - people:
-      - name: Koizumi Hajime
-        slug: koizumi-hajime
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-      - name: Abe Teruaki
-    role: Art
-  - people:
-      - name: Fujinawa Shôichi
-      - name: Miyazaki Masanobu
-    role: Sound
-  - people:
-      - name: Takashima Toshio
-    role: Lighting
-  - people:
-      - name: Koseki Yûji
-        slug: koseki-yuji
-    role: Music
-  - people:
-      - name: Taira Kazuji
-    role: Editor
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
 studios:
   - Toho Co., Ltd.
 supporting_cast:

@@ -10,33 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/triumphant-return-of-general-rouge-2009.webp
 release_date: 2009-03-07
 runtime: 123
-staff:
-  - people:
-      - name: Nakamura Yoshihiro
-    role: Director
-  - people:
-      - name: Saitô Hiroshi
-      - name: Nakamura Yoshihiro
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Sakakibara Yasushi
-    role: Photography
-  - people:
-      - name: Inori Miyanobu
-    role: Lighting
-  - people:
-      - name: Yokomizo Masatoshi
-    role: Sound
-  - people:
-      - name: Kanakatsu Hirokazu
-    role: Art
-  - people:
-      - name: Abe Hirohide
-    role: Editor
 studios:
   - Tokyo Broadcasting System Television, Inc.
   - Toho Co., Ltd.

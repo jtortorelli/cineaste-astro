@@ -13,44 +13,6 @@ original_works:
 poster_url: /static/images/films/posters/k-20-legend-of-the-mask-2008.webp
 release_date: 2008-12-20
 runtime: 137
-staff:
-  - people:
-      - name: Satô Shimako
-    role: Director
-  - people:
-      - name: Satô Shimako
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Shibasaki Kôzô
-    role: Photography
-  - people:
-      - name: Mizuno Ken'ichi
-      - name: Miyoshi Akiyo
-    role: Lighting
-  - people:
-      - name: Tsurumaki Hitoshi
-    role: Sound
-  - people:
-      - name: Jôjô Anri
-    role: Art
-  - people:
-      - name: Miyajima Ryûji
-    role: Editor
-  - people:
-      - name: Shibuya Kiyoko
-    role: VFX Director
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Screenplay Cooperation
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: VFX Cooperation
 studios:
   - Nippon Television Network Corporation
   - The Sapporo Television Broadcasting Co.,Ltd.

@@ -11,31 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/adventures-of-zatoichi-1964.webp
 release_date: 1964-12-30
 runtime: 86
-staff:
-  - people:
-      - name: Yasuda Kimiyoshi
-    role: Director
-  - people:
-      - name: Asai Shôzaburô
-    role: Screenplay
-  - people:
-      - name: Honda Shôzô
-    role: Photography
-  - people:
-      - name: Nagaoka Sakae
-    role: Sound
-  - people:
-      - name: Katô Hiroya
-    role: Lighting
-  - people:
-      - name: Katô Shigeru
-    role: Art
-  - people:
-      - name: Kosugi Taichirô
-    role: Music
-  - people:
-      - name: Yamada Hiroshi
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

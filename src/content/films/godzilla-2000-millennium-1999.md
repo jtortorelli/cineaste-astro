@@ -20,42 +20,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-2000-millennium-1999.webp
 release_date: 1999-12-11
 runtime: 108
-staff:
-  - people:
-      - name: Ôkawara Takao
-    role: Director
-  - people:
-      - name: Suzuki Kenji
-    role: SFX
-  - people:
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Kashiwabara Hiroshi
-      - name: Mimura Wataru
-    role: Screenplay
-  - people:
-      - name: Katô Yûdai
-    role: Photography
-  - people:
-      - name: Shimizu Takeshi
-    role: Art
-  - people:
-      - name: Saitô Teiichi
-    role: Sound
-  - people:
-      - name: Awakihara Tsuyoshi
-    role: Lighting
-  - people:
-      - name: Okuhara Yoshiyuki
-    role: Editor
-  - people:
-      - name: Hattori Takayuki
-    role: Music
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: Physical FX Assistant
 studios:
   - Toho Co., Ltd.
 supporting_cast:

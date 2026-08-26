@@ -4,32 +4,6 @@ japanese_title: 機動警察パトレイバー 2 the Movie
 poster_url: /static/images/films/posters/patlabor-2-the-movie-1993.webp
 release_date: 1993-08-07
 runtime: 113
-staff:
-  - people:
-      - name: Oshii Mamoru
-    role: Director
-  - people:
-      - name: Headgear
-    role: Story
-  - people:
-      - name: Itô Kazunori
-    role: Screenplay
-  - people:
-      - name: Takahashi Akihiko
-    role: Photography
-  - people:
-      - name: Ogura Hiromasa
-    role: Art
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Asari Naoko
-    role: Sound
-  - people:
-      - name: Kakesu Shûichi
-    role: Editor
 studios:
   - Bandai Visual
   - Production I.G, Inc.

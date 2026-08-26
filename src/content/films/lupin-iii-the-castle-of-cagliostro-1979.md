@@ -10,31 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/lupin-iii-the-castle-of-cagliostro-1979.webp
 release_date: 1979-12-15
 runtime: 100
-staff:
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Director
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-      - name: Yamazaki Haruya
-    role: Screenplay
-  - people:
-      - name: Ôno Yûji
-    role: Music
-  - people:
-      - name: Kobayashi Shichirô
-    role: Art
-  - people:
-      - name: Takahashi Hirokata
-    role: Photography
-  - people:
-      - name: Katô Satoshi
-    role: Sound
-  - people:
-      - name: Tsurubuchi Masatoshi
-    role: Editor
 studios:
   - Tokyo Movie Shinsha Co., Ltd.
 title: "Lupin III: The Castle of Cagliostro"

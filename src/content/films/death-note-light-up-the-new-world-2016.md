@@ -11,32 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/death-note-light-up-the-new-world-2016.webp
 release_date: 2016-10-29
 runtime: 135
-staff:
-  - people:
-      - name: Satô Shinsuke
-    role: Director
-  - people:
-      - name: Mano Katsunari
-    role: Screenplay
-  - people:
-      - name: Yamada Yutaka
-    role: Music
-  - people:
-      - name: Kawazu Tarô
-    role: Photography
-  - people:
-      - name: Saitô Iwao
-    role: Art
-  - people:
-      - name: Yokono Kazushikô
-    role: Sound
-  - people:
-      - name: Imai Tsuyoshi
-    role: Editor
-  - people:
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: SFX Director
 studios:
   - Nippon Television Network Corporation
   - Shueisha, Inc.

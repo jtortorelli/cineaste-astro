@@ -4,40 +4,6 @@ japanese_title: 魔女の宅急便
 poster_url: /static/images/films/posters/kikis-delivery-service-1989.webp
 release_date: 1989-07-29
 runtime: 102
-staff:
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Director
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Screenplay
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-      - name: Tokuma Yasuyoshi
-      - name: Tsuzuki Mikihiko
-      - name: Takagi Morihisa
-    role: Producer
-  - people:
-      - name: Suzuki Toshio
-    role: Assistant Producer
-  - people:
-      - name: Ôno Hiroshi
-    role: Art
-  - people:
-      - name: Hisaishi Joe
-    role: Music
-  - people:
-      - name: Sugimura Jûrô
-    role: Photography
-  - people:
-      - name: Seyama Takeshi
-    role: Editor
-  - people:
-      - name: Asari Naoko
-    role: Sound
 studios:
   - Tokuma Shoten Publishing Co., Ltd.
   - Yamato Transport Co., Ltd.

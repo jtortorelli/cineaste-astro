@@ -4,37 +4,6 @@ japanese_title: 幽霊屋敷の恐怖 血を吸う人形
 poster_url: /static/images/films/posters/vampire-doll-1970.webp
 release_date: 1970-07-04
 runtime: 71
-staff:
-  - people:
-      - name: Yamamoto Michio
-    role: Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Tanaka Fumio
-    role: Producer
-  - people:
-      - name: Ogawa Ei
-      - name: Nagano Hiroshi
-    role: Screenplay
-  - people:
-      - name: Hara Kazutami
-    role: Photography
-  - people:
-      - name: Honda Yoshifumi
-    role: Art
-  - people:
-      - name: Tomita Minoru
-    role: Sound
-  - people:
-      - name: Satô Kôjirô
-    role: Lighting
-  - people:
-      - name: Manabe Riichirô
-    role: Music
-  - people:
-      - name: Iwashita Kôichi
-    role: Editor
 studios:
   - Toho Co., Ltd.
 title: The Vampire Doll

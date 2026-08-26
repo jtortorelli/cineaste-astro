@@ -14,41 +14,6 @@ kaiju:
 poster_url: /static/images/films/posters/wrath-of-daimajin-1966.webp
 release_date: 1966-12-10
 runtime: 87
-staff:
-  - people:
-      - name: Mori Kazuo
-    role: Director
-  - people:
-      - name: Kuroda Yoshiyuki
-    role: SFX Director
-  - people:
-      - name: Nagata Masaichi
-    role: Producer
-  - people:
-      - name: Yoshida Tetsurô
-    role: Screenplay
-  - people:
-      - name: Imai Hiroshi
-      - name: Morita Fujio
-    role: Photography
-  - people:
-      - name: Ôtani Iwao
-    role: Sound
-  - people:
-      - name: Itô Teiichi
-      - name: Mima Hiroshi
-    role: Lighting
-  - people:
-      - name: Nishioka Yoshinobu
-      - name: Katô Shigeru
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

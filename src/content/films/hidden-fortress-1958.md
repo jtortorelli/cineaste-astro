@@ -4,41 +4,6 @@ japanese_title: 隠し砦の三悪人
 poster_url: /static/images/films/posters/hidden-fortress-1958.webp
 release_date: 1958-12-28
 runtime: 139
-staff:
-  - people:
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Director
-  - people:
-      - name: Fujimoto Sanezumi
-        slug: fujimoto-sanezumi
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Producer
-  - people:
-      - name: Kikushima Ryûzô
-      - name: Oguni Hideo
-      - name: Hashimoto Shinobu
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Screenplay
-  - people:
-      - name: Yamazaki Ichio
-    role: Photography
-  - people:
-      - name: Muraki Yoshirô
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-      - name: Shimonaga Hisashi
-    role: Sound
-  - people:
-      - name: Inohara Ichirô
-    role: Lighting
-  - people:
-      - name: Satô Masaru
-        slug: sato-masaru
-    role: Music
 studios:
   - Toho Co., Ltd.
 supporting_cast:

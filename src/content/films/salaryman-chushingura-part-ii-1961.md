@@ -4,37 +4,6 @@ japanese_title: 続サラリーマン忠臣蔵
 title: "Salaryman Chushingura: Part II"
 release_date: 1961-02-25
 draft: true
-staff:
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Ihara Yasuo
-    role: Story
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Sugie Toshio
-    role: Director
-  - people:
-      - name: Kankura Taiichi
-    role: Photography
-  - people:
-      - name: Kôzu Yoshiyuki
-    role: Music
-  - people:
-      - name: Muraki Yoshirô
-    role: Art
-  - people:
-      - name: Kaneko Mitsuo
-    role: Lighting
-  - people:
-      - name: Mikami Shin’ichirô
-    role: Sound
-  - people:
-      - name: Tanaka Kazukiyo
-    role: Still
 top_billed_cast:
   - name: Morishige Hisaya
     role: Ôishi Yoshio

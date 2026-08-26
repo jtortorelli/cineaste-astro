@@ -10,32 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/sky-high-2003.webp
 release_date: 2003-11-08
 runtime: 123
-staff:
-  - people:
-      - name: Kitamura Ryûhei
-    role: Director
-  - people:
-      - name: Kiriyama Isao
-    role: Screenplay
-  - people:
-      - name: Furuya Takumi
-    role: Photography
-  - people:
-      - name: Takasaka Toshihide
-    role: Lighting
-  - people:
-      - name: Hanaya Hidefumi
-    role: Art
-  - people:
-      - name: Takano Yasuo
-    role: Sound
-  - people:
-      - name: Kakesu Shûichi
-    role: Editor
-  - people:
-      - name: Morino Nobuhiko
-      - name: Yano Daisuke
-    role: Music
 studios:
   - Amuse Inc.
   - Toei Co., Ltd.

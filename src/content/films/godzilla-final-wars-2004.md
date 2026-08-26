@@ -84,53 +84,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-final-wars-2004.webp
 release_date: 2004-12-04
 runtime: 125
-staff:
-  - people:
-      - name: Kitamura Ryûhei
-    role: Director
-  - people:
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Mimura Wataru
-      - name: Kiriyama Isao
-    role: Screenplay
-  - people:
-      - name: Asada Eiichi
-    role: SFX
-  - people:
-      - name: Keith Emerson
-      - name: Morino Nobuhiko
-      - name: Yano Daisuke
-    role: Music
-  - people:
-      - name: Furuya Takumi
-    role: Photography
-  - people:
-      - name: Seshimo Yukiharu
-    role: Art
-  - people:
-      - name: Saitô Teiichi
-    role: Sound
-  - people:
-      - name: Takasaka Toshihide
-    role: Lighting
-  - people:
-      - name: Kakesu Shûichi
-    role: Editor
-  - people:
-      - name: Sakaguchi Tak
-      - name: Shimomura Yûji
-    role: Stunt Coordinator
-  - people:
-      - name: Takatsu Ryûichi
-    role: Overseas Unit Director
-  - people:
-      - name: Shinkawa Yôji
-    role: Gotengo Design
-  - people:
-      - name: Shinkawa Yôji
-    role: EDF Design
 studios:
   - Toho Co., Ltd.
 supporting_cast:

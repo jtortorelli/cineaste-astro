@@ -10,36 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/library-wars-the-last-mission-2015.webp
 release_date: 2015-10-10
 runtime: 120
-staff:
-  - people:
-      - name: Satô Shinsuke
-    role: Director
-  - people:
-      - name: Nogi Akiko
-    role: Screenplay
-  - people:
-      - name: Takami Yû
-    role: Music
-  - people:
-      - name: Kawazu Tarô
-    role: Photography
-  - people:
-      - name: Saitô Iwao
-    role: Art
-  - people:
-      - name: Yokono Kazushikô
-    role: Sound
-  - people:
-      - name: Imai Tsuyoshi
-    role: Editor
-  - people:
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-      - name: Tsujino Minami
-    role: VFX Supervisor
-  - people:
-      - name: Shimomura Yûji
-    role: Action Director
 studios:
   - Tokyo Broadcasting System Television, Inc.
   - Kadokawa Corporation

@@ -10,41 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/azumi-2-death-or-love-2005.webp
 release_date: 2005-03-12
 runtime: 112
-staff:
-  - people:
-      - name: Kaneko Shûsuke
-    role: Director
-  - people:
-      - name: Yamamoto Mataichirô
-    role: Producer
-  - people:
-      - alias: Mizushima Rikiya
-        name: Yamamoto Mataichirô
-    role: Screenplay
-  - people:
-      - name: Sakamoto Yoshitaka
-    role: Photography
-  - people:
-      - name: Inagaki Hisao
-    role: Art
-  - people:
-      - name: Ôkubo Takeshi
-    role: Lighting
-  - people:
-      - name: Ohara Yoshiya
-    role: Sound
-  - people:
-      - name: Kakesu Shûichi
-    role: Editor
-  - people:
-      - name: Kawamura Eiji
-    role: Music Director
-  - people:
-      - name: Kawamura Eiji
-      - name: Imaizumi Toshirô
-      - name: Ôtsubo Naoki
-      - name: Minegishi Yoshiyuki
-    role: Music
 studios:
   - Nippon Herald Films, Inc.
   - Tokyo Broadcasting System Television, Inc.

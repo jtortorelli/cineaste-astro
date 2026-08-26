@@ -4,39 +4,6 @@ japanese_title: 天空の城ラピュタ
 poster_url: /static/images/films/posters/castle-in-the-sky-1986.webp
 release_date: 1986-08-02
 runtime: 124
-staff:
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Director
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Story
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Screenplay
-  - people:
-      - name: Takahata Isao
-      - name: Tokuma Yasuyoshi
-    role: Producer
-  - people:
-      - name: Nozaki Toshirô
-      - name: Yamamoto Nizô
-    role: Art Director
-  - people:
-      - name: Hisaishi Joe
-    role: Music
-  - people:
-      - name: Takahashi Hirokata
-    role: Photography
-  - people:
-      - name: Seyama Takeshi
-    role: Editor
-  - people:
-      - name: Shiba Shigeharu
-    role: Sound
 studios:
   - Studio Ghibli, Inc.
   - Tokuma Shoten Publishing Co., Ltd.

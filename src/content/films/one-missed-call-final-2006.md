@@ -10,32 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/one-missed-call-final-2006.webp
 release_date: 2006-06-24
 runtime: 105
-staff:
-  - people:
-      - name: Asou Manabu
-    role: Director
-  - people:
-      - name: Daira Miwako
-      - name: Jirô Yûshin
-    role: Screenplay
-  - people:
-      - name: Tanaka Kazushige
-    role: Photography
-  - people:
-      - name: Isoda Norihiro
-    role: Art
-  - people:
-      - name: Okano Kiyoshi
-    role: Lighting
-  - people:
-      - name: Takizawa Osamu
-    role: Sound
-  - people:
-      - name: Kawashima Akimasa
-    role: Editor
-  - people:
-      - name: Endô Kôji
-    role: Music
 studios:
   - Kadokawa Herald Pictures
   - Japan Film Fund

@@ -4,37 +4,6 @@ japanese_title: ゼイラム
 poster_url: /static/images/films/posters/zeiram-1991.webp
 release_date: 1991-12-21
 runtime: 97
-staff:
-  - people:
-      - name: Amemiya Keita
-    role: Director
-  - people:
-      - name: Matsumoto Hajime
-      - name: Amemiya Keita
-    role: Screenplay
-  - people:
-      - name: Honjo Hiroshi
-    role: Photography
-  - people:
-      - name: Hosaka Yoshimi
-    role: Lighting
-  - people:
-      - name: Miike Toshio
-      - name: Takahashi Akihiko
-    role: Art
-  - people:
-      - name: Amemiya Keita
-    role: Character Design
-  - people:
-      - name: Ôta Kôichi
-      - name: Kinoshita Shinji
-    role: Music
-  - people:
-      - name: Itô Katsumi
-    role: Sound
-  - people:
-      - name: Sugisawa Kôichi
-    role: Editor
 studios:
   - Crowd
   - Gaga Communications, Inc.

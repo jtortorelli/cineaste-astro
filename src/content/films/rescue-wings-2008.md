@@ -17,34 +17,6 @@ original_works:
 poster_url: /static/images/films/posters/rescue-wings-2008.webp
 release_date: 2008-12-13
 runtime: 108
-staff:
-  - people:
-      - name: Tezuka Masaaki
-    role: Director
-  - people:
-      - name: Naitô Tadashi
-      - name: Minakami Seishi
-      - name: Tezuka Masaaki
-      - name: Ômori Kazuki
-    role: Screenplay
-  - people:
-      - name: Katô Yûdai
-    role: Photography
-  - people:
-      - name: Shibata Nobuhiro
-    role: Lighting
-  - people:
-      - name: Seshimo Yukiharu
-    role: Art
-  - people:
-      - name: Inoue Sôichi
-    role: Sound
-  - people:
-      - name: Kawashima Akimasa
-    role: Editor
-  - people:
-      - name: Wada Kaoru
-    role: Music
 studios:
   - First Pictures
   - Kadokawa Pictures, Inc.

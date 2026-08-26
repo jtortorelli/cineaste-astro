@@ -11,37 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-meets-yojimbo-1970.webp
 release_date: 1970-01-15
 runtime: 115
-staff:
-  - people:
-      - name: Okamoto Kihachi
-    role: Director
-  - people:
-      - name: Katsu Shintarô
-      - name: Nishioka Hiroyoshi
-    role: Producer
-  - people:
-      - name: Okamoto Kihachi
-      - name: Yoshida Tetsurô
-    role: Screenplay
-  - people:
-      - name: Miyagawa Kazuo
-    role: Photography
-  - people:
-      - name: Hayashi Tsuchitarô
-    role: Sound
-  - people:
-      - name: Nakaoka Genken
-    role: Lighting
-  - people:
-      - name: Nishioka Yoshinobu
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
   - Katsu Productions

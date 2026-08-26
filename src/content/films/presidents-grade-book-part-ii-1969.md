@@ -4,37 +4,6 @@ japanese_title: 続・社長えんま帖
 title: "President’s Grade Book: Part II"
 release_date: 1969-05-17
 draft: true
-staff:
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Matsubayashi Shûe
-    role: Director
-  - people:
-      - name: Suzuki Takeshi
-    role: Photography
-  - people:
-      - name: Ishii Chôshirô
-    role: Lighting
-  - people:
-      - name: Chûko Satoru
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Kôzu Yoshiyuki
-    role: Music
-  - people:
-      - name: Iwashita Kôichi
-    role: Editing
-  - people:
-      - name: Yoshizaki Matsuo
-    role: Still
 top_billed_cast:
   - name: Morishige Hisaya
     role: Ôtaka Chôtarô

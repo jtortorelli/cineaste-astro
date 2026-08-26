@@ -10,35 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/eko-eko-azarak-iii-misa-the-dark-angel-1998.webp
 release_date: 1998-01-15
 runtime: 95
-staff:
-  - people:
-      - name: Ueno Katsuhito
-    role: Director
-  - people:
-      - name: Nanatsuki Kyôichi
-      - name: Hayashi Sôtarô
-    role: Screenplay
-  - people:
-      - name: Suzuki Daisuke
-    role: Music
-  - people:
-      - name: Nishikubo Masahiro
-    role: Photography
-  - people:
-      - name: Hara Haruo
-    role: Lighting
-  - people:
-      - name: Misawa Takenori
-    role: Sound
-  - people:
-      - name: Ishige Akira
-    role: Art
-  - people:
-      - name: Haraguchi Tomoo
-    role: Special Makeup
-  - people:
-      - name: Yafune Yôsuke
-    role: Editor
 studios:
   - Gaga Communications, Inc.
   - Tsuburaya Productions Co., Ltd.

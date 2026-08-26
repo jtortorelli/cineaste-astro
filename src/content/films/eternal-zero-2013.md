@@ -10,42 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/eternal-zero-2013.webp
 release_date: 2013-12-21
 runtime: 144
-staff:
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Director
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: VFX
-  - people:
-      - name: Hayashi Tamio
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Shibasaki Kôzô
-    role: Photography
-  - people:
-      - name: Ueda Nariyuki
-    role: Lighting
-  - people:
-      - name: Jôjô Anri
-    role: Art
-  - people:
-      - name: Fujimoto Ken'ichi
-    role: Sound
-  - people:
-      - name: Miyajima Ryûji
-    role: Editor
-  - people:
-      - name: Shibuya Kiyoko
-    role: VFX Director
 studios:
   - Toho Co., Ltd.
   - Amuse Inc.

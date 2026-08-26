@@ -10,43 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/high-and-low-1963.webp
 release_date: 1963-03-01
 runtime: 143
-staff:
-  - people:
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Kikushima Ryûzô
-    role: Producer
-  - people:
-      - name: Oguni Hideo
-      - name: Kikushima Ryûzô
-      - name: Hisaita Eijirô
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Screenplay
-  - people:
-      - name: Nakai Asakazu
-      - name: Saitô Takao
-    role: Photography
-  - people:
-      - name: Muraki Yoshirô
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Mori Hiromitsu
-    role: Lighting
-  - people:
-      - name: Satô Masaru
-        slug: sato-masaru
-    role: Music
-  - people:
-      - name: Moritani Shirô
-    role: Assistant Director
 studios:
   - Toho Co., Ltd.
   - Kurosawa Productions

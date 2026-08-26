@@ -4,49 +4,6 @@ japanese_title: ガス人間㐧1号
 poster_url: /static/images/films/posters/human-vapor-1960.webp
 release_date: 1960-12-11
 runtime: 91
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-        alias: Kimura Takeshi
-    role: Screenplay
-  - people:
-      - name: Koizumi Hajime
-        slug: koizumi-hajime
-    role: Photography
-  - people:
-      - name: Shimizu Kiyoshi
-    role: Art
-  - people:
-      - name: Fujiyoshi Masao
-      - name: Miyazaki Masanobu
-    role: Sound
-  - people:
-      - name: Takashima Toshio
-    role: Lighting
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
-  - people:
-      - name: Miyauchi Kunio
-        slug: miyauchi-kunio
-    role: Music
-  - people:
-      - name: Taira Kazuji
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

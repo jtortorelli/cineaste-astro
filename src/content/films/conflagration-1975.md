@@ -10,48 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/conflagration-1975.webp
 release_date: 1975-07-12
 runtime: 100
-staff:
-  - people:
-      - name: Ishida Katsumune
-    role: Director
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Tanaka Osamu
-    role: Producer
-  - people:
-      - name: Ôno Yasuko
-      - name: Masuda Toshio
-    role: Screenplay
-  - people:
-      - name: Nishigaki Rokurô
-    role: Photography
-  - people:
-      - name: Muraki Yoshirô
-    role: Art
-  - people:
-      - name: Watarai Shin
-    role: Sound
-  - people:
-      - name: Takashima Toshio
-    role: Lighting
-  - people:
-      - name: Kaburagi Hajime
-    role: Music
-  - people:
-      - name: Ogawa Nobuo
-    role: Editor
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
-  - people:
-      - name: Kawakita Kôichi
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

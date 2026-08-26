@@ -10,34 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/jin-roh-the-wolf-brigade-2000.webp
 release_date: 2000-06-03
 runtime: 98
-staff:
-  - people:
-      - name: Okiura Hiroyuki
-    role: Director
-  - people:
-      - name: Okiura Hiroyuki
-    role: Storyboarding
-  - people:
-      - name: Oshii Mamoru
-    role: Screenplay
-  - people:
-      - name: Kamiyama Kenji
-    role: Producer
-  - people:
-      - name: Ogura Hiromasa
-    role: Art Director
-  - people:
-      - name: Shirai Hisao
-    role: Photography
-  - people:
-      - name: Kakesu Shûichi
-    role: Editor
-  - people:
-      - name: Mizoguchi Hajime
-    role: Music
-  - people:
-      - name: Wakabayashi Kazuhiro
-    role: Sound
 studios:
   - Bandai Visual
   - Production I.G, Inc.

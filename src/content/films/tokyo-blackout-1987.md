@@ -10,47 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/tokyo-blackout-1987.webp
 release_date: 1987-01-17
 runtime: 120
-staff:
-  - people:
-      - name: Masuda Toshio
-    role: Director
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Director
-  - people:
-      - name: Tokuma Yasuyoshi
-      - name: Murakami Shichirô
-    role: Producer
-  - people:
-      - name: Yamaura Hiroyasu
-      - name: Masuda Toshio
-    role: Screenplay
-  - people:
-      - name: Maurice Jarre
-    role: Music
-  - people:
-      - name: Îmura Masahiko
-    role: Photography
-  - people:
-      - name: Ikuno Shigekazu
-    role: Art
-  - people:
-      - name: Kawasaki Yasuyuki
-    role: Lighting
-  - people:
-      - name: Segawa Tetsuo
-    role: Sound
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
-  - people:
-      - name: Asada Eiichi
-    role: SFX Assistant Director
 studios:
   - Daiei Film Co., Ltd.
   - Kansai Television Co., Ltd.

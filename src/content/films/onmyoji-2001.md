@@ -10,41 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/onmyoji-2001.webp
 release_date: 2001-10-06
 runtime: 116
-staff:
-  - people:
-      - name: Takita Yôjirô
-    role: Director
-  - people:
-      - name: Fukuda Yasushi
-      - name: Yumemakura Baku
-      - name: Takita Yôjirô
-    role: Screenplay
-  - people:
-      - name: Umebayashi Shigeru
-    role: Music
-  - people:
-      - name: Kayano Naoki
-    role: Photography
-  - people:
-      - name: Osada Tatsuya
-    role: Lighting
-  - people:
-      - name: Heya Kyôko
-    role: Art
-  - people:
-      - name: Onodera Osamu
-    role: Sound
-  - people:
-      - name: Tomita Isao
-      - name: Tomita Nobuko
-    role: Editor
-  - people:
-      - name: Haraguchi Tomoo
-    role: Makeup Effects
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: SFX Director
 studios:
   - Tohokushinsha Film Corporation
   - Tokyo Broadcasting System Television, Inc.

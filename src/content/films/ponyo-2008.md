@@ -4,37 +4,6 @@ japanese_title: 崖の上のポニョ
 poster_url: /static/images/films/posters/ponyo-2008.webp
 release_date: 2008-07-19
 runtime: 101
-staff:
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Director
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Story
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Screenplay
-  - people:
-      - name: Suzuki Toshio
-    role: Producer
-  - people:
-      - name: Yoshida Noboru
-    role: Art
-  - people:
-      - name: Okui Atsushi
-    role: Photography
-  - people:
-      - name: Hisaishi Joe
-    role: Music
-  - people:
-      - name: Kimura Eriko
-    role: Sound
-  - people:
-      - name: Seyama Takeshi
-    role: Editor
 studios:
   - Studio Ghibli, Inc.
   - Nippon Television Network Corporation

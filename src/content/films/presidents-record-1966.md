@@ -4,40 +4,6 @@ japanese_title: 社長行状記
 title: President’s Record
 release_date: 1966-01-03
 draft: true
-staff:
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Sugie Toshio
-    role: Screenplay
-  - people:
-      - name: Matsubayashi Shûe
-    role: Director
-  - people:
-      - name: Suzuki Takeshi
-    role: Photography
-  - people:
-      - name: Ishii Chôshirô
-    role: Lighting
-  - people:
-      - name: Muraki Shinobu
-    role: Art
-  - people:
-      - name: Saitô Akira
-    role: Sound
-  - people:
-      - name: Yamamoto Naozumi
-    role: Music
-  - people:
-      - name: Iwashita Kôichi
-    role: Editing
-  - people:
-      - name: Asano Masao
-    role: Assistant Director
-  - people:
-      - name: Yoshizaki Matsuo
-    role: Still
 top_billed_cast:
   - name: Morishige Hisaya
     role: Kurihara Yaichirô

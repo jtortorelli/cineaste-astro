@@ -4,37 +4,6 @@ japanese_title: 社長千一夜
 title: President’s Thousand and One Nights
 release_date: 1967-01-01
 draft: true
-staff:
-  - people:
-      - name: Fujimoto Sanezumi
-    role: Producer
-  - people:
-      - name: Kasahara Ryôzô
-    role: Screenplay
-  - people:
-      - name: Matsubayashi Shûe
-    role: Director
-  - people:
-      - name: Hasegawa Kiyoshi
-    role: Photography
-  - people:
-      - name: Ishii Chôshirô
-    role: Lighting
-  - people:
-      - name: Muraki Shinobu
-    role: Art
-  - people:
-      - name: Yanoguchi Fumio
-    role: Sound
-  - people:
-      - name: Taku Kôji
-    role: Music
-  - people:
-      - name: Iwashita Kôichi
-    role: Editing
-  - people:
-      - name: Yoshizaki Matsuo
-    role: Still
 top_billed_cast:
   - name: Morishige Hisaya
     role: Shôji Keitarô

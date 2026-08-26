@@ -10,36 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/kamui-gaiden-2009.webp
 release_date: 2009-09-19
 runtime: 120
-staff:
-  - people:
-      - name: Sai Yôichi
-    role: Director
-  - people:
-      - name: Kudô Kankurô
-      - name: Sai Yôichi
-    role: Screenplay
-  - people:
-      - name: Iwashiro Tarô
-    role: Music
-  - people:
-      - name: Ezaki Tomoo
-      - name: Fujisawa Jun'ichi
-    role: Photography
-  - people:
-      - name: Imamura Tsutomu
-    role: Art
-  - people:
-      - name: Watanabe Kôichi
-    role: Lighting
-  - people:
-      - name: Shiratori Mitsugu
-    role: Sound
-  - people:
-      - name: Kawase Isao
-    role: Editor
-  - people:
-      - name: Tsukuda Norihiko
-    role: Screenplay Cooperation
 studios:
   - Shochiku Co., Ltd.
   - Total

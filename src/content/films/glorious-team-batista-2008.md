@@ -10,33 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/glorious-team-batista-2008.webp
 release_date: 2008-02-09
 runtime: 118
-staff:
-  - people:
-      - name: Nakamura Yoshihiro
-    role: Director
-  - people:
-      - name: Saitô Hiroshi
-      - name: Makita Mitsuharu
-    role: Screenplay
-  - people:
-      - name: Satô Naoki
-        slug: sato-naoki
-    role: Music
-  - people:
-      - name: Sakakibara Yasushi
-    role: Photography
-  - people:
-      - name: Inori Miyanobu
-    role: Lighting
-  - people:
-      - name: Onodera Osamu
-    role: Sound
-  - people:
-      - name: Heya Kyôko
-    role: Art
-  - people:
-      - name: Abe Hirohide
-    role: Editor
 studios:
   - Tokyo Broadcasting System Television, Inc.
   - Toho Co., Ltd.

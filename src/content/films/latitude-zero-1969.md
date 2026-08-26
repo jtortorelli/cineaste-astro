@@ -32,52 +32,6 @@ kaiju:
 poster_url: /static/images/films/posters/latitude-zero-1969.webp
 release_date: 1969-07-26
 runtime: 105
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Sekizawa Shin'ichi
-        slug: sekizawa-shinichi
-      - name: Ted Sherdeman
-    role: Screenplay
-  - people:
-      - name: Kankura Taiichi
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-    role: Art
-  - people:
-      - name: Fujiyoshi Masao
-    role: Sound
-  - people:
-      - name: Onda Kiichi
-    role: Lighting
-  - people:
-      - name: Takeda Ume
-    role: Editor
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Assistant Director
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
 studios:
   - Toho Co., Ltd.
 supporting_cast:

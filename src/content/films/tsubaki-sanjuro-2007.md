@@ -10,37 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/tsubaki-sanjuro-2007.webp
 release_date: 2007-12-01
 runtime: 119
-staff:
-  - people:
-      - name: Morita Yoshimitsu
-    role: Director
-  - people:
-      - name: Kadokawa Haruki
-    role: Executive Producer
-  - people:
-      - name: Kikushima Ryûzô
-      - name: Oguni Hideo
-      - name: Kurosawa Akira
-        slug: kurosawa-akira
-    role: Screenplay
-  - people:
-      - name: Hamada Takeshi
-    role: Photography
-  - people:
-      - name: Ogawa Fumio
-    role: Art
-  - people:
-      - name: Shibayama Nobuhiro
-    role: Sound
-  - people:
-      - name: Watanabe Mitsuo
-    role: Lighting
-  - people:
-      - name: Tanaka Shinji
-    role: Editor
-  - people:
-      - name: Ôshima Michiru
-    role: Music
 studios:
   - Kadokawa Haruki Corporation
   - Toho Co., Ltd.

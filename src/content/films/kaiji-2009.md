@@ -13,31 +13,6 @@ original_works:
 poster_url: /static/images/films/posters/kaiji-2009.webp
 release_date: 2009-10-10
 runtime: 129
-staff:
-  - people:
-      - name: Satô Tôya
-    role: Director
-  - people:
-      - name: Ômori Mika
-    role: Screenplay
-  - people:
-      - name: Kan'no Yûgo
-    role: Music
-  - people:
-      - name: Yanagijima Katsumi
-    role: Photography
-  - people:
-      - name: Suzuki Kôsuke
-    role: Lighting
-  - people:
-      - name: Wakui Ryôji
-    role: Sound
-  - people:
-      - name: Koike Hiroshi
-    role: Art
-  - people:
-      - name: Kusakabe Mototaka
-    role: Editor
 studios:
   - Nippon Television Network Corporation
   - The Sapporo Television Broadcasting Co.,Ltd.

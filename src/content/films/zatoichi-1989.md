@@ -11,40 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-1989.webp
 release_date: 1989-02-04
 runtime: 116
-staff:
-  - people:
-      - name: Katsu Shintarô
-    role: Director
-  - people:
-      - name: Katsu Shintarô
-      - name: Tsukamoto Jun Adams
-    role: Producer
-  - people:
-      - name: Katsu Shintarô
-      - name: Nakamura Tsutomu
-      - name: Ichiyama Tatsumi
-    role: Screenplay
-  - people:
-      - name: Nakaoka Kyôhei
-    role: Adaptation
-  - people:
-      - name: Naganuma Mutsuo
-    role: Photography
-  - people:
-      - name: Kumagai Hideo
-    role: Lighting
-  - people:
-      - name: Horiuchi Senchi
-    role: Sound
-  - people:
-      - name: Umeda Chiyoo
-    role: Art
-  - people:
-      - name: Taniguchi Toshio
-    role: Editor
-  - people:
-      - name: Edison
-    role: Music
 studios:
   - Katsu Productions
   - Miku

@@ -4,35 +4,6 @@ japanese_title: 宇宙大怪獣ギララ
 poster_url: /static/images/films/posters/x-from-outer-space-1967.webp
 release_date: 1967-03-25
 runtime: 88
-staff:
-  - people:
-      - name: Nihonmatsu Kazui
-    role: Director
-  - people:
-      - name: Ikeda Hiroshi
-    role: SFX Director
-  - people:
-      - name: Motomichi Eibi
-      - name: Ishida Moriyoshi
-      - name: Nihonmatsu Kazui
-    role: Screenplay
-  - people:
-      - name: Hirase Shizuo
-      - name: Ôgoshi Chitora
-    role: Photography
-  - people:
-      - name: Shigeta Shigemori
-    role: Art
-  - people:
-      - name: Izumi Taku
-    role: Music
-  - people:
-      - name: Tsubuki Masa
-      - name: Takahashi Toshifumi
-    role: Lighting
-  - people:
-      - name: Sugihara Yoshi
-    role: Editor
 studios:
   - Shochiku Co., Ltd.
 title: The X from Outer Space

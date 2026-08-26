@@ -15,41 +15,6 @@ original_works:
 poster_url: /static/images/films/posters/samurai-commando-mission-1549-2005.webp
 release_date: 2005-06-11
 runtime: 120
-staff:
-  - people:
-      - name: Tezuka Masaaki
-    role: Director
-  - people:
-      - name: Takeuchi Kiyoto
-      - name: Matsuura Yasushi
-    role: Screenplay
-  - people:
-      - name: shezoo
-    role: Music
-  - people:
-      - name: Fujishi Osamu
-    role: Photography
-  - people:
-      - name: Shimizu Takeshi
-    role: Art
-  - people:
-      - name: Watanabe Mitsuo
-    role: Lighting
-  - people:
-      - name: Yuwaki Fusao
-    role: Sound
-  - people:
-      - name: Fushima Shin'ichi
-    role: Editor
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: SFX Director
-  - people:
-      - name: Watanabe Ken'ichi
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: Planning Cooperation
 studios:
   - Kadokawa Pictures, Inc.
   - Japan Film Fund

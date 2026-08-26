@@ -33,44 +33,6 @@ video_review:
 poster_url: /static/images/films/posters/godzilla-raids-again-1955.webp
 release_date: 1955-04-24
 runtime: 82
-staff:
-  - people:
-      - name: Oda Motoyoshi
-        slug: oda-motoyoshi
-    role: Director
-  - people:
-      - alias: Tsumuraya Eiji
-        name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Murata Takeo
-      - name: Hidaka Shigeaki
-    role: Screenplay
-  - people:
-      - name: Endô Seiichi
-    role: Photography
-  - people:
-      - name: Kita Takeo
-        slug: kita-takeo
-    role: Art Director
-  - people:
-      - name: Miyazaki Masanobu
-    role: Sound
-  - people:
-      - name: Ônuma Masaki
-    role: Lighting
-  - people:
-      - name: Satô Masaru
-        slug: sato-masaru
-    role: Music
-  - people:
-      - name: Taira Kazuji
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

@@ -9,37 +9,6 @@ video_review:
 poster_url: /static/images/films/posters/warning-from-space-1956.webp
 release_date: 1956-01-29
 runtime: 82
-staff:
-  - people:
-      - name: Shima Kôji
-    role: Director
-  - people:
-      - name: Nagata Masaichi
-    role: Producer
-  - people:
-      - name: Nakajima Gentarô
-    role: Story
-  - people:
-      - name: Oguni Hideo
-    role: Screenplay
-  - people:
-      - name: Watanabe Kimio
-    role: Photography
-  - people:
-      - name: Nishii Ken'ichi
-    role: Sound
-  - people:
-      - name: Kubota Kôichi
-    role: Lighting
-  - people:
-      - name: Kan'no Shigeo
-    role: Art
-  - people:
-      - name: Ômori Seitarô
-    role: Music
-  - people:
-      - name: Suzuki Tôyô
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 title: Warning from Space

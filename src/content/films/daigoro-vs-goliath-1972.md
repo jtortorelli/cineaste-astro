@@ -17,38 +17,6 @@ kaiju:
 poster_url: /static/images/films/posters/daigoro-vs-goliath-1972.webp
 release_date: 1972-12-17
 runtime: 85
-staff:
-  - people:
-      - name: Îjima Toshihiro
-    role: Director
-  - people:
-      - name: Ôki Junkichi
-      - name: Nakano Minoru
-    role: SFX
-  - people:
-      - name: Tsuburaya Hajime
-    role: Producer
-  - people:
-      - name: Îjima Toshihiro
-    role: Screenplay
-  - people:
-      - name: Maita Shôkô
-    role: Music
-  - people:
-      - name: Inagaki Yôzô
-    role: Photography
-  - people:
-      - name: Ikeya Noriyoshi
-    role: Art
-  - people:
-      - name: Arai Mori
-    role: Lighting
-  - people:
-      - name: Tokyo Film and Video Department
-    role: Sound
-  - people:
-      - name: Shirae Takao
-    role: Editor
 studios:
   - Toho Co., Ltd.
   - Tsuburaya Productions Co., Ltd.

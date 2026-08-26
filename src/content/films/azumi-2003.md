@@ -10,45 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/azumi-2003.webp
 release_date: 2003-05-10
 runtime: 142
-staff:
-  - people:
-      - name: Kitamura Ryûhei
-    role: Director
-  - people:
-      - name: Yamamoto Mataichirô
-    role: Producer
-  - people:
-      - alias: Mizushima Rikiya
-        name: Yamamoto Mataichirô
-      - name: Kiriyama Isao
-    role: Screenplay
-  - people:
-      - name: Furuya Takumi
-    role: Photography
-  - people:
-      - name: Takasaka Toshihide
-    role: Lighting
-  - people:
-      - name: Hayashida Yûji
-    role: Art
-  - people:
-      - name: Ohara Yoshiya
-    role: Sound
-  - people:
-      - name: Kakesu Shûichi
-    role: Editor
-  - people:
-      - name: Iwashiro Tarô
-    role: Music Producer
-  - people:
-      - name: Sextasy Room
-    role: Music
-  - people:
-      - name: Iwashiro Tarô
-    role: Score Arrangement
-  - people:
-      - name: Iwashiro Tarô
-    role: Conductor
 studios:
   - Nippon Herald Films, Inc.
   - Tokyo Broadcasting System Television, Inc.

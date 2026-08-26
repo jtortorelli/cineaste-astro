@@ -10,31 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/gods-left-hand-devils-right-hand-2006.webp
 release_date: 2006-07-22
 runtime: 95
-staff:
-  - people:
-      - name: Kaneko Shûsuke
-    role: Director
-  - people:
-      - name: Matsugae Yoshinori
-    role: Screenplay
-  - people:
-      - name: Wataru Hokoyama
-    role: Music
-  - people:
-      - name: Takama Kenji
-    role: Photography
-  - people:
-      - name: Uwabo Masamichi
-    role: Lighting
-  - people:
-      - name: Iwamaru Hisashi
-    role: Sound
-  - people:
-      - name: Oikawa Ichi
-    role: Art
-  - people:
-      - name: Yafune Yôsuke
-    role: Editor
 studios:
   - Toshiba Entertainment Corporation
   - Shochiku Co., Ltd.

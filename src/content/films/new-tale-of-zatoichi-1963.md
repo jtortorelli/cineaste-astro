@@ -11,33 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/new-tale-of-zatoichi-1963.webp
 release_date: 1963-03-15
 runtime: 91
-staff:
-  - people:
-      - name: Tanaka Tokuzô
-    role: Director
-  - people:
-      - name: Inuzuka Minoru
-      - name: Umebayashi Kikuo
-    role: Screenplay
-  - people:
-      - name: Makiura Chikashi
-    role: Photography
-  - people:
-      - name: Ôsumi Masao
-    role: Sound
-  - people:
-      - name: Furuya Kenji
-    role: Lighting
-  - people:
-      - name: Ôta Seiichi
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Yamada Hiroshi
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

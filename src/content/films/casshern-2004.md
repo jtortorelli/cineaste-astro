@@ -9,41 +9,6 @@ original_works:
 poster_url: /static/images/films/posters/casshern-2004.webp
 release_date: 2004-04-24
 runtime: 141
-staff:
-  - people:
-      - name: Kiriya Kazuaki
-    role: Director
-  - people:
-      - name: Kiriya Kazuaki
-    role: Photography Director
-  - people:
-      - name: Kiriya Kazuaki
-    role: Editor
-  - people:
-      - name: Kiriya Kazuaki
-      - name: Suga Shôtarô
-      - name: Satô Dai
-    role: Screenplay
-  - people:
-      - name: Hayashida Yûji
-    role: Art
-  - people:
-      - name: Kiriya Kazuaki
-      - name: Morishita Shôzô
-    role: Photography
-  - people:
-      - name: Watanabe Yoshimi
-    role: Lighting
-  - people:
-      - name: Yano Masato
-    role: Sound
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: Battle Scene Storyboards
-  - people:
-      - name: Sagisu Shirô
-    role: Music
 studios:
   - Shochiku Co., Ltd.
   - Progressive Pictures

@@ -15,47 +15,6 @@ kaiju:
 poster_url: /static/images/films/posters/rebirth-of-mothra-ii-1997.webp
 release_date: 1997-12-13
 runtime: 100
-staff:
-  - people:
-      - name: Miyoshi Kunio
-    role: Director
-  - people:
-      - name: Kawakita Kôichi
-    role: SFX Director
-  - people:
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Story
-  - people:
-      - name: Suetani Masumi
-    role: Screenplay
-  - people:
-      - name: Watanabe Toshiyuki
-    role: Music
-  - people:
-      - name: Sekiguchi Yoshinori
-    role: Photography
-  - people:
-      - name: Shimizu Takeshi
-    role: Art
-  - people:
-      - name: Ikeda Noboru
-    role: Sound Director
-  - people:
-      - name: Ôsawa Teruo
-    role: Lighting
-  - people:
-      - name: Yoneda Miho
-    role: Editor
-  - people:
-      - name: Tezuka Masaaki
-    role: Assistant Director
-  - people:
-      - name: Suzuki Kenji
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

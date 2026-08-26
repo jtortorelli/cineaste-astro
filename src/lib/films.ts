@@ -21,18 +21,18 @@ export function staffFromCsv(
   rows: Record<string, string>[],
 ): StaffGroup[] {
   const groups: StaffGroup[] = [];
-  const roleIndex = new Map<string, number>();
 
-  for (const { role, person_display_name, person_slug } of rows) {
+  for (const { role, person_display_name, person_slug, person_alias } of rows) {
     const person: StaffGroup["people"][number] = {
       name: person_display_name,
       ...(person_slug ? { slug: person_slug } : {}),
+      ...(person_alias ? { alias: person_alias } : {}),
     };
 
-    if (roleIndex.has(role)) {
-      groups[roleIndex.get(role)!].people.push(person);
+    const last = groups.at(-1);
+    if (last && last.role === role) {
+      last.people.push(person);
     } else {
-      roleIndex.set(role, groups.length);
       groups.push({ role, people: [person] });
     }
   }

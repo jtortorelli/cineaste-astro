@@ -10,35 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/eko-eko-azarak-ii-birth-of-the-wizard-1996.webp
 release_date: 1996-04-10
 runtime: 83
-staff:
-  - people:
-      - name: Satô Shimako
-    role: Director
-  - people:
-      - name: Satô Shimako
-    role: Screenplay
-  - people:
-      - name: Katakura Mikiya
-    role: Music
-  - people:
-      - name: Sudô Shôei
-    role: Photography
-  - people:
-      - name: Yoshimura Mitsutaku
-    role: Lighting
-  - people:
-      - name: Yoneyama Hideaki
-    role: Sound
-  - people:
-      - name: Sakamoto Kyodai
-    role: Art
-  - people:
-      - name: Kawahara Hiroshi
-    role: Editor
-  - people:
-      - name: Yamazaki Takashi
-        slug: yamazaki-takashi
-    role: SFX Supervisor
 studios:
   - Gaga Communications, Inc.
   - Tsuburaya Productions Co., Ltd.

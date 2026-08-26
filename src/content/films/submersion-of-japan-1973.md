@@ -13,49 +13,6 @@ original_works:
 poster_url: /static/images/films/posters/submersion-of-japan-1973.webp
 release_date: 1973-12-29
 runtime: 140
-staff:
-  - people:
-      - name: Moritani Shirô
-    role: Director
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Tanaka Fumio
-    role: Producer
-  - people:
-      - name: Hashimoto Shinobu
-    role: Screenplay
-  - people:
-      - name: Murai Hiroshi
-      - name: Kimura Daisaku
-    role: Photography
-  - people:
-      - name: Satô Masaru
-        slug: sato-masaru
-    role: Music
-  - people:
-      - name: Muraki Yoshirô
-    role: Art
-  - people:
-      - name: Ban Toshiya
-    role: Sound
-  - people:
-      - name: Satô Kôjirô
-    role: Lighting
-  - people:
-      - name: Hashimoto Kôji
-    role: Assistant Director
-  - people:
-      - name: Ikeda Michiko
-    role: Editor
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
 studios:
   - Toho Co., Ltd.
 supporting_cast:

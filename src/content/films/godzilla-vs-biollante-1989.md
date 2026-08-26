@@ -24,46 +24,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-vs-biollante-1989.webp
 release_date: 1989-12-16
 runtime: 105
-staff:
-  - people:
-      - name: Ômori Kazuki
-    role: Director
-  - people:
-      - name: Ômori Kazuki
-    role: Screenplay
-  - people:
-      - name: Kawakita Kôichi
-    role: SFX Director
-  - people:
-      - name: Kobayashi Shin'ichirô
-    role: Story
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Katô Yûdai
-    role: Photography
-  - people:
-      - name: Ikuno Shigekazu
-    role: Art
-  - people:
-      - name: Miyauchi Kazuo
-    role: Sound
-  - people:
-      - name: Awakihara Tsuyoshi
-    role: Lighting
-  - people:
-      - name: Ikeda Michiko
-    role: Editor
-  - people:
-      - name: Sugiyama Kôichi
-    role: Music
-  - people:
-      - name: Kamiya Makoto
-        slug: kamiya-makoto
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:

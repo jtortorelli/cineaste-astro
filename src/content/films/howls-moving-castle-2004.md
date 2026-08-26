@@ -10,34 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/howls-moving-castle-2004.webp
 release_date: 2004-11-20
 runtime: 119
-staff:
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Director
-  - people:
-      - name: Suzuki Toshio
-    role: Producer
-  - people:
-      - name: Miyazaki Hayao
-        slug: miyazaki-hayao
-    role: Screenplay
-  - people:
-      - name: Hisaishi Joe
-    role: Music
-  - people:
-      - name: Takeshige Yôji
-      - name: Yoshida Noboru
-    role: Art Director
-  - people:
-      - name: Okui Atsushi
-    role: Photography
-  - people:
-      - name: Wakabayashi Kazuhiro
-    role: Sound
-  - people:
-      - name: Seyama Takeshi
-    role: Editor
 studios:
   - Tokuma Shoten Publishing Co., Ltd.
   - Nippon Television Network Corporation

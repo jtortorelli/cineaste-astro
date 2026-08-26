@@ -26,49 +26,6 @@ video_review:
 poster_url: /static/images/films/posters/rodan-1956.webp
 release_date: 1956-12-26
 runtime: 82
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Murata Takeo
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-        alias: Kimura Takeshi
-    role: Screenplay
-  - people:
-      - name: Ashida Isamu
-    role: Photography
-  - people:
-      - name: Kita Tatsuo
-    role: Art
-  - people:
-      - name: Miyazaki Masanobu
-    role: Sound
-  - people:
-      - name: Mori Shigeru
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - alias: Tsumuraya Eiji
-        name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Fukuda Jun
-        slug: fukuda-jun
-    role: Assistant Director
-  - people:
-      - name: Iwashita Kôichi
-    role: Editor
 studios:
   - Toho Co., Ltd.
 supporting_cast:

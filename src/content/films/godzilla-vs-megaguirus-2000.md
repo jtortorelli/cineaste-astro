@@ -16,45 +16,6 @@ kaiju:
 poster_url: /static/images/films/posters/godzilla-vs-megaguirus-2000.webp
 release_date: 2000-12-16
 runtime: 105
-staff:
-  - people:
-      - name: Tezuka Masaaki
-    role: Director
-  - people:
-      - name: Suzuki Kenji
-    role: SFX
-  - people:
-      - name: Tomiyama Shôgo
-    role: Producer
-  - people:
-      - name: Kashiwabara Hiroshi
-      - name: Mimura Wataru
-    role: Screenplay
-  - people:
-      - name: Kishimoto Masahiro
-    role: Photography
-  - people:
-      - name: Seshimo Yukiharu
-    role: Art
-  - people:
-      - name: Saitô Teiichi
-    role: Sound
-  - people:
-      - name: Saito Kaoru
-    role: Lighting
-  - people:
-      - name: Fushima Shin'ichi
-    role: Editor
-  - people:
-      - name: Ôshima Michiru
-    role: Music
-  - people:
-      - name: Kikuchi Yûichi
-    role: SFX Assistant Director
-  - people:
-      - name: Onoue Katsurô
-        slug: onoue-katsuro
-    role: Physical FX Assistant
 studios:
   - Toho Co., Ltd.
 supporting_cast:

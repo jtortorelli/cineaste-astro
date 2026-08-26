@@ -22,34 +22,6 @@ kaiju:
 poster_url: /static/images/films/posters/gamera-vs-guiron-1969.webp
 release_date: 1969-03-21
 runtime: 82
-staff:
-  - people:
-      - name: Yuasa Noriaki
-    role: Director
-  - people:
-      - name: Nagata Hidemasa
-    role: Producer
-  - people:
-      - name: Takahashi Nisan
-    role: Screenplay
-  - people:
-      - name: Kitazaki Akira
-    role: Photography
-  - people:
-      - name: Tobita Kimio
-    role: Sound
-  - people:
-      - name: Uehara Shôichi
-    role: Lighting
-  - people:
-      - name: Inoue Akira
-    role: Art
-  - people:
-      - name: Kikuchi Shunsuke
-    role: Music
-  - people:
-      - name: Miyazaki Yoshiyuki
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

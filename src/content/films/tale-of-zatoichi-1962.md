@@ -11,32 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/tale-of-zatoichi-1962.webp
 release_date: 1962-04-18
 runtime: 96
-staff:
-  - people:
-      - name: Misumi Kenji
-    role: Director
-  - people:
-      - name: Inuzuka Minoru
-    role: Screenplay
-  - people:
-      - name: Makiura Chikashi
-    role: Photography
-  - people:
-      - name: Ôtani Iwao
-    role: Sound
-  - people:
-      - name: Katô Hiroya
-    role: Lighting
-  - people:
-      - name: Naitô Akira
-    role: Art
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Suganuma Kanji
-    role: Editor
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

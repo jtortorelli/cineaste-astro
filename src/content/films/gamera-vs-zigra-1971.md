@@ -14,34 +14,6 @@ kaiju:
 poster_url: /static/images/films/posters/gamera-vs-zigra-1971.webp
 release_date: 1971-07-17
 runtime: 88
-staff:
-  - people:
-      - name: Yuasa Noriaki
-    role: Director
-  - people:
-      - name: Nagata Hidemasa
-    role: Producer
-  - people:
-      - name: Takahashi Nisan
-    role: Screenplay
-  - people:
-      - name: Uehara Akira
-    role: Photography
-  - people:
-      - name: Okuyama Hideo
-    role: Sound
-  - people:
-      - name: Kuboe Heihachi
-    role: Lighting
-  - people:
-      - name: Yano Tomohisa
-    role: Art
-  - people:
-      - name: Kikuchi Shunsuke
-    role: Music
-  - people:
-      - name: Miyazaki Yoshiyuki
-    role: Editor
 studios:
   - Dainichi Film Distribution Co., Ltd
   - Daiei Film Co., Ltd.

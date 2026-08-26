@@ -10,39 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/lupin-the-3rd-2014.webp
 release_date: 2014-08-30
 runtime: 133
-staff:
-  - people:
-      - name: Kitamura Ryûhei
-    role: Director
-  - people:
-      - name: Yamamoto Mataichirô
-    role: Producer
-  - people:
-      - name: Yamamoto Mataichirô
-    role: Screenplay
-  - people:
-      - name: Pedro J. Marquez
-      - name: Furuya Takumi
-    role: Photography
-  - people:
-      - name: Maruo Tomoyuki
-    role: Art
-  - people:
-      - name: Aldo Shllaku
-    role: Music
-  - people:
-      - name: Kakesu Shûichi
-    role: Editor
-  - people:
-      - name: Kureishi Yoshifumi
-    role: Sound
-  - people:
-      - name: Wada Yûji
-    role: Lighting
-  - people:
-      - name: Ozaki Masaya
-      - name: Ôtomi Izumi
-    role: Screenplay Cooperation
 studios:
   - Tokyo Broadcasting System Television, Inc.
   - Kadokawa Corporation

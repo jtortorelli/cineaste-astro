@@ -16,51 +16,6 @@ kaiju:
 poster_url: /static/images/films/posters/varan-the-unbelievable-1958.webp
 release_date: 1958-10-14
 runtime: 82
-staff:
-  - people:
-      - name: Honda Ishirô
-        slug: honda-ishiro
-    role: Director
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Kuronuma Ken
-    role: Story
-  - people:
-      - name: Sekizawa Shin'ichi
-        slug: sekizawa-shinichi
-    role: Screenplay
-  - people:
-      - name: Koizumi Hajime
-        slug: koizumi-hajime
-    role: Photography
-  - people:
-      - name: Shimizu Kiyoshi
-    role: Art
-  - people:
-      - name: Onuma Wataru
-      - name: Miyazaki Masanobu
-    role: Sound
-  - people:
-      - name: Kaneko Mitsuo
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Iwashita Kôichi
-    role: Editor
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
 studios:
   - Toho Co., Ltd.
 supporting_cast:

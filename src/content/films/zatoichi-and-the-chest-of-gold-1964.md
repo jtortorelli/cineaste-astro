@@ -11,35 +11,6 @@ original_works:
 poster_url: /static/images/films/posters/zatoichi-and-the-chest-of-gold-1964.webp
 release_date: 1964-03-14
 runtime: 83
-staff:
-  - people:
-      - name: Ikehiro Kazuo
-    role: Director
-  - people:
-      - name: Asai Shôzaburô
-      - name: Ôta Akikazu
-    role: Screenplay
-  - people:
-      - name: Miyagawa Kazuo
-    role: Photography
-  - people:
-      - name: Ôtani Iwao
-    role: Sound
-  - people:
-      - name: Nakaoka Genken
-    role: Lighting
-  - people:
-      - name: Nishioka Yoshinobu
-    role: Art
-  - people:
-      - name: Saitô Ichirô
-    role: Music
-  - people:
-      - name: Taniguchi Takashi
-    role: Editor
-  - people:
-      - name: Inoue Akira
-    role: Assistant Director
 studios:
   - Daiei Film Co., Ltd.
 supporting_cast:

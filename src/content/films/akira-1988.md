@@ -10,29 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/akira-1988.webp
 release_date: 1988-07-16
 runtime: 124
-staff:
-  - people:
-      - name: Ôtomo Katsuhiro
-    role: Director
-  - people:
-      - name: Ôtomo Katsuhiro
-      - name: Hashimoto Izô
-    role: Screenplay
-  - people:
-      - name: Mizutani Toshiharu
-    role: Art Director
-  - people:
-      - name: Misawa Katsuji
-    role: Photography
-  - people:
-      - name: Akitagawa Susumu
-    role: Sound
-  - people:
-      - name: Ôhashi Tsutomu
-    role: Music
-  - people:
-      - name: Seyama Takeshi
-    role: Editor
 studios:
   - Kodansha Ltd.
   - Mainichi Broadcasting System, Inc.

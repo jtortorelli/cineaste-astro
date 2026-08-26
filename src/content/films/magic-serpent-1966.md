@@ -4,31 +4,6 @@ japanese_title: 怪竜大決戦
 poster_url: /static/images/films/posters/magic-serpent-1966.webp
 release_date: 1966-12-21
 runtime: 94
-staff:
-  - people:
-      - name: Yamanouchi Tetsuya
-    role: Director
-  - people:
-      - name: Igami Masaru
-    role: Screenplay
-  - people:
-      - name: Washio Motoya
-    role: Photography
-  - people:
-      - name: Hasegawa Takeo
-    role: Lighting
-  - people:
-      - name: Arakawa Teruhiko
-    role: Sound
-  - people:
-      - name: Yada Seiji
-    role: Art
-  - people:
-      - name: Tsushima Toshiaki
-    role: Music
-  - people:
-      - name: Kanda Tadao
-    role: Editor
 studios:
   - Toei Co., Ltd.
 supporting_cast:

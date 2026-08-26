@@ -10,34 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/shinobi-heart-under-blade-2005.webp
 release_date: 2005-09-17
 runtime: 101
-staff:
-  - people:
-      - name: Shimoyama Ten
-    role: Director
-  - people:
-      - name: Hirata Ken'ya
-    role: Screenplay
-  - people:
-      - name: Chikamori Masashi
-    role: Photography
-  - people:
-      - name: Watanabe Kôichi
-    role: Lighting
-  - people:
-      - name: Isomi Toshihiro
-    role: Art
-  - people:
-      - name: Suzuki Hajime
-    role: Sound
-  - people:
-      - name: Kawase Isao
-    role: Editor
-  - people:
-      - name: Iwashiro Tarô
-    role: Music
-  - people:
-      - name: Shimomura Yûji
-    role: Action Director
 studios:
   - Shochiku Co., Ltd.
   - Nippon Television Network Corporation

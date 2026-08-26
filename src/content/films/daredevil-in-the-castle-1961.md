@@ -10,53 +10,6 @@ original_works:
 poster_url: /static/images/films/posters/daredevil-in-the-castle-1961.webp
 release_date: 1961-01-03
 runtime: 95
-staff:
-  - people:
-      - name: Inagaki Hiroshi
-        slug: inagaki-hiroshi
-    role: Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-    role: Producer
-  - people:
-      - name: Mabuchi Kaoru
-        slug: mabuchi-kaoru
-        alias: Kimura Takeshi
-      - name: Inagaki Hiroshi
-        slug: inagaki-hiroshi
-    role: Screenplay
-  - people:
-      - name: Yamada Kazuo
-    role: Photography
-  - people:
-      - name: Ueda Hiroshi
-    role: Art
-  - people:
-      - name: Nishikawa Yoshio
-      - name: Miyazaki Masanobu
-    role: Sound
-  - people:
-      - name: Kojima Shôshichi
-    role: Lighting
-  - people:
-      - name: Ifukube Akira
-        slug: ifukube-akira
-    role: Music
-  - people:
-      - name: Iwashita Kôichi
-    role: Editor
-  - people:
-      - name: Tsuburaya Eiji
-        slug: tsuburaya-eiji
-    role: SFX Director
-  - people:
-      - name: Arikawa Sadamasa
-        slug: arikawa-sadamasa
-    role: SFX Photography
-  - people:
-      - name: Kuze Ryû
-    role: Swordmaster
 studios:
   - Toho Co., Ltd.
 supporting_cast:

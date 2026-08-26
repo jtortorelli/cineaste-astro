@@ -4,40 +4,6 @@ japanese_title: ASSAULT GIRLS
 poster_url: /static/images/films/posters/assault-girls-2009.webp
 release_date: 2009-12-19
 runtime: 70
-staff:
-  - people:
-      - name: Oshii Mamoru
-    role: Director
-  - people:
-      - name: Oshii Mamoru
-    role: Screenplay
-  - people:
-      - name: Kawai Kenji
-        slug: kawai-kenji
-    role: Music
-  - people:
-      - name: Yuasa Hiroaki
-      - name: Satô Atsuki
-    role: Photography
-  - people:
-      - name: Satô Atsuki
-    role: Editor
-  - people:
-      - name: Satô Atsuki
-    role: VFX Supervisor
-  - people:
-      - name: Seki Teruhisa
-    role: Lighting
-  - people:
-      - name: Kurokawa Michitoshi
-    role: Art
-  - people:
-      - name: Wakabayashi Kazuhiro
-    role: Sound
-  - people:
-      - name: Higuchi Shinji
-        slug: higuchi-shinji
-    role: Key Art Design
 studios:
   - deiz
   - Geneon Universal Entertainment

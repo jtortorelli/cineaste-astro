@@ -15,53 +15,6 @@ original_works:
 poster_url: /static/images/films/posters/prophecies-of-nostradamus-1974.webp
 release_date: 1974-08-03
 runtime: 114
-staff:
-  - people:
-      - name: Masuda Toshio
-    role: Director
-  - people:
-      - name: Nakano Teruyoshi
-        slug: nakano-teruyoshi
-    role: SFX Director
-  - people:
-      - name: Tanaka Tomoyuki
-        slug: tanaka-tomoyuki
-      - name: Tanaka Osamu
-    role: Producer
-  - people:
-      - name: Yasumi Toshio
-      - name: Masuda Toshio
-      - name: Banno Yoshimitsu
-    role: Screenplay
-  - people:
-      - name: Nishigaki Rokurô
-      - name: Washio Kaoru
-    role: Photography
-  - people:
-      - name: Muraki Yoshirô
-    role: Art
-  - people:
-      - name: Masuo Kanae
-    role: Sound
-  - people:
-      - name: Kojima Shinji
-    role: Lighting
-  - people:
-      - name: Tomita Isao
-    role: Music
-  - people:
-      - name: Banno Yoshimitsu
-    role: Co-Director
-  - people:
-      - name: Ogawa Nobuo
-    role: Editor
-  - people:
-      - name: Inoue Yasuyuki
-        slug: inoue-yasuyuki
-    role: SFX Art
-  - people:
-      - name: Kawakita Kôichi
-    role: SFX Assistant Director
 studios:
   - Toho Co., Ltd.
 supporting_cast:
