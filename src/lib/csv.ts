@@ -62,3 +62,19 @@ export function loadCsvBySlug(
 export function isTruthy(value: unknown): boolean {
   return value === true || value === "TRUE" || value === "true";
 }
+
+export type HomeVideoRow = {
+  slug: string;
+  title: string;
+  format: string;
+  publisher: string;
+  year: string;
+  film_slugs: string;
+  notes: string;
+};
+
+export function loadHomeVideosCsv(): HomeVideoRow[] {
+  return parseCsvFile(join(DATA_DIR, "home-videos.csv")).filter(
+    (row) => row.slug,
+  ) as HomeVideoRow[];
+}

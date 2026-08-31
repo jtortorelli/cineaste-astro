@@ -1,0 +1,101 @@
+---
+import FilmShowcaseLink from "./FilmShowcaseLink.astro";
+import Icon from "./Icon.astro";
+import NamedDivider from "./NamedDivider.astro";
+import type { HomeVideoRelease } from "../lib/films";
+
+interface Props {
+  filmSlug: string;
+  releases: HomeVideoRelease[];
+}
+
+const { filmSlug, releases } = Astro.props;
+
+function formatIcon(format: string): { name: string; label: string } {
+  const key = format.toLowerCase().replace(/[_\s]+/g, "-");
+  if (key === "vhs") return { name: "device-audio-tape", label: "VHS" };
+  if (key === "dvd") return { name: "disc", label: "DVD" };
+  if (key === "blu-ray" || key === "bluray") {
+    return { name: "disc", label: "Blu-ray" };
+  }
+  if (key === "vod") return { name: "device-tv", label: "VOD" };
+  return { name: "movie", label: format };
+}
+---
+
+{
+  releases.length > 0 && (
+    <>
+      <NamedDivider name="Home Video" />
+      <div class="font-content text-sm text-gray-700 w-96 sm:w-fit m-auto flex flex-col gap-6">
+        {releases.map((release) => {
+          const companions = release.films.filter(
+            (film) => film.slug !== filmSlug,
+          );
+          const { name: iconName, label: formatLabel } = formatIcon(
+            release.format,
+          );
+          return (
+            <div class="flex gap-4 items-start">
+              {release.artUrl && (
+                <img
+                  class="rounded-lg drop-shadow-lg w-[120px] h-auto object-contain shrink-0 self-start"
+                  src={release.artUrl}
+                  alt={release.title}
+                />
+              )}
+              <div>
+                <div class="text-xs text-gray-500 flex items-center gap-1">
+                  <Icon
+                    name={iconName}
+                    set="tabler"
+                    variant="outline"
+                    class="h-4 w-4 text-gray-500"
+                  />
+                  <span class="uppercase font-detail">{formatLabel}</span>
+                </div>
+                <div class="italic pt-1">{release.title}</div>
+                <div class="text-xs text-gray-500">
+                  {release.publisher}, {release.year}
+                </div>
+                {companions.length > 0 && (
+                  <div class="pt-2">
+                    <div class="uppercase font-detail text-xs text-gray-500">
+                      also includes
+                    </div>
+                    {companions.map((film) => (
+                      <div>
+                        {film.showcased ? (
+                          <FilmShowcaseLink slug={film.slug}>
+                            <span class="italic">{film.title}</span>
+                            {film.year && <> ({film.year})</>}
+                          </FilmShowcaseLink>
+                        ) : (
+                          <>
+                            <span class="italic">{film.title}</span>
+                            {film.year && <> ({film.year})</>}
+                          </>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {release.notes && (
+                  <div class="text-xs text-gray-500 pt-2">
+                    {release.notes
+                      .split(";")
+                      .map((note) => note.trim())
+                      .filter(Boolean)
+                      .map((note) => (
+                        <div>{note}</div>
+                      ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </>
+  )
+}

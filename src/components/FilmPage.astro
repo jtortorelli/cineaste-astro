@@ -13,8 +13,10 @@ import {
   loadSeriesDataFromCsv,
   seriesEntryIsShowcased,
   staffFromCsv,
+  type HomeVideoRelease,
 } from "../lib/films";
 import type { FilmRow } from "../lib/csv";
+import HomeVideoBlock from "./HomeVideoBlock.astro";
 
 interface Props {
   slug: string;
@@ -26,6 +28,7 @@ interface Props {
   staffs: Record<string, Record<string, string>[]>;
   casts: Record<string, Record<string, string>[]>;
   credits: Record<string, Record<string, string>[]>;
+  homeVideos: Record<string, HomeVideoRelease[]>;
 }
 
 const {
@@ -38,6 +41,7 @@ const {
   staffs,
   casts,
   credits,
+  homeVideos,
 } = Astro.props;
 
 const title = data.title as string;
@@ -494,3 +498,4 @@ const creditRows = credits[slug];
     </>
   )
 }
+<HomeVideoBlock filmSlug={slug} releases={homeVideos[slug] ?? []} />

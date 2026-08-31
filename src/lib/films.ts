@@ -1,8 +1,12 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import {
   type FilmRow,
+  type HomeVideoRow,
   isTruthy,
   loadCsvBySlug,
   loadFilmsCsv,
+  loadHomeVideosCsv,
   loadSeriesByName,
 } from "./csv";
 import { releaseYear } from "./dates";
@@ -162,25 +166,119 @@ export function castFromCsv(rows: Record<string, string>[]) {
   return { topBilled, supporting };
 }
 
+export type HomeVideoFilm = {
+  slug: string;
+  title: string;
+  year: string | null;
+  showcased: boolean;
+};
+
+export type HomeVideoRelease = {
+  slug: string;
+  title: string;
+  format: string;
+  publisher: string;
+  year: string;
+  notes: string;
+  artUrl?: string;
+  films: HomeVideoFilm[];
+};
+
+const ART_EXTENSIONS = ["jpg", "jpeg", "png", "webp", "avif"] as const;
+
+export function homeVideoHasArt(slug: string): boolean {
+  const dir = join(process.cwd(), "public/static/images/home-videos", slug);
+  return ART_EXTENSIONS.some((ext) => existsSync(join(dir, `art.${ext}`)));
+}
+
+export function homeVideosByFilmSlug(
+  rows: HomeVideoRow[],
+  films: FilmRow[],
+): Record<string, HomeVideoRelease[]> {
+  const filmsBySlug = new Map(films.map((film) => [film.slug, film]));
+  const releases: HomeVideoRelease[] = [];
+
+  for (const row of rows) {
+    const filmSlugs = row.film_slugs
+      .split(";")
+      .map((slug) => slug.trim())
+      .filter(Boolean);
+
+    const releaseFilms = filmSlugs.map((slug) => {
+      const film = filmsBySlug.get(slug);
+      if (!film) {
+        throw new Error(
+          `home video "${row.slug}" references unknown film slug "${slug}"`,
+        );
+      }
+      return {
+        slug,
+        title: film.title,
+        year: releaseYear(film.release_date, slug),
+        showcased: isTruthy(film.showcased),
+      };
+    });
+
+    releases.push({
+      slug: row.slug,
+      title: row.title,
+      format: row.format,
+      publisher: row.publisher,
+      year: row.year,
+      notes: row.notes ?? "",
+      ...(homeVideoHasArt(row.slug)
+        ? { artUrl: `/static/images/home-videos/${row.slug}/art.webp` }
+        : {}),
+      films: releaseFilms,
+    });
+  }
+
+  const byFilm: Record<string, HomeVideoRelease[]> = {};
+  for (const release of releases) {
+    for (const film of release.films) {
+      (byFilm[film.slug] ??= []).push(release);
+    }
+  }
+
+  for (const list of Object.values(byFilm)) {
+    list.sort((a, b) => {
+      const year = Number(a.year) - Number(b.year);
+      if (year !== 0) return year;
+      const format = a.format.localeCompare(b.format);
+      if (format !== 0) return format;
+      return a.title.localeCompare(b.title);
+    });
+  }
+
+  return byFilm;
+}
+
 let cachedData: {
   films: FilmRow[];
   series: Record<string, { slug: string }[]>;
   credits: Record<string, Record<string, string>[]>;
   staffs: Record<string, Record<string, string>[]>;
   casts: Record<string, Record<string, string>[]>;
+  homeVideos: Record<string, HomeVideoRelease[]>;
 } | null = null;
 
 export function getFilmData() {
-  if (!cachedData) {
-    cachedData = {
-      films: loadFilmsCsv(),
-      series: loadSeriesByName(),
-      credits: loadCsvBySlug("credits"),
-      staffs: loadCsvBySlug("staffs"),
-      casts: loadCsvBySlug("casts"),
-    };
+  if (!import.meta.env.DEV && cachedData) {
+    return cachedData;
   }
-  return cachedData;
+  const films = loadFilmsCsv();
+  const data = {
+    films,
+    series: loadSeriesByName(),
+    credits: loadCsvBySlug("credits"),
+    staffs: loadCsvBySlug("staffs"),
+    casts: loadCsvBySlug("casts"),
+    homeVideos: homeVideosByFilmSlug(loadHomeVideosCsv(), films),
+  };
+  if (!import.meta.env.DEV) {
+    cachedData = data;
+  }
+  return data;
 }
 
 export function filmRecordFromCsv(slug: string, films: FilmRow[]) {
