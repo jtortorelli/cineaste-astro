@@ -187,8 +187,8 @@ export type HomeVideoRelease = {
 const ART_EXTENSIONS = ["jpg", "jpeg", "png", "webp", "avif"] as const;
 
 export function homeVideoHasArt(slug: string): boolean {
-  const dir = join(process.cwd(), "public/static/images/home-videos", slug);
-  return ART_EXTENSIONS.some((ext) => existsSync(join(dir, `art.${ext}`)));
+  const dir = join(process.cwd(), "public/static/images/home-videos");
+  return ART_EXTENSIONS.some((ext) => existsSync(join(dir, `${slug}.${ext}`)));
 }
 
 export function homeVideosByFilmSlug(
@@ -227,7 +227,7 @@ export function homeVideosByFilmSlug(
       year: row.year,
       notes: row.notes ?? "",
       ...(homeVideoHasArt(row.slug)
-        ? { artUrl: `/static/images/home-videos/${row.slug}/art.webp` }
+        ? { artUrl: `/static/images/home-videos/${row.slug}.webp` }
         : {}),
       films: releaseFilms,
     });
