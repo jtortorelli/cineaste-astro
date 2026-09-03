@@ -4,19 +4,25 @@ import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import { convertImagesIntegration } from "./scripts/convert-images.ts";
 
-function watchCsvData() {
+function watchDevData() {
+  const csvDir = join(process.cwd(), "src/data");
+  const homeVideoImages = join(
+    process.cwd(),
+    "public/static/images/home-videos",
+  );
   return {
-    name: "watch-csv-data",
+    name: "watch-dev-data",
     configureServer(server) {
-      server.watcher.add(join(process.cwd(), "src/data"));
+      server.watcher.add(csvDir);
+      server.watcher.add(homeVideoImages);
       const reload = (/** @type {string} */ file) => {
         const normalized = file.replaceAll("\\", "/");
-        if (
-          !normalized.endsWith(".csv") ||
-          !normalized.includes("/src/data/")
-        ) {
-          return;
-        }
+        const csvChanged =
+          normalized.endsWith(".csv") && normalized.includes("/src/data/");
+        const homeVideoArtChanged = normalized.includes(
+          "/static/images/home-videos/",
+        );
+        if (!csvChanged && !homeVideoArtChanged) return;
         for (const mod of server.moduleGraph.idToModuleMap.values()) {
           const id = mod.id?.replaceAll("\\", "/") ?? "";
           if (
@@ -31,6 +37,7 @@ function watchCsvData() {
       };
       server.watcher.on("change", reload);
       server.watcher.on("add", reload);
+      server.watcher.on("unlink", reload);
     },
   };
 }
@@ -39,6 +46,6 @@ export default defineConfig({
   trailingSlash: "never",
   integrations: [convertImagesIntegration()],
   vite: {
-    plugins: [tailwindcss(), watchCsvData()],
+    plugins: [tailwindcss(), watchDevData()],
   },
 });

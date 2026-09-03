@@ -180,15 +180,17 @@ export type HomeVideoRelease = {
   publisher: string;
   year: string;
   notes: string;
-  artUrl?: string;
   films: HomeVideoFilm[];
 };
 
 const ART_EXTENSIONS = ["jpg", "jpeg", "png", "webp", "avif"] as const;
 
-export function homeVideoHasArt(slug: string): boolean {
+export function homeVideoArtUrl(slug: string): string | undefined {
   const dir = join(process.cwd(), "public/static/images/home-videos");
-  return ART_EXTENSIONS.some((ext) => existsSync(join(dir, `${slug}.${ext}`)));
+  const hasArt = ART_EXTENSIONS.some((ext) =>
+    existsSync(join(dir, `${slug}.${ext}`)),
+  );
+  return hasArt ? `/static/images/home-videos/${slug}.webp` : undefined;
 }
 
 export function homeVideosByFilmSlug(
@@ -226,9 +228,6 @@ export function homeVideosByFilmSlug(
       publisher: row.publisher,
       year: row.year,
       notes: row.notes ?? "",
-      ...(homeVideoHasArt(row.slug)
-        ? { artUrl: `/static/images/home-videos/${row.slug}.webp` }
-        : {}),
       films: releaseFilms,
     });
   }

@@ -2,7 +2,7 @@
 import FilmShowcaseLink from "./FilmShowcaseLink.astro";
 import Icon from "./Icon.astro";
 import NamedDivider from "./NamedDivider.astro";
-import type { HomeVideoRelease } from "../lib/films";
+import { homeVideoArtUrl, type HomeVideoRelease } from "../lib/films";
 
 interface Props {
   filmSlug: string;
@@ -35,12 +35,13 @@ function formatIcon(format: string): { name: string; label: string } {
           const { name: iconName, label: formatLabel } = formatIcon(
             release.format,
           );
+          const artUrl = homeVideoArtUrl(release.slug);
           return (
             <div class="flex gap-4 items-start">
-              {release.artUrl && (
+              {artUrl && (
                 <img
                   class="rounded-lg drop-shadow-lg w-[120px] h-auto object-contain shrink-0 self-start"
-                  src={release.artUrl}
+                  src={artUrl}
                   alt={release.title}
                 />
               )}
