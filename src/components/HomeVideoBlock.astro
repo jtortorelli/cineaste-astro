@@ -18,6 +18,9 @@ function formatIcon(format: string): { name: string; label: string } {
   if (key === "blu-ray" || key === "bluray") {
     return { name: "disc", label: "Blu-ray" };
   }
+  if (key === "4k" || key === "uhd" || key === "4k-uhd" || key === "ultra-hd") {
+    return { name: "badge-4k", label: "4K" };
+  }
   if (key === "vod") return { name: "device-tv", label: "VOD" };
   return { name: "movie", label: format };
 }
