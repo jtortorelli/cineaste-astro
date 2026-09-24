@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import CineasteLink from "../../components/CineasteLink.astro";
-import Icon from "../../components/Icon.astro";
+import CatalogSearch from "../../components/CatalogSearch.astro";
 import { formatDate } from "../../lib/dates";
 
 const films = (await getCollection("films", ({ data }) => !data.draft)).sort(
@@ -17,29 +17,32 @@ const films = (await getCollection("films", ({ data }) => !data.draft)).sort(
     </h1>
   </div>
   <div class="pb-6">
-    <div class="relative shadow-lg">
-      <div
-        class="absolute inset-y-0 start-0 flex pl-4 items-center ps-3 pointer-events-none text-red-700"
-      >
-        <Icon name="search" set="tabler" variant="outline" class="h-5 w-5" />
-      </div>
-      <input
-        type="text"
-        id="default-search"
-        class="font-content block w-full p-4 pl-12 ps-10 text-base text-red-700 border-none rounded-lg"
-      />
-    </div>
+    <CatalogSearch
+      label="Titles, aliases, years"
+      total={films.length}
+      noun="films"
+    />
   </div>
   <div>
-    <div class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-start gap-4">
+    <div
+      id="search-results"
+      class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-start gap-4"
+    >
       {
         films.map((film) => {
           const slug = film.id.replace(/\.md$/, "");
           const aliases = (film.data.aliases as { alias: string }[] | undefined) ?? [];
+          const aliasNames = aliases.map((a) => a.alias);
+          const year = formatDate(film.data.release_date as string, "yyyy");
+          const japanese = (film.data.japanese_title as string | undefined) ?? "";
           return (
             <div
               class="filterable sm:flex sm:flex-col sm:w-36 grid grid-cols-[101px_auto]"
-              data-terms={`${film.data.title} ${formatDate(film.data.release_date as string, "yyyy")} ${aliases.map((a) => a.alias).join(" ")}`}
+              data-terms={`${film.data.title} ${year} ${japanese} ${aliasNames.join(" ")}`}
+              data-primary={film.data.title as string}
+              data-year={year}
+              data-japanese={japanese}
+              data-alternates={JSON.stringify(aliasNames)}
             >
               <div>
                 <a href={`/films/${slug}`}>
@@ -61,9 +64,10 @@ const films = (await getCollection("films", ({ data }) => !data.draft)).sort(
                     </div>
                   </CineasteLink>
                   <div class="font-content text-gray-500 text-xs">
-                    {formatDate(film.data.release_date as string, "yyyy")}
+                    {year}
                   </div>
                 </a>
+                <p class="match-note" hidden></p>
               </div>
             </div>
           );

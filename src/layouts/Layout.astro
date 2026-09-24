@@ -1,4 +1,5 @@
 ---
+import Icon from "../components/Icon.astro";
 import SocialLink from "../components/SocialLink.astro";
 
 interface Props {
@@ -24,6 +25,11 @@ const nav = [
   { href: "/films", label: "Films" },
   { href: "/people", label: "People" },
 ];
+
+const showHeaderSearch = !["/", "/films", "/people"].includes(pathname);
+const headerSearch = pathname.startsWith("/people")
+  ? { action: "/people", label: "Names and aliases" }
+  : { action: "/films", label: "Titles, aliases, years" };
 ---
 
 <!doctype html>
@@ -47,18 +53,36 @@ const nav = [
               The Godzilla Cineaste
               <small>godzillacineaste.net</small>
             </a>
-            <nav class="site-nav" aria-label="Primary">
+            <div class="site-header-end">
               {
-                nav.map((item) => (
-                  <a
-                    href={item.href}
-                    aria-current={isCurrent(item.href) ? "page" : undefined}
-                  >
-                    {item.label}
-                  </a>
-                ))
+                showHeaderSearch && (
+                <form class="header-search" action={headerSearch.action} method="get" role="search">
+                  <span class="header-search-icon" aria-hidden="true">
+                    <Icon name="search" set="tabler" variant="outline" class="h-4 w-4" />
+                  </span>
+                  <input
+                    type="search"
+                    name="q"
+                    placeholder={headerSearch.label}
+                    aria-label={headerSearch.label}
+                    autocomplete="off"
+                  />
+                </form>
+                )
               }
-            </nav>
+              <nav class="site-nav" aria-label="Primary">
+                {
+                  nav.map((item) => (
+                    <a
+                      href={item.href}
+                      aria-current={isCurrent(item.href) ? "page" : undefined}
+                    >
+                      {item.label}
+                    </a>
+                  ))
+                }
+              </nav>
+            </div>
           </div>
         </header>
         <main class="px-4 py-10 sm:px-6 lg:px-8">
@@ -111,18 +135,15 @@ const nav = [
         gap: 4px 8px;
         margin-top: 4px;
       }
-      .site-header {
-        border-bottom: 1px solid #e4e4e7;
-      }
       .site-header-bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 16px;
-        flex-wrap: wrap;
+        gap: 12px 20px;
         padding: 12px 0;
       }
       .wordmark {
+        flex: none;
         font-family: var(--font-content);
         color: var(--color-red-700);
         font-size: 1.25rem;
@@ -162,6 +183,69 @@ const nav = [
       .wordmark:focus-visible {
         outline: 2px solid var(--color-red-700);
         outline-offset: 3px;
+      }
+      .site-header-end {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        min-width: 0;
+        margin-left: auto;
+      }
+      .header-search {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex: 0 1 13.5rem;
+        width: 13.5rem;
+        min-width: 0;
+        height: 36px;
+        border: 1px solid #d4d4d8;
+        border-radius: 999px;
+        padding: 0 12px 0 10px;
+        color: var(--color-red-700);
+        background: white;
+      }
+      .header-search:focus-within {
+        outline: 2px solid var(--color-red-700);
+        outline-offset: 2px;
+      }
+      .header-search-icon {
+        display: flex;
+        flex: none;
+      }
+      .header-search-icon :global(svg) {
+        width: 16px;
+        height: 16px;
+      }
+      .header-search input {
+        border: 0;
+        width: 100%;
+        min-width: 0;
+        padding: 0;
+        font-family: var(--font-content);
+        font-size: 0.9rem;
+        color: var(--color-gray-700);
+        background: transparent;
+      }
+      .header-search input:focus {
+        outline: none;
+      }
+      .header-search input::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        appearance: none;
+      }
+      @media (max-width: 720px) {
+        .site-header-bar {
+          flex-wrap: wrap;
+        }
+        .site-header-end {
+          flex: 1 1 100%;
+        }
+        .header-search {
+          flex: 1 1 auto;
+          width: auto;
+        }
       }
     </style>
   </body>

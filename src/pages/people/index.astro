@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import CineasteLink from "../../components/CineasteLink.astro";
-import Icon from "../../components/Icon.astro";
+import CatalogSearch from "../../components/CatalogSearch.astro";
 import PersonDateRange from "../../components/PersonDateRange.astro";
 
 function sortKeyForName(name: string): string {
@@ -23,34 +23,39 @@ const people = (await getCollection("people")).sort((a, b) =>
     </h1>
   </div>
   <div class="pb-6">
-    <div class="relative shadow-lg">
-      <div
-        class="absolute inset-y-0 start-0 flex pl-4 items-center ps-3 pointer-events-none text-red-700"
-      >
-        <Icon name="search" set="tabler" variant="outline" class="h-5 w-5" />
-      </div>
-      <input
-        type="text"
-        id="default-search"
-        class="font-content block w-full p-4 pl-12 ps-10 text-base text-red-700 border-none rounded-lg"
-      />
-    </div>
+    <CatalogSearch
+      label="Names and aliases"
+      total={people.length}
+      noun="people"
+    />
   </div>
   <div>
-    <div class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-start gap-4">
+    <div
+      id="search-results"
+      class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-start gap-4"
+    >
       {
         people.map((p) => {
           const slug = p.id.replace(/\.md$/, "");
           const aliases = (p.data.aliases as { name: string }[] | undefined) ?? [];
-          const members = (p.data.members as { name: string; birth_name?: string }[] | undefined) ?? [];
+          const members =
+            (p.data.members as { name: string; birth_name?: string }[] | undefined) ??
+            [];
+          const japanese = (p.data.japanese_name as string | undefined) ?? "";
+          const birthName = (p.data.birth_name as string | undefined) ?? "";
+          const alternates = [
+            ...aliases.map((a) => a.name),
+            birthName,
+            japanese,
+            ...members.flatMap((m) => [m.name, m.birth_name ?? ""]),
+          ].filter((value) => value.length > 0);
           return (
             <div
               class="filterable sm:flex sm:flex-col sm:w-32 grid grid-cols-[100px_auto]"
-              data-terms={`${p.data.name}
-          ${p.data.birth_name ?? ""}
-          ${aliases.map((a) => a.name).join(" ")}
-          ${members.map((m) => `${m.name} ${m.birth_name ?? ""}`).join(" ")}
-            `}
+              data-terms={`${p.data.name} ${birthName} ${japanese} ${alternates.join(" ")}`}
+              data-primary={p.data.name as string}
+              data-japanese={japanese}
+              data-alternates={JSON.stringify(alternates)}
             >
               <div>
                 <a href={`/people/${slug}`}>
@@ -78,6 +83,7 @@ const people = (await getCollection("people")).sort((a, b) =>
                     </div>
                   )}
                 </a>
+                <p class="match-note" hidden></p>
               </div>
             </div>
           );
