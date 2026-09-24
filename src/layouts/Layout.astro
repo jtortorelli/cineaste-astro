@@ -53,9 +53,35 @@ const headerSearch = pathname.startsWith("/people")
               The Godzilla Cineaste
               <small>godzillacineaste.net</small>
             </a>
-            <div class="site-header-end">
-              {
-                showHeaderSearch && (
+            <button
+              type="button"
+              class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="site-nav"
+              aria-label="Menu"
+            >
+              <svg
+                class="icon-open"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M4 6h16"></path>
+                <path d="M4 12h16"></path>
+                <path d="M4 18h16"></path>
+              </svg>
+              <span class="icon-close" aria-hidden="true">
+                <Icon name="x" set="tabler" variant="outline" class="h-5 w-5" />
+              </span>
+            </button>
+            {
+              showHeaderSearch && (
                 <form class="header-search" action={headerSearch.action} method="get" role="search">
                   <span class="header-search-icon" aria-hidden="true">
                     <Icon name="search" set="tabler" variant="outline" class="h-4 w-4" />
@@ -68,21 +94,20 @@ const headerSearch = pathname.startsWith("/people")
                     autocomplete="off"
                   />
                 </form>
-                )
+              )
+            }
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+              {
+                nav.map((item) => (
+                  <a
+                    href={item.href}
+                    aria-current={isCurrent(item.href) ? "page" : undefined}
+                  >
+                    {item.label}
+                  </a>
+                ))
               }
-              <nav class="site-nav" aria-label="Primary">
-                {
-                  nav.map((item) => (
-                    <a
-                      href={item.href}
-                      aria-current={isCurrent(item.href) ? "page" : undefined}
-                    >
-                      {item.label}
-                    </a>
-                  ))
-                }
-              </nav>
-            </div>
+            </nav>
           </div>
         </header>
         <main class="px-4 py-10 sm:px-6 lg:px-8">
@@ -138,11 +163,12 @@ const headerSearch = pathname.startsWith("/people")
       .site-header-bar {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 12px 20px;
+        flex-wrap: wrap;
+        gap: 12px 16px;
         padding: 12px 0;
       }
       .wordmark {
+        margin-right: auto;
         flex: none;
         font-family: var(--font-content);
         color: var(--color-red-700);
@@ -180,17 +206,36 @@ const headerSearch = pathname.startsWith("/people")
         color: var(--color-red-700);
       }
       .site-nav a:focus-visible,
-      .wordmark:focus-visible {
+      .wordmark:focus-visible,
+      .nav-toggle:focus-visible {
         outline: 2px solid var(--color-red-700);
         outline-offset: 3px;
       }
-      .site-header-end {
-        display: flex;
+      .nav-toggle {
+        display: none;
         align-items: center;
-        justify-content: flex-end;
-        gap: 8px;
-        min-width: 0;
-        margin-left: auto;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: 0;
+        border-radius: 8px;
+        background: transparent;
+        color: var(--color-gray-700);
+        cursor: pointer;
+      }
+      .nav-toggle .icon-close {
+        display: none;
+      }
+      .nav-toggle[aria-expanded="true"] .icon-open {
+        display: none;
+      }
+      .nav-toggle[aria-expanded="true"] .icon-close {
+        display: flex;
+      }
+      .nav-toggle .icon-close :global(svg) {
+        width: 24px;
+        height: 24px;
       }
       .header-search {
         display: flex;
@@ -235,18 +280,70 @@ const headerSearch = pathname.startsWith("/people")
         -webkit-appearance: none;
         appearance: none;
       }
-      @media (max-width: 720px) {
+      @media (min-width: 721px) {
         .site-header-bar {
-          flex-wrap: wrap;
+          flex-wrap: nowrap;
         }
-        .site-header-end {
-          flex: 1 1 100%;
+      }
+      @media (max-width: 720px) {
+        .nav-toggle {
+          display: flex;
         }
         .header-search {
-          flex: 1 1 auto;
+          flex: 1 1 100%;
           width: auto;
+          max-width: none;
+          order: 3;
+        }
+        .site-nav {
+          display: none;
+          flex: 1 1 100%;
+          flex-direction: column;
+          align-items: stretch;
+          order: 4;
+          gap: 0;
+          padding-bottom: 4px;
+        }
+        .site-nav.is-open {
+          display: flex;
+          margin: 0 -1rem;
+          padding: 4px 1rem 12px;
+          background: white;
+        }
+        .site-header:has(.site-nav.is-open) {
+          position: relative;
+          z-index: 2;
+          background: white;
+          box-shadow: 0 14px 22px -14px rgba(24, 24, 27, 0.55);
+        }
+        .site-nav a {
+          padding: 12px 4px;
+          border-bottom-color: transparent;
+        }
+        .site-nav a[aria-current="page"] {
+          border-bottom-color: transparent;
         }
       }
     </style>
+    <script is:inline>
+      const navToggle = document.querySelector(".nav-toggle");
+      const siteNav = document.getElementById("site-nav");
+      if (navToggle && siteNav) {
+        navToggle.addEventListener("click", () => {
+          const open = navToggle.getAttribute("aria-expanded") === "true";
+          navToggle.setAttribute("aria-expanded", open ? "false" : "true");
+          navToggle.setAttribute("aria-label", open ? "Menu" : "Close menu");
+          siteNav.classList.toggle("is-open", !open);
+        });
+        document.addEventListener("keydown", (event) => {
+          if (event.key !== "Escape") return;
+          if (navToggle.getAttribute("aria-expanded") !== "true") return;
+          navToggle.setAttribute("aria-expanded", "false");
+          navToggle.setAttribute("aria-label", "Menu");
+          siteNav.classList.remove("is-open");
+          navToggle.focus();
+        });
+      }
+    </script>
   </body>
 </html>

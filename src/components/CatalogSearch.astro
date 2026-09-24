@@ -5,9 +5,10 @@ interface Props {
   label: string;
   total: number;
   noun: string;
+  empty?: boolean;
 }
 
-const { label, total, noun } = Astro.props;
+const { label, total, noun, empty = true } = Astro.props;
 ---
 
 <div class="catalog-search">
@@ -38,12 +39,16 @@ const { label, total, noun } = Astro.props;
     {total} {noun}
   </p>
 </div>
-<p id="search-empty" class="search-empty" hidden aria-live="polite"></p>
+{
+  empty && (
+    <p id="search-empty" class="search-empty" hidden aria-live="polite"></p>
+  )
+}
 
 <style>
   .catalog-search {
-    margin: 0 auto 8px;
-    max-width: 36rem;
+    width: 100%;
+    margin: 0 0 8px;
     text-align: left;
   }
   .search-label {
@@ -123,7 +128,7 @@ const { label, total, noun } = Astro.props;
     text-transform: uppercase;
     color: var(--color-gray-500);
   }
-  .search-empty {
+  :global(.search-empty) {
     margin: 28px auto;
     max-width: 28rem;
     text-align: center;
