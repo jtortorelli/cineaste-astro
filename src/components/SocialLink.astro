@@ -1,0 +1,51 @@
+---
+import Icon from "./Icon.astro";
+
+interface Props {
+  href: string;
+  name: string;
+  label: string;
+}
+
+const { href, name, label } = Astro.props;
+---
+
+<a class="social-link" href={href}>
+  <span class="social-link-icon" aria-hidden="true">
+    <Icon name={name} set="simpleicons" class="h-4 w-4" />
+  </span>
+  <span>{label}</span>
+</a>
+
+<style>
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 44px;
+    padding: 8px 10px;
+    color: var(--color-gray-500);
+    font-family: var(--font-content);
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+  }
+  .social-link:hover {
+    color: var(--color-red-700);
+  }
+  .social-link:focus-visible {
+    outline: 2px solid var(--color-red-700);
+    outline-offset: 2px;
+  }
+  .social-link-icon {
+    display: inline-flex;
+  }
+  .social-link-icon :global(svg) {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+  }
+  .social-link-icon :global(path) {
+    fill: currentColor;
+  }
+</style>

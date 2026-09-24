@@ -1,5 +1,5 @@
 ---
-import Icon from "../components/Icon.astro";
+import SocialLink from "../components/SocialLink.astro";
 
 interface Props {
   title?: string;
@@ -12,36 +12,53 @@ const pageTitle = title
   : name
     ? `${name} - The Godzilla Cineaste`
     : "The Godzilla Cineaste";
+
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+
+function isCurrent(href: string): boolean {
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+const nav = [
+  { href: "/about", label: "About" },
+  { href: "/films", label: "Films" },
+  { href: "/people", label: "People" },
+];
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div class="flex flex-col h-screen justify-between">
+    <div class="site-shell flex flex-col">
       <div>
-        <header class="px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between py-3 text-sm">
-            <div class="flex items-baseline gap-6">
-              <a href="/">
-                <span class="font-content text-red-700 hover:underline">
-                  godzillacineaste.net
-                </span>
-              </a>
-              <a href="/about">
-                <span class="font-content text-red-700 hover:underline">about</span>
-              </a>
-              <a href="/films">
-                <span class="font-content text-red-700 hover:underline">films</span>
-              </a>
-              <a href="/people">
-                <span class="font-content text-red-700 hover:underline">people</span>
-              </a>
-            </div>
+        <header class="site-header px-4 sm:px-6 lg:px-8">
+          <div class="site-header-bar">
+            <a
+              href="/"
+              class="wordmark"
+              aria-current={pathname === "/" ? "page" : undefined}
+            >
+              The Godzilla Cineaste
+              <small>godzillacineaste.net</small>
+            </a>
+            <nav class="site-nav" aria-label="Primary">
+              {
+                nav.map((item) => (
+                  <a
+                    href={item.href}
+                    aria-current={isCurrent(item.href) ? "page" : undefined}
+                  >
+                    {item.label}
+                  </a>
+                ))
+              }
+            </nav>
           </div>
         </header>
         <main class="px-4 py-10 sm:px-6 lg:px-8">
@@ -58,37 +75,94 @@ const pageTitle = title
           <p>James Tortorelli</p>
           <p class="font-detail text-xs pb-2">@jingowestern</p>
 
-          <p>
-            <a
+          <nav class="social-row" aria-label="Elsewhere">
+            <SocialLink
               href="https://x.com/jingowestern"
-              class="inline-block align-middle text-gray-500 [&_svg]:inline [&_svg]:h-4 [&_svg]:w-4 [&_svg]:fill-gray-500 [&_path]:fill-gray-500"
-            >
-              <Icon name="x" set="simpleicons" />
-            </a>
-            &nbsp;&nbsp;
-            <a
+              name="x"
+              label="X (formerly Twitter)"
+            />
+            <SocialLink
               href="https://www.youtube.com/@jingowestern"
-              class="inline-block align-middle text-red-500 [&_svg]:inline [&_svg]:h-4 [&_svg]:w-4 [&_svg]:fill-red-500 [&_path]:fill-red-500"
-            >
-              <Icon name="youtube" set="simpleicons" />
-            </a>
-            &nbsp;&nbsp;
-            <a
+              name="youtube"
+              label="YouTube"
+            />
+            <SocialLink
               href="https://rumble.com/c/c-7743057"
-              class="inline-block align-middle text-green-500 [&_svg]:inline [&_svg]:h-4 [&_svg]:w-4 [&_svg]:fill-green-500 [&_path]:fill-green-500"
-            >
-              <Icon name="rumble" set="simpleicons" />
-            </a>
-            &nbsp;&nbsp;
-            <a
+              name="rumble"
+              label="Rumble"
+            />
+            <SocialLink
               href="https://odysee.com/@jingowestern:3"
-              class="inline-block align-middle text-orange-500 [&_svg]:inline [&_svg]:h-4 [&_svg]:w-4 [&_svg]:fill-orange-500 [&_path]:fill-orange-500"
-            >
-              <Icon name="odysee" set="simpleicons" />
-            </a>
-          </p>
+              name="odysee"
+              label="Odysee"
+            />
+          </nav>
         </div>
       </footer>
     </div>
+    <style>
+      .site-shell {
+        min-height: 100vh;
+      }
+      .social-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 8px;
+        margin-top: 4px;
+      }
+      .site-header {
+        border-bottom: 1px solid #e4e4e7;
+      }
+      .site-header-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        padding: 12px 0;
+      }
+      .wordmark {
+        font-family: var(--font-content);
+        color: var(--color-red-700);
+        font-size: 1.25rem;
+        line-height: 1.15;
+        text-decoration: none;
+      }
+      .wordmark small {
+        display: block;
+        margin-top: 2px;
+        font-family: var(--font-detail);
+        font-size: 10px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--color-gray-500);
+      }
+      .site-nav {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .site-nav a {
+        font-family: var(--font-content);
+        font-size: 1rem;
+        color: var(--color-gray-700);
+        padding: 10px 12px;
+        border-bottom: 2px solid transparent;
+        text-decoration: none;
+      }
+      .site-nav a[aria-current="page"] {
+        color: var(--color-red-700);
+        border-bottom-color: var(--color-red-700);
+      }
+      .site-nav a:hover {
+        color: var(--color-red-700);
+      }
+      .site-nav a:focus-visible,
+      .wordmark:focus-visible {
+        outline: 2px solid var(--color-red-700);
+        outline-offset: 3px;
+      }
+    </style>
   </body>
 </html>

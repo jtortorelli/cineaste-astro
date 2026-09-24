@@ -39,7 +39,7 @@ const films = (await getCollection("films", ({ data }) => !data.draft)).sort(
           return (
             <div
               class="filterable sm:flex sm:flex-col sm:w-36 grid grid-cols-[101px_auto]"
-              data-terms={`${film.data.title} ${aliases.map((a) => a.alias).join(" ")}`}
+              data-terms={`${film.data.title} ${formatDate(film.data.release_date as string, "yyyy")} ${aliases.map((a) => a.alias).join(" ")}`}
             >
               <div>
                 <a href={`/films/${slug}`}>

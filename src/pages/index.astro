@@ -1,24 +1,227 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
+import { formatDate } from "../lib/dates";
+
+const films = await getCollection("films", ({ data }) => !data.draft);
+const people = await getCollection("people");
+
+const filmBySlug = new Map(
+  films.map((film) => [film.id.replace(/\.md$/, ""), film]),
+);
+const personBySlug = new Map(
+  people.map((person) => [person.id.replace(/\.md$/, ""), person]),
+);
+
+const startHere = [
+  { kind: "film" as const, slug: "godzilla-1954" },
+  { kind: "person" as const, slug: "honda-ishiro" },
+  { kind: "film" as const, slug: "mothra-1961" },
+  { kind: "film" as const, slug: "shin-godzilla-2016" },
+]
+  .map((pick) => {
+    if (pick.kind === "film") {
+      const film = filmBySlug.get(pick.slug);
+      if (!film) return null;
+      return {
+        href: `/films/${pick.slug}`,
+        image: film.data.poster_url as string,
+        title: film.data.title as string,
+        meta: formatDate(film.data.release_date as string, "yyyy"),
+        alt: `Poster for ${film.data.title as string}`,
+        italic: true,
+      };
+    }
+    const person = personBySlug.get(pick.slug);
+    if (!person) return null;
+    return {
+      href: `/people/${pick.slug}`,
+      image: person.data.avatar_url as string,
+      title: person.data.name as string,
+      meta: (person.data.profession as string | undefined) ?? "",
+      alt: `Portrait of ${person.data.name as string}`,
+      italic: false,
+    };
+  })
+  .filter((item) => item !== null);
 ---
 
 <Layout>
-  <div
-    class="w-full sm:w-96 mx-auto sm:py-32 text-center font-content text-lg flex flex-col gap-5 px-4 sm:px-0"
-  >
-    <div>
-      Welcome to the <span class="text-red-700">Godzilla Cineaste</span>, a
-      fan-made guide to Japanese science fiction and fantasy film.
+  <div class="home">
+    <p class="lede">
+      Welcome to the Godzilla Cineaste, a fan-made guide to Japanese science
+      fiction and fantasy film.
+    </p>
+    <form class="home-search" action="/films" method="get" role="search">
+      <Icon name="search" set="tabler" variant="outline" class="h-5 w-5" />
+      <input
+        type="search"
+        name="q"
+        aria-label="Search film titles and years"
+        placeholder="Search film titles and years"
+      />
+    </form>
+    <p class="home-count">
+      {films.length} films · {people.length} people
+    </p>
+    <section class="starts" aria-labelledby="start-here">
+      <h2 id="start-here">Start here</h2>
+      <div class="start-row">
+        {
+          startHere.map((item) => (
+            <a href={item.href}>
+              <img
+                class="drop-shadow-lg"
+                src={item.image}
+                alt={item.alt}
+                width="101"
+                height="150"
+              />
+              <span class:list={["start-title", { italic: item.italic }]}>
+                {item.title}
+              </span>
+              {item.meta && <span class="start-meta">{item.meta}</span>}
+            </a>
+          ))
+        }
+      </div>
+    </section>
+    <div class="home-note">
+      <p>
+        I hope you find this website useful as a repository of factoids and
+        trivia about these beloved films and the people who made them. Or at
+        least, I hope you find it an amusing distraction.
+      </p>
+      <p>
+        This website is a labor of love and the selected films reflect the
+        specific tastes and preferences of the author. All opinions are my own.
+      </p>
+      <p>Happy reading!</p>
     </div>
-    <div>
-      I hope you find this website useful as a repository of factoids and trivia
-      about these beloved films and the people who made them. Or at least, I hope
-      you find it an amusing distraction.
-    </div>
-    <div>
-      This website a labor of love and the selected films reflect the specific
-      tastes and preferences of the author. All opinions are my own.
-    </div>
-    <div>Get started by using the navigation links above. Happy reading!</div>
   </div>
 </Layout>
+
+<style>
+  .home {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 12px 0 8px;
+    text-align: center;
+    font-family: var(--font-content);
+    color: var(--color-gray-700);
+  }
+  .lede {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.45;
+  }
+  .home-search {
+    margin: 22px auto 0;
+    max-width: 36rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #d4d4d8;
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: var(--color-red-700);
+    text-align: left;
+  }
+  .home-search input {
+    border: 0;
+    width: 100%;
+    min-width: 0;
+    font-family: var(--font-content);
+    font-size: 1rem;
+    color: var(--color-gray-700);
+    background: transparent;
+  }
+  .home-search input:focus {
+    outline: none;
+  }
+  .home-search:focus-within {
+    outline: 2px solid var(--color-red-700);
+    outline-offset: 2px;
+  }
+  .home-count {
+    margin: 10px 0 0;
+    font-family: var(--font-detail);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-gray-500);
+  }
+  .starts {
+    margin-top: 28px;
+  }
+  .starts h2 {
+    margin: 0 0 14px;
+    font-family: var(--font-detail);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-red-700);
+  }
+  .start-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+  .start-row a {
+    width: 120px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .start-row a:focus-visible {
+    outline: 2px solid var(--color-red-700);
+    outline-offset: 4px;
+  }
+  .start-row img {
+    width: 120px;
+    height: 178px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    display: block;
+    background: #e4e4e7;
+  }
+  .start-title {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.25;
+    text-decoration: underline;
+    text-decoration-color: var(--color-red-700);
+    text-underline-offset: 3px;
+  }
+  .start-title.italic {
+    font-style: italic;
+  }
+  .start-row a:hover .start-title {
+    color: var(--color-red-700);
+  }
+  .start-meta {
+    display: block;
+    margin-top: 2px;
+    font-family: var(--font-detail);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--color-gray-500);
+    font-style: normal;
+  }
+  .home-note {
+    max-width: 38rem;
+    margin: 26px auto 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .home-note p {
+    margin: 0 0 1em;
+  }
+  .home-note p:last-child {
+    margin-bottom: 0;
+  }
+</style>
