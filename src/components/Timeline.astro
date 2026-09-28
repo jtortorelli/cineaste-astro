@@ -1,3 +1,72 @@
-<ol class="relative border-l border-red-700">
+---
+interface Props {
+  end?: string;
+}
+
+const { end } = Astro.props;
+---
+
+<ol class="rail">
   <slot />
+  {end && <li class="rail-item rail-end">{end}</li>}
 </ol>
+
+<style>
+  .rail {
+    max-width: 65ch;
+    margin-inline: auto;
+    padding: 0 0 0 6px;
+    list-style: none;
+  }
+  .rail :global(.rail-item) {
+    position: relative;
+    padding: 0 0 32px 20px;
+    border-left: 2px solid var(--color-red-700);
+  }
+  .rail :global(.rail-item:last-child) {
+    padding-bottom: 0;
+    border-left-color: transparent;
+  }
+  .rail :global(.rail-item)::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid white;
+    border-radius: 9999px;
+    background: var(--color-red-700);
+  }
+  .rail :global(.rail-heading) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 8px;
+    margin: 0 0 6px;
+    font-family: var(--font-content);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-gray-700);
+  }
+  .rail :global(.rail-heading time),
+  .rail :global(.rail-end) {
+    font-family: var(--font-detail);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-red-700);
+  }
+  .rail :global(.rail-end) {
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.875rem;
+  }
+  .rail :global(.rail-text) {
+    margin: 0;
+    font-family: var(--font-content);
+    line-height: 1.6;
+    color: var(--color-gray-700);
+  }
+</style>

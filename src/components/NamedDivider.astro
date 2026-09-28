@@ -6,11 +6,39 @@ interface Props {
 const { name } = Astro.props;
 ---
 
-<div class="inline-flex items-center justify-center text-center w-full">
-  <hr class="w-96 h-px my-8 border-0 rounded bg-red-700" />
-  <span
-    class="absolute px-3 font-detail text-sm uppercase -translate-x-1/2 bg-white left-1/2 text-red-700"
-  >
-    {name}
-  </span>
+<div class="named-divider">
+  <hr />
+  <span>{name}</span>
 </div>
+
+<style>
+  .named-divider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .named-divider hr {
+    width: min(100%, 24rem);
+    height: 1px;
+    margin: 0;
+    border: 0;
+    border-radius: 9999px;
+    background: var(--color-red-700);
+  }
+  .named-divider span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 0.75rem;
+    background: white;
+    font-family: var(--font-detail);
+    font-size: 0.875rem;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-red-700);
+    white-space: nowrap;
+  }
+</style>

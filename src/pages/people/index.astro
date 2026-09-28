@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import CineasteLink from "../../components/CineasteLink.astro";
 import CatalogSearch from "../../components/CatalogSearch.astro";
 import PersonDateRange from "../../components/PersonDateRange.astro";
 
@@ -27,6 +26,8 @@ const people = (await getCollection("people")).sort((a, b) =>
       label="Names and aliases"
       total={people.length}
       noun="people"
+      altHref="/films"
+      altNoun="films"
     />
   </div>
   <div>
@@ -51,40 +52,38 @@ const people = (await getCollection("people")).sort((a, b) =>
           ].filter((value) => value.length > 0);
           return (
             <div
-              class="filterable sm:flex sm:flex-col sm:w-32 grid grid-cols-[100px_auto]"
+              class="filterable sm:w-32"
               data-terms={`${p.data.name} ${birthName} ${japanese} ${alternates.join(" ")}`}
               data-primary={p.data.name as string}
               data-japanese={japanese}
               data-alternates={JSON.stringify(alternates)}
             >
-              <div>
-                <a href={`/people/${slug}`}>
-                  <div class="text-center w-fit m-auto">
-                    <img
-                      class="h-[100px] w-[100px] max-w-[150px] rounded-lg drop-shadow-lg"
-                      src={p.data.avatar_url as string}
-                    />
-                  </div>
-                </a>
-              </div>
-              <div class="sm:text-center pt-3">
-                <a href={`/people/${slug}`}>
-                  <CineasteLink href={`/people/${slug}`}>
-                    <div class="font-content text-sm">{p.data.name as string}</div>
-                  </CineasteLink>
+              <a
+                class="person-card group grid grid-cols-[100px_auto] gap-3 sm:flex sm:flex-col sm:items-center sm:gap-0"
+                href={`/people/${slug}`}
+              >
+                <img
+                  class="h-[100px] w-[100px] rounded-lg drop-shadow-lg"
+                  src={p.data.avatar_url as string}
+                  alt=""
+                />
+                <span class="block sm:text-center pt-3">
+                  <span class="block font-content text-sm underline decoration-red-700 decoration-1 underline-offset-2 group-hover:text-red-700">
+                    {p.data.name as string}
+                  </span>
                   {p.data.profession && (
-                    <div class="font-content text-xs text-gray-500">
+                    <span class="block font-content text-xs text-gray-500">
                       {p.data.profession as string}
-                    </div>
+                    </span>
                   )}
                   {p.data.type == "person" && (
-                    <div class="font-content text-xs text-gray-500">
+                    <span class="block font-content text-xs text-gray-500">
                       <PersonDateRange p={p.data as never} />
-                    </div>
+                    </span>
                   )}
-                </a>
-                <p class="match-note" hidden></p>
-              </div>
+                  <span class="match-note block" hidden></span>
+                </span>
+              </a>
             </div>
           );
         })
@@ -94,3 +93,17 @@ const people = (await getCollection("people")).sort((a, b) =>
   </div>
   <script is:inline src="/scripts/filter.js"></script>
 </Layout>
+
+<style>
+  .person-card {
+    color: inherit;
+    text-decoration: none;
+  }
+  .person-card:focus-visible {
+    outline: 2px solid var(--color-red-700);
+    outline-offset: 4px;
+  }
+  .person-card :global(.match-note[hidden]) {
+    display: none;
+  }
+</style>

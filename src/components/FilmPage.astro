@@ -1,5 +1,8 @@
 ---
+import { getCollection } from "astro:content";
 import Icon from "./Icon.astro";
+import Fact from "./Fact.astro";
+import FactList from "./FactList.astro";
 import CineasteLink from "./CineasteLink.astro";
 import FilmShowcaseLink from "./FilmShowcaseLink.astro";
 import PersonShowcaseLink from "./PersonShowcaseLink.astro";
@@ -100,6 +103,31 @@ const nextSeriesEntry = seriesData
 const displayStaff = staffFromCsv(staffs[slug] ?? []);
 const castCsv = casts[slug] ?? [];
 const creditRows = credits[slug];
+
+type CreditLine = Record<string, string> & { continued: boolean };
+const creditCards: CreditLine[][] = [];
+if (creditRows) {
+  let card: CreditLine[] = [];
+  for (const row of creditRows) {
+    if (!Object.values(row).some(Boolean)) {
+      if (card.length) creditCards.push(card);
+      card = [];
+      continue;
+    }
+    card.push({ ...row, continued: !row.role && !row.japanese_role && card.length > 0 });
+  }
+  if (card.length) creditCards.push(card);
+}
+
+const slugsByPersonName = new Map<string, string[]>();
+for (const person of await getCollection("people")) {
+  const name = person.data.name as string;
+  slugsByPersonName.set(name, [...(slugsByPersonName.get(name) ?? []), person.id]);
+}
+function personSlugFor(name: string): string | undefined {
+  const matches = slugsByPersonName.get(name);
+  return matches?.length === 1 ? matches[0] : undefined;
+}
 ---
 
 <div class="text-center w-fit m-auto">
@@ -107,161 +135,102 @@ const creditRows = credits[slug];
     {title}
   </h1>
 </div>
-<div class="pb-4 lg:shrink-0">
-  <div class="text-center w-fit m-auto">
+<div class="film-hero">
+  <div class="film-poster">
     <img
       class="rounded-lg drop-shadow-lg"
       height={400}
       width={270}
       src={poster_url}
+      alt={`Poster for ${title}`}
     />
   </div>
-</div>
-{
-  hasWrittenReview && (
-    <div class="text-center w-fit m-auto pt-2 pb-4">
-      <div class="font-content text-red-700">
-        <CineasteLink href={`/films/${slug}/review`}>
-          godzillacineaste.net review
-        </CineasteLink>
-      </div>
-      <ReviewStars star_rating={video_review?.star_rating} show_label={true} />
-    </div>
-  )
-}
-<NamedDivider name="Overview" />
-<div class="font-content text-sm text-gray-700 max-w-96 w-fit m-auto">
-  <div class="flex pb-2 gap-2">
-    <div class="-translate-y-[2px]">
-      <Icon
-        name="calendar-event"
-        set="tabler"
-        variant="outline"
-        class="inline h-4 w-4 text-gray-500"
-      />
-    </div>
-    <div>{formatDate(release_date, "d MMM yyyy")}</div>
-  </div>
-  <div class="flex pb-2 gap-2">
-    <div class="-translate-y-[2px]">
-      <Icon
-        name="stopwatch"
-        set="tabler"
-        variant="outline"
-        class="inline h-4 w-4 text-gray-500"
-      />
-    </div>
-    <div>{runtime}m</div>
-  </div>
-  <div class="flex pb-2 gap-2">
-    <div class="-translate-y-[2px]">
-      <Icon
-        name="language"
-        set="tabler"
-        variant="outline"
-        class="inline h-4 w-4 text-gray-500"
-      />
-    </div>
-    <div>
-      <span class="font-japanese tracking-wide" set:html={japanese_title} />
-      <br />
-      <span class="font-content italic text-xs text-gray-500">{transliteration}</span>
-      {
-        transliteration !== translation && (
-          <>
-            <br />
-            <span class="font-content italic text-xs text-gray-500">
-              {translation}
-            </span>
-          </>
-        )
-      }
-    </div>
-  </div>
+  <div class="film-side">
+<FactList>
+  {
+    hasWrittenReview && (
+      <Fact label="Review" class="border-b border-gray-200 pb-3">
+        <ReviewStars
+          align="start"
+          star_rating={video_review?.star_rating}
+          show_label={true}
+        />
+        <div class="read-link">
+          <CineasteLink href={`/films/${slug}/review`}>Read</CineasteLink>
+        </div>
+      </Fact>
+    )
+  }
+  <Fact label="Released">{formatDate(release_date, "d MMM yyyy")}</Fact>
+  {runtime && <Fact label="Runtime">{runtime} min</Fact>}
+  <Fact label="Japanese title">
+    <span lang="ja" class="font-japanese tracking-wide" set:html={japanese_title} />
+    <br />
+    <span class="fact-note">{transliteration}</span>
+    {
+      transliteration !== translation && (
+        <>
+          <br />
+          <span class="fact-note">{translation}</span>
+        </>
+      )
+    }
+  </Fact>
   {
     original_works?.map((work) => (
-      <div class="flex pb-2 gap-2">
-        <div class="-translate-y-[2px]">
-          <Icon
-            name="book"
-            set="tabler"
-            variant="outline"
-            class="inline h-4 w-4 text-gray-500"
-          />
-        </div>
-        <div>
+      <Fact label="Source">
           {work.title && (
             <>
               <span class="italic">{work.title}</span>
               <br />
             </>
           )}
-          <span class="uppercase font-detail text-xs text-gray-500">
-            {work.format} by
+          <span class="fact-note fact-plain">
+            {work.format
+              ? `${work.format.charAt(0).toUpperCase()}${work.format.slice(1)} by`
+              : "By"}
           </span>
           {work.authors?.map((a) => (
             <>
-              <br />
+              {" "}
               <PersonShowcaseLink slug={a.slug}>{a.name}</PersonShowcaseLink>
             </>
           ))}
           {work.studios?.map((s) => (
             <>
-              <br />
+              {" "}
               {s.name}
             </>
           ))}
-        </div>
-      </div>
+      </Fact>
     ))
   }
   {
-    aliases?.map((a) => (
-      <div class="flex pb-2 gap-2">
-        <div class="-translate-y-[2px]">
-          <Icon
-            name="at"
-            set="tabler"
-            variant="outline"
-            class="inline h-4 w-4 text-gray-500"
-          />
-        </div>
-        <div>
-          <span class="italic">{a.alias}</span>
-          <br />
-          <span class="text-xs text-gray-500">{a.context}</span>
-        </div>
-      </div>
-    ))
+    aliases && aliases.length > 0 && (
+      <Fact label="Also known as">
+        {aliases.map((a) => (
+          <div>
+            <span class="italic">{a.alias}</span>
+            {a.context && <div class="fact-note fact-plain">{a.context}</div>}
+          </div>
+        ))}
+      </Fact>
+    )
   }
   {
     seriesData && (
-      <div class="flex pb-2 gap-2">
-        <div class="-translate-y-[2px]">
-          <Icon
-            name="affiliate"
-            set="tabler"
-            variant="outline"
-            class="inline h-4 w-4 text-gray-500"
-          />
-        </div>
-        <div>
+      <Fact label="Series">
           <span>
-            {seriesData.seriesTitle} Series No. {seriesData.filmSeriesIndex + 1}{" "}
-            <>
-              &nbsp;
-              <button class="-translate-y-[2px]" onclick="series_modal.showModal()">
-                <Icon
-                  name="layers-subtract"
-                  set="tabler"
-                  variant="outline"
-                  class="inline h-5 w-5 text-red-700 hover:cursor-pointer"
-                />
-              </button>
+            <button type="button" class="series-open series-name" onclick="series_modal.showModal(); series_modal.querySelector('[aria-current]')?.scrollIntoView({ block: 'center' })">
+              {seriesData.seriesTitle} Series
+            </button>
+            {" "}No. {seriesData.filmSeriesIndex + 1}
+          </span>
+          <span>
               <dialog id="series_modal" class="modal">
-                <div class="modal-box">
-                  <form method="dialog">
-                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                <div class="modal-box max-h-[85vh]">
+                  <form method="dialog" class="modal-close">
+                    <button aria-label="Close" class="btn btn-sm btn-circle btn-ghost text-gray-700">
                       <Icon name="x" set="tabler" variant="outline" class="h-5 w-5" />
                     </button>
                   </form>
@@ -270,14 +239,18 @@ const creditRows = credits[slug];
                     <ol class="list-decimal list-outside gap-2">
                       {seriesData.mappedSeriesEntries.map((seriesEntry) => (
                         <li class="ml-8 my-1">
-                          {seriesEntryIsShowcased(seriesEntry) ? (
+                          {seriesEntry.slug === slug ? (
+                            <span class="series-current" aria-current="page">
+                              <i>{seriesEntry.title}</i> ({seriesEntry.year})
+                            </span>
+                          ) : seriesEntryIsShowcased(seriesEntry) ? (
                             <FilmShowcaseLink slug={seriesEntry.slug}>
                               <i>{seriesEntry.title}</i> ({seriesEntry.year})
                             </FilmShowcaseLink>
                           ) : (
-                            <>
+                            <span class="text-gray-500">
                               <i>{seriesEntry.title}</i> ({seriesEntry.year})
-                            </>
+                            </span>
                           )}
                         </li>
                       ))}
@@ -288,20 +261,12 @@ const creditRows = credits[slug];
                   <button>close</button>
                 </form>
               </dialog>
-            </>
           </span>
           {
             precedingSeriesEntry && (
               <>
                 <br />
-                <span class="pr-2">
-                  <Icon
-                    name="square-rounded-arrow-left"
-                    set="tabler"
-                    variant="outline"
-                    class="inline h-4 w-4 text-gray-500 -translate-y-[2px]"
-                  />
-                </span>
+                <span class="fact-note fact-plain">Preceded by </span>
                 {seriesEntryIsShowcased(precedingSeriesEntry) ? (
                   <FilmShowcaseLink slug={precedingSeriesEntry.slug}>
                     <span class="italic">{precedingSeriesEntry.title}</span> (
@@ -320,14 +285,7 @@ const creditRows = credits[slug];
             nextSeriesEntry && (
               <>
                 <br />
-                <span class="pr-2">
-                  <Icon
-                    name="square-rounded-arrow-right"
-                    set="tabler"
-                    variant="outline"
-                    class="inline h-4 w-4 text-gray-500 -translate-y-[2px]"
-                  />
-                </span>
+                <span class="fact-note fact-plain">Followed by </span>
                 {seriesEntryIsShowcased(nextSeriesEntry) ? (
                   <FilmShowcaseLink slug={nextSeriesEntry.slug}>
                     <span class="italic">{nextSeriesEntry.title}</span> (
@@ -342,41 +300,30 @@ const creditRows = credits[slug];
               </>
             )
           }
-        </div>
-      </div>
+      </Fact>
     )
   }
-  <div class="flex pb-2 gap-2">
-    <div class="-translate-y-[2px]">
-      <Icon
-        name="buildings"
-        set="tabler"
-        variant="outline"
-        class="inline h-4 w-4 text-gray-500"
-      />
-    </div>
-    <div>{studios?.join(", ")}</div>
+  {studios && studios.length > 0 && <Fact label="Studio">{studios.join(", ")}</Fact>}
+</FactList>
   </div>
-</div>
+  <div class="film-rest">
 <NamedDivider name="Staff" />
-<div
-  class={`w-fit m-auto ${displayStaff && displayStaff.length >= 6 && "lg:columns-3"} ${displayStaff && displayStaff.length < 6 && displayStaff.length >= 4 && "lg:columns-2"} lg:gap-x-8`}
->
+<div class="staff-grid">
   {
     displayStaff?.map((staffGroup) => (
-      <div class="lg:text-center text-left lg:break-inside-avoid-column pb-1">
+      <div class="staff-item">
         <div class="">
-          <span class="font-content text-xs text-gray-500">{staffGroup.role}</span>
+          <span class="staff-role">{staffGroup.role}</span>
         </div>
         <div class="">
           {staffGroup.people.map((person) => (
-            <div class="text-gray-700 text-sm font-content">
+            <div class="staff-name">
               <PersonShowcaseLink slug={person.slug}>
                 {person.disambig_chars ? (
                   <>
                     {person.name}
                     <span class="text-xs">
-                      (<span class="font-japanese">{person.disambig_chars}</span>)
+                      (<span lang="ja" class="font-japanese">{person.disambig_chars}</span>)
                     </span>
                   </>
                 ) : (
@@ -405,39 +352,41 @@ const creditRows = credits[slug];
 {
   creditRows && (
     <>
-      <div class="w-fit m-auto font-content text-sm text-red-700 hover:cursor-pointer pt-2">
-        <a onclick="credits_modal.showModal()">
-          Credits{" "}
-          <Icon
-            name="layers-subtract"
-            set="tabler"
-            variant="outline"
-            class="h-5 w-5 inline"
-          />
-        </a>
+      <div class="credits-row">
+        <button type="button" class="series-open" onclick="credits_modal.showModal()">
+          Credits
+        </button>
       </div>
       <dialog id="credits_modal" class="modal">
-        <div class="modal-box">
-          <form method="dialog">
-            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+        <div class="modal-box max-h-[85vh]">
+          <form method="dialog" class="modal-close">
+            <button aria-label="Close" class="btn btn-sm btn-circle btn-ghost text-gray-700">
               <Icon name="x" set="tabler" variant="outline" class="h-5 w-5" />
             </button>
           </form>
           <NamedDivider name="Credits" />
-          <div class="grid grid-cols-2 gap-2 text-gray-700 font-content text-sm">
-            {creditRows.map(({ japanese_role, japanese_name, role, name }) => (
-              <>
-                <div>
-                  <span class="text-gray-500 font-mono text-xs">{japanese_role}</span>
-                  <br />
-                  <span>{role}</span>
-                </div>
-                <div>
-                  <span class="text-gray-500 font-mono text-xs">{japanese_name}</span>
-                  <br />
-                  <span>{name}</span>
-                </div>
-              </>
+          <div class="credit-cards">
+            {creditCards.map((card) => (
+              <div class="credit-card">
+                {card.map((line) => (
+                  <div class:list={["credit-line", { "credit-continued": line.continued }]}>
+                    <div class="credit-role">
+                      {!line.continued && (
+                        <>
+                          <span lang="ja" class="credit-ja">{line.japanese_role}</span>
+                          <span>{line.role}</span>
+                        </>
+                      )}
+                    </div>
+                    <div class="credit-name">
+                      <span lang="ja" class="credit-ja">{line.japanese_name}</span>
+                      <PersonShowcaseLink slug={line.name ? personSlugFor(line.name) : undefined}>
+                        {line.name}
+                      </PersonShowcaseLink>
+                    </div>
+                  </div>
+                ))}
+              </div>
             ))}
           </div>
         </div>
@@ -448,18 +397,21 @@ const creditRows = credits[slug];
     </>
   )
 }
+  </div>
+</div>
 <CastBlockFromCsv rows={castCsv} />
 {
   kaiju && kaiju.length > 0 && (
     <>
       <NamedDivider name="kaiju, etc." />
-      <div class="flex flex-col sm:flex-row sm:flex-wrap sm:w-fit w-96 m-auto gap-4 justify-center">
+      <div class="flex flex-col sm:flex-row sm:flex-wrap sm:w-fit w-full max-w-96 sm:max-w-none m-auto gap-4 justify-center">
         {kaiju.map((monster) => (
           <div class="flex flex-row sm:flex-col sm:w-32 items-center gap-3">
             <div class="shrink-0">
               <img
                 class="h-[75px] w-[75px] sm:h-[100px] sm:w-[100px] max-w-[150px] rounded-lg drop-shadow-lg"
                 src={monster.avatar_url}
+                alt={monster.name}
               />
             </div>
             <div class="flex flex-col sm:items-center">
@@ -499,3 +451,165 @@ const creditRows = credits[slug];
   )
 }
 <HomeVideoBlock filmSlug={slug} releases={homeVideos[slug] ?? []} />
+
+<style>
+  .film-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    width: 100%;
+    align-items: start;
+  }
+  .film-poster {
+    display: flex;
+    justify-content: center;
+  }
+  .film-poster img {
+    width: 270px;
+    height: auto;
+  }
+  .film-side,
+  .film-rest {
+    min-width: 0;
+  }
+  .film-rest > :global(.named-divider:first-child) {
+    margin-top: 0;
+  }
+  .read-link {
+    margin-top: 4px;
+    font-family: var(--font-content);
+    font-size: 0.95rem;
+    color: var(--color-red-700);
+  }
+  .series-open {
+    display: block;
+    width: fit-content;
+    margin-top: 2px;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-family: var(--font-content);
+    font-size: 0.95rem;
+    color: var(--color-red-700);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .series-open.series-name {
+    display: inline;
+    width: auto;
+    margin-top: 0;
+  }
+  .credits-row {
+    margin-top: 18px;
+  }
+  .modal-close {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    height: 0;
+    transform: translate(12px, -12px);
+  }
+  .modal-close button {
+    background: white;
+  }
+  .series-current {
+    font-weight: 600;
+    color: var(--color-gray-700);
+  }
+  .credit-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: var(--font-content);
+    font-size: 0.875rem;
+    color: var(--color-gray-700);
+  }
+  .credit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .credit-card + .credit-card {
+    border-top: 1px solid var(--color-gray-200);
+    padding-top: 16px;
+  }
+  .credit-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .credit-continued {
+    margin-top: -4px;
+  }
+  .credit-role,
+  .credit-name {
+    display: flex;
+    flex-direction: column;
+  }
+  .credit-ja {
+    font-family: var(--font-japanese);
+    font-size: 0.75rem;
+    color: var(--color-gray-500);
+  }
+  .staff-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 28px;
+    text-align: left;
+  }
+  .staff-role {
+    font-family: var(--font-detail);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-gray-500);
+  }
+  .staff-name {
+    margin-top: 2px;
+    font-family: var(--font-content);
+    font-size: 0.95rem;
+    color: var(--color-gray-700);
+  }
+  @media (min-width: 720px) {
+    .film-hero {
+      grid-template-columns: 270px fit-content(34rem);
+      justify-content: center;
+      column-gap: 40px;
+      row-gap: 2rem;
+    }
+    .film-poster {
+      grid-column: 1;
+      grid-row: 1;
+      justify-content: flex-start;
+    }
+    .film-side {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .film-rest {
+      grid-column: 1 / -1;
+      grid-row: 2;
+    }
+    .staff-grid {
+      grid-template-columns: repeat(2, max-content);
+      width: fit-content;
+      margin-inline: auto;
+      column-gap: 4rem;
+    }
+    .credits-row {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 520px) {
+    .staff-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

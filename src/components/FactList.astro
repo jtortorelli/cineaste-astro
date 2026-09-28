@@ -1,0 +1,50 @@
+<div class="facts">
+  <slot />
+</div>
+
+<style>
+  .facts > :global(.fact + .fact) {
+    margin-top: 12px;
+  }
+  .facts :global(.fact) {
+    display: grid;
+    grid-template-columns: 8.75rem minmax(0, 1fr);
+    gap: 4px 20px;
+    align-items: start;
+  }
+  .facts :global(.fact-label) {
+    padding-top: 3px;
+    font-family: var(--font-detail);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 1.3;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: var(--color-gray-500);
+  }
+  .facts :global(.fact-value) {
+    font-family: var(--font-content);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--color-gray-700);
+  }
+  .facts :global(.fact-note) {
+    font-family: var(--font-content);
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--color-gray-500);
+  }
+  .facts :global(.fact-plain) {
+    font-style: normal;
+  }
+  @media (max-width: 520px) {
+    .facts :global(.fact) {
+      grid-template-columns: 1fr;
+      gap: 2px;
+    }
+    .facts :global(.fact-label) {
+      padding-top: 0;
+    }
+  }
+</style>

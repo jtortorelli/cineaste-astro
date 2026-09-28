@@ -1,5 +1,6 @@
 ---
-import Icon from "./Icon.astro";
+import Fact from "./Fact.astro";
+import FactList from "./FactList.astro";
 import NamedDivider from "./NamedDivider.astro";
 import SelectedWorks from "./SelectedWorks.astro";
 import { displayPersonDate, lifespan } from "../lib/dates";
@@ -37,105 +38,103 @@ const works = data.works as Record<string, unknown>[] | undefined;
   <h1 class="font-display tracking-wider uppercase text-2xl text-gray-700 p-4">
     {name}
   </h1>
-  <div class="pb-4 lg:shrink-0 h-full w-fit m-auto">
-    <img class="rounded-lg drop-shadow-lg" src={avatar_url} height="200px" width="200px" />
-  </div>
-  <NamedDivider name="Overview" />
-  <div class="font-content text-sm text-gray-700 max-w-96 w-fit m-auto mb-4">
-    {
-      japanese_name && (
-        <div class="flex pb-2 gap-2">
-          <div class="-translate-y-[2px]">
-            <Icon name="language" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
-          </div>
-          <div class="font-japanese">{japanese_name}</div>
-        </div>
-      )
-    }
-    {
-      active_period_start && (
-        <div class="flex pb-2 gap-2">
-          <div class="-translate-y-[2px]">
-            <Icon name="calendar-time" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
-          </div>
-          <div>
-            {active_period_start} - {active_period_end ?? "Present"}
-          </div>
-        </div>
-      )
-    }
-  </div>
+</div>
+<div class="person-hero">
+  <img
+    class="rounded-lg drop-shadow-lg"
+    src={avatar_url}
+    alt={`Portrait of ${name}`}
+    height="200"
+    width="200"
+  />
+  <FactList>
+    {japanese_name && (
+      <Fact label="Japanese name">
+        <span lang="ja" class="font-japanese">{japanese_name}</span>
+      </Fact>
+    )}
+    {active_period_start && (
+      <Fact label="Active">
+        {active_period_start}–{active_period_end ?? "present"}
+      </Fact>
+    )}
+  </FactList>
 </div>
 {
   members && members.length > 0 && (
     <>
-      <div class="inline-flex items-center justify-center text-center w-full">
-        <span class="absolute px-3 font-detail text-sm uppercase -translate-x-1/2 bg-white left-1/2 text-gray-500">
-          Members
-        </span>
-      </div>
-      <div class="w-96 m-auto sm:w-fit flex flex-col sm:flex-row flex-wrap gap-6 justify-center p-4">
+      <NamedDivider name="Members" />
+      <div class="group-members">
         {members.map((member) => (
-          <div class="flex flex-col text-sm gap-3">
-            <div class="sm:text-center text-base font-content text-gray-700">{member.name}</div>
-            {member.dob && (
-              <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
-                <Icon name="sun-high" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
-                <div class="space-y-1">
-                  <div class="font-content text-gray-700">
-                    {displayPersonDate(member.dob, member.dob_resolution)}
-                    {!member.dod && member.dob && (
-                      <> ({lifespan(member.dob, new Date().toISOString())})</>
-                    )}
-                  </div>
+          <div class="group-member">
+            <h2 class="group-member-name">{member.name}</h2>
+            <FactList>
+              {member.dob && (
+                <Fact label="Born">
+                  {displayPersonDate(member.dob, member.dob_resolution)}
+                  {!member.dod && <> ({lifespan(member.dob, new Date().toISOString())})</>}
                   {member.birth_name && (
-                    <div class="font-content text-gray-500 text-xs">{member.birth_name}</div>
+                    <div class="fact-note fact-plain">{member.birth_name}</div>
                   )}
                   {member.japanese_birth_name && (
-                    <div class="font-content text-gray-500 text-xs">
+                    <div lang="ja" class="fact-note fact-plain font-japanese">
                       {member.japanese_birth_name}
                     </div>
                   )}
                   {member.birth_place && (
-                    <div class="font-content text-gray-500 text-xs">{member.birth_place}</div>
+                    <div class="fact-note fact-plain">{member.birth_place}</div>
                   )}
-                </div>
-              </div>
-            )}
-            {member.dod && typeof member.dod !== "string" && member.dob && (
-              <div class="flex lg:break-inside-avoid-column gap-1 items-middle">
-                <Icon name="moon" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
-                <div class="space-y-1">
-                  <div class="font-content text-gray-700">
-                    {displayPersonDate(member.dod, member.dod_resolution)} (
-                    {lifespan(member.dob, member.dod)})
-                  </div>
+                </Fact>
+              )}
+              {member.dod && typeof member.dod !== "string" && member.dob && (
+                <Fact label="Died">
+                  {displayPersonDate(member.dod, member.dod_resolution)} (
+                  {lifespan(member.dob, member.dod)})
                   {member.death_place && (
-                    <div class="font-content text-gray-500 text-xs">{member.death_place}</div>
+                    <div class="fact-note fact-plain">{member.death_place}</div>
                   )}
                   {member.cause_of_death && (
-                    <div class="font-content text-gray-500 text-xs">{member.cause_of_death}</div>
+                    <div class="fact-note fact-plain">{member.cause_of_death}</div>
                   )}
-                </div>
-              </div>
-            )}
+                </Fact>
+              )}
+            </FactList>
           </div>
         ))}
       </div>
     </>
   )
 }
-<div
-  class="
-        text-sm font-content text-justify text-gray-700 pb-1 pt-2 mx-auto
-        w-96 sm:w-fit
-        columns-1 sm:columns-2 space-y-2
-        sm:[&:has(>_:only-child)]:columns-1
-        sm:[&:has(>_:only-child)]:w-96
-        sm:[&:has(>_:only-child)]:justify-items-center
-      "
->
+<NamedDivider name="Bio" />
+<div class="reading pb-1 pt-2">
   <Content />
 </div>
 <NamedDivider name="Selected Works" />
 <SelectedWorks works={works as never} />
+
+<style>
+  .group-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px 80px;
+    padding: 8px 0 24px;
+  }
+  .group-member {
+    width: fit-content;
+    max-width: 100%;
+  }
+  .group-member :global(.facts .fact) {
+    grid-template-columns: 3.5rem minmax(0, 1fr);
+    column-gap: 12px;
+  }
+  .group-member :global(.facts .fact + .fact) {
+    margin-top: 8px;
+  }
+  .group-member-name {
+    margin: 0 0 6px;
+    font-family: var(--font-content);
+    font-size: 1.05rem;
+    color: var(--color-gray-700);
+  }
+</style>

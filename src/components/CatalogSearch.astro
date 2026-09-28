@@ -6,9 +6,11 @@ interface Props {
   total: number;
   noun: string;
   empty?: boolean;
+  altHref?: string;
+  altNoun?: string;
 }
 
-const { label, total, noun, empty = true } = Astro.props;
+const { label, total, noun, empty = true, altHref, altNoun } = Astro.props;
 ---
 
 <div class="catalog-search">
@@ -41,7 +43,14 @@ const { label, total, noun, empty = true } = Astro.props;
 </div>
 {
   empty && (
-    <p id="search-empty" class="search-empty" hidden aria-live="polite"></p>
+    <p
+      id="search-empty"
+      class="search-empty"
+      hidden
+      aria-live="polite"
+      data-alt-href={altHref}
+      data-alt-noun={altNoun}
+    />
   )
 }
 

@@ -47,10 +47,26 @@ const decadeButtons = filmFilters
   : [];
 const seriesSelect = document.getElementById("series-filter");
 const reviewButton = document.getElementById("review-filter");
+const filtersToggle = document.getElementById("filters-toggle");
+const filterCount = document.getElementById("filter-count");
+
+function selectDecade(selected) {
+  decadeButtons.forEach((button) => {
+    const on = button === selected;
+    button.setAttribute("aria-checked", on ? "true" : "false");
+    button.tabIndex = on ? 0 : -1;
+  });
+}
+
+function setFiltersOpen(open) {
+  if (!filmFilters || !filtersToggle) return;
+  filmFilters.classList.toggle("is-open", open);
+  filtersToggle.setAttribute("aria-expanded", open ? "true" : "false");
+}
 
 function currentFilters() {
   const decade =
-    decadeButtons.find((button) => button.getAttribute("aria-pressed") === "true")
+    decadeButtons.find((button) => button.getAttribute("aria-checked") === "true")
       ?.getAttribute("data-decade") || "";
   return {
     decade,
@@ -111,6 +127,10 @@ function filterElements(writeUrl) {
   });
 
   if (seriesSelect) seriesSelect.classList.toggle("is-set", Boolean(filters.series));
+  if (filterCount) {
+    const active = [filters.decade, filters.series, filters.review].filter(Boolean).length;
+    filterCount.textContent = active ? ` · ${active}` : "";
+  }
 
   const total = status ? Number(status.dataset.total) : filterables.length;
   const noun = status?.dataset.noun || "results";
@@ -126,6 +146,13 @@ function filterElements(writeUrl) {
         ? `No ${noun} match “${inputValue}”.`
         : `No ${noun} match these filters.`
       : "";
+    const altHref = empty.dataset.altHref;
+    if (none && hasQuery && altHref) {
+      const link = document.createElement("a");
+      link.href = `${altHref}?q=${encodeURIComponent(inputValue)}`;
+      link.textContent = `Search ${empty.dataset.altNoun || "elsewhere"} instead.`;
+      empty.append(" ", link);
+    }
   }
 
   if (writeUrl) writeState(inputValue);
@@ -138,12 +165,10 @@ if (searchInput) {
 
   if (filmFilters) {
     const decade = params.get("decade") || "";
-    decadeButtons.forEach((button) => {
-      button.setAttribute(
-        "aria-pressed",
-        button.getAttribute("data-decade") === decade ? "true" : "false",
-      );
-    });
+    selectDecade(
+      decadeButtons.find((button) => button.getAttribute("data-decade") === decade) ||
+        decadeButtons[0],
+    );
     if (seriesSelect && params.get("series")) seriesSelect.value = params.get("series");
     if (reviewButton) {
       reviewButton.setAttribute(
@@ -151,11 +176,30 @@ if (searchInput) {
         params.get("review") === "1" ? "true" : "false",
       );
     }
-    decadeButtons.forEach((button) => {
+    setFiltersOpen(filtersActive(currentFilters()));
+    filtersToggle?.addEventListener("click", () => {
+      setFiltersOpen(filtersToggle.getAttribute("aria-expanded") !== "true");
+    });
+    decadeButtons.forEach((button, index) => {
       button.addEventListener("click", () => {
-        decadeButtons.forEach((other) => {
-          other.setAttribute("aria-pressed", other === button ? "true" : "false");
-        });
+        selectDecade(button);
+        filterElements(true);
+      });
+      button.addEventListener("keydown", (event) => {
+        const last = decadeButtons.length - 1;
+        const moves = {
+          ArrowRight: index === last ? 0 : index + 1,
+          ArrowDown: index === last ? 0 : index + 1,
+          ArrowLeft: index === 0 ? last : index - 1,
+          ArrowUp: index === 0 ? last : index - 1,
+          Home: 0,
+          End: last,
+        };
+        if (!(event.key in moves)) return;
+        event.preventDefault();
+        const next = decadeButtons[moves[event.key]];
+        selectDecade(next);
+        next.focus();
         filterElements(true);
       });
     });

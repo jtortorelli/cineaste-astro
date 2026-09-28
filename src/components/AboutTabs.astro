@@ -1,0 +1,53 @@
+---
+const tabs = [
+  { href: "/about", label: "The Gist" },
+  { href: "/about/history", label: "History" },
+  { href: "/about/acknowledgements", label: "Acknowledgements" },
+];
+
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+---
+
+<nav class="about-tabs" aria-label="About">
+  {
+    tabs.map((tab) => (
+      <a href={tab.href} aria-current={pathname === tab.href ? "page" : undefined}>
+        {tab.label}
+      </a>
+    ))
+  }
+</nav>
+
+<style>
+  .about-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 8px;
+    margin: 0 auto 24px;
+  }
+  .about-tabs a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 12px;
+    border-bottom: 2px solid transparent;
+    font-family: var(--font-detail);
+    font-size: 0.875rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-gray-500);
+    text-decoration: none;
+  }
+  .about-tabs a:hover {
+    color: var(--color-gray-700);
+  }
+  .about-tabs a[aria-current="page"] {
+    color: var(--color-red-700);
+    border-bottom-color: var(--color-red-700);
+  }
+  .about-tabs a:focus-visible {
+    outline: 2px solid var(--color-red-700);
+    outline-offset: 2px;
+  }
+</style>

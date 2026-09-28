@@ -37,14 +37,14 @@ function processRoles(
 ---
 
 <div class="full-filmography">
-  <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 m-auto sm:w-fit w-96">
+  <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 m-auto sm:w-fit w-full max-w-96 sm:max-w-none">
     {
       works?.map((entry) => (
         <>
           {entry.format.toLowerCase() === "video game" && (
             <div class="flex flex-row w-60 items-start gap-3">
               <div class="shrink-0">
-                <img class="rounded-lg drop-shadow-lg" width={75} src={entry.box_art_url} />
+                <img class="rounded-lg drop-shadow-lg" width={75} alt="" src={entry.box_art_url} />
               </div>
               <div>
                 <div class="font-content text-xs text-gray-500 flex items-center gap-1">
@@ -82,7 +82,7 @@ function processRoles(
           {entry.format.toLowerCase() === "tv series" && (
             <div class="flex flex-row w-60 items-start gap-3">
               <div class="shrink-0">
-                <img class="rounded-lg drop-shadow-lg" width={75} src={entry.title_card_url} />
+                <img class="rounded-lg drop-shadow-lg" width={75} alt="" src={entry.title_card_url} />
               </div>
               <div>
                 <div class="font-content text-xs text-gray-500 flex items-center gap-1">
@@ -128,7 +128,7 @@ function processRoles(
           {entry.format.toLowerCase() === "film" && (
             <div class="flex flex-row w-60 items-start gap-3">
               <div class="shrink-0">
-                <img class="rounded-lg drop-shadow-lg" width={75} src={entry.poster_url} />
+                <img class="rounded-lg drop-shadow-lg" width={75} alt="" src={entry.poster_url} />
               </div>
               <div>
                 <div class="font-content text-xs text-gray-500 flex items-center gap-1">
@@ -179,7 +179,7 @@ function processRoles(
           {entry.format.toLowerCase() === "book" && (
             <div class="flex flex-row w-60 items-start gap-3">
               <div class="shrink-0">
-                <img class="rounded-lg drop-shadow-lg" width={75} src={entry.cover_url} />
+                <img class="rounded-lg drop-shadow-lg" width={75} alt="" src={entry.cover_url} />
               </div>
               <div>
                 <div class="font-content text-xs text-gray-500 flex items-center gap-1">

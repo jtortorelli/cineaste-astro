@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+@import "./fonts.css";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-display: "Montserrat", sans-serif;
+  --font-content: "Petrona", serif;
+  --font-detail: "Sono", monospace;
+  --font-japanese: "Noto Serif JP", serif;
+}
+
+@layer components {
+  .reading {
+    max-width: 65ch;
+    margin-inline: auto;
+    text-align: left;
+    hyphens: auto;
+    font-family: var(--font-content);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-gray-700);
+  }
+  .reading > * + * {
+    margin-top: 1em;
+  }
+  .person-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 24px;
+  }
+  .person-hero > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .person-hero > .facts {
+    justify-self: stretch;
+  }
+  @media (min-width: 720px) {
+    .person-hero {
+      grid-template-columns: 200px fit-content(34rem);
+      justify-content: center;
+      align-items: start;
+      column-gap: 40px;
+    }
+  }
+}

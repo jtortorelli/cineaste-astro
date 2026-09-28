@@ -11,32 +11,68 @@ interface Props {
 
 const { filmSlug, releases } = Astro.props;
 
-function formatIcon(format: string): { name: string; label: string } {
+function canonicalFormat(format: string): string {
   const key = format.toLowerCase().replace(/[_\s]+/g, "-");
+  if (key === "blu-ray" || key === "bd") return "bluray";
+  if (key === "uhd" || key === "4k-uhd" || key === "ultra-hd") return "4k";
+  return key;
+}
+
+function formatMark(format: string): { name: string; label: string } {
+  const key = canonicalFormat(format);
   if (key === "vhs") return { name: "device-audio-tape", label: "VHS" };
   if (key === "dvd") return { name: "disc", label: "DVD" };
-  if (key === "blu-ray" || key === "bluray") {
-    return { name: "disc", label: "Blu-ray" };
-  }
-  if (key === "4k" || key === "uhd" || key === "4k-uhd" || key === "ultra-hd") {
-    return { name: "badge-4k", label: "4K" };
-  }
+  if (key === "bluray") return { name: "bluray", label: "Blu-ray" };
+  if (key === "4k") return { name: "badge-4k", label: "4K" };
   if (key === "vod") return { name: "device-tv", label: "VOD" };
   return { name: "movie", label: format };
 }
+
+const FORMAT_RANK: Record<string, number> = {
+  vhs: 0,
+  dvd: 1,
+  bluray: 2,
+  "4k": 3,
+  vod: 4,
+};
+
+const groups = [...releases.reduce((map, release) => {
+  const key = canonicalFormat(release.format);
+  const list = map.get(key) ?? [];
+  list.push(release);
+  map.set(key, list);
+  return map;
+}, new Map<string, HomeVideoRelease[]>())].sort(([a], [b]) => {
+  const rank = (FORMAT_RANK[a] ?? 99) - (FORMAT_RANK[b] ?? 99);
+  return rank !== 0 ? rank : a.localeCompare(b);
+}).map(([key, list]) => ({
+  ...formatMark(key),
+  releases: [...list].sort((a, b) => {
+    const year = Number(a.year) - Number(b.year);
+    return year !== 0 ? year : a.title.localeCompare(b.title);
+  }),
+}));
 ---
 
 {
   releases.length > 0 && (
     <>
       <NamedDivider name="Home Video" />
-      <div class="font-content text-sm text-gray-700 w-96 sm:w-fit m-auto flex flex-col gap-6">
-        {releases.map((release) => {
+      <div class="home-video font-content text-sm text-gray-700">
+        {groups.map((group) => (
+          <section class="home-video-group">
+            <div class="format-heading">
+              <Icon
+                name={group.name}
+                set="tabler"
+                variant="outline"
+                class="h-4 w-4"
+              />
+              <span>{group.label}</span>
+            </div>
+            {group.releases.map((release) => {
           const companions = release.films.filter(
             (film) => film.slug !== filmSlug,
-          );
-          const { name: iconName, label: formatLabel } = formatIcon(
-            release.format,
           );
           const artUrl = homeVideoArtUrl(release.slug);
           return (
@@ -49,16 +85,7 @@ function formatIcon(format: string): { name: string; label: string } {
                 />
               )}
               <div>
-                <div class="text-xs text-gray-500 flex items-center gap-1">
-                  <Icon
-                    name={iconName}
-                    set="tabler"
-                    variant="outline"
-                    class="h-4 w-4 text-gray-500"
-                  />
-                  <span class="uppercase font-detail">{formatLabel}</span>
-                </div>
-                <div class="italic pt-1">{release.title}</div>
+                <div class="italic">{release.title}</div>
                 <div class="text-xs text-gray-500">
                   {release.publisher}, {release.year}
                 </div>
@@ -98,8 +125,36 @@ function formatIcon(format: string): { name: string; label: string } {
               </div>
             </div>
           );
-        })}
+            })}
+          </section>
+        ))}
       </div>
     </>
   )
 }
+
+<style>
+  .home-video {
+    width: min(100%, 40rem);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .home-video-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .format-heading {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-detail);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-gray-700);
+  }
+</style>

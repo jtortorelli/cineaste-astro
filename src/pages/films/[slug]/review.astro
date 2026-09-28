@@ -60,42 +60,28 @@ const { filmTitle, filmUrl, posterUrl, videoReview, starRating, Content } =
       Back to <i>{filmTitle}</i>
     </CineasteLink>
   </div>
-  <div class="text-center w-fit m-auto">
-    <h1 class="font-display tracking-wider uppercase p-4 text-2xl text-gray-700">
+  <div class="text-center w-fit m-auto pt-2">
+    <p class="font-detail text-xs tracking-[0.14em] uppercase text-red-700">Review</p>
+    <h1 class="font-display tracking-wider uppercase px-4 pt-1 pb-3 text-2xl text-gray-700">
       {filmTitle}
     </h1>
   </div>
-  <div class="text-center w-fit m-auto pb-2">
-    <div class="font-content text-red-700">godzillacineaste.net review</div>
+  <div class="pb-6">
+    <ReviewStars star_rating={starRating} show_label={true} />
   </div>
-  <div class="pb-4 lg:shrink-0">
+  <div class="pb-6 lg:shrink-0">
     <div class="text-center w-fit m-auto">
       <img
         class="rounded-lg drop-shadow-lg"
         height={400}
         width={270}
         src={posterUrl}
+        alt={`Poster for ${filmTitle}`}
       />
     </div>
   </div>
-  <div class="pb-4">
-    <ReviewStars star_rating={starRating} show_label={true} />
-  </div>
-  <div
-    class="
-        text-sm font-content text-justify text-gray-700 pb-4 pt-2 mx-auto
-        w-96 sm:w-fit
-        columns-1 sm:columns-2 space-y-2
-
-        sm:[&:has(>_:only-child)]:columns-1
-        sm:[&:has(>_:only-child)]:w-96
-        sm:[&:has(>_:only-child)]:justify-items-center
-      "
-  >
+  <div class="reading pb-6 pt-2">
     <Content />
-  </div>
-  <div class="pb-4">
-    <ReviewStars star_rating={starRating} show_label={true} />
   </div>
   <ReviewVideoLinks video_review={videoReview} />
 </Layout>

@@ -54,35 +54,53 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
       empty={false}
     />
     <div class="film-filters" id="film-filters">
-    <div>
-      <p class="filter-label" id="decade-label">Decade</p>
-      <div class="chip-row" role="group" aria-labelledby="decade-label">
-        <button type="button" class="badge decade-badge" data-decade="" aria-pressed="true">
-          All
-        </button>
-        {
-          decades.map((decade) => (
-            <button type="button" class="badge decade-badge" data-decade={decade} aria-pressed="false">
-              {decade}s
+      <button
+        type="button"
+        class="chip filters-toggle"
+        id="filters-toggle"
+        aria-expanded="false"
+        aria-controls="filter-panel"
+      >
+        Filters<span id="filter-count"></span>
+      </button>
+      <div class="filter-panel" id="filter-panel">
+        <div>
+          <p class="filter-label" id="decade-label">Decade</p>
+          <div class="chip-row" role="radiogroup" aria-labelledby="decade-label">
+            <button type="button" class="chip" role="radio" data-decade="" aria-checked="true" tabindex="0">
+              All
             </button>
-          ))
-        }
+            {
+              decades.map((decade) => (
+                <button type="button" class="chip" role="radio" data-decade={decade} aria-checked="false" tabindex="-1">
+                  {decade}s
+                </button>
+              ))
+            }
+          </div>
+        </div>
+        <div class="filter-tools">
+          <label class="series-filter">
+            <span class="filter-label">Series</span>
+            <select id="series-filter" class="select">
+              <option value="">All</option>
+              {seriesNames.map((name) => <option value={name}>{name}</option>)}
+            </select>
+          </label>
+          <button type="button" class="chip" id="review-filter" aria-pressed="false">
+            Has review
+          </button>
+        </div>
       </div>
     </div>
-    <div class="filter-tools">
-      <label class="series-filter">
-        <span class="filter-label">Series</span>
-        <select id="series-filter" class="select">
-          <option value="">All</option>
-          {seriesNames.map((name) => <option value={name}>{name}</option>)}
-        </select>
-      </label>
-      <button type="button" class="chip" id="review-filter" aria-pressed="false">
-        reviewed?
-      </button>
-    </div>
-  </div>
-  <p id="search-empty" class="search-empty" hidden aria-live="polite"></p>
+  <p
+    id="search-empty"
+    class="search-empty"
+    hidden
+    aria-live="polite"
+    data-alt-href="/people"
+    data-alt-noun="people"
+  ></p>
   </div>
   <div>
     <div id="search-results" class="film-grid">
@@ -126,7 +144,16 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
     width: 100%;
   }
   .film-filters {
+    margin: 0 0 20px;
+  }
+  .filter-panel {
     display: none;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .film-filters.is-open .filter-panel {
+    display: flex;
   }
   .search-empty {
     margin: 28px auto;
@@ -139,11 +166,14 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
   }
   @media (min-width: 721px) {
     .film-filters {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      width: 100%;
       margin: 8px 0 28px;
+    }
+    .filters-toggle {
+      display: none;
+    }
+    .filter-panel {
+      display: flex;
+      margin-top: 0;
     }
     .search-empty {
       margin-top: 0;
@@ -165,26 +195,6 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
     align-items: flex-end;
     gap: 8px;
   }
-  .decade-badge {
-    height: auto;
-    min-height: 44px;
-    padding-inline: 14px;
-    font-family: var(--font-detail);
-    font-size: 12px;
-    letter-spacing: 0.04em;
-    color: var(--color-gray-700);
-    background-color: var(--color-base-200);
-    border-color: var(--color-base-200);
-    cursor: pointer;
-  }
-  .decade-badge[aria-pressed="true"] {
-    color: var(--color-red-700);
-    background-color: var(--color-red-100);
-    border-color: var(--color-red-700);
-  }
-  .decade-badge:hover {
-    color: var(--color-red-700);
-  }
   .chip {
     min-height: 44px;
     padding: 0 14px;
@@ -193,12 +203,12 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
     background: white;
     font-family: var(--font-detail);
     font-size: 12px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    letter-spacing: 0.04em;
     color: var(--color-gray-700);
     cursor: pointer;
   }
-  .chip[aria-pressed="true"] {
+  .chip[aria-pressed="true"],
+  .chip[aria-checked="true"] {
     color: var(--color-red-700);
     border-color: var(--color-red-700);
     background-color: var(--color-red-100);
@@ -206,7 +216,6 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
   .chip:hover {
     color: var(--color-red-700);
   }
-  .decade-badge:focus-visible,
   .chip:focus-visible,
   .series-filter select:focus-visible,
   .film-card:focus-visible {

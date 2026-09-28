@@ -1,11 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import AboutTabs from "../../components/AboutTabs.astro";
 
-const tabs = [
-  { href: "/about", label: "The Gist", active: true },
-  { href: "/about/history", label: "History", active: false },
-  { href: "/about/acknowledgements", label: "Acknowledgements", active: false },
-];
 ---
 
 <Layout title="About">
@@ -14,34 +10,24 @@ const tabs = [
       About
     </h1>
   </div>
-  <div
-    class="text-sm font-detail uppercase w-fit m-auto text-center text-gray-500 pb-4"
-  >
-    <div class="flex flex-col sm:flex-row">
-      {
-        tabs.map((tab) => (
-          <div>
-            <a
-              href={tab.href}
-              class={`inline-block p-1 px-4 rounded-t-lg ${tab.active ? "border-red-700 text-red-700" : "hover:text-gray-700"}`}
-            >
-              {tab.label}
-            </a>
-          </div>
-        ))
-      }
-    </div>
-  </div>
-  <div class="font-content text-gray-700">
-    The Godzilla Cineaste is a fan-made website dedicated to Japanese science
-    fiction and fantasy films. The nucleus of the site’s content is
-    <i>kaiju eiga</i>, that is, the “monster film” genre, with which I’ve held a
-    life-long fascination. The scope of the site grew as I continued developing it
-    until it became what you see now. I haven’t been to all the conventions and
-    haven’t spoken to all the stars (but I’d sure love to sometime). I’m just a
-    guy who’s spent a long time collecting movies and learning how to code. As
-    mentioned on the home page, this site is a labor of love, so updates will
-    occur infrequently and without warning (I’m also a family guy, so, you know,
-    priorities).
+  <AboutTabs />
+  <div class="reading">
+    <p>
+      The Godzilla Cineaste is a fan-made website dedicated to Japanese science
+      fiction and fantasy films. The nucleus of the site’s content is <i>kaiju eiga</i>, 
+      that is, the “monster film” genre, with which I’ve held a
+      life-long fascination. The scope of the site grew as I continued developing
+      it until it became what you see now.
+    </p>
+    <p>
+      I haven’t been to all the conventions and haven’t spoken to all the stars
+      (but I’d sure love to sometime). I’m just a guy who’s spent a long time
+      collecting movies and learning how to code.
+    </p>
+    <p>
+      As mentioned on the home page, this site is a labor of love, so updates will
+      occur infrequently and without warning (I’m also a family guy, so, you know,
+      priorities).
+    </p>
   </div>
 </Layout>

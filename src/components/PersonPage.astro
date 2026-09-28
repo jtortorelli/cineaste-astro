@@ -1,5 +1,7 @@
 ---
 import Icon from "./Icon.astro";
+import Fact from "./Fact.astro";
+import FactList from "./FactList.astro";
 import NamedDivider from "./NamedDivider.astro";
 import PersonShowcaseLink from "./PersonShowcaseLink.astro";
 import SelectedWorks from "./SelectedWorks.astro";
@@ -44,144 +46,92 @@ const works = data.works as Record<string, unknown>[] | undefined;
   <h1 class="font-display tracking-wider uppercase text-2xl text-gray-700 p-4">
     {name}
   </h1>
-  <div class="pb-4 lg:shrink-0 h-full w-fit m-auto">
-    <img class="rounded-lg drop-shadow-lg" src={avatar_url} height="200px" width="200px" />
-  </div>
 </div>
-<NamedDivider name="Bio" />
-<div class="font-content text-sm text-gray-700 max-w-96 w-fit m-auto mb-4">
-  {
-    japanese_name && (
-      <div class="flex pb-2 gap-2">
-        <div class="-translate-y-[2px]">
-          <Icon name="language" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
-        </div>
-        <div class="font-japanese">{japanese_name}</div>
-      </div>
-    )
-  }
-  {
-    dob && (
-      <div class="flex pb-2 gap-2">
-        <div class="-translate-y-[2px]">
-          <Icon name="sun-high" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
-        </div>
-        <div class="space-y-1">
+<div class="person-hero">
+  <img
+    class="rounded-lg drop-shadow-lg"
+    src={avatar_url}
+    alt={`Portrait of ${name}`}
+    height="200"
+    width="200"
+  />
+  <FactList>
+    {japanese_name && (
+      <Fact label="Japanese name">
+        <span lang="ja" class="font-japanese">{japanese_name}</span>
+      </Fact>
+    )}
+    {dob && (
+      <Fact label="Born">
+        {displayPersonDate(dob, dob_resolution)} <span id="age-span"></span>
+        {!dod && (
+          <script is:inline>
+            {`
+              const dob = new Date("${dob}");
+              const ageDifMs = Date.now() - dob.getTime();
+              const ageDate = new Date(ageDifMs);
+              const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+              const ageSpan = document.getElementById("age-span");
+              if (ageSpan) ageSpan.textContent = "(" + age + ")";
+            `}
+          </script>
+        )}
+        {birth_name && <div class="fact-note fact-plain">{birth_name}</div>}
+        {japanese_birth_name && (
+          <div lang="ja" class="fact-note fact-plain font-japanese">{japanese_birth_name}</div>
+        )}
+        {birth_place && <div class="fact-note fact-plain">{birth_place}</div>}
+      </Fact>
+    )}
+    {dod && typeof dod !== "string" && (
+      <Fact label="Died">
+        {displayPersonDate(dod, dod_resolution)} ({lifespan(dob!, dod)})
+        {death_place && <div class="fact-note fact-plain">{death_place}</div>}
+        {cause_of_death && <div class="fact-note fact-plain">{cause_of_death}</div>}
+      </Fact>
+    )}
+    {dod && typeof dod === "string" && dod.toLowerCase() === "unknown" && (
+      <Fact label="Died">Unknown date</Fact>
+    )}
+    {aliases && aliases.length > 0 && (
+      <Fact label="Also known as">
+        {aliases.map((a) => (
           <div>
-            {displayPersonDate(dob, dob_resolution)} <span id="age-span"></span>
-            {!dod && (
-              <script is:inline>
-                {`
-                  const dob = new Date("${dob}");
-                  const ageDifMs = Date.now() - dob.getTime();
-                  const ageDate = new Date(ageDifMs);
-                  const age = Math.abs(ageDate.getUTCFullYear() - 1970);
-                  const ageSpan = document.getElementById("age-span");
-                  if (ageSpan) ageSpan.textContent = "(" + age + ")";
-                `}
-              </script>
+            {a.name}
+            {a.japanese_name && (
+              <div lang="ja" class="fact-note fact-plain font-japanese">{a.japanese_name}</div>
+            )}
+            {a.context && <div class="fact-note fact-plain">{a.context}</div>}
+            {a.category == "mistranslation" && (
+              <div class="fact-note fact-plain">Mistranslation</div>
             )}
           </div>
-          {birth_name && <div class="text-xs text-gray-500">{birth_name}</div>}
-          {japanese_birth_name && (
-            <div class="text-xs text-gray-500">{japanese_birth_name}</div>
-          )}
-          {birth_place && <div class="text-xs text-gray-500">{birth_place}</div>}
-        </div>
-      </div>
-    )
-  }
-  {
-    dod && typeof dod !== "string" && (
-      <div class="flex pb-2 gap-2">
-        <div class="-translate-y-[2px]">
-          <Icon name="moon" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
-        </div>
-        <div class="space-y-1">
+        ))}
+      </Fact>
+    )}
+    {spouses && spouses.length > 0 && (
+      <Fact label={spouses.length > 1 ? "Spouses" : "Spouse"}>
+        {spouses.map((spouse) => (
           <div>
-            {displayPersonDate(dod, dod_resolution)} ({lifespan(dob!, dod)})
+            <PersonShowcaseLink slug={spouse.slug}>{spouse.name}</PersonShowcaseLink>
           </div>
-          {death_place && <div class="text-xs text-gray-500">{death_place}</div>}
-          {cause_of_death && (
-            <div class="text-xs text-gray-500">{cause_of_death}</div>
-          )}
-        </div>
-      </div>
-    )
-  }
-  {
-    dod && typeof dod === "string" && dod.toLowerCase() === "unknown" && (
-      <div class="flex pb-2 gap-2">
-        <div class="-translate-y-[2px]">
-          <Icon name="moon" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
-        </div>
-        <div>Unknown Date</div>
-      </div>
-    )
-  }
-  {
-    aliases?.map((a) => (
-      <div class="flex pb-2 gap-2">
-        <div class="-translate-y-[2px]">
-          <Icon name="at" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
-        </div>
-        <div>
-          <div>{a.name}</div>
-          {a.japanese_name && (
-            <div class="text-xs text-gray-500">{a.japanese_name}</div>
-          )}
-          {a.context && <div class="text-xs text-gray-500">{a.context}</div>}
-          {a.category == "mistranslation" && (
-            <div class="text-xs text-gray-500">Mistranslation</div>
-          )}
-        </div>
-      </div>
-    ))
-  }
-  {
-    spouses?.map((spouse) => (
-      <div class="flex pb-2 gap-2">
-        <div class="-translate-y-[2px]">
-          <Icon name="chart-circles" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
-        </div>
-        <div>
-          <PersonShowcaseLink slug={spouse.slug}>{spouse.name}</PersonShowcaseLink>
-        </div>
-      </div>
-    ))
-  }
-  {
-    family && family.length > 0 && (
-      <div class="flex pb-2 gap-2">
-        <div class="-translate-y-[2px]">
-          <Icon name="users-group" set="tabler" variant="outline" class="inline h-4 w-4 text-gray-500" />
-        </div>
-        <div>
-          {family.map((member) => (
-            <>
-              <div>
-                <PersonShowcaseLink slug={member.slug}>{member.name}</PersonShowcaseLink>
-              </div>
-              <div class="text-xs text-gray-500 capitalize">
-                {member.relationship}
-              </div>
-            </>
-          ))}
-        </div>
-      </div>
-    )
-  }
+        ))}
+      </Fact>
+    )}
+    {family && family.length > 0 && (
+      <Fact label="Family">
+        {family.map((member) => (
+          <div>
+            <PersonShowcaseLink slug={member.slug}>{member.name}</PersonShowcaseLink>
+            <div class="fact-note fact-plain capitalize">{member.relationship}</div>
+          </div>
+        ))}
+      </Fact>
+    )}
+  </FactList>
 </div>
-<div
-  class="
-        text-sm font-content text-justify text-gray-700 pb-1 pt-2 mx-auto
-        w-96 sm:w-fit
-        columns-1 sm:columns-2 space-y-2
-        sm:[&:has(>_:only-child)]:columns-1
-        sm:[&:has(>_:only-child)]:w-96
-        sm:[&:has(>_:only-child)]:justify-items-center
-      "
->
+<NamedDivider name="Bio" />
+<div class="reading pb-1 pt-2">
   <Content />
 </div>
 {

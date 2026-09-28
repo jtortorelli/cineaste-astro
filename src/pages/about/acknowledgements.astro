@@ -3,13 +3,10 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { load } from "js-yaml";
 import Layout from "../../layouts/Layout.astro";
+import AboutTabs from "../../components/AboutTabs.astro";
 import NamedDivider from "../../components/NamedDivider.astro";
+import CineasteLink from "../../components/CineasteLink.astro";
 
-const tabs = [
-  { href: "/about", label: "The Gist", active: false },
-  { href: "/about/history", label: "History", active: false },
-  { href: "/about/acknowledgements", label: "Acknowledgements", active: true },
-];
 
 type WebsiteEntry = {
   name: string;
@@ -38,54 +35,17 @@ const data = load(
   labels: LabelEntry[];
 };
 
-function displayUrl(entry: WebsiteEntry): string | null {
-  if (entry.domain) return entry.domain;
-  if (!entry.resource_url) return null;
-  try {
-    return new URL(entry.resource_url).host;
-  } catch {
-    return entry.resource_url;
-  }
-}
-
 function linkUrl(entry: WebsiteEntry): string | undefined {
   if (entry.resource_url) return entry.resource_url;
   if (entry.domain) return `https://${entry.domain}`;
   return undefined;
 }
 
-const listClass =
-  "font-content ack-list ack-list--2 list-disc list-outside pl-5 mb-6";
-const labelsListClass =
-  "font-content ack-list ack-list--3 list-disc list-outside pl-5 mb-6";
+const websiteSections = [
+  { title: "Influences", entries: data.influences },
+  { title: "Resources", entries: data.resources },
+];
 ---
-
-<style>
-  .ack-list {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
-    width: 100%;
-    max-width: 24rem;
-    margin-inline: auto;
-  }
-
-  @media (width >= 40rem) {
-    .ack-list {
-      max-width: 100%;
-    }
-
-    .ack-list--2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  @media (width >= 64rem) {
-    .ack-list--3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-</style>
 
 <Layout title="Acknowledgements">
   <div class="text-center w-fit m-auto">
@@ -93,124 +53,70 @@ const labelsListClass =
       About
     </h1>
   </div>
-  <div
-    class="text-sm font-detail uppercase w-fit m-auto text-center text-gray-500 pb-4"
-  >
-    <div class="flex flex-col sm:flex-row">
-      {
-        tabs.map((tab) => (
-          <div>
-            <a
-              href={tab.href}
-              class={`inline-block p-1 px-4 rounded-t-lg ${tab.active ? "border-red-700 text-red-700" : "hover:text-gray-700"}`}
-            >
-              {tab.label}
-            </a>
-          </div>
-        ))
-      }
-    </div>
-  </div>
+  <AboutTabs />
 
-  <NamedDivider name="Influences" />
-  <ul class={listClass}>
-    {
-      data.influences.map((entry) => {
-        const url = displayUrl(entry);
-        const href = linkUrl(entry);
-        return (
-          <li>
-            <div class="text-sm text-gray-700">
-              {entry.name}
-              {
-                url && (
-                  <>
-                    {" "}
-                    (
-                    {href ? (
-                      <a href={href} class="text-red-700 hover:underline">
-                        {url}
-                      </a>
-                    ) : (
-                      url
-                    )}
-                    )
-                  </>
-                )
-              }
-            </div>
-            {entry.alias && (
-              <div class="text-xs text-gray-500">aka {entry.alias}</div>
-            )}
-            {entry.author && (
-              <div class="text-xs text-gray-500">{entry.author}</div>
-            )}
-          </li>
-        );
-      })
-    }
-  </ul>
-
-  <NamedDivider name="Resources" />
-  <ul class={listClass}>
-    {
-      data.resources.map((entry) => {
-        const url = displayUrl(entry);
-        const href = linkUrl(entry);
-        return (
-          <li>
-            <div class="text-sm text-gray-700">
-              {entry.name}
-              {
-                url && (
-                  <>
-                    {" "}
-                    (
-                    {href ? (
-                      <a href={href} class="text-red-700 hover:underline">
-                        {url}
-                      </a>
-                    ) : (
-                      url
-                    )}
-                    )
-                  </>
-                )
-              }
-            </div>
-            {entry.author && (
-              <div class="text-xs text-gray-500">{entry.author}</div>
-            )}
-          </li>
-        );
-      })
-    }
-  </ul>
+  {
+    websiteSections.map((section) => (
+      <>
+        <NamedDivider name={section.title} />
+        <ul class="reading ack-list">
+          {section.entries.map((entry) => {
+            const href = linkUrl(entry);
+            return (
+              <li>
+                {href ? <CineasteLink href={href}>{entry.name}</CineasteLink> : entry.name}
+                {entry.alias && <div class="ack-note">aka {entry.alias}</div>}
+                {entry.author && <div class="ack-note">{entry.author}</div>}
+              </li>
+            );
+          })}
+        </ul>
+      </>
+    ))
+  }
 
   <NamedDivider name="Books" />
-  <ul class={listClass}>
+  <ul class="reading ack-list">
     {
       data.books.map((book) => (
         <li>
-          <div class="text-sm text-gray-700 italic">
+          <i>
             {book.name}
-            {book.subtitle && (
-              <>
-                {": "}
-                {book.subtitle}
-              </>
-            )}
-          </div>
-          {book.author && (
-            <div class="text-xs text-gray-500">{book.author}</div>
-          )}
+            {book.subtitle && <>: {book.subtitle}</>}
+          </i>
+          {book.author && <div class="ack-note">{book.author}</div>}
         </li>
       ))
     }
   </ul>
 
   <NamedDivider name="Labels" />
-  <ul class={labelsListClass}>
-    {data.labels.map((label) => <li class="text-sm text-gray-700">{label.name}</li>)}
+  <ul class="reading ack-labels">
+    {data.labels.map((label) => <li>{label.name}</li>)}
   </ul>
 </Layout>
+
+<style>
+  .ack-list {
+    list-style: none;
+    padding: 0;
+  }
+  .ack-list > li + li {
+    margin-top: 14px;
+  }
+  .ack-note {
+    font-size: 0.85rem;
+    color: var(--color-gray-500);
+  }
+  .ack-labels {
+    list-style: none;
+    padding: 0;
+    columns: 3 10rem;
+    column-gap: 24px;
+  }
+  .ack-labels > li {
+    margin: 0;
+    padding: 3px 0;
+    break-inside: avoid;
+  }
+</style>
