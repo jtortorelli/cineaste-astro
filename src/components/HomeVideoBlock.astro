@@ -11,6 +11,8 @@ interface Props {
 
 const { filmSlug, releases } = Astro.props;
 
+const INLINE_LIMIT = 2;
+
 function canonicalFormat(format: string): string {
   const key = format.toLowerCase().replace(/[_\s]+/g, "-");
   if (key === "blu-ray" || key === "bd") return "bluray";
@@ -47,10 +49,16 @@ const groups = [...releases.reduce((map, release) => {
   return rank !== 0 ? rank : a.localeCompare(b);
 }).map(([key, list]) => ({
   ...formatMark(key),
+  setLabel: key === "vod" ? "Collection" : "Box set",
   releases: [...list].sort((a, b) => {
     const year = Number(a.year) - Number(b.year);
     return year !== 0 ? year : a.title.localeCompare(b.title);
-  }),
+  }).map((release) => ({
+    ...release,
+    artUrl: homeVideoArtUrl(release.slug),
+    notes: (release.notes ?? "").split(";").map((n) => n.trim()).filter(Boolean),
+    companions: release.films.filter((film) => film.slug !== filmSlug),
+  })),
 }));
 ---
 
@@ -58,74 +66,80 @@ const groups = [...releases.reduce((map, release) => {
   releases.length > 0 && (
     <>
       <NamedDivider name="Home Video" />
-      <div class="home-video font-content text-sm text-gray-700">
+      <div class="home-video">
         {groups.map((group) => (
-          <section class="home-video-group">
-            <div class="format-heading">
-              <Icon
-                name={group.name}
-                set="tabler"
-                variant="outline"
-                class="h-4 w-4"
-              />
+          <section class="hv-group">
+            <h3 class="hv-format">
+              <Icon name={group.name} set="tabler" variant="outline" class="hv-format-icon" />
               <span>{group.label}</span>
-            </div>
-            {group.releases.map((release) => {
-          const companions = release.films.filter(
-            (film) => film.slug !== filmSlug,
-          );
-          const artUrl = homeVideoArtUrl(release.slug);
-          return (
-            <div class="flex gap-4 items-start">
-              {artUrl && (
-                <img
-                  class="rounded-lg drop-shadow-lg w-[120px] h-auto object-contain shrink-0 self-start"
-                  src={artUrl}
-                  alt={release.title}
-                />
-              )}
-              <div>
-                <div class="italic">{release.title}</div>
-                <div class="text-xs text-gray-500">
-                  {release.publisher}, {release.year}
-                </div>
-                {companions.length > 0 && (
-                  <div class="pt-2">
-                    <div class="uppercase font-detail text-xs text-gray-500">
-                      also includes
+            </h3>
+            <div class="hv-grid">
+              {group.releases.map((release) => (
+                <article class="hv-card">
+                  {release.artUrl ? (
+                    <div class="hv-cover">
+                      <img src={release.artUrl} alt="" loading="lazy" width="64" height="90" />
                     </div>
-                    {companions.map((film) => (
-                      <div>
-                        {film.showcased ? (
-                          <FilmShowcaseLink slug={film.slug}>
-                            <span class="italic">{film.title}</span>
-                            {film.year && <> ({film.year})</>}
-                          </FilmShowcaseLink>
-                        ) : (
-                          <>
-                            <span class="italic">{film.title}</span>
-                            {film.year && <> ({film.year})</>}
-                          </>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                )}
-                {release.notes && (
-                  <div class="text-xs text-gray-500 pt-2">
-                    {release.notes
-                      .split(";")
-                      .map((note) => note.trim())
-                      .filter(Boolean)
-                      .map((note) => (
-                        <div>{note}</div>
+                  ) : (
+                    <div class="hv-cover hv-cover-empty" aria-hidden="true">
+                      <Icon name={group.name} set="tabler" variant="outline" class="h-6 w-6" />
+                    </div>
+                  )}
+                  <div class="hv-body">
+                    <div class="hv-title">{release.title}</div>
+                    <div class="hv-meta">{release.publisher} · {release.year}</div>
+                    {release.companions.length > 0 &&
+                      (release.companions.length <= INLINE_LIMIT ? (
+                        <div class="hv-with">
+                          With{" "}
+                          {release.companions.map((film, index) => (
+                            <>
+                              {index > 0 && ", "}
+                              <FilmShowcaseLink slug={film.showcased ? film.slug : undefined}>
+                                <i>{film.title}</i>
+                                {film.year && <> ({film.year})</>}
+                              </FilmShowcaseLink>
+                            </>
+                          ))}
+                        </div>
+                      ) : (
+                        <details class="hv-more">
+                          <summary>
+                            {group.setLabel} · {release.films.length} films
+                            <Icon name="chevron-down" set="tabler" variant="outline" class="hv-chevron" />
+                          </summary>
+                          <ul class="hv-films">
+                            {release.companions.map((film) => (
+                              <li>
+                                <FilmShowcaseLink slug={film.showcased ? film.slug : undefined}>
+                                  <i>{film.title}</i>
+                                  {film.year && <> ({film.year})</>}
+                                </FilmShowcaseLink>
+                              </li>
+                            ))}
+                          </ul>
+                        </details>
+                      ))}
+                    {release.notes.length > 0 &&
+                      (release.notes.length <= INLINE_LIMIT ? (
+                        <ul class="hv-notes">
+                          {release.notes.map((note) => <li>{note}</li>)}
+                        </ul>
+                      ) : (
+                        <details class="hv-more">
+                          <summary>
+                            {release.notes.length} special features
+                            <Icon name="chevron-down" set="tabler" variant="outline" class="hv-chevron" />
+                          </summary>
+                          <ul class="hv-notes">
+                            {release.notes.map((note) => <li>{note}</li>)}
+                          </ul>
+                        </details>
                       ))}
                   </div>
-                )}
-              </div>
+                </article>
+              ))}
             </div>
-          );
-            })}
           </section>
         ))}
       </div>
@@ -135,26 +149,148 @@ const groups = [...releases.reduce((map, release) => {
 
 <style>
   .home-video {
-    width: min(100%, 40rem);
+    width: min(100%, 48rem);
     margin-inline: auto;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 24px;
+    font-family: var(--font-content);
+    font-size: 0.875rem;
+    color: var(--color-gray-700);
   }
-  .home-video-group {
+  .hv-group {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
   }
-  .format-heading {
+  .hv-format {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
+    margin: 0;
     font-family: var(--font-detail);
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-gray-700);
+  }
+  .hv-format::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid var(--color-gray-200);
+  }
+  .hv-format :global(.hv-format-icon) {
+    width: 18px;
+    height: 18px;
+    color: var(--color-red-700);
+  }
+  .hv-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px 24px;
+    align-items: start;
+  }
+  @media (min-width: 720px) {
+    .hv-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .hv-card {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+  }
+  .hv-cover {
+    display: block;
+    width: 64px;
+    height: 90px;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--color-gray-100);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.18);
+  }
+  .hv-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .hv-more summary:focus-visible {
+    outline: 2px solid var(--color-red-700);
+    outline-offset: 2px;
+  }
+  .hv-cover-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gray-400);
+    box-shadow: none;
+  }
+  .hv-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  .hv-title {
+    font-style: italic;
+    line-height: 1.35;
+  }
+  .hv-meta {
+    font-size: 0.75rem;
+    color: var(--color-gray-500);
+  }
+  .hv-with,
+  .hv-notes {
+    margin-top: 4px;
+    font-size: 0.75rem;
+    line-height: 1.45;
+  }
+  .hv-notes {
+    padding: 0;
+    list-style: none;
+    color: var(--color-gray-500);
+  }
+  .hv-more {
+    margin-top: 4px;
+  }
+  .hv-more summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 24px;
+    list-style: none;
+    font-family: var(--font-detail);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-gray-500);
+    cursor: pointer;
+  }
+  .hv-more summary::-webkit-details-marker {
+    display: none;
+  }
+  .hv-more :global(.hv-chevron) {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.15s ease;
+  }
+  .hv-more[open] :global(.hv-chevron) {
+    transform: rotate(180deg);
+  }
+  .hv-more summary:hover {
+    color: var(--color-gray-700);
+  }
+  .hv-films {
+    margin-top: 4px;
+    padding: 0;
+    list-style: none;
+    font-size: 0.75rem;
+    line-height: 1.5;
   }
 </style>
