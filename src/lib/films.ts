@@ -9,7 +9,7 @@ import {
   loadHomeVideosCsv,
   loadSeriesByName,
 } from "./csv";
-import { releaseYear } from "./dates";
+import { compareReleaseDate, releaseYear } from "./dates";
 
 export type StaffGroup = {
   role: string;
@@ -205,6 +205,15 @@ export function homeVideosByFilmSlug(
       .split(";")
       .map((slug) => slug.trim())
       .filter(Boolean);
+
+    if (filmSlugs.length > 1) {
+      filmSlugs.sort((slugA, slugB) =>
+        compareReleaseDate(
+          filmsBySlug.get(slugA)!,
+          filmsBySlug.get(slugB)!,
+        ),
+      );
+    }
 
     const releaseFilms = filmSlugs.map((slug) => {
       const film = filmsBySlug.get(slug);

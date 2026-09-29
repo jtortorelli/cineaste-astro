@@ -21,6 +21,30 @@ export function formatDate(
   return format(utcDate(value), pattern);
 }
 
+export function releaseDateSortKey(
+  releaseDate: string | null | undefined,
+  slug: string,
+): string {
+  if (releaseDate != null && releaseDate !== "") {
+    const asString = String(releaseDate);
+    if (/^\d{4}-\d{2}-\d{2}/.test(asString)) {
+      return asString.slice(0, 10);
+    }
+  }
+  const year = slug.match(/-(\d{4})$/)?.[1];
+  return year ? `${year}-01-01` : slug;
+}
+
+export function compareReleaseDate(
+  a: { release_date: string; slug: string },
+  b: { release_date: string; slug: string },
+): number {
+  const byDate = releaseDateSortKey(a.release_date, a.slug).localeCompare(
+    releaseDateSortKey(b.release_date, b.slug),
+  );
+  return byDate !== 0 ? byDate : a.slug.localeCompare(b.slug);
+}
+
 export function releaseYear(
   releaseDate: unknown,
   slug?: string,
