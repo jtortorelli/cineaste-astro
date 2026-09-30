@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import CatalogSearch from "../../components/CatalogSearch.astro";
-import CastCatalog from "../../components/CastCatalog.astro";
 import { formatDate } from "../../lib/dates";
 import { getFilmData } from "../../lib/films";
 import { getReviewSlugs } from "../../lib/reviews";
@@ -103,8 +102,8 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
     data-alt-noun="people"
   ></p>
   </div>
-  <CastCatalog>
-    <div id="search-results" class="cast-grid">
+  <div class="film-catalog">
+    <div id="search-results" class="film-grid">
       {
         catalog.map((film) => (
           <div
@@ -137,7 +136,7 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
         ))
       }
     </div>
-  </CastCatalog>
+  </div>
   <script is:inline src="/scripts/filter.js"></script>
 </Layout>
 
@@ -240,6 +239,21 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
   }
   .filter-tools .chip {
     align-self: flex-end;
+  }
+  .film-catalog {
+    width: min(100%, 64rem);
+    margin-inline: auto;
+  }
+  .film-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px 24px;
+    align-items: start;
+  }
+  @media (min-width: 720px) {
+    .film-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
   }
   .film-card {
     display: grid;

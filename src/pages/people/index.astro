@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import CatalogSearch from "../../components/CatalogSearch.astro";
-import PersonDateRange from "../../components/PersonDateRange.astro";
 
 const people = (await getCollection("people")).sort((a, b) =>
   a.id.localeCompare(b.id),
@@ -24,11 +23,8 @@ const people = (await getCollection("people")).sort((a, b) =>
       altNoun="films"
     />
   </div>
-  <div>
-    <div
-      id="search-results"
-      class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-start gap-4"
-    >
+  <div class="person-catalog">
+    <div id="search-results" class="person-grid">
       {
         people.map((p) => {
           const slug = p.id.replace(/\.md$/, "");
@@ -46,56 +42,101 @@ const people = (await getCollection("people")).sort((a, b) =>
           ].filter((value) => value.length > 0);
           return (
             <div
-              class="filterable sm:w-32"
+              class="filterable person-result"
               data-terms={`${p.data.name} ${birthName} ${japanese} ${alternates.join(" ")}`}
               data-primary={p.data.name as string}
               data-japanese={japanese}
               data-alternates={JSON.stringify(alternates)}
             >
-              <a
-                class="person-card group grid grid-cols-[100px_auto] gap-3 sm:flex sm:flex-col sm:items-center sm:gap-0"
-                href={`/people/${slug}`}
-              >
+              <a class="person-card" href={`/people/${slug}`}>
                 <img
-                  class="h-[100px] w-[100px] rounded-lg drop-shadow-lg"
-                  src={p.data.avatar_url as string}
+                  class="person-still"
                   alt=""
+                  height={80}
+                  width={80}
+                  src={p.data.avatar_url as string}
+                  loading="lazy"
                 />
-                <span class="block sm:text-center pt-3">
-                  <span class="block font-content text-sm underline decoration-red-700 decoration-1 underline-offset-2 group-hover:text-red-700">
-                    {p.data.name as string}
-                  </span>
+                <span class="person-copy">
+                  <span class="person-name">{p.data.name as string}</span>
                   {p.data.profession && (
-                    <span class="block font-content text-xs text-gray-500">
-                      {p.data.profession as string}
-                    </span>
+                    <span class="person-profession">{p.data.profession as string}</span>
                   )}
-                  {p.data.type == "person" && (
-                    <span class="block font-content text-xs text-gray-500">
-                      <PersonDateRange p={p.data as never} />
-                    </span>
-                  )}
-                  <span class="match-note block" hidden></span>
+                  <span class="match-note" hidden></span>
                 </span>
               </a>
             </div>
           );
         })
       }
-      <div></div>
     </div>
   </div>
   <script is:inline src="/scripts/filter.js"></script>
 </Layout>
 
 <style>
+  .person-catalog {
+    width: min(100%, 64rem);
+    margin-inline: auto;
+  }
+  .person-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px 24px;
+    align-items: start;
+  }
+  @media (min-width: 720px) {
+    .person-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
   .person-card {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
     color: inherit;
     text-decoration: none;
   }
+  .person-still {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 6px;
+    background: var(--color-gray-100);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.18);
+  }
+  .person-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  .person-name {
+    font-family: var(--font-content);
+    font-size: 0.95rem;
+    line-height: 1.35;
+    color: var(--color-gray-700);
+  }
+  .person-card:hover .person-name,
+  .person-card:focus-visible .person-name {
+    color: var(--color-red-700);
+    text-decoration: underline;
+    text-decoration-color: var(--color-red-700);
+    text-underline-offset: 3px;
+  }
+  .person-profession {
+    font-family: var(--font-detail);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-gray-500);
+  }
   .person-card:focus-visible {
     outline: 2px solid var(--color-red-700);
-    outline-offset: 4px;
+    outline-offset: 3px;
   }
   .person-card :global(.match-note[hidden]) {
     display: none;
