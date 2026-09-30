@@ -12,12 +12,6 @@ japanese_name: 小沢栄太郎
 name: Ozawa Eitarô
 profession: Actor
 type: person
-accolades:
-  - ceremony: 1st Mainichi Film Awards
-    category: Best Actor
-    status: won
-    films:
-      - title: Morning for the Osone Family
 works:
   - title: Morning for the Osone Family
     format: film

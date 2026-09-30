@@ -11,37 +11,6 @@ japanese_name: 佐藤勝
 name: Satô Masaru
 profession: Composer
 type: person
-accolades:
-  - ceremony: 3rd Japan Academy Prizes
-    category: Best Music
-    status: won
-    films:
-      - title: Oh! The Nomugi Pass
-      - title: The Last Game
-      - title: The Shogun Assassins
-      - title: Hunter in the Dark
-  - ceremony: 4th Japan Academy Prizes
-    category: Best Music
-    status: won
-    films:
-      - title: A Distant Cry from Spring
-  - ceremony: 7th Japan Academy Prizes
-    category: Best Music
-    status: won
-    films:
-      - title: The Geisha
-      - title: Adrift at Sea
-      - title: Our Teacher
-  - ceremony: 19th Japan Academy Prizes
-    category: Best Music
-    status: nominated
-    films:
-      - title: Himeyuri no Tô
-  - ceremony: 24th Japan Academy Prizes
-    category: Best Music
-    status: won
-    films:
-      - title: After the Rain
 works:
   - format: film
     poster_url: /static/images/films/posters/godzilla-raids-again-1955.webp

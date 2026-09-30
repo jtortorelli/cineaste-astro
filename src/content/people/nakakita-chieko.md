@@ -15,20 +15,6 @@ spouses:
   - name: Tanaka Tomoyuki
     slug: tanaka-tomoyuki
 type: person
-accolades:
-  - ceremony: 7th Mainichi Film Awards
-    category: Best Supporting Actress
-    status: won
-    films:
-      - title: The Hill is in Bloom
-      - title: Mother
-      - title: Lightning
-  - ceremony: 3rd Blue Ribbon Awards
-    category: Best Supporting Actress
-    status: won
-    films:
-      - title: The Hill is in Bloom
-      - title: Lightning
 works:
   - title: One Wonderful Sunday
     poster_url: /static/images/films/posters/one-wonderful-sunday-1947.webp

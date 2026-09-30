@@ -1,21 +1,5 @@
 ---
 tags: ["cineaste", "people"]
-accolades:
-  - category: Special Acting Award
-    ceremony: 40th Mainichi Film Awards
-    films:
-      - title: Gray Sunset
-    status: won
-  - category: Best Actor
-    ceremony: 28th Blue Ribbon Awards
-    films:
-      - title: Gray Sunset
-    status: won
-  - category: Best Actor
-    ceremony: 9th Japan Academy Prizes
-    films:
-      - title: Gray Sunset
-    status: won
 avatar_url: /static/images/people/chiaki-minoru/avatar.webp
 birth_name: Sasaki Katsuji
 birth_place: Nakagawa, Hokkaido, Japan

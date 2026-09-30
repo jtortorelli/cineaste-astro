@@ -1,0 +1,122 @@
+---
+import NamedDivider from "./NamedDivider.astro";
+import FilmShowcaseLink from "./FilmShowcaseLink.astro";
+import { accoladesFromCsv } from "../lib/films";
+
+interface Props {
+  personSlug: string;
+}
+
+const { personSlug } = Astro.props;
+const groups = accoladesFromCsv(personSlug);
+---
+
+{
+  groups.length > 0 && (
+    <>
+      <NamedDivider name="Accolades" />
+      <div class="acc-catalog">
+        {groups.map((group) => (
+          <div class="acc-group">
+            <h3 class="acc-subhead">
+              {group.career ? (
+                group.title
+              ) : (
+                <FilmShowcaseLink slug={group.slug}>
+                  {group.title}
+                </FilmShowcaseLink>
+              )}
+            </h3>
+            <div class="acc-rows">
+              {group.citations.map((citation) => (
+                <div class="acc-row">
+                  <div
+                    class:list={[
+                      "acc-status",
+                      citation.status === "won" ? "text-amber-600" : "text-gray-500",
+                    ]}
+                  >
+                    {citation.status === "won" ? "Won" : "Nominated"}
+                  </div>
+                  <div class="acc-body">
+                    <span class="acc-ceremony">{citation.ceremony}</span>
+                    {citation.category && (
+                      <>
+                        <span class="acc-sep"> · </span>
+                        <span class="acc-category">{citation.category}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  )
+}
+
+<style>
+  .acc-catalog {
+    width: min(100%, 48rem);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .acc-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .acc-subhead {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-family: var(--font-detail);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-gray-700);
+  }
+  .acc-subhead::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid var(--color-gray-200);
+  }
+  .acc-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .acc-row {
+    display: grid;
+    grid-template-columns: 6.75rem minmax(0, 1fr);
+    column-gap: 12px;
+    align-items: baseline;
+  }
+  .acc-status {
+    font-family: var(--font-detail);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .acc-body {
+    min-width: 0;
+    font-family: var(--font-content);
+    line-height: 1.4;
+  }
+  .acc-ceremony {
+    font-size: 0.95rem;
+    color: var(--color-gray-700);
+  }
+  .acc-sep,
+  .acc-category {
+    font-size: 0.75rem;
+    color: var(--color-gray-500);
+  }
+</style>

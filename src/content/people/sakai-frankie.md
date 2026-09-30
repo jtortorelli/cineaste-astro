@@ -14,18 +14,6 @@ japanese_name: フランキー堺
 name: Frankie Sakai
 profession: Actor
 type: person
-accolades:
-  - ceremony: 8th Blue Ribbon Awards
-    category: Best Actor
-    status: won
-    films:
-      - title: Sun in the Last Days of the Shogunate
-      - title: Happiness is Our Wish
-  - ceremony: 31st Kinema Junpo Awards
-    category: Best Actor
-    status: won
-    films:
-      - title: Sun in the Last Days of the Shogunate
 works:
   - title: Sun in the Last Days of the Shogunate
     format: film

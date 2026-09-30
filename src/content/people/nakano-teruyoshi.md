@@ -11,18 +11,6 @@ japanese_name: 中野昭慶
 name: Nakano Teruyoshi
 profession: SFX Director
 type: person
-accolades:
-  - ceremony: 9th Japan Academy Prizes
-    category: Special Technique Award
-    status: won
-    films:
-      - title: The Return of Godzilla
-  - ceremony: 11th Japan Academy Prizes
-    category: Special Technique Award
-    status: won
-    films:
-      - title: Tokyo Blackout
-      - title: Princess from the Moon
 works:
   - format: film
     poster_url: /static/images/films/posters/matango-1963.webp

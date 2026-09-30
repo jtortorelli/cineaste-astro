@@ -185,22 +185,6 @@ works:
     slug: prophecies-of-nostradamus-1974
     title: Prophecies of Nostradamus
     year: 1974
-accolades:
-  - ceremony: 9th Blue Ribbon Awards
-    category: Best Actress
-    status: won
-    films:
-      - title: The Kii River
-  - ceremony: 22nd Mainichi Film Awards
-    category: Best Actress
-    status: won
-    films:
-      - title: The Kii River
-  - ceremony: 40th Kinema Junpo Awards
-    category: Best Actress
-    status: won
-    films:
-      - title: The Kii River
 ---
 Tsukasa Yôko is an actress who appeared in numerous comedies and samurai films. She first began modeling for the Mei Ushiyama agency in 1954 before being offered a contract with Toho later that year. Tsukasa appeared opposite actor Mifune Toshirô in several films, including _The Three Treasures_ (1959, as his love interest), _Yojimbo_ (1961, as a kidnapped wife he rescues), and _Samurai Rebellion_ (1967, as his daughter-in-law).
 

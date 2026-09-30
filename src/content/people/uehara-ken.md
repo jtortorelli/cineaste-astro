@@ -8,13 +8,6 @@ dob: 1909-11-07
 dob_resolution: exact
 dod: 1991-11-23
 dod_resolution: exact
-accolades:
-  - ceremony: 8th Mainichi Film Awards
-    category: Best Actor
-    status: won
-    films:
-      - title: Wife
-      - title: Husband and Wife
 family:
   - name: Kayama Yûzô
     relationship: son

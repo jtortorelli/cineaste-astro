@@ -2,22 +2,6 @@
 tags:
   - cineaste
   - people
-accolades:
-  - category: Best Supporting Actor
-    ceremony: 7th Mainichi Film Awards
-    films:
-      - title: Mother
-        status: won
-  - category: Best Supporting Actor
-    ceremony: 3rd Blue Ribbon Awards
-    films:
-      - title: Mother
-    status: won
-  - category: Best Supporting Actor
-    ceremony: 6th Blue Ribbon Awards
-    films:
-      - title: Bloody Spear at Mount Fuji
-    status: won
 avatar_url: "/static/images/people/kato-daisuke/avatar.webp"
 birth_name: Katô Tokunosuke
 birth_place: Tokyo, Japan

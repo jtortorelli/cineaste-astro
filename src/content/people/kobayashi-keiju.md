@@ -2,17 +2,6 @@
 tags:
   - cineaste
   - people
-accolades:
-  - category: Best Supporting Actor
-    ceremony: 10th Mainichi Film Awards
-    status: won
-    films:
-      - title: Here is a Spring
-  - category: Best Actor
-    ceremony: 13th Mainichi Film Awards
-    status: won
-    films:
-      - title: The Naked General
 avatar_url: "/static/images/people/kobayashi-keiju/avatar.webp"
 birth_place: Murota, Gunma, Japan
 cause_of_death: Heart Failure

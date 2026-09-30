@@ -15,40 +15,6 @@ profession: Actress
 spouses:
   - name: Shindô Kaneto
 type: person
-accolades:
-  - ceremony: 4th Blue Ribbon Awards
-    category: Best Actress
-    status: won
-    films:
-      - title: Epitome
-      - title: Yokubo
-      - title: Life of a Woman
-  - ceremony: 17th Blue Ribbon Awards
-    category: Best Supporting Actress
-    status: won
-    films:
-      - title: Lost Sex
-  - ceremony: 23rd Mainichi Film Awards
-    category: Best Actress
-    status: won
-    films:
-      - title: Kuroneko
-      - title: Strong Women, Weak Men
-  - ceremony: 47th Mainichi Film Awards
-    category: Best Supporting Actress
-    status: won
-    films:
-      - title: The Strange Tale of Oyuki
-  - ceremony: 19th Japan Academy Prizes
-    category: Best Supporting Actress
-    status: won
-    films:
-      - title: A Last Note
-  - ceremony: 69th Kinema Junpo Awards
-    category: Best Supporting Actress
-    status: won
-    films:
-      - title: A Last Note
 works:
   - title: Shojohou
     format: film

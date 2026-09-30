@@ -8,42 +8,6 @@ japanese_name: 佐藤直紀
 name: Satô Naoki
 profession: Composer
 type: person
-accolades:
-  - ceremony: 29th Japan Academy Prizes
-    category: Best Music
-    status: won
-    films:
-      - title: "Always: Sunset on Third Street"
-  - ceremony: 31st Japan Academy Prizes
-    category: Best Music
-    status: nominated
-    films:
-      - title: "Always: Sunset on Third Street 2"
-  - ceremony: 38th Japan Academy Prizes
-    category: Best Music
-    status: nominated
-    films:
-      - title: The Eternal Zero
-  - ceremony: 40th Japan Academy Prizes
-    category: Best Music
-    status: nominated
-    films:
-      - title: "Fueled: The Man They Called Pirate"
-  - ceremony: 44th Japan Academy Prizes
-    category: Best Music
-    status: nominated
-    films:
-      - title: "The Voice of Sin"
-  - ceremony: 47th Japan Academy Prizes
-    category: Best Music
-    status: nominated
-    films:
-      - title: "Godzilla Minus One"
-  - ceremony: 49th Japan Academy Prizes
-    category: Best Music
-    status: nominated
-    films:
-      - title: "Hero's Island"
 works:
   - title: X
     format: tv series

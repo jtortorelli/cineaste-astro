@@ -12,15 +12,6 @@ japanese_name: 伊福部昭
 name: Ifukube Akira
 profession: Composer
 type: person
-accolades:
-  - category: Best Music
-    ceremony: 16th Japan Academy Prizes
-    status: nominated
-    films:
-      - title: Godzilla vs. Mothra
-  - category: Chairman's Special Award
-    ceremony: 30th Japan Academy Prizes
-    status: won
 works:
   - title: The Quiet Duel
     year: 1949

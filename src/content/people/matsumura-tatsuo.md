@@ -12,12 +12,6 @@ japanese_name: 松村達雄
 name: Matsumura Tatsuo
 profession: Actor
 type: person
-accolades:
-  - category: Best Actor
-    ceremony: 17th Japan Academy Prizes
-    films:
-      - title: Madadayo
-    status: nominated
 works:
   - format: film
     poster_url: /static/images/films/posters/secret-of-the-telegian-1960.webp

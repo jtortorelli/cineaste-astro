@@ -1,11 +1,5 @@
 ---
 tags: ["cineaste", "people"]
-accolades:
-  - category: Best Supporting Actor
-    ceremony: 36th Oscars
-    films:
-      - title: Twilight of Honor
-    status: nominated
 avatar_url: /static/images/people/adams-nick/avatar.webp
 birth_name: Nicholas Aloysius Adamshock
 birth_place: Nanticoke, Pennsylvania, USA

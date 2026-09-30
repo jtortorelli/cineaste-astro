@@ -14,26 +14,6 @@ japanese_name: 東野英治郎
 name: Tôno Eijirô
 profession: Actor
 type: person
-accolades:
-  - ceremony: 5th Blue Ribbon Awards
-    category: Best Supporting Actor
-    status: won
-    films:
-      - title: The Black Current
-      - title: The Glorious Days
-  - ceremony: 11th Mainichi Film Awards
-    category: Best Supporting Actor
-    status: won
-    films:
-      - title: Night River
-      - title: Farewell to Dream
-      - title: Aya Ni Itoshiki
-  - ceremony: 17th Mainichi Film Awards
-    category: Best Supporting Actor
-    status: won
-    films:
-      - title: Foundry Town
-      - title: An Autumn Afternoon
 works:
   - title: The Glorious Days
     format: film

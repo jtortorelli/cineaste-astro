@@ -1,26 +1,5 @@
 ---
 tags: ["cineaste", "people"]
-accolades:
-  - category: Special Technique Award
-    ceremony: 19th Japan Academy Prizes
-    films:
-      - title: "Gamera: Guardian of the Universe"
-    status: won
-  - category: Best Director
-    ceremony: 36th Japan Academy Prizes
-    films:
-      - title: The Floating Castle
-    status: nominated
-  - category: Best Director
-    ceremony: 40th Japan Academy Prizes
-    films:
-      - title: Shin Godzilla
-    status: won
-  - category: Best Director
-    ceremony: 46th Japan Academy Prizes
-    films:
-      - title: Shin Ultraman
-    status: nominated
 avatar_url: /static/images/people/higuchi-shinji/avatar.webp
 birth_place: Tokyo, Japan
 dob: 1965-09-22

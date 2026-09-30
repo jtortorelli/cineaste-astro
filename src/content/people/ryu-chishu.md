@@ -10,29 +10,6 @@ japanese_name: 笠智衆
 name: Ryû Chishû
 profession: Actor
 type: person
-accolades:
-  - ceremony: 3rd Mainichi Film Awards
-    award: Best Actor
-    status: won
-    films:
-      - title: Children Hand in Hand
-  - ceremony: 6th Mainichi Film Awards
-    award: Best Actor
-    status: won
-    films:
-      - title: Inochi Uruwashi
-      - title: Fireworks Over the Sea
-  - ceremony: 2nd Blue Ribbon Awards
-    award: Best Actor
-    status: won
-    films:
-      - title: Inochi Uruwashi
-      - title: Home Sweet Home
-  - ceremony: 25th Mainichi Film Awards
-    award: Best Supporting Actor
-    status: won
-    films:
-      - title: Where Spring Comes Late
 works:
   - title: Dreams of Youth
     year: 1928

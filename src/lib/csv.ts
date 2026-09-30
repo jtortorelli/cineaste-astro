@@ -78,3 +78,18 @@ export function loadHomeVideosCsv(): HomeVideoRow[] {
     (row) => row.slug,
   ) as HomeVideoRow[];
 }
+
+export type AccoladeRow = {
+  person_slug: string;
+  status: string;
+  ceremony: string;
+  category: string;
+  films: string;
+  film_slugs: string;
+};
+
+export function loadAccoladesCsv(): AccoladeRow[] {
+  return parseCsvFile(join(DATA_DIR, "accolades.csv")).filter(
+    (row) => row.person_slug,
+  ) as AccoladeRow[];
+}

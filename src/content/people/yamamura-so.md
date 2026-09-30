@@ -19,19 +19,6 @@ japanese_name: 山村聰
 name: Yamamura Sô
 profession: Actor
 type: person
-accolades:
-  - ceremony: 1st Blue Ribbon Awards
-    category: Best Actor
-    status: won
-    films:
-      - title: The Munekata Sisters
-  - ceremony: 5th Mainichi Film Awards
-    category: Best Actor
-    status: won
-    films:
-      - title: Kikyo
-      - title: The Munekata Sisters
-      - title: Night Mist Over Otone
 works:
   - title: The Munekata Sisters
     year: 1950

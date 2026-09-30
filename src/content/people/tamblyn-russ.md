@@ -9,17 +9,6 @@ japanese_name: ラス・タンブリン
 name: Russ Tamblyn
 profession: Actor
 type: person
-accolades:
-  - ceremony: 13th Golden Globes
-    category: Most Promising Newcomer - Male
-    status: won
-    films:
-      - title: Hit the Deck
-  - ceremony: 30th Oscars
-    category: Best Supporting Actor
-    status: nominated
-    films:
-      - title: Peyton Place
 works:
   - title: Seven Brides for Seven Brothers
     format: film

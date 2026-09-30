@@ -7,12 +7,6 @@ japanese_name: 川井憲次
 name: Kawai Kenji
 profession: Composer
 type: person
-accolades:
-  - category: Best Music in a Feature Production
-    ceremony: 32nd Annie Awards
-    status: nominated
-    films:
-      - title: "Ghost in the Shell 2: Innocence"
 works:
   - format: film
     poster_url: /static/images/films/posters/red-spectacles-1987.webp

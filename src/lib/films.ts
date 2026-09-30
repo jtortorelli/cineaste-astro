@@ -4,6 +4,7 @@ import {
   type FilmRow,
   type HomeVideoRow,
   isTruthy,
+  loadAccoladesCsv,
   loadCsvBySlug,
   loadFilmsCsv,
   loadHomeVideosCsv,
@@ -42,6 +43,73 @@ export function staffFromCsv(
   }
 
   return groups;
+}
+
+export type AccoladeCitation = {
+  status: string;
+  ceremony: string;
+  category: string;
+};
+
+export type AccoladeGroup = {
+  title: string;
+  slug?: string;
+  career: boolean;
+  citations: AccoladeCitation[];
+};
+
+function splitSemi(value: string | undefined): string[] {
+  if (!value) return [];
+  return value.split(";").map((part) => part.trim());
+}
+
+export function accoladesFromCsv(personSlug: string): AccoladeGroup[] {
+  const rows = loadAccoladesCsv().filter((row) => row.person_slug === personSlug);
+  const films: AccoladeGroup[] = [];
+  const career: AccoladeCitation[] = [];
+  const byTitle = new Map<string, AccoladeGroup>();
+
+  for (const row of rows) {
+    const citation: AccoladeCitation = {
+      status: row.status.trim(),
+      ceremony: row.ceremony.trim(),
+      category: row.category.trim(),
+    };
+    const titles = splitSemi(row.films).filter(Boolean);
+    const slugs = splitSemi(row.film_slugs);
+
+    if (titles.length === 0) {
+      career.push(citation);
+      continue;
+    }
+
+    titles.forEach((title, index) => {
+      const existing = byTitle.get(title);
+      if (existing) {
+        existing.citations.push(citation);
+        if (!existing.slug && slugs[index]) existing.slug = slugs[index];
+        return;
+      }
+      const group: AccoladeGroup = {
+        title,
+        career: false,
+        citations: [citation],
+        ...(slugs[index] ? { slug: slugs[index] } : {}),
+      };
+      byTitle.set(title, group);
+      films.push(group);
+    });
+  }
+
+  if (career.length > 0) {
+    films.push({
+      title: "Career",
+      career: true,
+      citations: career,
+    });
+  }
+
+  return films;
 }
 
 export function seriesEntryIsShowcased(seriesEntry: {

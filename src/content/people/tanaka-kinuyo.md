@@ -12,49 +12,6 @@ japanese_name: 田中絹代
 name: Tanaka Kinuyo
 profession: Actress
 type: person
-accolades:
-  - ceremony: 2nd Mainichi Film Awards
-    category: Best Actress
-    status: won
-    films:
-      - title: Marriage
-      - title: Phoenix
-      - title: The Love of Sumako the Actress
-  - ceremony: 3rd Mainichi Film Awards
-    category: Best Actress
-    status: won
-    films:
-      - title: Women of the Night
-      - title: A Hen in the Wind
-  - ceremony: 12th Mainichi Film Awards
-    category: Best Supporting Actress
-    status: won
-    films:
-      - title: Stepbrothers
-      - title: On This Earth
-      - title: A Geisha in the Old City
-  - ceremony: 32nd Kinema Junpo Awards
-    category: Best Actress
-    status: won
-    films:
-      - title: The Ballad of Narayama
-  - ceremony: 15th Mainichi Film Awards
-    category: Best Supporting Actress
-    status: won
-    films:
-      - title: Her Brother
-  - ceremony: 29th Mainichi Film Awards
-    category: Best Actress
-    status: won
-    films:
-      - title: Sandakan No. 8
-      - title: Three Old Ladies
-  - ceremony: 48th Kinema Junpo Awards
-    category: Best Actress
-    status: won
-    films:
-      - title: Sandakan No. 8
-      - title: Three Old Ladies
 works:
   - title: The Tree of Love
     format: film

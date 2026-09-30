@@ -17,20 +17,6 @@ profession: Actress
 spouses:
   - name: Taniguchi Senkichi
     slug: taniguchi-senkichi
-accolades:
-  - ceremony: 27th Japan Academy Prizes
-    category: Best Supporting Actress
-    status: won
-    films:
-      - title: Like Asura
-  - ceremony: 58th Mainichi Film Awards
-    category: Tanaka Kinuyo Award
-    status: won
-  - ceremony: 64th Mainichi Film Awards
-    category: Best Supporting Actress
-    status: won
-    films:
-      - title: Dear Doctor
 type: person
 works:
   - format: film

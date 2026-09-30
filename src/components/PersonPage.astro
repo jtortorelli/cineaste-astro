@@ -1,18 +1,19 @@
 ---
-import Icon from "./Icon.astro";
 import Fact from "./Fact.astro";
 import FactList from "./FactList.astro";
 import NamedDivider from "./NamedDivider.astro";
 import PersonShowcaseLink from "./PersonShowcaseLink.astro";
 import SelectedWorks from "./SelectedWorks.astro";
+import Accolades from "./Accolades.astro";
 import { displayPersonDate, lifespan } from "../lib/dates";
 
 interface Props {
   data: Record<string, unknown>;
   Content: Astro.Component;
+  slug: string;
 }
 
-const { data, Content } = Astro.props;
+const { data, Content, slug } = Astro.props;
 
 const name = data.name as string;
 const avatar_url = data.avatar_url as string;
@@ -31,14 +32,6 @@ const aliases = data.aliases as
   | undefined;
 const spouses = data.spouses as { name: string; slug?: string }[] | undefined;
 const family = data.family as { name: string; slug?: string; relationship: string }[] | undefined;
-const accolades = data.accolades as
-  | {
-      ceremony: string;
-      category: string;
-      status: string;
-      films?: { title: string }[];
-    }[]
-  | undefined;
 const works = data.works as Record<string, unknown>[] | undefined;
 ---
 
@@ -134,48 +127,6 @@ const works = data.works as Record<string, unknown>[] | undefined;
 <div class="reading pb-1 pt-2">
   <Content />
 </div>
-{
-  accolades && accolades.length > 0 && (
-    <>
-      <NamedDivider name="Accolades" />
-      <div class="grid gap-6 sm:grid-cols-[repeat(auto-fit,minmax(110px,150px))] justify-center mx-auto">
-        {accolades.map((accolade) => (
-          <div class="">
-            <div
-              class={`font-content text-xs gap-1 ${
-                accolade.status === "won" ? "text-amber-600" : "text-gray-700"
-              }`}
-            >
-              <div class="flex items-end gap-1">
-                <Icon
-                  name="award"
-                  set="tabler"
-                  variant={accolade.status === "won" ? "filled" : "outline"}
-                  class="h-4 w-4"
-                />
-                <div
-                  class={`uppercase font-detail ${
-                    accolade.status !== "won" ? "text-gray-500" : ""
-                  }`}
-                >
-                  {accolade.status === "won" ? "Won" : "Nominated"}
-                </div>
-              </div>
-              <div>
-                <div>{accolade.ceremony}</div>
-                <div>{accolade.category}</div>
-                {accolade.films && accolade.films.length > 0 && (
-                  <div class="italic">
-                    {accolade.films.map((f) => f.title).join(", ")}
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </>
-  )
-}
+<Accolades personSlug={slug} />
 <NamedDivider name="Selected Works" />
 <SelectedWorks works={works as never} />

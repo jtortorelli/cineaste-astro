@@ -17,6 +17,7 @@ export async function getStaticPaths() {
         data: person.data,
         isGroup: person.data.type === "group",
         Content,
+        slug,
       },
     });
   }
@@ -28,15 +29,16 @@ interface Props {
   data: Record<string, unknown>;
   isGroup: boolean;
   Content: Awaited<ReturnType<typeof render>>["Content"];
+  slug: string;
 }
 
-const { data, isGroup, Content } = Astro.props;
+const { data, isGroup, Content, slug } = Astro.props;
 ---
 
 <Layout name={data.name as string}>
   {isGroup ? (
     <GroupPage data={data} Content={Content} />
   ) : (
-    <PersonPage data={data} Content={Content} />
+    <PersonPage data={data} Content={Content} slug={slug} />
   )}
 </Layout>
