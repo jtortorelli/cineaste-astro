@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import CatalogSearch from "../../components/CatalogSearch.astro";
+import CastCatalog from "../../components/CastCatalog.astro";
 import { formatDate } from "../../lib/dates";
 import { getFilmData } from "../../lib/films";
 import { getReviewSlugs } from "../../lib/reviews";
@@ -102,8 +103,8 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
     data-alt-noun="people"
   ></p>
   </div>
-  <div>
-    <div id="search-results" class="film-grid">
+  <CastCatalog>
+    <div id="search-results" class="cast-grid">
       {
         catalog.map((film) => (
           <div
@@ -119,15 +120,16 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
           >
             <a class="film-card" href={`/films/${film.slug}`}>
               <img
-                class="drop-shadow-lg"
+                class="film-still"
                 alt=""
-                height={150}
-                width={101}
+                height={113}
+                width={80}
                 src={film.poster}
+                loading="lazy"
               />
               <span class="film-copy">
-                <span class="film-title" title={film.title}>{film.title}</span>
-                <span class="film-year">{film.year}</span>
+                <span class="film-title">{film.title}</span>
+                {film.year && <span class="film-year">{film.year}</span>}
                 <span class="match-note" hidden></span>
               </span>
             </a>
@@ -135,7 +137,7 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
         ))
       }
     </div>
-  </div>
+  </CastCatalog>
   <script is:inline src="/scripts/filter.js"></script>
 </Layout>
 
@@ -239,75 +241,49 @@ const seriesNames = [...new Set(catalog.map((film) => film.series).filter(Boolea
   .filter-tools .chip {
     align-self: flex-end;
   }
-  .film-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
   .film-card {
     display: grid;
-    grid-template-columns: 101px minmax(0, 1fr);
+    grid-template-columns: 80px minmax(0, 1fr);
     gap: 12px;
     align-items: start;
     color: inherit;
     text-decoration: none;
   }
-  .film-card img {
-    width: 101px;
-    height: 150px;
+  .film-still {
+    width: 80px;
+    height: 113px;
     object-fit: cover;
     object-position: top;
-    border-radius: 8px;
-    background: #e4e4e7;
+    border-radius: 6px;
+    background: var(--color-gray-100);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.18);
   }
   .film-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
     min-width: 0;
-    padding-top: 4px;
   }
   .film-title {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    overflow: hidden;
     font-family: var(--font-content);
     font-style: italic;
     font-size: 0.95rem;
-    line-height: 1.3;
+    line-height: 1.35;
     color: var(--color-gray-700);
+  }
+  .film-card:hover .film-title,
+  .film-card:focus-visible .film-title {
+    color: var(--color-red-700);
     text-decoration: underline;
     text-decoration-color: var(--color-red-700);
     text-underline-offset: 3px;
   }
-  .film-card:hover .film-title {
-    color: var(--color-red-700);
-  }
   .film-year {
-    display: block;
-    margin-top: 2px;
-    font-family: var(--font-content);
-    font-size: 0.75rem;
+    font-family: var(--font-detail);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--color-gray-500);
-  }
-  @media (min-width: 640px) {
-    .film-grid {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    .film-result {
-      width: 9rem;
-      flex: 0 0 9rem;
-    }
-    .film-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .film-copy {
-      padding-top: 8px;
-    }
   }
 </style>
