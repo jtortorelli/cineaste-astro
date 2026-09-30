@@ -145,12 +145,7 @@ function processRoles(
                     <Icon name="chair-director" set="tabler" variant="outline" class="h-4 w-4" />
                     <div>
                       <div>{s.role}</div>
-                      {s.staff_alias && (
-                        <div class="flex">
-                          <Icon name="at" set="tabler" variant="outline" class="h-3 w-3" />
-                          {s.staff_alias}
-                        </div>
-                      )}
+                      {s.staff_alias && <div>as {s.staff_alias}</div>}
                     </div>
                   </div>
                 ))}
@@ -160,10 +155,7 @@ function processRoles(
                     <div>
                       <div><span set:html={processRoleName(r.name)} /></div>
                       {"actor_alias" in r && r.actor_alias && (
-                        <>
-                          <Icon name="at" set="tabler" variant="outline" class="h-3 w-3 inline" />
-                          {r.actor_alias}
-                        </>
+                        <div>as {r.actor_alias}</div>
                       )}
                       <div class="flex flex-col">
                         {"qualifiers" in r &&

@@ -1,5 +1,6 @@
 ---
 import CastBlock from "./CastBlock.astro";
+import CastCatalog from "./CastCatalog.astro";
 import NamedDivider from "./NamedDivider.astro";
 import { castFromCsv } from "../lib/films";
 
@@ -9,15 +10,24 @@ interface Props {
 
 const { rows } = Astro.props;
 const { topBilled, supporting } = castFromCsv(rows);
+const showSubheads = topBilled.length > 0 && supporting.length > 0;
 ---
 
-<NamedDivider name="top billed cast" />
-<CastBlock block={topBilled} />
 {
-  supporting.length > 0 && (
+  (topBilled.length > 0 || supporting.length > 0) && (
     <>
-      <NamedDivider name="supporting cast" />
-      <CastBlock block={supporting} />
+      <NamedDivider name="Cast" />
+      <CastCatalog>
+        {topBilled.length > 0 && (
+          <CastBlock
+            heading={showSubheads ? "Top billed" : undefined}
+            block={topBilled}
+          />
+        )}
+        {supporting.length > 0 && (
+          <CastBlock heading="Supporting" block={supporting} />
+        )}
+      </CastCatalog>
     </>
   )
 }

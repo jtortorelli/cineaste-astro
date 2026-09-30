@@ -9,7 +9,8 @@ import PersonShowcaseLink from "./PersonShowcaseLink.astro";
 import NamedDivider from "./NamedDivider.astro";
 import ReviewStars from "./ReviewStars.astro";
 import CastBlockFromCsv from "./CastBlockFromCsv.astro";
-import QualifierBadge from "./QualifierBadge.astro";
+import CastCatalog from "./CastCatalog.astro";
+import RoleRow, { type RolePerson } from "./RoleRow.astro";
 import { formatDate } from "../lib/dates";
 import {
   getAdjacentSeriesEntry,
@@ -66,16 +67,51 @@ const original_works = data.original_works as
     }[]
   | undefined;
 const studios = data.studios as string[] | undefined;
+type KaijuPortrayal = {
+  type: string;
+  people?: { name: string; slug?: string; alias?: string }[];
+};
+
 const kaiju = data.kaiju as
   | {
       avatar_url: string;
       name: string;
-      portrayals: {
-        type: string;
-        people?: { name: string; slug?: string; alias?: string }[];
-      }[];
+      portrayals: KaijuPortrayal[];
     }[]
   | undefined;
+
+function kaijuRolePeople(portrayals: KaijuPortrayal[]): RolePerson[] {
+  const people: RolePerson[] = [];
+  const extraQualifiers: string[] = [];
+
+  for (const portrayal of portrayals) {
+    if (portrayal.people?.length) {
+      for (const person of portrayal.people) {
+        people.push({
+          name: person.name,
+          slug: person.slug,
+          alias: person.alias,
+          qualifiers: portrayal.type,
+        });
+      }
+      continue;
+    }
+
+    if (!portrayal.type) continue;
+
+    if (portrayal.type.toLowerCase() === "suit actor") {
+      people.push({ qualifiers: portrayal.type });
+    } else {
+      extraQualifiers.push(portrayal.type);
+    }
+  }
+
+  if (extraQualifiers.length > 0) {
+    people.push({ qualifiers: extraQualifiers.join(", ") });
+  }
+
+  return people;
+}
 const video_review = data.video_review as
   | { star_rating?: number | string }
   | undefined;
@@ -332,15 +368,7 @@ function personSlugFor(name: string): string | undefined {
               </PersonShowcaseLink>
               <br />
               {person.alias && (
-                <span class="text-gray-500 text-xs">
-                  <Icon
-                    name="at"
-                    set="tabler"
-                    variant="outline"
-                    class="inline h-3 w-3 text-gray-500"
-                  />
-                  {person.alias}
-                </span>
+                <span class="text-gray-500 text-xs">as {person.alias}</span>
               )}
             </div>
           ))}
@@ -403,50 +431,21 @@ function personSlugFor(name: string): string | undefined {
 {
   kaiju && kaiju.length > 0 && (
     <>
-      <NamedDivider name="kaiju, etc." />
-      <div class="flex flex-col sm:flex-row sm:flex-wrap sm:w-fit w-full max-w-96 sm:max-w-none m-auto gap-4 justify-center">
-        {kaiju.map((monster) => (
-          <div class="flex flex-row sm:flex-col sm:w-32 items-center gap-3">
-            <div class="shrink-0">
-              <img
-                class="h-[75px] w-[75px] sm:h-[100px] sm:w-[100px] max-w-[150px] rounded-lg drop-shadow-lg"
-                src={monster.avatar_url}
-                alt={monster.name}
+      <NamedDivider name="Kaiju" />
+      <CastCatalog>
+        <section class="cast-group">
+          <div class="cast-grid">
+            {kaiju.map((monster) => (
+              <RoleRow
+                avatar_url={monster.avatar_url}
+                avatar_alt={monster.name}
+                role={monster.name}
+                people={kaijuRolePeople(monster.portrayals)}
               />
-            </div>
-            <div class="flex flex-col sm:items-center">
-              <div class="font-content text-gray-500 text-xs">{monster.name}</div>
-              {monster.portrayals.map((portrayal) => (
-                <>
-                  {portrayal.people ? (
-                    portrayal.people.map((person) => (
-                      <div class="font-content text-sm sm:text-center text-gray-700">
-                        <PersonShowcaseLink slug={person.slug}>
-                          {person.name}
-                        </PersonShowcaseLink>
-                        {person.alias && (
-                          <div class="font-content text-xs text-gray-500">
-                            <Icon
-                              name="at"
-                              set="tabler"
-                              variant="outline"
-                              class="inline h-3 w-3 text-gray-500"
-                            />
-                            {person.alias}
-                          </div>
-                        )}
-                        <QualifierBadge>{portrayal.type}</QualifierBadge>
-                      </div>
-                    ))
-                  ) : (
-                    <QualifierBadge>{portrayal.type}</QualifierBadge>
-                  )}
-                </>
-              ))}
-            </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </section>
+      </CastCatalog>
     </>
   )
 }
