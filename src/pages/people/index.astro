@@ -4,14 +4,8 @@ import Layout from "../../layouts/Layout.astro";
 import CatalogSearch from "../../components/CatalogSearch.astro";
 import PersonDateRange from "../../components/PersonDateRange.astro";
 
-function sortKeyForName(name: string): string {
-  return name.replace(/^The /, "");
-}
-
 const people = (await getCollection("people")).sort((a, b) =>
-  sortKeyForName(a.data.name as string).localeCompare(
-    sortKeyForName(b.data.name as string),
-  ),
+  a.id.localeCompare(b.id),
 );
 ---
 

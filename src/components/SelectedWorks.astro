@@ -1,10 +1,16 @@
 ---
-import Icon from "./Icon.astro";
+import CastCatalog from "./CastCatalog.astro";
 import FilmShowcaseLink from "./FilmShowcaseLink.astro";
-import PersonShowcaseLink from "./PersonShowcaseLink.astro";
-import QualifierBadge from "./QualifierBadge.astro";
-import UncreditedBadge from "./UncreditedBadge.astro";
+import Icon from "./Icon.astro";
 import { processRoleName } from "../lib/films";
+
+interface RoleCredit {
+  name: string;
+  episode_count?: number;
+  actor_alias?: string;
+  qualifiers?: string[];
+  uncredited?: boolean;
+}
 
 interface WorkEntry {
   format: string;
@@ -16,8 +22,17 @@ interface WorkEntry {
   title_card_url?: string;
   cover_url?: string;
   staff?: { role: string; staff_alias?: string; episode_count?: number }[];
-  roles?: { name: string; episode_count?: number }[];
-  kaiju_roles?: { name: string; actor_alias?: string; qualifiers?: string[]; uncredited?: boolean }[];
+  roles?: RoleCredit[];
+  kaiju_roles?: RoleCredit[];
+}
+
+interface WorkCredit {
+  kind: "staff" | "role";
+  name: string;
+  alias?: string;
+  qualifiers?: string[];
+  uncredited?: boolean;
+  episode_count?: number;
 }
 
 interface Props {
@@ -25,173 +40,278 @@ interface Props {
 }
 
 const { works } = Astro.props;
+const INLINE_LIMIT = 2;
 
-function processRoles(
-  kaiju_roles: WorkEntry["kaiju_roles"],
-  roles: WorkEntry["roles"],
-) {
-  const nullSafeKaiju = kaiju_roles && kaiju_roles.length > 0 ? kaiju_roles : [];
-  const nullSafeRoles = roles && roles.length > 0 ? roles : [];
-  return [...nullSafeKaiju, ...nullSafeRoles];
+function formatKey(format: string): string {
+  return format.toLowerCase().replace(/[_\s]+/g, " ").trim();
+}
+
+function formatMark(format: string): string | undefined {
+  const key = formatKey(format);
+  if (key === "tv series") return "TV";
+  if (key === "book") return "Book";
+  if (key === "video game") return "Game";
+  return undefined;
+}
+
+function artUrl(entry: WorkEntry): string | undefined {
+  return entry.poster_url || entry.title_card_url || entry.cover_url || entry.box_art_url;
+}
+
+function episodeMark(count?: number): string | undefined {
+  if (!count) return undefined;
+  return count === 1 ? "1 EP" : `${count} EPS`;
+}
+
+function roleCredits(entry: WorkEntry): RoleCredit[] {
+  return [...(entry.kaiju_roles ?? []), ...(entry.roles ?? [])];
+}
+
+function creditsFor(entry: WorkEntry): WorkCredit[] {
+  const staff = (entry.staff ?? []).map((s) => ({
+    kind: "staff" as const,
+    name: s.role,
+    alias: s.staff_alias?.trim() || undefined,
+    episode_count: s.episode_count,
+  }));
+  const roles = roleCredits(entry).map((r) => ({
+    kind: "role" as const,
+    name: r.name,
+    alias: r.actor_alias?.trim() || undefined,
+    qualifiers: r.qualifiers,
+    uncredited: r.uncredited,
+    episode_count: r.episode_count,
+  }));
+  return [...staff, ...roles];
+}
+
+function partitionCredits(entry: WorkEntry): {
+  visible: WorkCredit[];
+  hidden: WorkCredit[];
+  total: number;
+} {
+  const all = creditsFor(entry);
+  if (formatKey(entry.format) === "tv series" && all.length > INLINE_LIMIT) {
+    return {
+      visible: all.slice(0, INLINE_LIMIT),
+      hidden: all.slice(INLINE_LIMIT),
+      total: all.length,
+    };
+  }
+  return { visible: all, hidden: [], total: all.length };
 }
 ---
 
-<div class="full-filmography">
-  <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 m-auto sm:w-fit w-full max-w-96 sm:max-w-none">
-    {
-      works?.map((entry) => (
-        <>
-          {entry.format.toLowerCase() === "video game" && (
-            <div class="flex flex-row w-60 items-start gap-3">
-              <div class="shrink-0">
-                <img class="rounded-lg drop-shadow-lg" width={75} alt="" src={entry.box_art_url} />
-              </div>
-              <div>
-                <div class="font-content text-xs text-gray-500 flex items-center gap-1">
-                  <Icon name="device-gamepad-2" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
-                  <div>{entry.year}</div>
-                </div>
-                <div class="font-content text-sm text-gray-700 mb-1">
-                  <span class="italic">{entry.title}</span>
-                </div>
-                {entry.staff?.map((s) => (
-                  <div class="font-content text-xs text-gray-500 flex">
-                    <Icon name="chair-director" set="tabler" variant="outline" class="h-4 w-4" />
-                    <div><div>{s.role}</div></div>
-                  </div>
-                ))}
-                {entry.roles && entry.roles.length > 0 && (
-                  <div class="font-content text-xs text-gray-500 flex gap-1">
-                    <Icon name="masks-theater" set="tabler" variant="outline" class="h-4 w-4" />
-                    <div class="flex flex-col">
-                      {entry.roles.map((r) => (
-                        <div>
-                          <span set:html={processRoleName(r.name)} />{" "}
-                          <span class="font-detail uppercase text-gray-400">
-                            {r.episode_count &&
-                              `${r.episode_count}${r.episode_count > 1 ? "eps" : "ep"}`}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+{
+  works && works.length > 0 && (
+    <CastCatalog>
+      <section class="cast-group">
+        <div class="cast-grid">
+          {works.map((entry) => {
+            const art = artUrl(entry);
+            const mark = formatMark(entry.format);
+            const { visible, hidden, total } = partitionCredits(entry);
+            return (
+              <article class="work-row">
+                {art ? (
+                  <img
+                    class="work-still"
+                    src={art}
+                    alt=""
+                    width="48"
+                    height="68"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div class="work-still work-still-empty" aria-hidden="true" />
                 )}
-              </div>
-            </div>
-          )}
-          {entry.format.toLowerCase() === "tv series" && (
-            <div class="flex flex-row w-60 items-start gap-3">
-              <div class="shrink-0">
-                <img class="rounded-lg drop-shadow-lg" width={75} alt="" src={entry.title_card_url} />
-              </div>
-              <div>
-                <div class="font-content text-xs text-gray-500 flex items-center gap-1">
-                  <Icon name="device-tv-old" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
-                  <div>{entry.year}</div>
-                </div>
-                <div class="font-content text-sm text-gray-700 mb-1">
-                  <span class="italic">{entry.title}</span>
-                </div>
-                {entry.staff?.map((s) => (
-                  <div class="font-content text-xs text-gray-500 flex">
-                    <Icon name="chair-director" set="tabler" variant="outline" class="h-4 w-4" />
-                    <div>
-                      <div>
-                        {s.role}{" "}
-                        <span class="font-detail uppercase text-gray-400">
-                          {s.episode_count &&
-                            `${s.episode_count}${s.episode_count > 1 ? "eps" : "ep"}`}
-                        </span>
-                      </div>
+                <div class="work-body">
+                  {(entry.year || mark) && (
+                    <div class="work-meta">
+                      {entry.year}
+                      {entry.year && mark && " · "}
+                      {mark}
                     </div>
+                  )}
+                  <div class="work-title">
+                    <FilmShowcaseLink slug={entry.slug}>
+                      {entry.title}
+                    </FilmShowcaseLink>
                   </div>
-                ))}
-                {entry.roles && entry.roles.length > 0 && (
-                  <div class="font-content text-xs text-gray-500 flex gap-1">
-                    <Icon name="masks-theater" set="tabler" variant="outline" class="h-4 w-4" />
-                    <div class="flex flex-col">
-                      {entry.roles.map((r) => (
-                        <div>
-                          <span set:html={processRoleName(r.name)} />{" "}
-                          <span class="font-detail uppercase text-gray-400">
-                            {r.episode_count &&
-                              `${r.episode_count}${r.episode_count > 1 ? "eps" : "ep"}`}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-          )}
-          {entry.format.toLowerCase() === "film" && (
-            <div class="flex flex-row w-60 items-start gap-3">
-              <div class="shrink-0">
-                <img class="rounded-lg drop-shadow-lg" width={75} alt="" src={entry.poster_url} />
-              </div>
-              <div>
-                <div class="font-content text-xs text-gray-500 flex items-center gap-1">
-                  <Icon name="movie" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
-                  <div>{entry.year}</div>
-                </div>
-                <div class="font-content text-sm text-gray-700 mb-1">
-                  <FilmShowcaseLink slug={entry.slug}>
-                    <span class="italic">{entry.title}</span>
-                  </FilmShowcaseLink>
-                </div>
-                {entry.staff?.map((s) => (
-                  <div class="font-content text-xs text-gray-500 flex">
-                    <Icon name="chair-director" set="tabler" variant="outline" class="h-4 w-4" />
-                    <div>
-                      <div>{s.role}</div>
-                      {s.staff_alias && <div>as {s.staff_alias}</div>}
-                    </div>
-                  </div>
-                ))}
-                {processRoles(entry.kaiju_roles, entry.roles).map((r) => (
-                  <div class="font-content text-xs text-gray-500 flex gap-1">
-                    <Icon name="masks-theater" set="tabler" variant="outline" class="h-4 w-4" />
-                    <div>
-                      <div><span set:html={processRoleName(r.name)} /></div>
-                      {"actor_alias" in r && r.actor_alias && (
-                        <div>as {r.actor_alias}</div>
+                  {visible.map((credit) => (
+                    <div class:list={["work-credit", credit.kind === "staff" && "work-staff"]}>
+                      {credit.kind === "staff" ? (
+                        <span>{credit.name}</span>
+                      ) : (
+                        <span set:html={processRoleName(credit.name)} />
                       )}
-                      <div class="flex flex-col">
-                        {"qualifiers" in r &&
-                          r.qualifiers?.map((q) => <QualifierBadge>{q}</QualifierBadge>)}
-                        {"uncredited" in r && r.uncredited && <UncreditedBadge />}
-                      </div>
+                      {credit.qualifiers?.map((q) => (
+                        <span class="work-qualifier"> · {q}</span>
+                      ))}
+                      {credit.uncredited && (
+                        <span class="work-uncredited"> · uncredited</span>
+                      )}
+                      {episodeMark(credit.episode_count) && (
+                        <span class="work-eps"> · {episodeMark(credit.episode_count)}</span>
+                      )}
+                      {credit.alias && (
+                        <div class="work-alias">as {credit.alias}</div>
+                      )}
                     </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-          {entry.format.toLowerCase() === "book" && (
-            <div class="flex flex-row w-60 items-start gap-3">
-              <div class="shrink-0">
-                <img class="rounded-lg drop-shadow-lg" width={75} alt="" src={entry.cover_url} />
-              </div>
-              <div>
-                <div class="font-content text-xs text-gray-500 flex items-center gap-1">
-                  <Icon name="book" set="tabler" variant="outline" class="h-5 w-4 text-gray-500" />
-                  <div>{entry.year}</div>
+                  ))}
+                  {hidden.length > 0 && (
+                    <details class="work-more">
+                      <summary>
+                        {total} {total === 1 ? "role" : "roles"}
+                        <Icon name="chevron-down" set="tabler" variant="outline" class="work-chevron" />
+                      </summary>
+                      {hidden.map((credit) => (
+                        <div class:list={["work-credit", credit.kind === "staff" && "work-staff"]}>
+                          {credit.kind === "staff" ? (
+                            <span>{credit.name}</span>
+                          ) : (
+                            <span set:html={processRoleName(credit.name)} />
+                          )}
+                          {credit.qualifiers?.map((q) => (
+                            <span class="work-qualifier"> · {q}</span>
+                          ))}
+                          {credit.uncredited && (
+                            <span class="work-uncredited"> · uncredited</span>
+                          )}
+                          {episodeMark(credit.episode_count) && (
+                            <span class="work-eps"> · {episodeMark(credit.episode_count)}</span>
+                          )}
+                          {credit.alias && (
+                            <div class="work-alias">as {credit.alias}</div>
+                          )}
+                        </div>
+                      ))}
+                    </details>
+                  )}
                 </div>
-                <div class="font-content text-sm text-gray-700 mb-1">
-                  <span class="italic">{entry.title}</span>
-                </div>
-                {entry.staff?.map((s) => (
-                  <div class="font-content text-xs text-gray-500 flex gap-1">
-                    <Icon name="pencil" set="tabler" variant="outline" class="h-4 w-4" />
-                    <div><div>{s.role}</div></div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </>
-      ))
-    }
-  </div>
-</div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+    </CastCatalog>
+  )
+}
+
+<style>
+  .work-row {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+  }
+  .work-still {
+    width: 48px;
+    height: 68px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 6px;
+    background: var(--color-gray-100);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.18);
+  }
+  .work-still-empty {
+    display: block;
+    box-shadow: none;
+  }
+  .work-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  .work-meta,
+  .work-staff,
+  .work-qualifier,
+  .work-uncredited,
+  .work-eps {
+    font-family: var(--font-detail);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .work-meta {
+    font-size: 11px;
+    color: var(--color-gray-500);
+  }
+  .work-title {
+    font-family: var(--font-content);
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.35;
+    color: var(--color-gray-700);
+  }
+  .work-credit {
+    font-family: var(--font-content);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--color-gray-700);
+  }
+  .work-credit.work-staff {
+    font-family: var(--font-detail);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-gray-500);
+  }
+  .work-qualifier,
+  .work-eps {
+    font-size: 11px;
+    color: var(--color-gray-500);
+  }
+  .work-uncredited {
+    font-size: 11px;
+    color: var(--color-red-700);
+  }
+  .work-alias {
+    margin-top: 1px;
+    font-family: var(--font-content);
+    font-size: 0.75rem;
+    line-height: 1.45;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: var(--color-gray-500);
+  }
+  .work-more {
+    margin-top: 4px;
+  }
+  .work-more summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 24px;
+    list-style: none;
+    font-family: var(--font-detail);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-gray-500);
+    cursor: pointer;
+  }
+  .work-more summary::-webkit-details-marker {
+    display: none;
+  }
+  .work-more :global(.work-chevron) {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.15s ease;
+  }
+  .work-more[open] :global(.work-chevron) {
+    transform: rotate(180deg);
+  }
+  .work-more summary:hover {
+    color: var(--color-gray-700);
+  }
+  .work-more summary:focus-visible {
+    outline: 2px solid var(--color-red-700);
+    outline-offset: 2px;
+  }
+</style>
+
