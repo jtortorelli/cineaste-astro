@@ -4,21 +4,6 @@ aliases:
   - alias: Gigantis, the Fire Monster
     context: American Theatrical Release
 japanese_title: ゴジラの逆襲
-kaiju:
-  - avatar_url: /static/images/films/godzilla-raids-again-1955/kaiju-avatars/02320.webp
-    name: Godzilla
-    portrayals:
-      - people:
-          - name: Nakajima Haruo
-            slug: nakajima-haruo
-        type: suit actor
-  - avatar_url: /static/images/films/godzilla-raids-again-1955/kaiju-avatars/01333.webp
-    name: Anguirus
-    portrayals:
-      - people:
-          - name: Tezuka Katsumi
-            slug: tezuka-katsumi
-        type: suit actor
 original_works:
   - authors:
       - name: Kayama Shigeru

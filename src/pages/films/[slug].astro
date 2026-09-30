@@ -8,7 +8,7 @@ import { getReviewSlugs } from "../../lib/reviews";
 export async function getStaticPaths() {
   const films = await getCollection("films", ({ data }) => !data.draft);
   const reviewSlugs = await getReviewSlugs();
-  const { films: filmRows, series, credits, staffs, casts, homeVideos } =
+  const { films: filmRows, series, credits, staffs, casts, kaiju, homeVideos } =
     getFilmData();
 
   return films.map((film) => ({
@@ -21,6 +21,7 @@ export async function getStaticPaths() {
       films: filmRows,
       staffs,
       casts,
+      kaiju,
       credits,
       homeVideos,
     },
@@ -35,6 +36,7 @@ interface Props {
   films: ReturnType<typeof getFilmData>["films"];
   staffs: ReturnType<typeof getFilmData>["staffs"];
   casts: ReturnType<typeof getFilmData>["casts"];
+  kaiju: ReturnType<typeof getFilmData>["kaiju"];
   credits: ReturnType<typeof getFilmData>["credits"];
   homeVideos: ReturnType<typeof getFilmData>["homeVideos"];
 }
@@ -48,6 +50,7 @@ const {
   films,
   staffs,
   casts,
+  kaiju,
   credits,
   homeVideos,
 } = Astro.props;
@@ -63,6 +66,7 @@ const {
     films={films}
     staffs={staffs}
     casts={casts}
+    kaiju={kaiju}
     credits={credits}
     homeVideos={homeVideos}
   />

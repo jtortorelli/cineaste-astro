@@ -4,16 +4,6 @@ aliases:
   - alias: Godzilla, King of the Monsters!
     context: American Theatrical Release
 japanese_title: ゴジラ
-kaiju:
-  - avatar_url: /static/images/films/godzilla-1954/kaiju-avatars/haruo-nakajima-0.webp
-    name: Godzilla
-    portrayals:
-      - people:
-          - name: Nakajima Haruo
-            slug: nakajima-haruo
-          - name: Tezuka Katsumi
-            slug: tezuka-katsumi
-        type: suit actor
 original_works:
   - authors:
       - name: Kayama Shigeru

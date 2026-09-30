@@ -1,23 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 空の大怪獣 ラドン
-kaiju:
-  - avatar_url: /static/images/films/rodan-1956/kaiju-avatars/haruo-nakajima-0.webp
-    name: Rodan
-    portrayals:
-      - people:
-          - name: Nakajima Haruo
-            slug: nakajima-haruo
-        type: Suit Actor
-  - avatar_url: /static/images/films/rodan-1956/kaiju-avatars/katsumi-tezuka-0.webp
-    name: Meganulon
-    portrayals:
-      - people:
-          - name: Hirose Shôichi
-            slug: hirose-shoichi
-          - name: Tezuka Katsumi
-            slug: tezuka-katsumi
-        type: Suit Actor
 video_review:
   star_rating: 4
   youtube_url: https://youtu.be/HwKNJG2x1ls

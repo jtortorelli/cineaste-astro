@@ -1,16 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: モスラ
-kaiju:
-  - avatar_url: /static/images/films/mothra-1961/kaiju-avatars/haruo-nakajima-0.webp
-    name: Mothra
-    portrayals:
-      - people:
-          - name: Tezuka Katsumi
-            slug: tezuka-katsumi
-          - name: Nakajima Haruo
-            slug: nakajima-haruo
-        type: Suit Actor
 original_works:
   - authors:
       - name: Nakamura Shin'ichirô

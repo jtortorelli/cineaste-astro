@@ -234,6 +234,71 @@ export function castFromCsv(rows: Record<string, string>[]) {
   return { topBilled, supporting };
 }
 
+export type KaijuPerson = {
+  name: string;
+  slug?: string;
+  alias?: string;
+};
+
+export type KaijuPortrayal = {
+  type: string;
+  people?: KaijuPerson[];
+};
+
+export type KaijuEntry = {
+  name: string;
+  avatar_url: string;
+  portrayals: KaijuPortrayal[];
+};
+
+function kaijuRowHasPerson(row: Record<string, string>): boolean {
+  return Boolean(row.person_name || row.person_slug || row.person_alias);
+}
+
+export function kaijuFromCsv(rows: Record<string, string>[]): KaijuEntry[] {
+  const monsters: KaijuEntry[] = [];
+
+  for (const row of rows) {
+    if (!row.monster && !row.avatar_url && !row.portrayal_type) continue;
+
+    let monster = monsters.at(-1);
+    if (!monster || monster.name !== row.monster) {
+      monster = {
+        name: row.monster,
+        avatar_url: row.avatar_url,
+        portrayals: [],
+      };
+      monsters.push(monster);
+    }
+
+    const person = kaijuRowHasPerson(row)
+      ? {
+          name: row.person_name,
+          ...(row.person_slug ? { slug: row.person_slug } : {}),
+          ...(row.person_alias ? { alias: row.person_alias } : {}),
+        }
+      : undefined;
+
+    const lastPortrayal = monster.portrayals.at(-1);
+    if (
+      person &&
+      lastPortrayal?.people?.length &&
+      lastPortrayal.type === row.portrayal_type
+    ) {
+      lastPortrayal.people.push(person);
+    } else if (person) {
+      monster.portrayals.push({
+        type: row.portrayal_type,
+        people: [person],
+      });
+    } else {
+      monster.portrayals.push({ type: row.portrayal_type });
+    }
+  }
+
+  return monsters;
+}
+
 export type HomeVideoFilm = {
   slug: string;
   title: string;
@@ -335,6 +400,7 @@ let cachedData: {
   credits: Record<string, Record<string, string>[]>;
   staffs: Record<string, Record<string, string>[]>;
   casts: Record<string, Record<string, string>[]>;
+  kaiju: Record<string, Record<string, string>[]>;
   homeVideos: Record<string, HomeVideoRelease[]>;
 } | null = null;
 
@@ -349,6 +415,7 @@ export function getFilmData() {
     credits: loadCsvBySlug("credits"),
     staffs: loadCsvBySlug("staffs"),
     casts: loadCsvBySlug("casts"),
+    kaiju: loadCsvBySlug("kaiju"),
     homeVideos: homeVideosByFilmSlug(loadHomeVideosCsv(), films),
   };
   if (!import.meta.env.DEV) {

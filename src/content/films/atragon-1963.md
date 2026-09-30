@@ -1,11 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 海底軍艦
-kaiju:
-  - avatar_url: /static/images/films/atragon-1963/kaiju-avatars/02486.webp
-    name: Manda
-    portrayals:
-      - type: Puppet
 original_works:
   - authors:
       - name: Oshikawa Shunrô

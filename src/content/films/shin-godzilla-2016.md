@@ -4,13 +4,6 @@ aliases:
   - alias: Godzilla Resurgence
     context: International Title
 japanese_title: シン・ゴジラ
-kaiju:
-  - avatar_url: /static/images/films/shin-godzilla-2016/kaiju-avatars/mansai-nomura-0.webp
-    name: Godzilla
-    portrayals:
-      - people:
-          - name: Nomura Mansai
-        type: Motion Capture
 poster_url: /static/images/films/posters/shin-godzilla-2016.webp
 release_date: 2016-07-29
 runtime: 119

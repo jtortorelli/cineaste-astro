@@ -4,11 +4,6 @@ aliases:
   - alias: Dogora, the Space Monster
     context: American Theatrical Release
 japanese_title: 宇宙大怪獣ドゴラ
-kaiju:
-  - avatar_url: /static/images/films/dogora-1964/kaiju-avatars/01672.webp
-    name: Dogora
-    portrayals:
-      - type: Puppet
 original_works:
   - authors:
       - name: Okami Jôjirô

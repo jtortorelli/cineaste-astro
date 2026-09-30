@@ -3,16 +3,6 @@ tags: ["cineaste", "films"]
 video_review:
   star_rating: 3
 japanese_title: 地球防衛軍
-kaiju:
-  - avatar_url: /static/images/films/mysterians-1957/kaiju-avatars/haruo-nakajima-0.webp
-    name: Mogera
-    portrayals:
-      - people:
-          - name: Nakajima Haruo
-            slug: nakajima-haruo
-          - name: Tezuka Katsumi
-            slug: tezuka-katsumi
-        type: Suit Actor
 original_works:
   - authors:
       - name: Okami Jôjirô

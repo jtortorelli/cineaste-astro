@@ -47,7 +47,7 @@ export function loadSeriesByName(): Record<string, { slug: string }[]> {
 }
 
 export function loadCsvBySlug(
-  subdir: "credits" | "staffs" | "casts",
+  subdir: "credits" | "staffs" | "casts" | "kaiju",
 ): Record<string, Record<string, string>[]> {
   const dir = join(DATA_DIR, subdir);
   const result: Record<string, Record<string, string>[]> = {};

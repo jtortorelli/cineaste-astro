@@ -17,7 +17,9 @@ import {
   loadSeriesDataFromCsv,
   seriesEntryIsShowcased,
   staffFromCsv,
+  kaijuFromCsv,
   type HomeVideoRelease,
+  type KaijuPortrayal,
 } from "../lib/films";
 import type { FilmRow } from "../lib/csv";
 import HomeVideoBlock from "./HomeVideoBlock.astro";
@@ -31,6 +33,7 @@ interface Props {
   films: FilmRow[];
   staffs: Record<string, Record<string, string>[]>;
   casts: Record<string, Record<string, string>[]>;
+  kaiju: Record<string, Record<string, string>[]>;
   credits: Record<string, Record<string, string>[]>;
   homeVideos: Record<string, HomeVideoRelease[]>;
 }
@@ -44,6 +47,7 @@ const {
   films,
   staffs,
   casts,
+  kaiju: kaijuBySlug = {},
   credits,
   homeVideos,
 } = Astro.props;
@@ -67,18 +71,7 @@ const original_works = data.original_works as
     }[]
   | undefined;
 const studios = data.studios as string[] | undefined;
-type KaijuPortrayal = {
-  type: string;
-  people?: { name: string; slug?: string; alias?: string }[];
-};
-
-const kaiju = data.kaiju as
-  | {
-      avatar_url: string;
-      name: string;
-      portrayals: KaijuPortrayal[];
-    }[]
-  | undefined;
+const kaiju = kaijuFromCsv(kaijuBySlug[slug] ?? []);
 
 function kaijuRolePeople(portrayals: KaijuPortrayal[]): RolePerson[] {
   const people: RolePerson[] = [];
@@ -429,7 +422,7 @@ function personSlugFor(name: string): string | undefined {
 </div>
 <CastBlockFromCsv rows={castCsv} />
 {
-  kaiju && kaiju.length > 0 && (
+  kaiju.length > 0 && (
     <>
       <NamedDivider name="Kaiju" />
       <CastCatalog>

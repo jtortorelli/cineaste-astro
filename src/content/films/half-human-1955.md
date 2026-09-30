@@ -17,14 +17,6 @@ runtime: 95
 studios:
   - Toho Co., Ltd.
 title: Half Human
-kaiju:
-  - name: Abominable Snowman
-    portrayals:
-      - people:
-          - name: Ôhashi Fuminori
-            alias: Sagara Sanshirô
-        type: Suit Actor
-    avatar_url: /static/images/films/half-human-1955/kaiju-avatars/ohashi-fuminori.webp
 translation: Beastman Yeti
 transliteration: Jûjin Yukiotoko
 ---

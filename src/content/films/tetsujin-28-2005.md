@@ -1,23 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 鉄人28号
-kaiju:
-  - avatar_url: /static/images/films/tetsujin-28-2005/kaiju-avatars/akira-ohashi-0.webp
-    name: Tetsujin-28
-    portrayals:
-      - people:
-          - name: Ôhashi Akira
-          - name: Sasaki Toshinori
-        type: Motion Capture
-  - avatar_url: /static/images/films/tetsujin-28-2005/kaiju-avatars/megumi-hayashibara-0.webp
-    name: Black Ox
-    portrayals:
-      - people:
-          - name: Yoshida Mizuho
-        type: Motion Capture
-      - people:
-          - name: Hayashibara Megumi
-        type: Voice
 original_works:
   - authors:
       - name: Yokoyama Mitsuteru
