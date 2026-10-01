@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 万能鑑定士Q -モナ・リザの瞳-
-original_works:
-  - authors:
-      - name: Matsuoka Keisuke
-    format: novel series
-    slug: all-round-appraiser-qs-case-files
-    title: All-Round Appraiser Q's Case Files
 poster_url: /static/images/films/posters/all-round-appraiser-q-the-eyes-of-mona-lisa-2014.webp
 release_date: 2014-05-31
 runtime: 119

@@ -26,6 +26,7 @@ export type FilmRow = {
   transliteration: string;
   translation: string;
   aliases_json: string;
+  original_work_slugs: string;
 };
 
 export function loadFilmsCsv(): FilmRow[] {
@@ -92,4 +93,30 @@ export function loadAccoladesCsv(): AccoladeRow[] {
   return parseCsvFile(join(DATA_DIR, "accolades.csv")).filter(
     (row) => row.person_slug,
   ) as AccoladeRow[];
+}
+
+export type OriginalWorkRow = {
+  slug: string;
+  title: string;
+  format: string;
+  studio_names: string;
+};
+
+export function loadOriginalWorksCsv(): OriginalWorkRow[] {
+  return parseCsvFile(join(DATA_DIR, "original-works.csv")).filter(
+    (row) => row.slug,
+  ) as OriginalWorkRow[];
+}
+
+export type OriginalWorkAuthorRow = {
+  work_slug: string;
+  name: string;
+  person_slug: string;
+  credit: string;
+};
+
+export function loadOriginalWorkAuthorsCsv(): OriginalWorkAuthorRow[] {
+  return parseCsvFile(join(DATA_DIR, "original-work-authors.csv")).filter(
+    (row) => row.work_slug,
+  ) as OriginalWorkAuthorRow[];
 }

@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: プラチナデータ
-original_works:
-  - authors:
-      - name: Higashino Keigo
-    format: novel
-    slug: platinum-data
-    title: Platinum Data
 poster_url: /static/images/films/posters/platinum-data-2013.webp
 release_date: 2013-03-16
 runtime: 133

@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 海賊とよばれた男
-original_works:
-  - authors:
-      - name: Hyakuta Naoki
-    format: novel
-    slug: man-they-called-pirate
-    title: The Man They Called Pirate
 poster_url: /static/images/films/posters/fueled-the-man-they-called-pirate-2016.webp
 release_date: 2016-12-10
 runtime: 145

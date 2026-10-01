@@ -4,12 +4,6 @@ aliases:
   - alias: Rasen
     context: American Home Video
 japanese_title: らせん
-original_works:
-  - authors:
-      - name: Suzuki Kôji
-    format: novel
-    slug: spiral
-    title: Spiral
 poster_url: /static/images/films/posters/spiral-1998.webp
 release_date: 1998-01-31
 runtime: 97

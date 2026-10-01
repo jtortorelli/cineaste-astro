@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: カムイ外伝
-original_works:
-  - authors:
-      - name: Shirato Sanpei
-    format: manga
-    slug: kamui-gaiden
-    title: Kamui Gaiden
 poster_url: /static/images/films/posters/kamui-gaiden-2009.webp
 release_date: 2009-09-19
 runtime: 120

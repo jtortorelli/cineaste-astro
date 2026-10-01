@@ -3,11 +3,15 @@ import { join } from "node:path";
 import {
   type FilmRow,
   type HomeVideoRow,
+  type OriginalWorkAuthorRow,
+  type OriginalWorkRow,
   isTruthy,
   loadAccoladesCsv,
   loadCsvBySlug,
   loadFilmsCsv,
   loadHomeVideosCsv,
+  loadOriginalWorkAuthorsCsv,
+  loadOriginalWorksCsv,
   loadSeriesByName,
 } from "./csv";
 import { compareReleaseDate, releaseYear } from "./dates";
@@ -394,6 +398,56 @@ export function homeVideosByFilmSlug(
   return byFilm;
 }
 
+export type OriginalWorkSource = {
+  title: string;
+  format: string;
+  authors: { name: string; slug?: string }[];
+  studios: { name: string }[];
+};
+
+export function originalWorksForFilm(
+  film: FilmRow | null,
+  works: OriginalWorkRow[],
+  authors: OriginalWorkAuthorRow[],
+): OriginalWorkSource[] {
+  const slugs = (film?.original_work_slugs ?? "")
+    .split(";")
+    .map((slug) => slug.trim())
+    .filter(Boolean);
+  if (slugs.length === 0) return [];
+
+  const workBySlug = new Map(works.map((work) => [work.slug, work]));
+  const authorsByWork = new Map<string, OriginalWorkAuthorRow[]>();
+  for (const author of authors) {
+    const list = authorsByWork.get(author.work_slug);
+    if (list) list.push(author);
+    else authorsByWork.set(author.work_slug, [author]);
+  }
+
+  return slugs.map((slug) => {
+    const work = workBySlug.get(slug);
+    if (!work) {
+      throw new Error(
+        `film "${film?.slug}" references unknown original work "${slug}"`,
+      );
+    }
+    const studios = (work.studio_names ?? "")
+      .split(";")
+      .map((name) => name.trim())
+      .filter(Boolean)
+      .map((name) => ({ name }));
+    return {
+      title: work.title,
+      format: work.format,
+      authors: (authorsByWork.get(slug) ?? []).map((author) => ({
+        name: author.name,
+        ...(author.person_slug ? { slug: author.person_slug } : {}),
+      })),
+      studios,
+    };
+  });
+}
+
 let cachedData: {
   films: FilmRow[];
   series: Record<string, { slug: string }[]>;
@@ -401,6 +455,8 @@ let cachedData: {
   staffs: Record<string, Record<string, string>[]>;
   casts: Record<string, Record<string, string>[]>;
   kaiju: Record<string, Record<string, string>[]>;
+  originalWorks: OriginalWorkRow[];
+  originalWorkAuthors: OriginalWorkAuthorRow[];
   homeVideos: Record<string, HomeVideoRelease[]>;
 } | null = null;
 
@@ -416,6 +472,8 @@ export function getFilmData() {
     staffs: loadCsvBySlug("staffs"),
     casts: loadCsvBySlug("casts"),
     kaiju: loadCsvBySlug("kaiju"),
+    originalWorks: loadOriginalWorksCsv(),
+    originalWorkAuthors: loadOriginalWorkAuthorsCsv(),
     homeVideos: homeVideosByFilmSlug(loadHomeVideosCsv(), films),
   };
   if (!import.meta.env.DEV) {

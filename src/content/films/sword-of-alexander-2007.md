@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 大帝の剣
-original_works:
-  - authors:
-      - name: Yumemakura Baku
-    format: serialized novel
-    slug: sword-of-the-emperor
-    title: The Sword of the Emperor
 poster_url: /static/images/films/posters/sword-of-alexander-2007.webp
 release_date: 2007-04-07
 runtime: 110

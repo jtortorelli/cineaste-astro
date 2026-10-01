@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: GANTZ
-original_works:
-  - authors:
-      - name: Oku Hiroya
-    format: manga
-    slug: gantz
-    title: Gantz
 poster_url: /static/images/films/posters/gantz-2011.webp
 release_date: 2011-01-29
 runtime: 130

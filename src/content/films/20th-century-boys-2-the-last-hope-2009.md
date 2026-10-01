@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 本格科学冒険映画 20世紀少年 第2章 最後の希望
-original_works:
-  - authors:
-      - name: Urasawa Naoki
-    format: manga
-    slug: 20th-century-boys
-    title: 20th Century Boys
 poster_url: /static/images/films/posters/20th-century-boys-2-the-last-hope-2009.webp
 release_date: 2009-01-31
 runtime: 139

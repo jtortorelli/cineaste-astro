@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 陰陽師II
-original_works:
-  - authors:
-      - name: Yumemakura Baku
-    format: novel series
-    slug: onmyoji
-    title: Onmyoji
 poster_url: /static/images/films/posters/onmyoji-ii-2003.webp
 release_date: 2003-10-04
 runtime: 115

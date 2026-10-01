@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 着信アリFinal
-original_works:
-  - authors:
-      - name: Akimoto Yasushi
-    format: novel series
-    slug: one-missed-call
-    title: One Missed Call
 poster_url: /static/images/films/posters/one-missed-call-final-2006.webp
 release_date: 2006-06-24
 runtime: 105

@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: SPACE BATTLESHIP ヤマト
-original_works:
-  - authors:
-      - name: Nishizaki Yoshinobu
-    format: anime
-    slug: space-battleship-yamato
-    title: Space Battleship Yamato
 poster_url: /static/images/films/posters/space-battleship-yamato-2010.webp
 release_date: 2010-12-01
 runtime: 138

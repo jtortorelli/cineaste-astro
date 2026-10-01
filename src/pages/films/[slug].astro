@@ -8,8 +8,17 @@ import { getReviewSlugs } from "../../lib/reviews";
 export async function getStaticPaths() {
   const films = await getCollection("films", ({ data }) => !data.draft);
   const reviewSlugs = await getReviewSlugs();
-  const { films: filmRows, series, credits, staffs, casts, kaiju, homeVideos } =
-    getFilmData();
+  const {
+    films: filmRows,
+    series,
+    credits,
+    staffs,
+    casts,
+    kaiju,
+    originalWorks,
+    originalWorkAuthors,
+    homeVideos,
+  } = getFilmData();
 
   return films.map((film) => ({
     params: { slug: film.id.replace(/\.md$/, "") },
@@ -22,6 +31,8 @@ export async function getStaticPaths() {
       staffs,
       casts,
       kaiju,
+      originalWorks,
+      originalWorkAuthors,
       credits,
       homeVideos,
     },
@@ -37,6 +48,8 @@ interface Props {
   staffs: ReturnType<typeof getFilmData>["staffs"];
   casts: ReturnType<typeof getFilmData>["casts"];
   kaiju: ReturnType<typeof getFilmData>["kaiju"];
+  originalWorks: ReturnType<typeof getFilmData>["originalWorks"];
+  originalWorkAuthors: ReturnType<typeof getFilmData>["originalWorkAuthors"];
   credits: ReturnType<typeof getFilmData>["credits"];
   homeVideos: ReturnType<typeof getFilmData>["homeVideos"];
 }
@@ -51,6 +64,8 @@ const {
   staffs,
   casts,
   kaiju,
+  originalWorks,
+  originalWorkAuthors,
   credits,
   homeVideos,
 } = Astro.props;
@@ -67,6 +82,8 @@ const {
     staffs={staffs}
     casts={casts}
     kaiju={kaiju}
+    originalWorks={originalWorks}
+    originalWorkAuthors={originalWorkAuthors}
     credits={credits}
     homeVideos={homeVideos}
   />

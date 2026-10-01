@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 蒼き狼 地果て海尽きるまで
-original_works:
-  - authors:
-      - name: Morimura Seiichi
-    format: novel
-    slug: to-the-ends-of-the-earth-and-sea
-    title: "To the Ends of the Earth and Sea: A Novel of Genghis Khan"
 poster_url: /static/images/films/posters/genghis-khan-to-the-ends-of-the-earth-and-sea-2007.webp
 release_date: 2007-03-03
 runtime: 136

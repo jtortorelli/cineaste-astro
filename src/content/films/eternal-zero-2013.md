@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 永遠の<ruby>0<rt>ゼロ</rt></ruby>
-original_works:
-  - authors:
-      - name: Hyakuta Naoki
-    format: novel
-    slug: eternal-zero
-    title: The Eternal Zero
 poster_url: /static/images/films/posters/eternal-zero-2013.webp
 release_date: 2013-12-21
 runtime: 144

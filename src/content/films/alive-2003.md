@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: ALIVE
-original_works:
-  - authors:
-      - name: Takahashi Tsutomu
-    format: manga
-    slug: alive
-    title: Alive
 poster_url: /static/images/films/posters/alive-2003.webp
 release_date: 2003-06-21
 runtime: 150

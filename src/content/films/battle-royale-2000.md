@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: バトル・ロワイアル
-original_works:
-  - authors:
-      - name: Takami Kôshun
-    format: novel
-    slug: battle-royale
-    title: Battle Royale
 poster_url: /static/images/films/posters/battle-royale-2000.webp
 release_date: 2000-12-16
 runtime: 114

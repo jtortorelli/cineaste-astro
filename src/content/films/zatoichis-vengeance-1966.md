@@ -1,13 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 座頭市の歌が聞える
-original_works:
-  - authors:
-      - name: Shimozawa Kan
-        slug: shimozawa-kan
-    format: short story
-    slug: zatoichi
-    title:
 poster_url: /static/images/films/posters/zatoichis-vengeance-1966.webp
 release_date: 1966-05-03
 runtime: 83

@@ -4,12 +4,6 @@ aliases:
   - alias: Godzilla, King of the Monsters!
     context: American Theatrical Release
 japanese_title: ゴジラ
-original_works:
-  - authors:
-      - name: Kayama Shigeru
-        slug: kayama-shigeru
-    format: serial
-    title: Monster Godzilla
 video_review:
   star_rating: 3
   youtube_url: https://youtu.be/9JIAAsvhDdg

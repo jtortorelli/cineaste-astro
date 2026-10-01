@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: ALWAYS 三丁目の夕日
-original_works:
-  - authors:
-      - name: Saigan Ryôhei
-    format: manga
-    slug: sunset-on-third-street
-    title: Sunset on Third Street
 poster_url: /static/images/films/posters/always-sunset-on-third-street-2005.webp
 release_date: 2005-11-05
 runtime: 133

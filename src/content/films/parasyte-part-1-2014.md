@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 寄生獣
-original_works:
-  - authors:
-      - name: Iwaaki Hitoshi
-    format: manga
-    slug: parasyte
-    title: Parasyte
 poster_url: /static/images/films/posters/parasyte-part-1-2014.webp
 release_date: 2014-11-29
 runtime: 109

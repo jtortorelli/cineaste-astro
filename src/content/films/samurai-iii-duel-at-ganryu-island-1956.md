@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 宮本武蔵 完結篇 決闘巌流島
-original_works:
-  - authors:
-      - name: Yoshikawa Eiji
-    format: serialized novel
-    slug: musashi-miyamoto
-    title: Musashi Miyamoto
 poster_url: /static/images/films/posters/samurai-iii-duel-at-ganryu-island-1956.webp
 release_date: 1956-01-03
 runtime: 104

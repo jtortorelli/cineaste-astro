@@ -1,13 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 新座頭市・破れ！唐人剣
-original_works:
-  - authors:
-      - name: Shimozawa Kan
-        slug: shimozawa-kan
-    format: short story
-    slug: zatoichi
-    title:
 poster_url: /static/images/films/posters/zatoichi-meets-the-one-armed-swordsman-1971.webp
 release_date: 1971-01-13
 runtime: 94

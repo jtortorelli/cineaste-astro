@@ -1,13 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: ガッチャマン
-original_works:
-  - authors: []
-    studios:
-      - name: Tatsunoko Pro
-    format: anime
-    slug: science-ninja-team-gatchaman
-    title: Science Ninja Team Gatchaman
 poster_url: /static/images/films/posters/gatchaman-2013.webp
 release_date: 2013-08-24
 runtime: 113

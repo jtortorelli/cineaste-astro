@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 神の左手悪魔の右手
-original_works:
-  - authors:
-      - name: Umezu Kazuo
-    format: manga
-    slug: gods-left-hand-devils-right-hand
-    title: "God's Left Hand, Devil's Right Hand"
 poster_url: /static/images/films/posters/gods-left-hand-devils-right-hand-2006.webp
 release_date: 2006-07-22
 runtime: 95

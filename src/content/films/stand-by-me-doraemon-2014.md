@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: STAND BY ME ドラえもん
-original_works:
-  - authors:
-      - name: Fujiko F. Fujio
-    format: manga
-    slug: doraemon
-    title: Doraemon
 poster_url: /static/images/films/posters/stand-by-me-doraemon-2014.webp
 release_date: 2014-08-08
 runtime: 95

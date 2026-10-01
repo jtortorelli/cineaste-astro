@@ -1,13 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 座頭市逆手斬り
-original_works:
-  - authors:
-      - name: Shimozawa Kan
-        slug: shimozawa-kan
-    format: short story
-    slug: zatoichi
-    title:
 poster_url: /static/images/films/posters/zatoichi-and-the-doomed-man-1965.webp
 release_date: 1965-09-18
 runtime: 78

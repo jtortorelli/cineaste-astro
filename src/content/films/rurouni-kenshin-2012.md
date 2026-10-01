@@ -4,12 +4,6 @@ aliases:
   - alias: "Rurouni Kenshin Part I: Origins"
     context: American Home Video
 japanese_title: るろうに剣心
-original_works:
-  - authors:
-      - name: Watsuki Nobuhiro
-    format: manga
-    slug: rurouni-kenshin
-    title: "Rurouni Kenshin: Meiji Swordsman Romantic Story"
 poster_url: /static/images/films/posters/rurouni-kenshin-2012.webp
 release_date: 2012-08-25
 runtime: 134

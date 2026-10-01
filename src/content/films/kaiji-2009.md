@@ -4,12 +4,6 @@ aliases:
   - alias: "Kaiji: The Ultimate Gambler"
     context: International Title
 japanese_title: カイジ 人生逆転ゲーム
-original_works:
-  - authors:
-      - name: Fukumoto Nobuyuki
-    format: manga
-    slug: kaiji
-    title: Kaiji
 poster_url: /static/images/films/posters/kaiji-2009.webp
 release_date: 2009-10-10
 runtime: 129

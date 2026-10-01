@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: エコエコアザラク -WIZARD OF DARKNESS-
-original_works:
-  - authors:
-      - name: Koga Shin'ichi
-    format: manga
-    slug: eko-eko-azarak
-    title: Eko Eko Azarak
 poster_url: /static/images/films/posters/eko-eko-azarak-wizard-of-darkness-1995.webp
 release_date: 1995-04-08
 runtime: 80

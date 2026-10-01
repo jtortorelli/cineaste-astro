@@ -1,13 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 新座頭市物語 折れた杖
-original_works:
-  - authors:
-      - name: Shimozawa Kan
-        slug: shimozawa-kan
-    format: short story
-    slug: zatoichi
-    title:
 poster_url: /static/images/films/posters/zatoichi-in-desperation-1972.webp
 release_date: 1972-09-02
 runtime: 95

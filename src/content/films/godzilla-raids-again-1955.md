@@ -4,12 +4,6 @@ aliases:
   - alias: Gigantis, the Fire Monster
     context: American Theatrical Release
 japanese_title: ゴジラの逆襲
-original_works:
-  - authors:
-      - name: Kayama Shigeru
-        slug: kayama-shigeru
-    slug: monster-godzilla
-    title: Monster Godzilla
 video_review:
   star_rating: 3
   youtube_url: https://youtu.be/S-Z8-9Usy4Q

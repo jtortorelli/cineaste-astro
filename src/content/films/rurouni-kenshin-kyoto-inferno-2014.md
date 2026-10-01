@@ -4,12 +4,6 @@ aliases:
   - alias: "Rurouni Kenshin Part II: Kyoto Inferno"
     context: American Home Video
 japanese_title: るろうに剣心 京都大火編
-original_works:
-  - authors:
-      - name: Watsuki Nobuhiro
-    format: manga
-    slug: rurouni-kenshin
-    title: "Rurouni Kenshin: Meiji Swordsman Romantic Story"
 poster_url: /static/images/films/posters/rurouni-kenshin-kyoto-inferno-2014.webp
 release_date: 2014-08-01
 runtime: 139

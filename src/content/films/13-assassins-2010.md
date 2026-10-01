@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 十三人の刺客
-original_works:
-  - authors:
-      - name: Ikemiya Shôichirô
-    format: screenplay
-    slug: 13-assassins
-    title:
 poster_url: /static/images/films/posters/13-assassins-2010.webp
 release_date: 2010-09-25
 runtime: 141

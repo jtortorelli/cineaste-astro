@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: どろろ
-original_works:
-  - authors:
-      - name: Tezuka Osamu
-    format: manga
-    slug: dororo
-    title: Dororo
 poster_url: /static/images/films/posters/dororo-2007.webp
 release_date: 2007-01-27
 runtime: 138

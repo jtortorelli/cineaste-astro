@@ -1,13 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: デスノート the Last name
-original_works:
-  - authors:
-      - name: Ôba Tsugumi
-      - name: Obata Takeshi
-    format: manga
-    slug: death-note
-    title: Death Note
 poster_url: /static/images/films/posters/death-note-the-last-name-2006.webp
 release_date: 2006-11-03
 runtime: 140

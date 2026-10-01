@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 図書館戦争-THE LAST MISSION-
-original_works:
-  - authors:
-      - name: Takami Yû
-    format: manga
-    slug: library-wars
-    title: Library Wars
 poster_url: /static/images/films/posters/library-wars-the-last-mission-2015.webp
 release_date: 2015-10-10
 runtime: 120

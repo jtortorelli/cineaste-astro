@@ -4,12 +4,6 @@ aliases:
   - alias: "Attack on Titan the Movie: Part 2"
     context: American Home Video
 japanese_title: 進撃の巨人 エンド オブ ザ ワールド
-original_works:
-  - authors:
-      - name: Isayama Hajime
-    format: manga
-    slug: attack-on-titan
-    title: Attack on Titan
 poster_url: /static/images/films/posters/attack-on-titan-end-of-the-world-2015.webp
 release_date: 2015-09-19
 runtime: 87

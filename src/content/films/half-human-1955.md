@@ -1,11 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 獣人雪男
-original_works:
-  - authors:
-      - name: Kayama Shigeru
-        slug: kayama-shigeru
-    title: Beastman Yeti
 video_review:
   star_rating: 2
   youtube_url: https://youtu.be/yheLVDhE3Xo

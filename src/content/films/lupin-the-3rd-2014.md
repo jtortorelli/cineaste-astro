@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: ルパン三世
-original_works:
-  - authors:
-      - name: Monkey Punch
-    format: manga
-    slug: lupin-iii
-    title: Lupin III
 poster_url: /static/images/films/posters/lupin-the-3rd-2014.webp
 release_date: 2014-08-30
 runtime: 133

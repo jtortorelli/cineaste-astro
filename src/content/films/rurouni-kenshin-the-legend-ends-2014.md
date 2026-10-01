@@ -4,12 +4,6 @@ aliases:
   - alias: "Rurouni Kenshin Part III: The Legend Ends"
     context: American Home Video
 japanese_title: るろうに剣心 伝説の最期編
-original_works:
-  - authors:
-      - name: Watsuki Nobuhiro
-    format: manga
-    slug: rurouni-kenshin
-    title: "Rurouni Kenshin: Meiji Swordsman Romantic Story"
 poster_url: /static/images/films/posters/rurouni-kenshin-the-legend-ends-2014.webp
 release_date: 2014-09-13
 runtime: 135

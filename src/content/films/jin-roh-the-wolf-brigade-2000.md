@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 人狼 JIN-ROH
-original_works:
-  - authors:
-      - name: Oshii Mamoru
-    format: manga
-    slug: kerberos-panzer-cop
-    title: Kerberos Panzer Cop
 poster_url: /static/images/films/posters/jin-roh-the-wolf-brigade-2000.webp
 release_date: 2000-06-03
 runtime: 98

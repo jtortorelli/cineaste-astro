@@ -18,10 +18,15 @@ import {
   seriesEntryIsShowcased,
   staffFromCsv,
   kaijuFromCsv,
+  originalWorksForFilm,
   type HomeVideoRelease,
   type KaijuPortrayal,
 } from "../lib/films";
-import type { FilmRow } from "../lib/csv";
+import type {
+  FilmRow,
+  OriginalWorkAuthorRow,
+  OriginalWorkRow,
+} from "../lib/csv";
 import HomeVideoBlock from "./HomeVideoBlock.astro";
 
 interface Props {
@@ -34,6 +39,8 @@ interface Props {
   staffs: Record<string, Record<string, string>[]>;
   casts: Record<string, Record<string, string>[]>;
   kaiju: Record<string, Record<string, string>[]>;
+  originalWorks: OriginalWorkRow[];
+  originalWorkAuthors: OriginalWorkAuthorRow[];
   credits: Record<string, Record<string, string>[]>;
   homeVideos: Record<string, HomeVideoRelease[]>;
 }
@@ -48,6 +55,8 @@ const {
   staffs,
   casts,
   kaiju: kaijuBySlug = {},
+  originalWorks = [],
+  originalWorkAuthors = [],
   credits,
   homeVideos,
 } = Astro.props;
@@ -62,14 +71,11 @@ const translation = data.translation as string | undefined;
 const aliases = data.aliases as
   | { alias: string; context?: string }[]
   | undefined;
-const original_works = data.original_works as
-  | {
-      title?: string;
-      format?: string;
-      authors?: { name: string; slug?: string }[];
-      studios?: { name: string }[];
-    }[]
-  | undefined;
+const original_works = originalWorksForFilm(
+  filmRecord,
+  originalWorks,
+  originalWorkAuthors,
+);
 const studios = data.studios as string[] | undefined;
 const kaiju = kaijuFromCsv(kaijuBySlug[slug] ?? []);
 
@@ -206,7 +212,7 @@ function personSlugFor(name: string): string | undefined {
     }
   </Fact>
   {
-    original_works?.map((work) => (
+    original_works.map((work) => (
       <Fact label="Source">
           {work.title && (
             <>
@@ -219,12 +225,18 @@ function personSlugFor(name: string): string | undefined {
               ? `${work.format.charAt(0).toUpperCase()}${work.format.slice(1)} by`
               : "By"}
           </span>
-          {work.authors?.map((a) => (
-            <>
-              {" "}
-              <PersonShowcaseLink slug={a.slug}>{a.name}</PersonShowcaseLink>
-            </>
-          ))}
+          {(work.authors?.length ?? 0) > 1
+            ? work.authors.map((a) => (
+                <div>
+                  <PersonShowcaseLink slug={a.slug}>{a.name}</PersonShowcaseLink>
+                </div>
+              ))
+            : work.authors?.map((a) => (
+                <>
+                  {" "}
+                  <PersonShowcaseLink slug={a.slug}>{a.name}</PersonShowcaseLink>
+                </>
+              ))}
           {work.studios?.map((s) => (
             <>
               {" "}

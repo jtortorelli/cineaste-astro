@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: スカイハイ 劇場版
-original_works:
-  - authors:
-      - name: Takahashi Tsutomu
-    format: manga
-    slug: sky-high
-    title: Shy High
 poster_url: /static/images/films/posters/sky-high-2003.webp
 release_date: 2003-11-08
 runtime: 123

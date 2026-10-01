@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 暗殺教室
-original_works:
-  - authors:
-      - name: Matsui Yusei
-    format: manga
-    slug: assassination-classroom
-    title: Assassination Classroom
 poster_url: /static/images/films/posters/assassination-classroom-2015.webp
 release_date: 2015-03-21
 runtime: 110

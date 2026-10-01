@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: アイアムアヒーロー
-original_works:
-  - authors:
-      - name: Hanazawa Kengo
-    format: manga
-    slug: i-am-a-hero
-    title: I Am A Hero
 poster_url: /static/images/films/posters/i-am-a-hero-2016.webp
 release_date: 2016-04-23
 runtime: 127

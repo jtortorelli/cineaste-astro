@@ -1,13 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 座頭市血煙り街道
-original_works:
-  - authors:
-      - name: Shimozawa Kan
-        slug: shimozawa-kan
-    format: short story
-    slug: zatoichi
-    title:
 poster_url: /static/images/films/posters/zatoichi-challenged-1967.webp
 release_date: 1967-12-30
 runtime: 87

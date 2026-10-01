@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: ジェネラル・ルージュの凱旋
-original_works:
-  - authors:
-      - name: Kaidô Takeru
-    format: novel
-    slug: triumphant-return-of-general-rouge
-    title: The Triumphant Return of General Rouge
 poster_url: /static/images/films/posters/triumphant-return-of-general-rouge-2009.webp
 release_date: 2009-03-07
 runtime: 123

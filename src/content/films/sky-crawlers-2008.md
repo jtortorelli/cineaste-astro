@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: スカイ・クロラ The Sky Crawlers
-original_works:
-  - authors:
-      - name: Mori Hiroshi
-    format: novel series
-    slug: sky-crawlers
-    title: The Sky Crawlers
 poster_url: /static/images/films/posters/sky-crawlers-2008.webp
 release_date: 2008-08-02
 runtime: 122

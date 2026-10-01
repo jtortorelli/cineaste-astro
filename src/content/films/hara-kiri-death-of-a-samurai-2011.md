@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: 一命
-original_works:
-  - authors:
-      - name: Takiguchi Yasuhiko
-    format: novel
-    slug: strange-ronin
-    title: Strange Ronin
 poster_url: /static/images/films/posters/hara-kiri-death-of-a-samurai-2011.webp
 release_date: 2011-10-15
 runtime: 126

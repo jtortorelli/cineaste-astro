@@ -1,11 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: CASSHERN
-original_works:
-  - format: anime
-    studios:
-      - name: Tatsunoko Production Co., Ltd.
-    title: Casshern
 poster_url: /static/images/films/posters/casshern-2004.webp
 release_date: 2004-04-24
 runtime: 141

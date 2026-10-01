@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: バトル・ロワイアルII <ruby>鎮魂歌<rt>レクイエム</rt></ruby>
-original_works:
-  - authors:
-      - name: Takami Kôshun
-    format: novel
-    slug: battle-royale
-    title: Battle Royale
 poster_url: /static/images/films/posters/battle-royale-ii-requiem-2003.webp
 release_date: 2003-07-05
 runtime: 133

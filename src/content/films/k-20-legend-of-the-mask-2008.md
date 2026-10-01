@@ -4,12 +4,6 @@ aliases:
   - alias: "K-20: The Fiend with Twenty Faces"
     context: American Home Video
 japanese_title: K-20 怪人二十面相・伝
-original_works:
-  - authors:
-      - name: Kitamura Sô
-    format: novel
-    slug: fiend-with-twenty-faces
-    title: The Fiend with Twenty Faces
 poster_url: /static/images/films/posters/k-20-legend-of-the-mask-2008.webp
 release_date: 2008-12-20
 runtime: 137

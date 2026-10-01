@@ -4,12 +4,6 @@ aliases:
   - alias: "Attack on Titan the Movie: Part 1"
     context: American Home Video
 japanese_title: 進撃の巨人
-original_works:
-  - authors:
-      - name: Isayama Hajime
-    format: manga
-    slug: attack-on-titan
-    title: Attack on Titan
 poster_url: /static/images/films/posters/attack-on-titan-2015.webp
 release_date: 2015-08-01
 runtime: 98

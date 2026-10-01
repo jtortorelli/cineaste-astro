@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: ルパン三世 カリオストロの城
-original_works:
-  - authors:
-      - name: Monkey Punch
-    format: manga
-    slug: lupin-iii
-    title: Lupin III
 poster_url: /static/images/films/posters/lupin-iii-the-castle-of-cagliostro-1979.webp
 release_date: 1979-12-15
 runtime: 100

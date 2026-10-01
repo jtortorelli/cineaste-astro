@@ -1,12 +1,6 @@
 ---
 tags: ["cineaste", "films"]
 japanese_title: あずみ2 Death or Love
-original_works:
-  - authors:
-      - name: Koyama Yû
-    format: manga
-    slug: azumi
-    title: Azumi
 poster_url: /static/images/films/posters/azumi-2-death-or-love-2005.webp
 release_date: 2005-03-12
 runtime: 112
