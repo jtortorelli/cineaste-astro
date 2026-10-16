@@ -12,53 +12,6 @@ japanese_name: 小沢栄太郎
 name: Ozawa Eitarô
 profession: Actor
 type: person
-works:
-  - title: Morning for the Osone Family
-    format: film
-    year: 1946
-    poster_url: /static/images/films/posters/morning-for-the-osone-family-1946.webp
-    roles:
-      - name: Ôsone Issei
-  - format: film
-    poster_url: /static/images/films/posters/samurai-i-musashi-miyamoto-1954.webp
-    roles:
-      - name: Ikeda Terumasa
-        uncredited: false
-    slug: samurai-i-musashi-miyamoto-1954
-    title: "Samurai I: Musashi Miyamoto"
-    year: 1954
-  - format: film
-    poster_url: /static/images/films/posters/h-man-1958.webp
-    roles:
-      - name: Detective Miyashita
-        uncredited: false
-    slug: h-man-1958
-    title: The H-Man
-    year: 1958
-  - format: film
-    poster_url: /static/images/films/posters/gorath-1962.webp
-    roles:
-      - name: Minister Kinami
-        uncredited: false
-    slug: gorath-1962
-    title: Gorath
-    year: 1962
-  - format: film
-    poster_url: /static/images/films/posters/zatoichi-challenged-1967.webp
-    roles:
-      - name: Torikoshi
-        uncredited: false
-    slug: zatoichi-challenged-1967
-    title: Zatoichi Challenged
-    year: 1967
-  - format: film
-    poster_url: /static/images/films/posters/return-of-godzilla-1984.webp
-    roles:
-      - name: Minister Kanzaki
-        uncredited: false
-    slug: return-of-godzilla-1984
-    title: The Return of Godzilla
-    year: 1985
 ---
 Ozawa Eitarô took an interest in acting in junior high school, eventually abandoning high school to join a small theater company in 1927. In 1929, he debuted with the Tokyo Leftist Theater and joined the Proletariat (Communist) party in Japan. Following the enactment of the Peace Preservation Law in 1930, radical groups came under intense scrutiny. The Leftist Theater was found in violation of the law, and Ozawa spent a year and a half behind bars.
 

@@ -15,26 +15,6 @@ profession: Composer
 spouses:
   - name: Uchiyama Kinko
 type: person
-works:
-  - title: The Bells of Nagasaki
-    year: 1950
-    format: film
-    poster_url: "/static/images/films/posters/bells-of-nagasaki-1950.webp"
-    staff:
-      - role: Music
-  - format: film
-    poster_url: "/static/images/films/posters/presidents-travels-1961.webp"
-    title: President’s Travels
-    year: 1961
-    staff:
-      - role: Music
-  - format: film
-    poster_url: "/static/images/films/posters/mothra-1961.webp"
-    slug: mothra-1961
-    staff:
-      - role: Music
-    title: Mothra
-    year: 1961
 ---
 
 Born in Fukushima, Koseki Yûji showed early musical promise, winning a 1929

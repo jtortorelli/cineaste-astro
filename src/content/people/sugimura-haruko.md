@@ -14,39 +14,6 @@ japanese_name: 杉村春子
 name: Sugimura Haruko
 profession: Actress
 type: person
-works:
-  - title: Late Spring
-    format: film
-    year: 1949
-    poster_url: /static/images/films/posters/late-spring-1949.webp
-    roles:
-      - name: Taguchi Masa
-  - title: Early Summer
-    format: film
-    year: 1951
-    poster_url: /static/images/films/posters/early-summer-1951.webp
-    roles:
-      - name: Yabe Tami
-  - title: Tokyo Story
-    format: film
-    year: 1953
-    poster_url: /static/images/films/posters/tokyo-story-1953.webp
-    roles:
-      - name: Kaneko Shige
-  - format: film
-    poster_url: /static/images/films/posters/three-treasures-1959.webp
-    roles:
-      - name: Storyteller
-        uncredited: false
-    slug: three-treasures-1959
-    title: The Three Treasures
-    year: 1959
-  - title: A Last Note
-    format: film
-    year: 1995
-    poster_url: /static/images/films/posters/a-last-note-1995.webp
-    roles:
-      - name: Morimoto Yôko
 ---
 Sugimura Haruko was an incredibly prestigious Japanese stage and film actress, widely recognized as one of the nation's most accomplished and decorated dramatic theatrical performers of the 20th century.
 

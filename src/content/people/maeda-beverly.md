@@ -10,26 +10,6 @@ profession: Actress
 type: person
 spouses:
   - name: Mike Maki
-works:
-  - title: Let's Go, Young Guy!
-    year: 1967
-    format: film
-    poster_url: /static/images/films/posters/lets-go-young-guy-1967.webp
-    roles:
-      - name: Etsuko
-  - title: Judo Champion
-    year: 1967
-    format: film
-    poster_url: /static/images/films/posters/judo-champion-1967.webp
-    roles:
-      - name: Arita Yumiko
-  - format: film
-    poster_url: /static/images/films/posters/son-of-godzilla-1967.webp
-    roles:
-      - name: Saeko
-    slug: son-of-godzilla-1967
-    title: Son of Godzilla
-    year: 1967
 ---
 
 Maeda was born to an American father and Japanese mother; the name "Beverly" comes from her paternal grandmother. She studied ballet as a child, and after joining Toho following a music competition, made her film debut in 1964. In 1966, at age 18, she became the face of Shiseido Cosmetics.

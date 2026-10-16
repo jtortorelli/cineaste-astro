@@ -5,6 +5,7 @@ import {
   type HomeVideoRow,
   type OriginalWorkAuthorRow,
   type OriginalWorkRow,
+  type OtherWorkRow,
   isTruthy,
   loadAccoladesCsv,
   loadCsvBySlug,
@@ -12,6 +13,7 @@ import {
   loadHomeVideosCsv,
   loadOriginalWorkAuthorsCsv,
   loadOriginalWorksCsv,
+  loadOtherWorksCsv,
   loadSeriesByName,
 } from "./csv";
 import { compareReleaseDate, releaseYear } from "./dates";
@@ -457,6 +459,7 @@ let cachedData: {
   kaiju: Record<string, Record<string, string>[]>;
   originalWorks: OriginalWorkRow[];
   originalWorkAuthors: OriginalWorkAuthorRow[];
+  otherWorks: OtherWorkRow[];
   homeVideos: Record<string, HomeVideoRelease[]>;
 } | null = null;
 
@@ -474,6 +477,7 @@ export function getFilmData() {
     kaiju: loadCsvBySlug("kaiju"),
     originalWorks: loadOriginalWorksCsv(),
     originalWorkAuthors: loadOriginalWorkAuthorsCsv(),
+    otherWorks: loadOtherWorksCsv(),
     homeVideos: homeVideosByFilmSlug(loadHomeVideosCsv(), films),
   };
   if (!import.meta.env.DEV) {

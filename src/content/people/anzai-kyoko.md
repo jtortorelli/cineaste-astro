@@ -15,15 +15,6 @@ spouses:
   - name: Mihashi Tatsuya
     slug: mihashi-tatsuya
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/battle-in-outer-space-1959.webp
-    roles:
-      - name: Shiraishi Etsuko
-        uncredited: false
-    slug: battle-in-outer-space-1959
-    title: Battle in Outer Space
-    year: 1959
 ---
 
 Anzai Kyôko began her career in entertainment as a member of the Osaka Shochiku

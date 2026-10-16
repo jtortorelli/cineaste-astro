@@ -14,38 +14,6 @@ japanese_name: 河内桃子
 name: Kouchi Momoko
 profession: Actress
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/godzilla-1954.webp
-    roles:
-      - name: Yamane Emiko
-        uncredited: false
-    slug: godzilla-1954
-    title: Godzilla
-    year: 1954
-  - format: film
-    poster_url: /static/images/films/posters/half-human-1955.webp
-    roles:
-      - name: Takeno Machiko
-    title: Half Human
-    year: 1955
-    slug: half-human-1955
-  - format: film
-    poster_url: /static/images/films/posters/mysterians-1957.webp
-    roles:
-      - name: Iwamoto Hiroko
-        uncredited: false
-    slug: mysterians-1957
-    title: The Mysterians
-    year: 1957
-  - format: film
-    poster_url: /static/images/films/posters/godzilla-vs-destoroyah-1995.webp
-    roles:
-      - name: Yamane Emiko
-        uncredited: false
-    slug: godzilla-vs-destoroyah-1995
-    title: Godzilla vs. Destoroyah
-    year: 1995
 ---
 
 Descended from a distinguished lineage, Kouchi Momoko was the granddaughter of

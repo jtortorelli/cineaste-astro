@@ -14,51 +14,6 @@ japanese_name: 原節子
 name: Hara Setsuko
 profession: Actress
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/daughter-of-the-samurai-1937.webp
-    roles:
-      - name: Yamato Mitsuko
-    title: The Daughter of the Samurai
-    year: 1937
-  - title: No Regrets for Our Youth
-    year: 1946
-    format: film
-    poster_url: /static/images/films/posters/no-regrets-for-our-youth-1946.webp
-    roles:
-      - name: Yagihara Yukie
-  - title: Late Spring
-    year: 1949
-    format: film
-    poster_url: /static/images/films/posters/late-spring-1949.webp
-    roles:
-      - name: Somiya Noriko
-  - title: Early Summer
-    year: 1951
-    format: film
-    poster_url: /static/images/films/posters/early-summer-1951.webp
-    roles:
-      - name: Mamiya Noriko
-  - title: Tokyo Story
-    year: 1953
-    format: film
-    poster_url: /static/images/films/posters/tokyo-story-1953.webp
-    roles:
-      - name: Noriko
-  - format: film
-    poster_url: /static/images/films/posters/three-treasures-1959.webp
-    roles:
-      - name: Amaterasu
-        uncredited: false
-    slug: three-treasures-1959
-    title: The Three Treasures
-    year: 1959
-  - format: film
-    poster_url: /static/images/films/posters/chushingura-1962.webp
-    roles:
-      - name: Riku
-    title: Chushingura
-    year: 1962
 ---
 
 Often called the "Eternal Virgin" of Japanese cinema, Hara Setsuko is most

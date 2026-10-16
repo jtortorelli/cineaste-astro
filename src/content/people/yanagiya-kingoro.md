@@ -15,21 +15,6 @@ japanese_name: 柳家金語楼
 name: Yanagiya Kingoro
 profession: Actor
 type: person
-works:
-  - format: film
-    poster_url: "/static/images/films/posters/three-treasures-1959.webp"
-    roles:
-      - name: Omoikane
-        uncredited: false
-    slug: three-treasures-1959
-    title: The Three Treasures
-    year: 1959
-  - format: film
-    poster_url: "/static/images/films/posters/presidents-trip-abroad-part-ii-1963.webp"
-    title: "President’s Trip Abroad: Part II"
-    year: 1963
-    roles:
-      - name: Matsumoto
 ---
 Esteemed comedic actor recognizable by his baldness and well known for his _rakugo_ (a form of one-man storytelling) performances. Yanagiya Kingorô was born into a family of performers and debuted on stage at the young age of six. 
 

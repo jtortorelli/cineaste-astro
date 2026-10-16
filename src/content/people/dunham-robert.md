@@ -20,47 +20,6 @@ japanese_name: ロバート・ダンハム
 name: Robert Dunham
 profession: Actor
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/mothra-1961.webp
-    roles:
-      - name: Rolisican Policeman
-        uncredited: false
-    slug: mothra-1961
-    title: Mothra
-    year: 1961
-  - format: film
-    poster_url: /static/images/films/posters/dogora-1964.webp
-    roles:
-      - actor_alias: Dan Yuma
-        name: Mark Jackson
-        uncredited: false
-    slug: dogora-1964
-    title: Dogora
-    year: 1964
-  - format: film
-    poster_url: /static/images/films/posters/green-slime-1968.webp
-    roles:
-      - name: Captain Martin
-        uncredited: false
-    title: The Green Slime
-    year: 1968
-  - format: film
-    poster_url: /static/images/films/posters/godzilla-vs-megalon-1973.webp
-    roles:
-      - name: Emperor Antonio
-        uncredited: false
-    slug: godzilla-vs-megalon-1973
-    title: Godzilla vs. Megalon
-    year: 1973
-  - format: film
-    poster_url: /static/images/films/posters/espy-1974.webp
-    roles:
-      - name: Pilot
-        uncredited: true
-    slug: espy-1974
-    title: ESPY
-    year: 1974
 ---
 
 Robert Dunham was an American actor, writer, and entrepreneur who lived in Japan

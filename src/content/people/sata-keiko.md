@@ -7,23 +7,6 @@ japanese_name: 佐多契子
 name: Sata Keiko
 profession: Actress
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/human-vapor-1960.webp
-    roles:
-      - name: Kôno Kyôko
-        uncredited: false
-    slug: human-vapor-1960
-    title: The Human Vapor
-    year: 1960
-  - format: film
-    poster_url: /static/images/films/posters/gorath-1962.webp
-    roles:
-      - name: Secretary
-        uncredited: false
-    slug: gorath-1962
-    title: Gorath
-    year: 1962
 ---
 Sata Keiko was a Japanese actress. She worked exclusively for Toho Studios for a brief period between 1960 and 1963. 
 

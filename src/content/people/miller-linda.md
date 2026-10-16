@@ -8,21 +8,6 @@ japanese_name: リンダ・ミラー
 name: Linda Miller
 profession: Actress
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/king-kong-escapes-1967.webp
-    roles:
-      - name: Susan Watson
-        uncredited: false
-    slug: king-kong-escapes-1967
-    title: King Kong Escapes
-    year: 1967
-  - title: The Green Slime
-    year: 1968
-    format: film
-    roles:
-      - name: Nurse
-    poster_url: "/static/images/films/posters/green-slime-1968.webp"
 ---
 Miller grew up in a military household; her father's assignments took her all over the United States, Europe, and eventually Japan. As a recent high school graduate in Japan, she began working as a fashion model, most notably for Noritake China. After two years in the industry, she was discovered by American producer Arthur Rankin, who was in Japan working on a film adaptation of his King Kong cartoon series. Rankin cast Miller as the female lead, Susan Watson, in _King Kong Escapes_ (1967). She subsequently appeared in Fukasaku Kinji's _The Green Slime_ (1968).
 

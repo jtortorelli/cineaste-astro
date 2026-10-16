@@ -17,39 +17,6 @@ spouses:
   - name: Yachigusa Kaoru
     slug: yachigusa-kaoru
 type: person
-works:
-  - title: Snow Trail
-    format: film
-    poster_url: /static/images/films/posters/snow-trail-1947.webp
-    year: 1947
-    staff:
-      - role: Director
-  - format: film
-    poster_url: /static/images/films/posters/lost-world-of-sinbad-1963.webp
-    slug: lost-world-of-sinbad-1963
-    staff:
-      - role: Director
-    title: The Lost World of Sinbad
-    year: 1963
-  - title: Key of Keys
-    format: film
-    poster_url: /static/images/films/posters/key-of-keys-1965.webp
-    year: 1965
-    staff:
-      - role: Director
-  - format: film
-    poster_url: /static/images/films/posters/adventure-of-kigan-castle-1966.webp
-    slug: adventure-of-kigan-castle-1966
-    staff:
-      - role: Director
-    title: The Adventure of Kigan Castle
-    year: 1966
-  - title: The Killing Bottle
-    format: film
-    poster_url: /static/images/films/posters/killing-bottle-1967.webp
-    year: 1967
-    staff:
-      - role: Director
 ---
 Taniguchi Senkichi was a prolific Japanese film director who specialized in action adventures, thrillers, and fantasy epics. 
 

@@ -10,23 +10,6 @@ japanese_name: 八代美紀
 name: Yashiro Miki
 profession: Actress
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/matango-1963.webp
-    roles:
-      - name: Sôma Akiko
-        uncredited: false
-    slug: matango-1963
-    title: Matango
-    year: 1963
-  - format: film
-    poster_url: /static/images/films/posters/mothra-vs-godzilla-1964.webp
-    roles:
-      - name: Schoolteacher
-        uncredited: false
-    slug: mothra-vs-godzilla-1964
-    title: Mothra vs. Godzilla
-    year: 1964
 ---
 Yashiro Miki joined Toho fresh out of high school, becoming a full-fledged actress in 1963 after graduating from the studio's performing arts program. Her career was brief, however, and she apparently retired from film in 1966. 
 

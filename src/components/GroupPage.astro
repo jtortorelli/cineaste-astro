@@ -4,13 +4,15 @@ import FactList from "./FactList.astro";
 import NamedDivider from "./NamedDivider.astro";
 import SelectedWorks from "./SelectedWorks.astro";
 import { displayPersonDate, lifespan } from "../lib/dates";
+import type { SelectedWork } from "../lib/selected-works";
 
 interface Props {
   data: Record<string, unknown>;
   Content: Astro.Component;
+  works: SelectedWork[];
 }
 
-const { data, Content } = Astro.props;
+const { data, Content, works } = Astro.props;
 
 const name = data.name as string;
 const avatar_url = data.avatar_url as string;
@@ -31,7 +33,6 @@ const members = data.members as
       cause_of_death?: string;
     }[]
   | undefined;
-const works = data.works as Record<string, unknown>[] | undefined;
 ---
 
 <div class="text-center w-fit m-auto">
@@ -110,7 +111,7 @@ const works = data.works as Record<string, unknown>[] | undefined;
   <Content />
 </div>
 <NamedDivider name="Selected Works" />
-<SelectedWorks works={works as never} />
+<SelectedWorks works={works} />
 
 <style>
   .group-members {

@@ -11,22 +11,6 @@ japanese_name: 榎本健一
 name: Enomoto Ken'ichi
 profession: Actor
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/men-who-tread-on-the-tigers-tail-1952.webp
-    roles:
-      - name: Porter
-        uncredited: false
-    title: The Men Who Tread on the Tiger's Tail
-    year: 1952
-  - format: film
-    poster_url: /static/images/films/posters/three-treasures-1959.webp
-    roles:
-      - name: Tamaso
-        uncredited: false
-    slug: three-treasures-1959
-    title: The Three Treasures
-    year: 1959
 ---
 
 Enomoto Ken'ichi, widely known as "Enoken," was a legendary Japanese singing

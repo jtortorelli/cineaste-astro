@@ -14,14 +14,6 @@ japanese_name: 押川春浪
 name: Oshikawa Shunrô
 profession: Author
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/atragon-1963.webp
-    slug: atragon-1963
-    title: Atragon
-    year: 1963
-    staff:
-      - role: Original Story
 ---
 Oshikawa is considered a pioneer of Japanese science fiction. Influenced by the adventure novels of Jules Verne, he wrote stories that combined technological speculation with the martial spirit of Meiji-era Japan.
 

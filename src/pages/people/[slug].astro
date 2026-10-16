@@ -3,9 +3,12 @@ import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import PersonPage from "../../components/PersonPage.astro";
 import GroupPage from "../../components/GroupPage.astro";
+import { getFilmData } from "../../lib/films";
+import { selectedWorksFor } from "../../lib/selected-works";
 
 export async function getStaticPaths() {
   const people = await getCollection("people");
+  const catalog = getFilmData();
   const paths = [];
 
   for (const person of people) {
@@ -18,6 +21,7 @@ export async function getStaticPaths() {
         isGroup: person.data.type === "group",
         Content,
         slug,
+        works: selectedWorksFor(slug, catalog),
       },
     });
   }
@@ -30,15 +34,16 @@ interface Props {
   isGroup: boolean;
   Content: Awaited<ReturnType<typeof render>>["Content"];
   slug: string;
+  works: ReturnType<typeof selectedWorksFor>;
 }
 
-const { data, isGroup, Content, slug } = Astro.props;
+const { data, isGroup, Content, slug, works } = Astro.props;
 ---
 
 <Layout name={data.name as string}>
   {isGroup ? (
-    <GroupPage data={data} Content={Content} />
+    <GroupPage data={data} Content={Content} works={works} />
   ) : (
-    <PersonPage data={data} Content={Content} slug={slug} />
+    <PersonPage data={data} Content={Content} slug={slug} works={works} />
   )}
 </Layout>

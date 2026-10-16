@@ -29,8 +29,17 @@ export type FilmRow = {
   original_work_slugs: string;
 };
 
+export function filmPosterUrl(slug: string, posterUrl?: string): string {
+  const explicit = posterUrl?.trim();
+  if (explicit) return explicit;
+  return `/static/images/films/posters/${slug}.webp`;
+}
+
 export function loadFilmsCsv(): FilmRow[] {
-  return parseCsvFile(join(DATA_DIR, "films.csv")) as FilmRow[];
+  return (parseCsvFile(join(DATA_DIR, "films.csv")) as FilmRow[]).map((row) => ({
+    ...row,
+    poster_url: filmPosterUrl(row.slug, row.poster_url),
+  }));
 }
 
 export function loadSeriesByName(): Record<string, { slug: string }[]> {
@@ -119,4 +128,26 @@ export function loadOriginalWorkAuthorsCsv(): OriginalWorkAuthorRow[] {
   return parseCsvFile(join(DATA_DIR, "original-work-authors.csv")).filter(
     (row) => row.work_slug,
   ) as OriginalWorkAuthorRow[];
+}
+
+export type OtherWorkRow = {
+  person_slug: string;
+  film_slug: string;
+  format: string;
+  title: string;
+  release_date: string;
+  release_date_resolution: string;
+  art_url: string;
+  kind: string;
+  credit: string;
+  alias: string;
+  episode_count: string;
+  qualifiers: string;
+  uncredited: string;
+};
+
+export function loadOtherWorksCsv(): OtherWorkRow[] {
+  return parseCsvFile(join(DATA_DIR, "other-works.csv")).filter(
+    (row) => row.person_slug,
+  ) as OtherWorkRow[];
 }

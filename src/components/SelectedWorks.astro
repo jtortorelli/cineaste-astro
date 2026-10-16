@@ -3,6 +3,7 @@ import CastCatalog from "./CastCatalog.astro";
 import FilmShowcaseLink from "./FilmShowcaseLink.astro";
 import Icon from "./Icon.astro";
 import { processRoleName } from "../lib/films";
+import type { SelectedWork } from "../lib/selected-works";
 
 interface RoleCredit {
   name: string;
@@ -36,7 +37,7 @@ interface WorkCredit {
 }
 
 interface Props {
-  works?: WorkEntry[];
+  works?: SelectedWork[] | WorkEntry[];
 }
 
 const { works } = Astro.props;

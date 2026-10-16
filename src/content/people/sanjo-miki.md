@@ -12,27 +12,6 @@ japanese_name: 三條美紀
 name: Sanjô Miki
 profession: Actress
 type: person
-works:
-  - title: The Quiet Duel
-    format: film
-    year: 1949
-    poster_url: /static/images/films/posters/quiet-duel-1949.webp
-    roles:
-      - name: Matsumoto Misao
-  - format: film
-    poster_url: /static/images/films/posters/invisible-man-1954.webp
-    roles:
-      - name: Michiyo
-        uncredited: false
-    slug: invisible-man-1954
-    title: Invisible Man
-    year: 1954
-  - title: Young Guy vs. Blue Guy
-    year: 1971
-    format: film
-    poster_url: /static/images/films/posters/young-guy-vs-blue-guy-1971.webp
-    roles:
-      - name: Ôta Harue
 ---
 Sanjô Miki was a Japanese actress. After graduating from the Tokyo Metropolitan Sakuramizu Women's Commercial School, she went to work in the accounting department of Daiei Studios.
 

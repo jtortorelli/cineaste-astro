@@ -15,23 +15,6 @@ profession: Actor
 spouses:
   - name: Iwai Yumi
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/lost-world-of-sinbad-1963.webp
-    roles:
-      - name: The Prince of Ming
-        uncredited: false
-    slug: lost-world-of-sinbad-1963
-    title: The Lost World of Sinbad
-    year: 1963
-  - format: film
-    poster_url: /static/images/films/posters/dogora-1964.webp
-    roles:
-      - name: Detective Nitta
-        uncredited: false
-    slug: dogora-1964
-    title: Dogora
-    year: 1964
 ---
 
 Funato Jun was a Toho actor who appeared in several films during the 1960s. He

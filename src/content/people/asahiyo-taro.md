@@ -13,15 +13,6 @@ japanese_name: 朝潮太郎
 name: Asahiyo Tarô
 profession: Wrestler
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/three-treasures-1959.webp
-    roles:
-      - name: Tajikarao
-        uncredited: false
-    slug: three-treasures-1959
-    title: The Three Treasures
-    year: 1959
 ---
 
 Asahiyo Tarô stowed away on a cargo ship to compete in his first sumo match in

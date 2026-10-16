@@ -17,35 +17,6 @@ japanese_name: 團伊玖磨
 name: Dan Ikuma
 profession: Composer
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/samurai-i-musashi-miyamoto-1954.webp
-    slug: samurai-i-musashi-miyamoto-1954
-    staff:
-      - role: Music
-    title: "Samurai I: Musashi Miyamoto"
-    year: 1954
-  - format: film
-    poster_url: /static/images/films/posters/samurai-ii-duel-at-ichijoji-temple-1955.webp
-    slug: samurai-ii-duel-at-ichijoji-temple-1955
-    staff:
-      - role: Music
-    title: "Samurai II: Duel at Ichijoji Temple"
-    year: 1955
-  - format: film
-    poster_url: /static/images/films/posters/samurai-iii-duel-at-ganryu-island-1956.webp
-    slug: samurai-iii-duel-at-ganryu-island-1956
-    staff:
-      - role: Music
-    title: "Samurai III: Duel at Ganryu Island"
-    year: 1956
-  - format: film
-    poster_url: /static/images/films/posters/last-war-1961.webp
-    slug: last-war-1961
-    staff:
-      - role: Music
-    title: The Last War
-    year: 1961
 ---
 
 Dan Ikuma was born into a distinguished family; his grandfather was Baron Dan

@@ -20,37 +20,6 @@ japanese_name: 千田是也
 name: Senda Koreya
 profession: Actor
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/h-man-1958.webp
-    roles:
-      - name: Doctor Maki
-        uncredited: false
-    slug: h-man-1958
-    title: The H-Man
-    year: 1958
-  - format: film
-    poster_url: /static/images/films/posters/varan-the-unbelievable-1958.webp
-    roles:
-      - name: Doctor Sugimoto
-        uncredited: false
-    slug: varan-the-unbelievable-1958
-    title: Varan the Unbelievable
-    year: 1958
-  - format: film
-    poster_url: /static/images/films/posters/battle-in-outer-space-1959.webp
-    roles:
-      - name: Doctor Adachi
-        uncredited: false
-    slug: battle-in-outer-space-1959
-    title: Battle in Outer Space
-    year: 1959
-  - title: Tora! Tora! Tora!
-    format: film
-    year: 1970
-    poster_url: /static/images/films/posters/tora-tora-tora-1970.webp
-    roles:
-      - name: Konoe Fumimaro
 ---
 Senda Koreya (born Itô Kunio) was a revered Japanese stage and film actor. He adopted his stage name as both a parody and a tribute to the victims of the cruel Korean massacres following the Great Kanto Earthquake of 1923 ("The **Korea**ns in **Senda**gaya").
 

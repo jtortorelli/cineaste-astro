@@ -11,54 +11,6 @@ japanese_name: 小人のマーチャン
 name: Little Man Mâchan
 profession: Suit Actor
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/lost-world-of-sinbad-1963.webp
-    roles:
-      - name: Dwarf Servant
-        uncredited: true
-    slug: lost-world-of-sinbad-1963
-    title: The Lost World of Sinbad
-    year: 1963
-  - format: film
-    poster_url: /static/images/films/posters/son-of-godzilla-1967.webp
-    roles:
-      - name: Minilla
-        qualifiers:
-          - Suit Actor
-        uncredited: false
-    slug: son-of-godzilla-1967
-    title: Son of Godzilla
-    year: 1967
-  - format: film
-    poster_url: /static/images/films/posters/destroy-all-monsters-1968.webp
-    roles:
-      - name: Minilla
-        qualifiers:
-          - Suit Actor
-        uncredited: false
-    slug: destroy-all-monsters-1968
-    title: Destroy All Monsters
-    year: 1968
-  - format: film
-    poster_url: /static/images/films/posters/all-monsters-attack-1969.webp
-    roles:
-      - name: Minilla
-        qualifiers:
-          - Suit Actor
-        uncredited: false
-    slug: all-monsters-attack-1969
-    title: All Monsters Attack
-    year: 1969
-  - format: film
-    poster_url: /static/images/films/posters/pulgasari-1986.webp
-    roles:
-      - name: Infant Pulgasari
-        qualifiers:
-          - Suit Actor
-        uncredited: true
-    title: Pulgasari
-    year: 1986
 ---
 
 Born Fukasawa Masao, "Little Man Mâchan" was a diminutive actor and former professional midget wrestler. He was active in theater, both in drama and comedy, and was reportedly an accomplished tap dancer.

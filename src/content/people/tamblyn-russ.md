@@ -9,46 +9,6 @@ japanese_name: ラス・タンブリン
 name: Russ Tamblyn
 profession: Actor
 type: person
-works:
-  - title: Seven Brides for Seven Brothers
-    format: film
-    year: 1954
-    poster_url: /static/images/films/posters/seven-brides-for-seven-brothers-1954.webp
-    roles:
-      - name: Gabriel
-  - title: Peyton Place
-    format: film
-    year: 1957
-    poster_url: /static/images/films/posters/peyton-place-1957.webp
-    roles:
-      - name: Norman Page
-  - title: Tom Thumb
-    format: film
-    year: 1958
-    poster_url: /static/images/films/posters/tom-thumb-1958.webp
-    roles:
-      - name: Tom Thumb
-  - title: West Side Story
-    format: film
-    year: 1961
-    poster_url: /static/images/films/posters/west-side-story-1961.webp
-    roles:
-      - name: Riff
-  - format: film
-    poster_url: /static/images/films/posters/war-of-the-gargantuas-1966.webp
-    roles:
-      - name: Doctor Paul Stewart
-        uncredited: false
-    slug: war-of-the-gargantuas-1966
-    title: War of the Gargantuas
-    year: 1966
-  - title: Twin Peaks
-    format: tv series
-    year: 1990
-    title_card_url: /static/images/tv-series/title-cards/twin-peaks-1990.webp
-    roles:
-      - name: Dr. Lawrence Jacoby
-        episode_count: 15
 ---
 Russ Tamblyn is an American actor and dancer who gained international fame in the 1950s and 1960s through his appearances in Hollywood musicals. 
 

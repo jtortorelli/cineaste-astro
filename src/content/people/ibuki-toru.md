@@ -10,55 +10,6 @@ japanese_name: 伊吹徹
 name: Ibuki Tôru
 profession: Actor
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/ghidorah-the-three-headed-monster-1964.webp
-    roles:
-      - name: Assassin
-        uncredited: false
-    slug: ghidorah-the-three-headed-monster-1964
-    title: Ghidorah, the Three-Headed Monster
-    year: 1964
-  - format: film
-    poster_url: /static/images/films/posters/invasion-of-astro-monster-1965.webp
-    roles:
-      - name: X<span class="italic">-seijin</span>
-        uncredited: false
-    slug: invasion-of-astro-monster-1965
-    title: Invasion of Astro-Monster
-    year: 1965
-  - format: film
-    poster_url: /static/images/films/posters/ebirah-horror-of-the-deep-1966.webp
-    roles:
-      - name: Yata
-        uncredited: false
-    slug: ebirah-horror-of-the-deep-1966
-    title: Ebirah, Horror of the Deep
-    year: 1966
-  - format: film
-    poster_url: /static/images/films/posters/king-kong-escapes-1967.webp
-    roles:
-      - name: Who Henchman
-        uncredited: false
-    slug: king-kong-escapes-1967
-    title: King Kong Escapes
-    year: 1967
-  - format: film
-    poster_url: /static/images/films/posters/destroy-all-monsters-1968.webp
-    roles:
-      - name: Possessed Monsterland Personnel
-        uncredited: false
-    slug: destroy-all-monsters-1968
-    title: Destroy All Monsters
-    year: 1968
-  - format: film
-    poster_url: /static/images/films/posters/terror-of-mechagodzilla-1975.webp
-    roles:
-      - name: Tsuda
-        uncredited: false
-    slug: terror-of-mechagodzilla-1975
-    title: Terror of Mechagodzilla
-    year: 1975
 ---
 
 Born Daimaru Chisato, Ibuki Tôru was a staple of Toho's science fiction films in

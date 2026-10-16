@@ -10,23 +10,6 @@ japanese_name: ジョージ・ファーネス
 name: George A. Furness
 profession: Actor
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/mysterians-1957.webp
-    roles:
-      - name: Doctor Svenson
-        uncredited: false
-    slug: mysterians-1957
-    title: The Mysterians
-    year: 1957
-  - format: film
-    poster_url: /static/images/films/posters/gorath-1962.webp
-    roles:
-      - name: UN Ambassador
-        uncredited: false
-    slug: gorath-1962
-    title: Gorath
-    year: 1962
 ---
 
 George A. Furness was an American lawyer who played a significant role in

@@ -11,27 +11,6 @@ japanese_name: 小林哲子
 name: Kobayashi Tetsuko
 profession: Actress
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/atragon-1963.webp
-    roles:
-      - name: Mû Empress
-        uncredited: false
-    slug: atragon-1963
-    title: Atragon
-    year: 1963
-  - title: The Blazing Sword
-    year: 1966
-    format: film
-    poster_url: /static/images/films/posters/blazing-sword-1966.webp
-    roles:
-      - name: Sae
-  - title: Samurai Rebellion
-    year: 1967
-    format: film
-    poster_url: /static/images/films/posters/samurai-rebellion-1967.webp
-    roles:
-      - name: Otama
 ---
 
 Born in Tokyo, Kobayashi Tetsuko is best known to international audiences for

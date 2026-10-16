@@ -27,28 +27,6 @@ members:
 name: The Peanuts
 profession: Musical Act
 type: group
-works:
-  - format: film
-    poster_url: /static/images/films/posters/mothra-1961.webp
-    roles:
-      - name: The Shobijin
-    slug: mothra-1961
-    title: Mothra
-    year: 1961
-  - format: film
-    poster_url: /static/images/films/posters/mothra-vs-godzilla-1964.webp
-    roles:
-      - name: The Shobijin
-    slug: mothra-vs-godzilla-1964
-    title: Mothra vs. Godzilla
-    year: 1964
-  - format: film
-    poster_url: /static/images/films/posters/ghidorah-the-three-headed-monster-1964.webp
-    roles:
-      - name: The Shobijin
-    slug: ghidorah-the-three-headed-monster-1964
-    title: Ghidorah, the Three-Headed Monster
-    year: 1964
 ---
 The Peanuts were an enormously popular Japanese pop vocal duo, forever immortalized on screen as the Shobijin in the Godzilla franchise. Itô Emi (born Itô Hideyo) and Itô Yumi (born Itô Tsukiko) were identical twins from Nagoya.
 

@@ -21,40 +21,6 @@ japanese_name: ジェリー・伊藤
 name: Jerry Itô
 profession: Actor
 type: person
-works:
-  - title: The Manster
-    year: 1959
-    format: film
-    poster_url: /static/images/films/posters/manster-1959.webp
-    roles:
-      - name: Superintendent Aida
-  - format: film
-    poster_url: /static/images/films/posters/mothra-1961.webp
-    roles:
-      - name: Clark Nelson
-    slug: mothra-1961
-    title: Mothra
-    year: 1961
-  - format: film
-    poster_url: /static/images/films/posters/last-war-1961.webp
-    roles:
-      - name: Watkins
-    slug: last-war-1961
-    title: The Last War
-    year: 1961
-  - format: film
-    poster_url: /static/images/films/posters/message-from-space-1978.webp
-    roles:
-      - name: Earth Federation Commander
-    slug: message-from-space-1978
-    title: Message from Space
-    year: 1978
-  - format: tv series
-    roles:
-      - name: Grandpa Jerry
-    title: "Let's Play in English 3: Planet Paradise"
-    title_card_url: /static/images/tv-series/title-cards/lets-play-in-english-1995.webp
-    year: 1995
 ---
 
 Jerry Itô was born in New York City to a distinguished show business family. His

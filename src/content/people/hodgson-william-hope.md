@@ -12,33 +12,6 @@ japanese_name: ウイリアム・ホープ・ホジスン
 name: William Hope Hodgson
 profession: Author
 type: person
-works:
-  - cover_url: /static/images/books/voice-in-the-night-1907/William%20Hope%20Hodgson%20Voice%20in%20the%20Night.webp
-    format: book
-    staff:
-      - role: Author
-    title: The Voice in the Night
-    year: 1907
-  - cover_url: /static/images/books/house-on-the-borderland-1908/House%20on%20the%20Borderland%20First.webp
-    format: book
-    staff:
-      - role: Author
-    title: The House on the Borderland
-    year: 1908
-  - format: tv series
-    staff:
-      - episode_count: 1
-        role: Original Work
-    title: Suspicion
-    title_card_url: /static/images/tv-series/title-cards/suspicion-1957.webp
-    year: 1957
-  - format: film
-    poster_url: /static/images/films/posters/matango-1963.webp
-    slug: matango-1963
-    staff:
-      - role: Original Work
-    title: Matango
-    year: 1963
 ---
 
 Born in Essex, England, to a large family, Hodgson ran away from boarding school

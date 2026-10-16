@@ -13,35 +13,6 @@ japanese_name: 香山滋
 name: Kayama Shigeru
 profession: Author
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/godzilla-1954.webp
-    slug: godzilla-1954
-    title: Godzilla
-    year: 1954
-    staff:
-      - role: Original Story
-  - title: Half Human
-    slug: half-human-1955
-    year: 1955
-    format: film
-    poster_url: /static/images/films/posters/half-human-1955.webp
-    staff:
-      - role: Original Story
-  - format: film
-    poster_url: /static/images/films/posters/godzilla-raids-again-1955.webp
-    slug: godzilla-raids-again-1955
-    title: Godzilla Raids Again
-    year: 1955
-    staff:
-      - role: Original Story
-  - format: film
-    poster_url: /static/images/films/posters/mysterians-1957.webp
-    slug: mysterians-1957
-    staff:
-      - role: Screenplay
-    title: The Mysterians
-    year: 1957
 ---
 
 Born Yamada Kôji in Tokyo, Kayama Shigeru began his writing career while working

@@ -10,29 +10,6 @@ japanese_name: 愛京子
 name: Ai Kyôko
 profession: Actress
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/kigeki-ekimae-gakuen-1967.webp
-    roles:
-      - name: Ikezawa Tayo
-    title: Kigeki ekimae gakuen
-    year: 1967
-  - format: film
-    poster_url: /static/images/films/posters/destroy-all-monsters-1968.webp
-    roles:
-      - name: Queen Kilaak
-        uncredited: false
-    slug: destroy-all-monsters-1968
-    title: Destroy All Monsters
-    year: 1968
-  - format: film
-    poster_url: /static/images/films/posters/flying-phantom-ship-1969.webp
-    roles:
-      - name: Kuroshio's Wife
-        qualifiers:
-          - voice
-    title: Flying Phantom Ship
-    year: 1969
 ---
 
 Ai graduated from Soai College. She was discovered by a talent scout while

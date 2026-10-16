@@ -17,15 +17,6 @@ spouses:
   - name: Taniguchi Senkichi
     slug: taniguchi-senkichi
 type: person
-works:
-  - format: film
-    poster_url: /static/images/films/posters/godzilla-raids-again-1955.webp
-    roles:
-      - name: Yamaji Hidemi
-        uncredited: false
-    slug: godzilla-raids-again-1955
-    title: Godzilla Raids Again
-    year: 1955
 ---
 Wakayama Setsuko joined Toho through the first New Face program and debuted in film in 1947. She made notable appearances in Imai Tadashi's _Blue Mountains_ (1949) and especially in Makino Masahiro's multi-part film series _Jirocho Sangokushi_ (1952-1953). Wakayama appeared in one sci-fi film: _Godzilla Raids Again_ (1955), the first sequel of the series.
 
