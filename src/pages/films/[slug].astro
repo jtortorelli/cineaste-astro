@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import FilmPage from "../../components/FilmPage.astro";
-import { filmRecordFromCsv, getFilmData } from "../../lib/films";
+import { filmRecordFromCsv, getFilmData, withFilmCsvFallbacks } from "../../lib/films";
 import { getReviewSlugs } from "../../lib/reviews";
 
 export async function getStaticPaths() {
@@ -20,23 +20,27 @@ export async function getStaticPaths() {
     homeVideos,
   } = getFilmData();
 
-  return films.map((film) => ({
-    params: { slug: film.id.replace(/\.md$/, "") },
-    props: {
-      data: film.data,
-      hasWrittenReview: reviewSlugs.has(film.id.replace(/\.md$/, "")),
-      filmRecord: filmRecordFromCsv(film.id.replace(/\.md$/, ""), filmRows),
-      seriesByName: series,
-      films: filmRows,
-      staffs,
-      casts,
-      kaiju,
-      originalWorks,
-      originalWorkAuthors,
-      credits,
-      homeVideos,
-    },
-  }));
+  return films.map((film) => {
+    const slug = film.id.replace(/\.md$/, "");
+    const filmRecord = filmRecordFromCsv(slug, filmRows);
+    return {
+      params: { slug },
+      props: {
+        data: withFilmCsvFallbacks(slug, film.data, filmRecord),
+        hasWrittenReview: reviewSlugs.has(slug),
+        filmRecord,
+        seriesByName: series,
+        films: filmRows,
+        staffs,
+        casts,
+        kaiju,
+        originalWorks,
+        originalWorkAuthors,
+        credits,
+        homeVideos,
+      },
+    };
+  });
 }
 
 interface Props {

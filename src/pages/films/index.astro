@@ -3,31 +3,30 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import CatalogSearch from "../../components/CatalogSearch.astro";
 import { formatDate } from "../../lib/dates";
-import { getFilmData } from "../../lib/films";
+import { getFilmData, withFilmCsvFallbacks } from "../../lib/films";
 import { getReviewSlugs } from "../../lib/reviews";
 
 const films = (await getCollection("films", ({ data }) => !data.draft)).sort(
   (a, b) => a.id.localeCompare(b.id),
 );
 const reviewSlugs = await getReviewSlugs();
-const seriesBySlug = new Map(
-  getFilmData().films.map((row) => [row.slug, row.series_name]),
-);
+const filmRows = new Map(getFilmData().films.map((row) => [row.slug, row]));
 
 const catalog = films.map((film) => {
   const slug = film.id.replace(/\.md$/, "");
-  const aliases = (film.data.aliases as { alias: string }[] | undefined) ?? [];
+  const data = withFilmCsvFallbacks(slug, film.data, filmRows.get(slug));
+  const aliases = (data.aliases as { alias: string }[] | undefined) ?? [];
   const aliasNames = aliases.map((a) => a.alias);
-  const year = formatDate(film.data.release_date as string, "yyyy");
+  const year = formatDate(data.release_date as string, "yyyy");
   const decade = year ? String(Math.floor(Number(year) / 10) * 10) : "";
-  const japanese = (film.data.japanese_title as string | undefined) ?? "";
+  const japanese = (data.japanese_title as string | undefined) ?? "";
   return {
     slug,
-    title: film.data.title as string,
-    poster: film.data.poster_url as string,
+    title: data.title as string,
+    poster: data.poster_url as string,
     year,
     decade,
-    series: seriesBySlug.get(slug) ?? "",
+    series: filmRows.get(slug)?.series_name ?? "",
     japanese,
     aliasNames,
     hasReview: reviewSlugs.has(slug) || Boolean(film.data.video_review),

@@ -3,10 +3,12 @@ import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Icon from "../components/Icon.astro";
 import { formatDate } from "../lib/dates";
+import { getFilmData, withFilmCsvFallbacks } from "../lib/films";
 
 const films = await getCollection("films", ({ data }) => !data.draft);
 const people = await getCollection("people");
 
+const filmRows = new Map(getFilmData().films.map((row) => [row.slug, row]));
 const filmBySlug = new Map(
   films.map((film) => [film.id.replace(/\.md$/, ""), film]),
 );
@@ -24,12 +26,13 @@ const startHere = [
     if (pick.kind === "film") {
       const film = filmBySlug.get(pick.slug);
       if (!film) return null;
+      const data = withFilmCsvFallbacks(pick.slug, film.data, filmRows.get(pick.slug));
       return {
         href: `/films/${pick.slug}`,
-        image: film.data.poster_url as string,
-        title: film.data.title as string,
-        meta: formatDate(film.data.release_date as string, "yyyy"),
-        alt: `Poster for ${film.data.title as string}`,
+        image: data.poster_url as string,
+        title: data.title as string,
+        meta: formatDate(data.release_date as string, "yyyy"),
+        alt: `Poster for ${data.title as string}`,
         italic: true,
       };
     }

@@ -5,10 +5,12 @@ import CineasteLink from "../../../components/CineasteLink.astro";
 import Icon from "../../../components/Icon.astro";
 import ReviewStars from "../../../components/ReviewStars.astro";
 import ReviewVideoLinks from "../../../components/ReviewVideoLinks.astro";
+import { getFilmData, withFilmCsvFallbacks } from "../../../lib/films";
 
 export async function getStaticPaths() {
   const reviews = await getCollection("reviews");
   const films = await getCollection("films", ({ data }) => !data.draft);
+  const filmRows = new Map(getFilmData().films.map((row) => [row.slug, row]));
   const filmBySlug = new Map(
     films.map((film) => [film.id.replace(/\.md$/, ""), film]),
   );
@@ -19,13 +21,14 @@ export async function getStaticPaths() {
     const film = filmBySlug.get(slug);
     if (!film) continue;
 
+    const data = withFilmCsvFallbacks(slug, film.data, filmRows.get(slug));
     const { Content } = await render(review);
     paths.push({
       params: { slug },
       props: {
-        filmTitle: film.data.title,
+        filmTitle: data.title,
         filmUrl: `/films/${slug}`,
-        posterUrl: film.data.poster_url,
+        posterUrl: data.poster_url,
         videoReview: film.data.video_review,
         starRating: film.data.video_review?.star_rating,
         Content,

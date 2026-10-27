@@ -6,6 +6,7 @@ import {
   type OriginalWorkAuthorRow,
   type OriginalWorkRow,
   type OtherWorkRow,
+  filmPosterUrl,
   isTruthy,
   loadAccoladesCsv,
   loadCsvBySlug,
@@ -488,4 +489,75 @@ export function getFilmData() {
 
 export function filmRecordFromCsv(slug: string, films: FilmRow[]) {
   return films.find((row) => row.slug === slug) ?? null;
+}
+
+function isBlank(value: unknown): boolean {
+  return value == null || (typeof value === "string" && value.trim() === "");
+}
+
+type FilmAlias = { alias: string; context?: string };
+
+function aliasesFromCsv(value: string | undefined): FilmAlias[] | undefined {
+  const text = value?.trim();
+  if (!text) return undefined;
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(text);
+  } catch {
+    return undefined;
+  }
+  if (!Array.isArray(parsed)) return undefined;
+  const aliases = parsed.flatMap((item) => {
+    if (!item || typeof item !== "object") return [];
+    const record = item as { alias?: unknown; context?: unknown };
+    if (typeof record.alias !== "string" || record.alias.trim() === "") return [];
+    return [
+      {
+        alias: record.alias,
+        ...(typeof record.context === "string" && record.context.trim()
+          ? { context: record.context }
+          : {}),
+      },
+    ];
+  });
+  return aliases.length > 0 ? aliases : undefined;
+}
+
+function runtimeFromCsv(value: string | undefined): number | undefined {
+  const text = value?.trim();
+  if (!text) return undefined;
+  const runtime = Number(text);
+  return Number.isFinite(runtime) ? runtime : undefined;
+}
+
+/** Markdown values win. Blank catalog fields fall back to films.csv. */
+export function withFilmCsvFallbacks(
+  slug: string,
+  data: object,
+  row?: FilmRow | null,
+): Record<string, unknown> {
+  const next: Record<string, unknown> = { ...(data as Record<string, unknown>) };
+
+  const fill = (key: string, value: unknown) => {
+    if (!isBlank(next[key]) || isBlank(value)) return;
+    next[key] = value;
+  };
+
+  fill("title", row?.title);
+  fill("release_date", row?.release_date);
+  fill("japanese_title", row?.japanese_title);
+  fill("transliteration", row?.transliteration);
+  fill("translation", row?.translation);
+  fill("runtime", runtimeFromCsv(row?.runtime));
+
+  if (isBlank(next.poster_url)) {
+    next.poster_url = filmPosterUrl(slug, row?.poster_url);
+  }
+
+  if (!Array.isArray(next.aliases) || next.aliases.length === 0) {
+    const aliases = aliasesFromCsv(row?.aliases_json);
+    if (aliases) next.aliases = aliases;
+  }
+
+  return next;
 }
