@@ -1,3 +1,16 @@
+## What I Liked
+
+- Actually decent child actors.
+- Masahiko Naruse.
+- The exploding rocket.
+
+## What I Didn't Like
+
+- Glaringly low-budget set pieces.
+- Goofy sound design.
+
+---
+
 _Prince of Space_, or _Yûsei Ôji_ ( _Planet Prince_) in the original Japanese, was released on May 19th, 1959. It was produced by Toei, runs for 57 minutes, and was filmed in black and white in 2.35:1 film aspect ratio. The "Prince of Space" character was originally created by Toei to compete with Shintoho's "Super Giant" character of the same time period, and prior to this feature he had already appeared in year-long, 49 episode television series. It was directed by Eijiro Wakabayashi, from a script by Shin Morita, and features a score by Katsuhisa Hattori (father of future Godzilla composer Takayuki Hattori). _Prince of Space_ and its immediate sequel, _The Terrifying Spaceship_, both debuted in May 1959 within a week of each other, and are reputed to be Toei's very first science fiction theatrical films.
 
 The story follows Waku, a lowly shoe shiner, and his immediate circle: the children under his care, and the scientist Dr. Maki, inventor of a revolutionary rocket fuel that will propel mankind into the space age. An interstellar despot, Ambassador Phantom, learns about the rocket fuel and threatens Earth with destruction if they do not hand it over to him. Unbeknownst to his friends, the unassuming Waku is none other than the Prince of Space, a sort of space sheriff, whose own strength and personal arsenal are more than a match for Phantom and his goons. Phantom resorts to more subtle methods to accomplish his schemes, but the Prince's friendly alliance with the children help him stay one step ahead. Finally the Phantom attempts to abduct Dr. Maki himself, leading to a final showdown on the launchpad of Maki's experimental rocket.
@@ -8,4 +21,4 @@ For a _tokusatsu_ film there's actually not very many special effects shots in _
 
 The score is nothing to write home about, mainly because there's so little of it in the sparse runtime. A few cues here and there to underscore tension, and some generic action music during the fight scenes. The most prominent musical cue is the children's song extolling the title character which bookends the film. Wakabayashi's direction is fine, considering the material. At its heart _Prince of Space_ is children's entertainment so there aren't any grand themes or morals present, or at least nothing subtle. It's quite clear who the good guys and bad guys are, and no matter how strong the bad guys, the good guys are always stronger, and always win.
 
-Overall I'd give _Prince of Space_ 2 out of 4 stars. Yes, it's a character meant for children, it's based on a children's TV show and plays like an extended TV episode. But so were later Toei _tokusatsu_ shows like _Kamen Rider_ and _Super Sentai_, and of course the _Ultraman_ franchise, and each of those programs were much more engaging in terms of story, music, effects and performances. _Prince of Space_, by comparison, just feels "okay."
+Overall I'd give _Prince of Space_ 2 out of 4 stars. Yes, it's a character meant for children, it's based on a children's TV show and plays like an extended TV episode. But so were later Toei _tokusatsu_ shows like _Kamen Rider_ and _Super Sentai_, and of course the _Ultraman_ franchise from Tsuburaya, and each of those programs were much more engaging in terms of story, music, effects and performances. _Prince of Space_, by comparison, just feels "okay."

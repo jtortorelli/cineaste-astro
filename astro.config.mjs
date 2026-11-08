@@ -2,7 +2,9 @@
 import { join } from "node:path";
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
+import { satteri } from "@astrojs/markdown-satteri";
 import { convertImagesIntegration } from "./scripts/convert-images.ts";
+import { reviewVerdictHeadings } from "./src/lib/review-verdict.ts";
 
 function watchDevData() {
   const csvDir = join(process.cwd(), "src/data");
@@ -44,6 +46,11 @@ function watchDevData() {
 
 export default defineConfig({
   trailingSlash: "never",
+  markdown: {
+    processor: satteri({
+      hastPlugins: [reviewVerdictHeadings],
+    }),
+  },
   integrations: [convertImagesIntegration()],
   vite: {
     plugins: [tailwindcss(), watchDevData()],

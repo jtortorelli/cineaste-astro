@@ -1,3 +1,17 @@
+## What I Liked
+
+- Noir vibes.
+- Shosaku Sugiyama.
+- Daijiro Natsukawa.
+- Great camera work, "invisible man scope."
+
+## What I Didn't Like
+
+- Eerie music cue is overused.
+- Some important scenes are rushed.
+
+---
+
 *The Invisible Man Appears* (*Tômei Ningen Arawaru*) was released on September 25, 1949, making it one of the earliest science fiction films out of Japan, predating the first *Godzilla* film by a full five years. It was produced by Daiei, the studio that would later release the first color science fiction film, *Warning from Space* (1956), and would become famous for its *Gamera* and *Zatoichi* films of the 60s and early 70s. It runs 82 minutes, filmed in black and white at 1.33:1 aspect ratio. This is the first Japanese film based on the classic character introduced in H.G. Wells' 1897 story *The Invisible Man*, following Universal's celebrated 1933 adaptation starring Claude Rains. It was written and directed by Nobuo Adachi, based on a story by prolific mystery writer Akimitsu Takagi. The film's special effects were supervised by Eiji Tsuburaya, who had recently been forced out of Toho under pressure from the US Occupation over his wartime propaganda work. Tsuburaya expressed interest in Daiei's invisible man film and agreed to join the production; without his involvement, it's unlikely the film would have ever been greenlit. He eventually returned to Toho, where two months after the release of *Godzilla* (1954), he took another crack at the concept in Motoyoshi Oda's *Invisible Man*, aka *The Invisible Avenger*.
 
 The film's plot covers a lot of ground during its sparse 80-minute runtime. It begins in the laboratory of Dr. Nakazato, where the elder scientist observes the rivalry between his two understudies, Drs. Seki and Kurokawa. The two men are rivals in science and romance, competing to see who will be the first to discover an invisibility serum, with the grand prize being Nakazato's daughter, Machiko. Unbeknownst to either of them, their mentor has already secretly perfected a formula. Nakazato later demonstrates it for his business friend Kawabe, who surreptitiously notes where the formula is hidden. Shortly after, Nakazato disappears, leaving a note explaining that he is preparing to test the formula on himself. Kurokawa goes searching for him and also vanishes. Then an invisible man storms into a jewelry store and attempts to steal the Tears of Amour, an extremely valuable diamond necklace that Kawabe also has his eye on. What follows is a tense crime mystery (screenwriter Takagi's specialty) with strong noir influences, where secrets are revealed, villains are unmasked, and what began as a playful rivalry between fellow scientists tumbles inexorably toward tragedy.

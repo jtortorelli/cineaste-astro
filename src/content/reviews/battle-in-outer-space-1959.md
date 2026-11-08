@@ -1,3 +1,18 @@
+## What I Liked
+
+- The sheer audacity of this production.
+- Yoshio Tsuchiya.
+- City-sucking mothership effects.
+
+
+## What I Didn't Like
+
+- Practically no plot.
+- Forgettable aliens.
+- The final battle goes a bit long.
+
+---
+
 _Battle in Outer Space_, or _Uchû Daisensô_ (_Great Space War_) in the original Japanese, was released on December 26th, 1959. It was produced by Toho, runs for 93 minutes, and was filmed in color widescreen via TohoScope. It is Toho's second alien invasion film after _The Mysterians_ (1957) , and like that film is also based on a story by science fiction author Jojiro Okami. _Battle in Outer Space_ serves as a quasi-sequel to _The Mysterians_; various characters in both films share the same name, although portrayed by different actors, and the art direction and design of the alien props was apparently based on the assumption that this would be a direct sequel. *The Mysterians* was Toho's previously most ambitious project, so naturally *Battle in Outer Space* would have to surpass it in every way. Producer Tomoyuki Tanaka once again turned to the reliable creative partnership of director Ishiro Honda, effects director Eiji Tsuburaya, composer Akira Ifukube, and screenwriter Shinichi Sekizawa to develop it.
 
 The film actually contains very little in terms of plot, instead depicting a single expansive military action between Earth and the invading Natal. The Natal open hostilities by blowing up an orbiting space station and then wreak havoc on various Earth-based landmarks. They even resort to subterfuge and sabotage to try and derail Earth's militarized space program. Mankind retaliates with a rocket strike team which takes out the Natal's advance base on the moon. In the end the combined space might of both Natal and Humanity meet in pitched battle, in orbit high above the Earth, and even in the skies above Tokyo.

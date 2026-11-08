@@ -1,3 +1,16 @@
+## What I Liked
+
+- Tight script.
+- Competent characters.
+- The scene aboard the alien spaceship and the transformation sequence.
+
+## What I Didn't Like
+
+- Jarring dance numbers.
+- Drawn out final act.
+
+---
+
 *Warning from Space* (*Uchūjin Tōkyō Ni Arawaru*, aka *Space Men Appear in Tokyo*) was released on January 29, 1956. It was produced by Daiei, runs 87 minutes, filmed in color at 1.37:1 aspect ratio. This was the first Japanese science fiction film in color, predating Toho's *Rodan* by almost a full year, and the first Japanese science fiction film to feature aliens. Although promotional materials feature the film's iconic starfish aliens towering over the cast, this is not a *kaiju* film — the aliens themselves are human sized and appear mainly in the first act. It was directed by Koji Shima and written by Hideo Oguni, a frequent collaborator on Akira Kurosawa's films. The story borrows core concepts from American films *The Day the Earth Stood Still* and *When Worlds Collide* (both 1951), but spins them into something uniquely Japanese: more optimistic about the potential benefits of nuclear energy and touched by the promise of international cooperation. In Japan it is remembered less as a derivative work than as an influential one, notably for introducing the trope of aliens transforming into humans, a concept that became commonplace on 60s TV shows like *Ultraman*.
 
 The story begins with the astronomy community on edge as unidentified objects streak across Japan's skies. Several starfish-like aliens are spotted, but they never linger and their intentions are unknown. The encounters suddenly cease and things return to normal, until a strange woman is found who is an exact double of a famous entertainer. While she feigns amnesia, she is in fact a starfish alien transformed into a humanoid. She infiltrates the social circle of the country's top scientists and reveals her twofold purpose: to convince the world to dispose of its nuclear arsenals by discharging them into the rogue planet R, on a collision course with Earth, and to prevent Dr. Matsuda from synthesizing the new element Urium. The Pairans discovered Urium centuries before and deemed it too dangerous even for research; the destructive potential of even a small amount would eclipse every nuclear arsenal on Earth. Tensions rise as other nations are skeptical of reports out of Japan, until Planet R is finally visible to Earth's telescopes, only days from impact. On top of this, a careless comment to the press exposes Matsuda's secret Urium research, and he is kidnapped by industrial spies eager to sell his work to the highest bidder.

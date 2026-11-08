@@ -1,3 +1,18 @@
+## What I Liked
+
+- Meganulon (when you don't see it).
+- Kenji Sahara + Yumi Shirakawa.
+- The hatching scene.
+- The destruction of Sasebo.
+- The finale.
+
+## What I Didn't Like
+
+- Meganulon (when you do see it).
+- There's too much film left after the big city destruction scene.
+
+---
+
 *Rodan* (*Sora no Daikaiju Radon*, aka *Giant Monster of the Sky Rodan*) was released on December 26, 1956. It was produced by Toho, runs 82 minutes, filmed in color at 1.33:1 aspect ratio. While not the first color science fiction film out of Japan — *Warning from Space* beat it to the punch earlier that year — it is the first in Toho's repertoire. This was Toho's third *kaiju eiga*, after *Godzilla* (1954) and *Godzilla Raids Again* (1955), and its first not to feature Godzilla, instead marking the debut of Rodan, who would later become a stalwart Godzilla ally and remains a series fixture to this day. The film reunites much of the *Godzilla* crew — director Ishiro Honda, composer Akira Ifukube, screenwriter Takeo Murata, and effects director Eiji Tsuburaya — with Takeshi Kimura making his *kaiju eiga* debut on the screenplay. It stars Kenji Sahara and Yumi Shirakawa, the first of three 50s Toho sci-fi films to cast them as a romantically linked couple, alongside *The Mysterians* (1957) and *The H-Man* (1958). Producer Tomoyuki Tanaka, riding the success of the first two *Godzilla* films, was inspired by the supersonic jet craze to craft a film about a flying monster and its clash with civilization. The story is based on an original work by Ken Kuronuma, author of many stories exploring paranormal phenomenon — in other words, a good fit for a *kaiju* film.
 
 The film starts in a mining village at the foot of Mt. Aso. A flooded tunnel yields a floating, bloodied corpse, and Goro, another miner who had quarreled with the victim, has vanished — making him the prime suspect. Shigeru, the safety inspector, consoles Goro's sister Kiyo as more miners are victimized. The true culprit proves to be a giant prehistoric insect armed with razor-sharp claws. Shigeru leads police and army into the mine to dispatch it but is trapped in a cave-in. Shigeru is recovered after an earthquake opens a valley near Mt. Aso, but is traumatized, mute, and amnesiac. Meanwhile midair collisions, disappearances, and UFO sightings clog the airwaves until scientists stumble upon a theory so preposterous they can hardly believe it — until Shigeru regains his memory and confirms their worst fears: the flying reptile Rodan has been reawakened. Japan's fighter jets may not even keep up with Rodan's speed, and matters grow worse when a second Rodan joins the fray.

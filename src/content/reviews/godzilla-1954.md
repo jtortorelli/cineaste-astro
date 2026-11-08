@@ -1,3 +1,17 @@
+## What I Liked
+
+- The birth of a genre.
+- Akihiko Hirata.
+- Excellent Ifukube score.
+- A handful of flawless effects shots.
+
+## What I Didn't Like
+
+- Overall uneven special effects.
+- Young leads don't quite sell the romance.
+
+---
+
 *Godzilla*, or *Gojira* in the original Japanese, was released on November 3, 1954, a day now known around the world as “Godzilla Day.” Produced by Toho, it runs 97 minutes, filmed in black and white in 1.37:1 aspect ratio. This is the first film in the *Godzilla* franchise, the oldest surviving film of the *kaiju eiga* genre, and the first to feature the classic “man in suit” style of special effects pioneered by Eiji Tsuburaya. It was produced by Tomoyuki Tanaka, whose original war film project was canceled due to postwar tensions between Japan and his Indonesian partners. Tanaka and Tsuburaya were both influenced by American monster films like *King Kong* (1933) and *The Beast from 20,000 Fathoms* (1954) and pitched their own monster movie to Toho as a replacement. Tsuburaya was fresh off of the U.S. occupation blacklist for his work on wartime propaganda films and eager to tackle a new challenge. While he admired *King Kong*, the budget would not allow for similar stop-motion techniques, and "suitmation" was developed in its stead. *Godzilla* was also the first *kaiju* film directed by Ishiro Honda, who would work frequently in the genre throughout the 50s and 60s. Honda, a war vet and lifelong friend of Akira Kurosawa, was selected because he took the subject matter seriously when other directors wouldn't. Honda and screenwriter Takeo Murata reworked a short story by novelist Shigeru Kayama into the final script, which included none-too-subtle political themes inspired by the infamous *Lucky Dragon No. 5* nuclear incident. The name "Gojira" derives from a contraction of the words "gorilla" and "*kujira*" (or "whale"), and was intended to convey the title creature's size and strength.
 
 The film opens with mysterious boating disasters near a backwater fishing village on Odo Island. News reporter Hagiwara interviews the inhabitants and learns the legend of "Godzilla", an ancient creature worshipped by the islanders. A storm hits and an unseen force rises from the sea to destroy the village. Yamane, a prominent scientist, leads an expedition to the island, where he discovers huge radioactive footprints filled with prehistoric detritus. The monster Godzilla appears, and Yamane warns Japan to prepare for the worst. Before long Godzilla visits the mainland, and the Self-Defense Force mounts a futile defense of the capital.

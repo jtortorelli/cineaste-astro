@@ -1,3 +1,19 @@
+## What I Liked
+
+- Brilliant effects work.
+- Mesmerizing alien dome interior shots.
+- George Furness.
+- Honda tackles some interesting themes (scientists vs aliens).
+
+## What I Didn't Like
+
+- Insipid reveal of the aliens.
+- Yoshio Tsuchiya's baffling acting choices.
+- Harold "Good News Everyone" Conway
+- Ifukube's score gets edited to death in the final battle.
+
+---
+
 _The Mysterians_, or _Chikyû Bôeigun_ (_Earth Defense Force_) in the original Japanese, was released on December 28, 1957. It was produced by Toho, runs for 88 minutes, filmed in color and shot in glorious TohoScope at 2.35:1 film aspect ratio. This would be Toho's most ambitious effects film to date, an epic feat of special effects wizardry and cosmic storytelling brought to life by the _tokusatsu_ dream team of director Ishiro Honda, effects director Eiji Tsuburaya, and composer Akira Ifukube. It was based on an unpublished novel by author Jojiro Okami, which was fashioned into a screenplay by Shigeru Kayama, author of the original _Godzilla_ novellas, and Kaoru Mabuchi, under the pseudonym Takeshi Kimura.
 
 The film opens with a village festival at the foot of Mount Fuji. Two scientist friends, Atsumi and Shiraishi, are on a double date with their sweethearts, Etsuko and Hiroko. The village is devastated by the 1-2-3 punch of a freak forest fire, an earthquake, and a giant robot attack, and Shiraishi goes missing. A group of aliens, known as the Mysterians, take up residence inside a large dome at the base of Mount Fuji. They profess to be refugees from a nuclear war on their own planet and want to resettle on Earth. They boldly demand a permanent plot of land and the right to intermarry with Earth women to repopulate their species. War breaks out, and the Mysterians have the early advantage due to their superior technology, but it's only a matter of time before human cooperation and ingenuity cut them down to size. Meanwhile, Atsumi learns that Shiraishi has joined the aliens, and so he must not only defeat the aliens but rescue his colleague from their seductive ideology.

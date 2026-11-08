@@ -1,3 +1,17 @@
+## What I Liked
+
+- Better human characters all around.
+- "Slice of Life" _kaiju_ film.
+- Consistently good effects.
+
+## What I Didn't Like
+
+- Masao Shimizu's Professor Know-it-All.
+- The big monster fight happens too early.
+- Unexciting climax.
+
+---
+
 *Godzilla Raids Again*, or *Gojira No Gyakushû* (*Godzilla's Counterattack*) in the original Japanese, was released on April 24, 1955. Produced by Toho, it runs 81 minutes, filmed in black and white in 1.37:1 aspect ratio. It is the second film in the Godzilla series, released only six months after the 1954 original and four months after director Motoyoshi Oda’s previous film *Invisible Man*. It is the first Godzilla film to pit Godzilla against another monster and the first in the series with a soundtrack by Masaru Sato. Like its predecessor, it draws inspiration from a short story by Shigeru Kayama, with screenwriter Takeo Murata returning alongside Shigeaki Hidaka. Eiji Tsuburaya returns as special effects director and continues to innovate on the suitmation techniques pioneered in the previous film.  After the success of the original, producer Tomoyuki Tanaka was eager for a sequel. Ishiro Honda was already at work on *Half Human* (1955), which encountered delays, so Tanaka kicked off production to fill the release schedule. Oda, known for extraordinarily tight schedules, was a natural choice. Rather than lean into the darker tone of Honda’s film, Oda delivered a lighter sequel focused on character more than allegory. The nuclear metaphor is reduced to a one-time plot device justifying the monsters and is never spoken of again.
 
 The film focuses on the employees of Marine Fisheries, especially its two pilots, Tsukioka and Kobayashi, and the radio girls in the home office, including Hidemi, the boss’s daughter and Tsukioka’s love interest. Kobayashi’s plane malfunctions and is forced to land on a remote island, where both pilots encounter two monsters. Scientists confirm that one is the same species as the Godzilla who raided Japan the year before; the other, Anguirus, is a different but equally formidable species.  The monsters are impervious to conventional weaponry, so the defense force decides to stall the monsters and draw them away from the mainland. Through a series of unfortunate events the monsters are accidentally drawn into the heart of Osaka. The fishery employees watch helplessly as their headquarters is laid waste while Godzilla defeats Anguirus in a fight to the death. Life goes on; they transfer most of their staff to another fishery in Hokkaido and hold a rowdy gathering at a rustic inn to boost morale. The revelry is cut short when Godzilla reappears off the coast. The pilots leap into action and the stage is set for the final showdown

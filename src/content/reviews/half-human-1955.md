@@ -1,3 +1,17 @@
+## What I Liked
+
+- Yoshio Kosugi.
+- Fuminori Ohashi's brilliant performance in costume.
+- Some excellent miniature effects.
+
+## What I Didn't Like
+
+- Formulaic creature feature, less compelling than other _kaiju_ of the same period.
+- Two-dimensional villagers.
+- Baby half human.
+
+---
+
 *Half Human*, or *Jûjin Yukiotoko* (*Beast Man Yeti*) in the original Japanese, was released on August 14, 1955. Produced by Toho, it runs 95 minutes, filmed in black and white in 1.37:1 aspect ratio. This was Ishiro Honda’s second monster film after the original *Godzilla* (1954) and Toho’s fourth postwar special-effects film, following *Godzilla*, *Invisible Man* (1954), and *Godzilla Raids Again* (1955). It was actually in development as far back as the first *Godzilla* and was meant to release earlier, but delays led to its crew being reassigned to *Godzilla Raids Again*. Like the earlier Godzilla films, it is drawn from a short story by Shigeru Kayama, with a screenplay by Takeo Murata. Eiji Tsuburaya returns as special-effects director, using costumes, miniatures, stop-motion, and rotoscoping. Unlike *Godzilla*, it was not influenced by American films of the same genre but by mountaineer Eric Shipton’s 1951 “yeti footprint” discovery, and is only one of several abominable snowman movies of the era such as *The Snow Creature* (1954) and *The Abominable Snowman* (1957).
 
 The film is told in flashback and bookended by scenes of the main cast relating the story to a reporter during a layover at a small train station. A group of student friends go on a skiing trip in the mountainous Nagano region. The trip takes a dark turn when the group is separated; half reach the safety of a travel lodge while the others are presumably lost in a blizzard en route to another lodge. When the weather clears they find the second lodge destroyed and their friends either dead or missing. All signs point to a large animal as the culprit.

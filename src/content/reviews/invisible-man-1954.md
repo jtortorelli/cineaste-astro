@@ -1,3 +1,16 @@
+## What I Liked
+
+- Yoshio Tsuchiya.
+- Some tense scenes when the invisible man really goes to work.
+
+## What I Didn't Like
+
+- The absurdity of gangsters "disguising" themselves as "invisible men."
+- Some invisible man effects strain credulity.
+- Goofy climactic fight scene.
+
+---
+
 *Invisible Man*, or *Tômei Ningen* in the original Japanese (also known as *The Invisible Avenger*), was released on December 29, 1954, almost two months after the first *Godzilla*. Produced by Toho, it runs 70 minutes, filmed in black and white in 1.37:1 aspect ratio. It is the first entry in Toho’s informal “Transforming Human” series, later followed by *The H-Man* (1958), *The Human Vapor* and *The Secret of the Telegian* (both 1960). It is the second Japanese adaptation of the Invisible Man story and the second with effects director Eiji Tsuburaya’s involvement, after Daiei’s *The Invisible Man Appears* (1949). At times it feels less like an organic story and more like a highlight reel of “invisible man” effects techniques Tsuburaya didn’t get to use the first time around. It was directed by Motoyoshi Oda, a reliable director who typically handled up to seven films a year. *Invisible Man* was completed four months before Oda’s next film *Godzilla Raids Again* (1955) and only two months after his previous film *Ghost Man* (1954). The leads of *Ghost Man*, Seizaburo Kawazu and Miki Sanjo, return, along with composer Kyosuke Kami. In an interesting twist it was not produced by Tomoyuki Tanaka but by Takeo Kita, the art director behind dozens of *kaiju eiga* throughout the 1960s and 1970s.
 
 The film opens with a compelling scene of an invisible man’s suicide. A driver in Tokyo traffic strikes an unseen obstacle; when a crowd gathers, a dead man materializes underneath the car. A suicide note indicates the deceased is a former soldier who became invisible through military science and that one more member of his invisible squad remains at large. “Invisible Man” paranoia settles over the nation, and unscrupulous dirtbags are eager to take advantage.

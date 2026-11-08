@@ -1,3 +1,17 @@
+## What I Liked
+
+- Toshiro Mifune (duh).
+- Masterful Ifukube score.
+- Finale worthy of a 3-hour epic.
+
+## What I Didn't Like
+
+- Surprisingly bland color palette.
+- Clumsy swordfight choreography (Mifune vs Tsuruta).
+- The dragon fight is a little overhyped.
+
+---
+
 _The Three Treasures_, or _Nippon Tanjô_ (_Birth of Japan_) in the original Japanese, was released on October 25th, 1959. It was produced by Toho, runs for 182 minutes, and was filmed in color widescreen. This was Toho's 1000th film, and the occasion demanded a suitably grand spectacle. Producer Tomoyuki Tanaka, who often handled "men's movies" in the action, war and sci-fi genres, collaborated with his contemporary Sanezumi Fujimoto, who worked primarily in dramas and comedies, in order to pull off this epic project. It was directed by Hiroshi Inagaki, who just a few years earlier had completed his _Samurai_ trilogy of films (1954-1956) starring Toshiro Mifune, who also garnered the lead role in _The Three Treasures_. Akira Ifukube provided the traditional sounding score and Eiji Tsuburaya's special effects department contributed to key scenes.  _The Three Treasures_ is a sweeping tale that blends history and mythology, filled with romance, intrigue, duels and battles between gods and monsters and men, all driven by one of the most celebrated heroes of Japanese folklore.
 
 The story follows Prince Ousu, a rugged and daring warrior with a short fuse. He catches his older brother with one of the emperor's concubines and beats him within an inch of his life. Otomo, the corrupt counselor to the emperor, uses this occasion to sway the emperor's heart against his son and send him on a suicide mission to subdue the Kumaso tribe. Ousu unexpectedly succeeds, earning the title "Yamato Takeru" as a result. Tensions flare as Otomo exerts all his influence to keep Ousu away from the throne. Ousu continues his journeys and learns to temper his wild spirit, but ultimately must contend with the treacherous forces arrayed against him.

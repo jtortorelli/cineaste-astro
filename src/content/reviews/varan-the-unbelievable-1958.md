@@ -1,3 +1,18 @@
+## What I Liked
+
+- Ifukube's score is better than the film deserves.
+- Varan is a visually appealing monster design.
+
+## What I Didn't Like
+
+- Dumbed down plot intended for American television.
+- Noticeably suffers from mid-production aspect ratio change.
+- Low-energy, low-charisma cast.
+- Varan the flying squirrel.
+- Threadbare final "city destruction" sequence.
+
+---
+
 _Varan the Unbelievable_, or _Daikaijû Baran_ (_Giant Monster Varan_) in the original Japanese, was released on October 14th, 1958. It was produced by Toho, runs for 87 minutes, and was filmed in black and white, initially in 1.33:1 or Academy aspect ratio, and then later converted to 2.35:1 aspect ratio via Toho Pan Scope. It was originally conceived as a television miniseries, co-produced with American studio AB-PT, hence the decision to shoot in Academy ratio and in black and white. AB-PT fell apart during production, and Toho salvaged the project for a Japanese theatrical release instead. Remaining footage was shot in widescreen and existing Academy footage was cropped to match, hence "Pan Scope." Producer Tomoyuki Tanaka once again united the _tokusatsu_ dream team of director Ishiro Honda, effects director Eiji Tsuburaya, composer Akira Ifukube, and screenwriter Shinichi Sekizawa to craft this film.
 
 The film opens like an episode of a science fiction anthology, with footage of rockets launching and opening narration about the mysteries of the universe. The story focuses on Uozaki, a research assistant, Yuriko, a journalist, and Horiguchi, Yuriko's photographer, who venture out to the wild countryside of Japan in search of Uozaki's missing colleagues. They enter a secluded village where the residents worship a primal deity known as "Barandagi." The deity reveals itself to be an enormous dinosaur-like creature, Varan, who emerges from its underwater lair to wreak havoc. Varan eludes the military, leading them on a chase through the coastal waters before landing in Tokyo, where the final showdown takes place.

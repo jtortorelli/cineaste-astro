@@ -27,6 +27,67 @@
   .reading > * + * {
     margin-top: 1em;
   }
+  .reading:has(> .verdicts) {
+    container-type: inline-size;
+  }
+  .reading > .verdicts {
+    display: grid;
+    align-items: start;
+    gap: 1.35rem 2rem;
+  }
+  @container (min-width: 34rem) {
+    .reading > .verdicts:has(> :nth-child(2)) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .reading .verdict-group > * + * {
+    margin-top: 0.35em;
+  }
+  .reading .verdict-group h2 {
+    font-size: 1rem;
+    font-weight: 650;
+    line-height: 1.3;
+  }
+  .reading .verdict-group.liked h2 {
+    color: var(--color-green-700);
+  }
+  .reading .verdict-group.disliked h2 {
+    color: var(--color-red-700);
+  }
+  .reading ul,
+  .reading ol {
+    padding-left: 1.2em;
+  }
+  .reading ul {
+    list-style: disc;
+  }
+  .reading ol {
+    list-style: decimal;
+  }
+  .reading li + li {
+    margin-top: 0.3em;
+  }
+  .reading li::marker {
+    color: var(--color-gray-400);
+  }
+  .reading .verdict-group.liked li::marker {
+    color: var(--color-green-700);
+  }
+  .reading .verdict-group.disliked li::marker {
+    color: var(--color-red-700);
+  }
+  .reading > hr {
+    width: 5rem;
+    height: 4px;
+    margin-inline: auto;
+    border: 0;
+    border-radius: 999px;
+    background: var(--color-gray-300);
+  }
+  .reading > * + hr,
+  .reading > hr + * {
+    margin-top: 1.75em;
+  }
   .person-hero {
     display: grid;
     grid-template-columns: 1fr;

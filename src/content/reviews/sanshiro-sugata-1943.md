@@ -1,3 +1,17 @@
+## What I Liked
+
+- Susumu Fujita carries the movie.
+- The romantic bits.
+- Epic location shoot of the final battle.
+
+## What I Didn't Like
+
+- Ryunosuke Tsukigata's one-note villain.
+- Stilted fight choreography.
+- Important scenes still missing.
+
+---
+
 *Sanshiro Sugata*, or *Sugata Sanshirô* in the original Japanese, was released on March 25th, 1943. It was produced by Toho, ran for 97 minutes, and was filmed in black and white in standard Academy film aspect ratio. It was based on the novel of the same name by Tsuneo Tomita, itself a dramatic retelling of the rivalry between different schools of judo martial arts during the Meiji Era. This was the first feature ever helmed by acclaimed director Akira Kurosawa, who had just barely finished his apprenticeship at the time and was especially eager to sink his teeth into the tale of Sugata. Unfortunately for Kurosawa, the finished film was later heavily edited by wartime Japanese censors and about 17 minutes were lost. For decades, this edited version was the only version available, and it is the version that was released in the US in the Eclipse box set of *The First Films of Akira Kurosawa*. However, in 2026, a new 4K transfer was prepared which restored 12 minutes, bringing the film's length back up to 91 minutes, though with crucial scenes still missing.
 
 The story follows the journey of Sanshiro Sugata, a young martial arts disciple who joins the dojo of judo master Yano. Sugata is a promising youth with great strength, but is prone to violence and outbursts of temper. It's up to Yano's patient instruction to impart wisdom and patience to his protege. Yano's unorthodox methods earn him the ire of several rival schools, and things come to a head when his dojo participates in an exhibition match for the Japanese police academy. Sugata is scheduled to spar with Murai, the father of Sayo, who he has just recently met and become infatuated with. On top of this, Sugata must contend with Murai's zealous pupil Higaki, who is waiting in the wings for his chance to duel with Sugata and defend the honor of his dojo.

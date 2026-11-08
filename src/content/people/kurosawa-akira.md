@@ -12,6 +12,8 @@ japanese_name: 黒澤明
 name: Kurosawa Akira
 profession: Director
 type: person
+spouses:
+    - name: Yaguchi Yôko
 ---
 
 Regarded by many as one of the greatest filmmakers in cinema history, Kurosawa
